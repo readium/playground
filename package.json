@@ -12,10 +12,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:all": "pnpm run build:submodules && next build",
+    "build:submodules": "pnpm run build:shared && pnpm run build:navigator",
+    "build:shared": "cd ./src/readium/ts-toolkit/shared && pnpm run build",
+    "build:navigator": "pnpm run build:injectables && cd ./src/readium/ts-toolkit/navigator && pnpm run build",
+    "build:injectables": "cd ./src/readium/ts-toolkit/navigator-html-injectables && pnpm run build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npx @cloudflare/next-on-pages@1 && npx wrangler pages deploy ./.vercel/output/static",
-    "preinstall": "npx only-allow pnpm"
+    "deploy": "npx @cloudflare/next-on-pages@1 && npx wrangler pages deploy",
+    "preinstall": "npx only-allow pnpm && cd ./src/readium/ts-toolkit && pnpm install",
+    "postinstall": "pnpm run build:submodules"
   },
   "dependencies": {
     "@emotion/cache": "^11.13.1",
@@ -26,7 +32,13 @@
     "@mui/material": "^6.0.2",
     "@mui/material-nextjs": "^6.0.2",
     "@mui/material-pigment-css": "^6.0.2",
+    "@readium/navigator": "link:src/readium/ts-toolkit/navigator",
+    "@readium/navigator-html-injectables": "link:src/readium/ts-toolkit/navigator-html-injectables",
+    "@readium/shared": "link:src/readium/ts-toolkit/shared",
+    "@uidotdev/usehooks": "^2.4.1",
     "css-selector-generator": "^3.6.8",
+    "debounce": "^2.1.1",
+    "json-templates": "^5.1.0",
     "next": "14.2.7",
     "path-browserify": "^1.0.1",
     "react": "^18",
@@ -34,11 +46,14 @@
   },
   "devDependencies": {
     "@pigment-css/nextjs-plugin": "^0.0.21",
+    "@svgr/webpack": "^8.1.0",
+    "@types/json-templates": "^3.0.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",
+    "readium-css": "github:readium/readium-css#json",
     "typescript": "^5"
   }
 }

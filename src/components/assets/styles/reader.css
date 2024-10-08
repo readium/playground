@@ -1,3 +1,10 @@
+:root {
+  /* Borrowed from Thorium src/renderer/assets/styles/variable.scss */
+  --color-primary: #4d4d4d;
+  --color-secondary: white;
+  --color-disabled: #767676;
+}
+
 html,
 body {
   min-height: 100%;
@@ -9,7 +16,7 @@ body {
 
 body {
   margin: 0;
-  /*background: #eee;*/
+  background-color: #FFFFFF;
 }
 
 #bottom-bar,
@@ -20,11 +27,29 @@ body {
   align-items: center;
   gap: 2px;
   touch-action: manipulation;
+  background-color: #FFFFFF;
+}
+
+#bottom-bar.immersive,
+#top-bar.immersive {
+  opacity: 0.25;
+}
+
+#bottom-bar:hover,
+#top-bar:hover {
+  opacity: 1;
 }
 
 #top-bar {
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1em;
+}
+
+#top-bar h1 {
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--color-primary);
+  font-weight: normal;
 }
 
 #wrapper {
@@ -38,6 +63,7 @@ body {
   contain: content;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
 }
 
 .readium-navigator-iframe {

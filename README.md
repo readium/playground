@@ -29,8 +29,24 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+The Readium Playground is using the following configuration:
+
+- Go-Toolkit on Google Cloud Run
+- Playground App on CloudFlare Worker
+- Assets e.g. demo EPUBs stored on Google Cloud Storage
+
+To deploy, the following script is run: 
+
+```bash
+npx @cloudflare/next-on-pages@1 && npx wrangler pages deploy ./.vercel/output/static
+```
+
+It’s running with defaults, which means a commit triggers a build and deploy for the current branch to preview. You can then access the app from a subdomain using this branch name. 
+
+More details in [the @cloudflare/next-on-pages repo](https://github.com/cloudflare/next-on-pages).

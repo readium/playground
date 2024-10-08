@@ -1,5 +1,5 @@
-import { HttpFetcher } from "@readium/shared/src/fetcher/HttpFetcher";
-import { Link } from "@readium/shared/src/publication/Link";
+import { HttpFetcher } from "@readium/shared";
+import { Link } from "@readium/shared";
 import { Reader } from "@/components/Reader";
 
 // TODO page metadata w/ generateMetadata

@@ -1,0 +1,4 @@
+#current {
+  color: var(--color-primary);
+  font-variant-numeric: lining-nums tabular-nums;
+}

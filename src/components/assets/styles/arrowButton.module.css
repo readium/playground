@@ -1,0 +1,75 @@
+.container {
+  position: absolute;
+  z-index: 2;
+}
+
+#left {
+  top: 50vh;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+#left button {
+  margin-left: var(--arrow-offset, 0);
+}
+
+#right {
+  top: 50vh;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+#right button {
+  margin-right: var(--arrow-offset, 0);
+}
+
+.container button {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+
+  width: var(--arrow-size, 40px);
+  /* height: var(--arrow-size, 40px); */
+  height: 50vh;
+  height: 50dvh;
+  border-radius: 5px;
+  pointer-events: auto;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.container button.immersive {
+  opacity: 0.25;
+}
+
+.container button:disabled {
+  pointer-events: none;
+}
+
+.container button:focus {
+  opacity: 1;
+}
+
+.container button:not(:disabled):hover {
+  opacity: 1;
+  transition: all 200ms;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-primary);
+}
+
+.container button svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+
+.hidden {
+  opacity: 0;
+}

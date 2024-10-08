@@ -1,0 +1,21 @@
+{
+  "reader": {
+    "app": {
+      "publicationWrapper": "You’re now in the Publication.",
+      "header": {
+        "title": "Publication Title",
+        "fallback": "Publication"
+      },
+      "progression": {
+        "wrapper": "Current progression",
+        "of": "{{current}} of {{reference}}",
+        "referenceFallback": "current chapter",
+        "pubFallback": "the publication"
+      }
+    },
+    "navigation": {
+      "goForward": "Go Forward",
+      "goBackward": "Go Backward"
+    }
+  }
+}

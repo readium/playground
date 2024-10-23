@@ -3,8 +3,12 @@
     "app": {
       "publicationWrapper": "You’re now in the Publication.",
       "header": {
+        "label": "Top bar",
         "runningHead": "...",
         "runningHeadFallback": "Publication"
+      },
+      "footer": {
+        "label": "Bottom bar"
       },
       "progression": {
         "wrapper": "Current progression",
@@ -15,12 +19,24 @@
     },
     "navigation": {
       "goForward": "Go Forward",
-      "goBackward": "Go Backward"
+      "goBackward": "Go Backward",
+      "scrollPrevious": "Go to the previous resource",
+      "scrollNext": "Go to the next resource"
     },
     "settings": {
-      "readingDisplayLayout": "Layout",
-      "scrolled": "Scrollable",
-      "paginated": "Paginated"
+      "trigger": "Open settings menu",
+      "close": "Close settings menu",
+      "layout": {
+        "title": "Layout",
+        "scrolled": "Scrollable",
+        "paginated": "Paginated"
+      },
+      "column": {
+        "title": "Columns",
+        "auto": "Auto",
+        "one": "1 col",
+        "two": "2 cols"
+      }
     }
   }
 }

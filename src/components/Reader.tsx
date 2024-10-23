@@ -15,32 +15,36 @@ import { EpubNavigator, EpubNavigatorListeners, FrameManager, FXLFrameManager } 
 import { Locator, Manifest, Publication, Fetcher, HttpFetcher, EPUBLayout, ReadingProgression } from "@readium/shared";
 
 import Peripherals from "@/helpers/peripherals";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 import { ReaderHeader } from "./ReaderHeader";
 import { ArrowButton } from "./ArrowButton";
 import { ReaderFooter } from "./ReaderFooter";
 
 import { autoPaginate } from "@/helpers/autoLayout/autoPaginate";
-import { getOptimalLineLength } from "@/helpers/autoLayout/optimalLineLength";
+import { getOptimalLineLength, IOptimalLineLength } from "@/helpers/autoLayout/optimalLineLength";
 import { propsToCSSVars } from "@/helpers/propsToCSSVars";
 import { localData } from "@/helpers/localData";
-import { setImmersive, setBreakpoint } from "@/lib/readerReducer";
+import { setImmersive, setBreakpoint, setHovering } from "@/lib/readerReducer";
 import { setFXL, setRTL, setProgression, setRunningHead } from "@/lib/publicationReducer";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import debounce from "debounce";
+import { ScrollAffordance } from "./ScrollAffordance";
 
 export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHref: string }) => {
   const container = useRef<HTMLDivElement>(null);
   const nav = useRef<EpubNavigator | null>(null);
   const publication = useRef<Publication | null>(null);
-  const optimalLineLength = useRef<number | null>(null);
+  const optimalLineLength = useRef<IOptimalLineLength | null>(null);
 
   const arrowsWidth = useRef(2 * ((RSPrefs.theming.arrow.size || 40) + (RSPrefs.theming.arrow.offset || 0)));
 
   const localDataKey = useRef(`${selfHref}-current-location`);
 
+  const hasReachedBreakpoint = useAppSelector(state => state.reader.hasReachedBreakpoint) || RSPrefs.breakpoint <= window.innerWidth;
   const isPaged = useAppSelector(state => state.reader.isPaged);
+  const colCount = useAppSelector(state => state.reader.colCount);
+  
   const isImmersive = useAppSelector(state => state.reader.isImmersive);
   const immersive = useRef(isImmersive);
 
@@ -64,6 +68,8 @@ export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHre
   }
 
   const toggleImmersive = () => {
+    // If tap/click in iframe, then header/footer no longer hoovering 
+    dispatch(setHovering(false));
     dispatch(setImmersive(!immersive.current));
   }
 
@@ -74,19 +80,70 @@ export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHre
           frameManager.window.document.documentElement.style.setProperty(key, value);
         }
       }
-    });
-  }
+    })
+  };
 
   useEffect(() => {
-    isPaged ? applyReadiumCSSStyles({
-      "--USER__view": "readium-paged-on"
-    }) :
-    applyReadiumCSSStyles({
-      "--USER__view": "readium-scroll-on"
-    })
-  }, [isPaged])
+    if (isPaged) { 
+      applyReadiumCSSStyles({
+        "--USER__view": "readium-paged-on"
+      });
+    } else {
+      applyReadiumCSSStyles({
+        "--USER__view": "readium-scroll-on"
+      })
+    }
+  }, [isPaged]);
 
-  const handleReaderControl = (ev: Event) => {
+  const handleColCountReflow = useCallback(() => {
+    if (container.current && optimalLineLength.current) {
+      let RCSSColCount = 1;
+
+      if (colCount === "auto") {
+        RCSSColCount = autoPaginate(RSPrefs.breakpoint, window.innerWidth, optimalLineLength.current.optimal);
+      } else if (colCount === "2") {
+        const requiredWidth = ((2 * optimalLineLength.current.min) * optimalLineLength.current.fontSize);
+        window.innerWidth > requiredWidth ? RCSSColCount = 2 : RCSSColCount = 1;
+      } else {
+        RCSSColCount = Number(colCount);
+      }
+
+      if (hasReachedBreakpoint) {
+        const containerWithArrows = window.innerWidth - arrowsWidth.current;
+        const containerWidth = RCSSColCount > 1 ? Math.min(((RCSSColCount * optimalLineLength.current.optimal) * optimalLineLength.current.fontSize), containerWithArrows) : containerWithArrows;
+        container.current.style.width = `${containerWidth}px`;
+      } else {
+        container.current.style.width = `${window.innerWidth}px`;
+      }
+
+      applyReadiumCSSStyles({
+        "--USER__colCount": `${RCSSColCount}`,
+        "--RS__defaultLineLength": `${optimalLineLength.current.optimal}rem`
+      })
+    }
+  }, [colCount, hasReachedBreakpoint]);
+
+  useEffect(() => {
+    if (nav.current?.layout === EPUBLayout.reflowable) {
+      handleColCountReflow();
+    } else if (nav.current?.layout === EPUBLayout.fixed) {
+      if (colCount === "1") {
+        // @ts-ignore
+        nav.current.pool.setPerPage(1);
+      } else {
+        // @ts-ignore
+        nav.current.pool.setPerPage(0)
+      }
+    }
+  }, [colCount, handleColCountReflow]);
+
+  const handleResize = useCallback(debounce(() => {
+    if (nav.current?.layout === EPUBLayout.reflowable) {
+      handleColCountReflow();
+    }
+  }, 250), [handleColCountReflow]);
+
+  const handleReaderControl = useCallback((ev: Event) => {
     const detail = (ev as CustomEvent).detail as {
       command: string;
       data: unknown;
@@ -110,15 +167,26 @@ export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHre
       default:
         console.error("Unknown reader-control event", ev);
     }
-  };
+  }, []);
+
+  const mq = "(min-width:"+ RSPrefs.breakpoint + "px)";
+  const breakpointQuery = window.matchMedia(mq);
+  const handleBreakpointChange = useCallback((event: MediaQueryListEvent) => {
+    dispatch(setBreakpoint(event.matches))}, [dispatch]);
 
   useEffect(() => {
     window.addEventListener("reader-control", handleReaderControl);
+    breakpointQuery.addEventListener("change", handleBreakpointChange);
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("orientationchange", handleResize);
     
     return () => {
       window.removeEventListener("reader-control", handleReaderControl);
+      breakpointQuery.removeEventListener("change", handleBreakpointChange);
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("orientationchange", handleResize);
     }
-  });
+  }, [breakpointQuery, handleBreakpointChange, handleResize, handleReaderControl]);
 
   useEffect(() => {
     const fetcher: Fetcher = new HttpFetcher(undefined, selfHref);
@@ -155,36 +223,20 @@ export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHre
 
     fetchPositions()
       .catch(console.error);
-
-    const handleResize = () => {
-      if (nav.current && container.current) {
-        const currentBreakpoint = RSPrefs.breakpoint < container.current.clientWidth
-        dispatch(setBreakpoint(currentBreakpoint));
-    
-        if (nav.current?.layout === EPUBLayout.reflowable && optimalLineLength.current) {
-          const containerWidth = currentBreakpoint ? window.innerWidth - arrowsWidth.current : window.innerWidth;
-          container.current.style.width = `${containerWidth}px`;
-
-          const colCount = autoPaginate(RSPrefs.breakpoint, containerWidth, optimalLineLength.current);
-    
-          applyReadiumCSSStyles({
-            "--RS__colCount": `${colCount}`,
-            "--RS__defaultLineLength": `${optimalLineLength.current}rem`,
-            "--RS__pageGutter": `${RSPrefs.typography.pageGutter}px`
-          });
-        }
-      }
-    };
     
     const initReadingEnv = () => {
       if (nav.current?.layout === EPUBLayout.reflowable) {
         optimalLineLength.current = getOptimalLineLength({
-          chars: RSPrefs.typography.lineLength,
+          minChars: RSPrefs.typography.minimalLineLength,
+          optimalChars: RSPrefs.typography.optimalLineLength,
           fontFace: fontStacks.RS__oldStyleTf,
           pageGutter: RSPrefs.typography.pageGutter,
         //  letterSpacing: 2,
         //  wordSpacing: 2,
         //  sample: "It will be seen that this mere painstaking burrower and grub-worm of a poor devil of a Sub-Sub appears to have gone through the long Vaticans and street-stalls of the earth, picking up whatever random allusions to whales he could anyways find in any book whatsoever, sacred or profane. Therefore you must not, in every case at least, take the higgledy-piggledy whale statements, however authentic, in these extracts, for veritable gospel cetology. Far from it. As touching the ancient authors generally, as well as the poets here appearing, these extracts are solely valuable or entertaining, as affording a glancing bird’s eye view of what has been promiscuously said, thought, fancied, and sung of Leviathan, by many nations and generations, including our own."
+        });
+        applyReadiumCSSStyles({
+          "--RS__pageGutter": `${RSPrefs.typography.pageGutter}px`
         });
         handleResize();
       } else if (nav.current?.layout === EPUBLayout.fixed) {
@@ -226,9 +278,6 @@ export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHre
         shiftKey 
           ? nav.current?.goBackward(true, activateImmersiveOnAction) 
           : nav.current?.goForward(true, activateImmersiveOnAction);
-      },
-      resize: () => {
-        handleResize();
       }
     });
 
@@ -335,26 +384,45 @@ export const Reader = ({ rawManifest, selfHref }: { rawManifest: object, selfHre
         runningHead={ runningHead } 
       />
 
+    { isPaged ? 
       <nav className={ arrowStyles.container } id={ arrowStyles.left }>
         <ArrowButton 
           direction="left" 
           disabled={ atPublicationStart }
         />
-      </nav>
+      </nav> : 
+      <></>
+    }
 
       <article id="wrapper" aria-label={ Locale.reader.app.publicationWrapper }>
+        { !isPaged ? 
+          <ScrollAffordance 
+            pref={ RSPrefs.scroll.topAffordance } 
+          /> : 
+          <></> 
+        }
+
         <div id="container" ref={ container }></div>
+
+        { !isPaged ? 
+          <ScrollAffordance 
+            pref={ RSPrefs.scroll.bottomAffordance } 
+          /> : 
+          <></> 
+        }
       </article>
 
+    { isPaged ?
       <nav className={ arrowStyles.container } id={ arrowStyles.right }>
         <ArrowButton 
           direction="right"  
           disabled={ atPublicationEnd }
         />
-      </nav>
+      </nav> : 
+      <></>
+    }
 
-      <ReaderFooter />
-    </main>
-    </>
-  );
-};
+    { isPaged ? <ReaderFooter /> : <></>}
+  </main>
+  </>
+)};

@@ -1,5 +1,6 @@
 import React from "react";
 
+import Locale from "../resources/locales/en.json";
 import readerStateStyles from "./assets/styles/readerStates.module.css";
 
 import { setHovering } from "@/lib/readerReducer";
@@ -32,7 +33,13 @@ export const ReaderFooter = () => {
 
   return(
     <>
-    <aside className={handleClassNameFromState()}  id="bottom-bar" aria-label="Bottom Bar" onMouseEnter={setHover} onMouseLeave={removeHover}>
+    <aside 
+      className={ handleClassNameFromState() } 
+      id="bottom-bar" 
+      aria-label={ Locale.reader.app.footer.label } 
+      onMouseEnter={ setHover } 
+      onMouseLeave={ removeHover }
+    >
       <ProgressionOf />
     </aside>
     </>

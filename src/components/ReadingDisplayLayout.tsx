@@ -30,16 +30,30 @@ export const ReadingDisplayLayout = ({ isFXL }: { isFXL: boolean }) => {
   return (
     <>
     <div>
-      <RadioGroup className={settingsStyles.readingDisplayLayoutPopover} orientation="horizontal" value={isPaged ? ReadingDisplayLayoutOption.paginated : ReadingDisplayLayoutOption.scroll} onChange={handleChange}>
-        <Label className={settingsStyles.readingDisplayLayoutLabel}>{Locale.reader.settings.readingDisplayLayout}</Label>
-        <div className={settingsStyles.readingDisplayLayoutRadioWrapper}>
-          <Radio className={settingsStyles.readingDisplayLayoutRadio} value={ReadingDisplayLayoutOption.scroll} id={ReadingDisplayLayoutOption.scroll} isDisabled={isFXL}>
+      <RadioGroup 
+        orientation="horizontal" 
+        value={ isPaged ? ReadingDisplayLayoutOption.paginated : ReadingDisplayLayoutOption.scroll } 
+        onChange={ handleChange }
+      >
+        <Label className={ settingsStyles.readerSettingsLabel }>{ Locale.reader.settings.layout.title }</Label>
+        <div className={ settingsStyles.readerSettingsRadioWrapper }>
+          <Radio 
+            className={ settingsStyles.readerSettingsRadio } 
+            value={ ReadingDisplayLayoutOption.scroll } 
+            id={ ReadingDisplayLayoutOption.scroll } 
+            isDisabled={ isFXL }
+          >
             <ScrollableIcon aria-hidden="true" focusable="false" />
-            <span>{Locale.reader.settings.scrolled}</span>
+            <span>{ Locale.reader.settings.layout.scrolled }</span>
           </Radio>
-          <Radio className={settingsStyles.readingDisplayLayoutRadio} value={ReadingDisplayLayoutOption.paginated} id={ReadingDisplayLayoutOption.paginated} isDisabled={false}>
+          <Radio 
+            className={ settingsStyles.readerSettingsRadio } 
+            value={ ReadingDisplayLayoutOption.paginated } 
+            id={ ReadingDisplayLayoutOption.paginated } 
+            isDisabled={ false }
+          >
             <PaginatedIcon aria-hidden="true" focusable="false" />
-            <span>{Locale.reader.settings.paginated}</span>
+            <span>{ Locale.reader.settings.layout.paginated }</span>
           </Radio>
         </div>
       </RadioGroup>

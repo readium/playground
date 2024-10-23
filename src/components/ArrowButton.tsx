@@ -49,17 +49,20 @@ export const ArrowButton = (props: ReaderArrowProps) => {
     <>
     <TooltipTrigger>
       <Button
-        ref={button}
-        aria-label={label}
-        onPress={() => { props.direction === "left" ? control("goLeft") : control("goRight") }}
-        className={classNames(props.className, handleClassNameFromState())}
-        isDisabled={props.disabled}>
-        {props.direction === "left" ? <LeftArrow aria-hidden="true" focusable="false" /> : <RightArrow aria-hidden="true" focusable="false" />}
+        ref={ button }
+        aria-label={ label }
+        onPress={ () => { props.direction === "left" ? control("goLeft") : control("goRight") } }
+        className={ classNames(props.className, handleClassNameFromState()) }
+        isDisabled={ props.disabled }>
+        { props.direction === "left" ? 
+          <LeftArrow aria-hidden="true" focusable="false" /> : 
+          <RightArrow aria-hidden="true" focusable="false" />
+        }
       </Button>
       <Tooltip
-        className={arrowStyles.arrowTooltip}
-        placement={props.direction === "left" ? "right" : "left"}>
-        {label}
+        className={ arrowStyles.arrowTooltip }
+        placement={ props.direction === "left" ? "right" : "left" }>
+        { label }
       </Tooltip>
     </TooltipTrigger>
     </>);

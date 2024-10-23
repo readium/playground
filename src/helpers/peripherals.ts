@@ -6,11 +6,10 @@ import { isInteractiveElement } from "./isInteractiveElement";
 export interface PCallbacks {
   moveTo: (direction: "left" | "right") => void;
   goProgression: (shiftKey?: boolean) => void;
-  resize: () => void;
 }
 
 export default class Peripherals {
-  private readonly observers = ["keyup", "keydown", "resize", "orientationchange"];
+  private readonly observers = ["keydown"];
   private targets: EventTarget[] = [];
   private readonly callbacks: PCallbacks;
 
@@ -41,29 +40,14 @@ export default class Peripherals {
     if (!item) return;
     if (this.targets.includes(item)) return;
     this.observers.forEach((EventName) => {
-      if (EventName === "resize") {
-        item.addEventListener(EventName, debounce((this as any)["on" + EventName], 250, { immediate: true }), false);
-      } else {
-        item.addEventListener(EventName, (this as any)["on" + EventName], false);
-      }
+      item.addEventListener(EventName, (this as any)["on" + EventName], false);
     });
     this.targets.push(item);
   }
 
-  onkeyup(e: KeyboardEvent) {
-    if (e.code === "Space" && !isInteractiveElement(document.activeElement)) this.callbacks.goProgression(e.shiftKey);
-  }
-
   onkeydown(e: KeyboardEvent) {
+    if (e.code === "Space" && !isInteractiveElement(document.activeElement)) this.callbacks.goProgression(e.shiftKey);
     if (e.code === "ArrowRight" && !isInteractiveElement(document.activeElement)) this.callbacks.moveTo("right");
     else if (e.code === "ArrowLeft" && !isInteractiveElement(document.activeElement)) this.callbacks.moveTo("left");
-  }
-
-  onresize() {
-    this.callbacks.resize();
-  }
-
-  onorientationchange() {
-    this.callbacks.resize();
   }
 }

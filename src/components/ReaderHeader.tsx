@@ -36,13 +36,19 @@ export const ReaderHeader = ({ runningHead }: { runningHead: string | undefined 
 
   return (
     <>
-    <header className={classNames(settingsStyles.header, handleClassNameFromState())} id="top-bar" aria-label="Top Bar" onMouseEnter={setHover} onMouseLeave={removeHover}>
-      <h1 aria-label={Locale.reader.app.header.runningHead}>
-        {runningHead
+    <header 
+      className={ classNames(settingsStyles.header, handleClassNameFromState()) } 
+      id="top-bar" 
+      aria-label={ Locale.reader.app.header.label } 
+      onMouseEnter={ setHover } 
+      onMouseLeave={ removeHover }
+    >
+      <h1 aria-label={ Locale.reader.app.header.runningHead }>
+        { runningHead
           ? runningHead
-          : Locale.reader.app.header.runningHeadFallback}
+          : Locale.reader.app.header.runningHeadFallback }
       </h1>
-      {/* <ReaderSettings /> */}
+      <ReaderSettings />
     </header>
     </>
   );

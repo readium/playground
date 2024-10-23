@@ -1,3 +1,4 @@
+import { RSPrefs } from "@/preferences";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface IReaderState {
@@ -5,6 +6,7 @@ interface IReaderState {
   isHovering?: boolean;
   isFullscreen?: boolean;
   isPaged?: boolean;
+  colCount?: string;
   hasReachedBreakpoint?: boolean;
   settingsOpen?: boolean;
 }
@@ -14,6 +16,7 @@ const initialState: IReaderState = {
   isHovering: false,
   isFullscreen: false,
   isPaged: true,
+  colCount: "auto",
   hasReachedBreakpoint: false,
   settingsOpen: false
 }
@@ -34,6 +37,9 @@ export const readerSlice = createSlice({
     setPaged: (state, action) => {
       state.isPaged = action.payload
     },
+    setColCount: (state, action) => {
+      state.colCount = action.payload
+    },
     setBreakpoint: (state, action) => {
       state.hasReachedBreakpoint = action.payload
     },
@@ -49,6 +55,7 @@ export const {
   setHovering, 
   setFullscreen, 
   setPaged, 
+  setColCount, 
   setBreakpoint, 
   setSettingsOpen 
 } = readerSlice.actions;

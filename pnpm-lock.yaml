@@ -12,7 +12,7 @@ importers:
         specifier: ^0.11.0
         version: 0.11.0(@babel/core@7.27.1)(@readium/css@2.0.0-beta.13)(@readium/navigator-html-injectables@2.0.0-beta.1)(@readium/navigator@2.0.0-beta.2)(@readium/shared@1.2.1)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.8.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.39.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.37.0(react@19.1.0))(react@19.1.0)
       '@readium/css':
-        specifier: 2.0.0-beta.13
+        specifier: '>=2.0.0-beta.13'
         version: 2.0.0-beta.13
       '@readium/navigator':
         specifier: '>=2.0.0-beta.2'

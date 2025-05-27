@@ -26,7 +26,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy"
   },
   "dependencies": {
     "@edrlab/thorium-web": "^0.11.0",

@@ -1,0 +1,11 @@
+.readerSettingsGroup {
+  margin: calc(var(--layout-spacing) * 2) 0; 
+}
+
+.readerSettings .readerSettingsGroup:first-of-type {
+  margin-top: 0;
+}
+
+.readerSettings .readerSettingsGroup:last-of-type {
+  margin-bottom: 0;
+}

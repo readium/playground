@@ -1,0 +1,10 @@
+html, body {
+  color: var(--theme-text);
+  background-color: var(--theme-background);
+  height: 100%;
+  margin: 0;
+}
+
+#home {
+  margin: 20px;
+}

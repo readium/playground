@@ -1,0 +1,31 @@
+{
+  "reader": {
+    "layoutStrategy": {
+      "tooltip": "Layout",
+      "trigger": "Layout strategy",
+      "close": "Close layout strategy menu",
+      "heading": "Layout strategy",
+      "title": "Strategy",
+      "margin": "Margin",
+      "lineLength": "Line length",
+      "columns": "Columns",
+      "minChars": "Disable minimal line length",
+      "maxChars": "Disable maximal line length",
+      "minimalLineLength": {
+        "title": "Minimal line length",
+        "increase": "Increase minimal line length",
+        "decrease": "Decrease maximal line length"
+      },
+      "optimalLineLength": {
+        "title": "Optimal line length",
+        "increase": "Increase optimal line length",
+        "decrease": "Decrease optimal line length"
+      },
+      "maximalLineLength": {
+        "title": "Maximal line length",
+        "increase": "Increase maximal line length",
+        "decrease": "Decrease maximal line length"
+      }
+    }
+  }
+}

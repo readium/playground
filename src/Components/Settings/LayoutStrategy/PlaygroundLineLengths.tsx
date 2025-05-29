@@ -39,8 +39,8 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
   } = useEpubNavigator();
 
   const lineLengthRangeConfig = {
-    range: preferencesEditor?.lineLength.supportedRange || [20, 100],
-    step: preferencesEditor?.lineLength.step || 1
+    range: preferencesEditor?.optimalLineLength.supportedRange || [20, 100],
+    step: preferencesEditor?.optimalLineLength.step || 1
   }
 
   const updatePreference = useCallback(async (type: "min" | "optimal" | "max", value: number) => {

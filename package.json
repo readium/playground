@@ -30,9 +30,9 @@
     "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^0.11.0",
+    "@edrlab/thorium-web": "^0.12.0",
     "@readium/css": ">=2.0.0-beta.13",
-    "@readium/navigator": ">=2.0.0-beta.2",
+    "@readium/navigator": ">=2.0.0-beta.3",
     "@readium/navigator-html-injectables": ">=2.0.0-beta.1",
     "@readium/shared": "^1.2.1",
     "@reduxjs/toolkit": "^2.8.2",

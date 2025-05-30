@@ -13,7 +13,7 @@ import {
   usePreferences,
   useAppDispatch, 
   useAppSelector,
-  setTmpMinChars
+  setLineLength
 } from "@edrlab/thorium-web/epub";
 
 // TMP Component that is not meant to be implemented AS-IS, for testing purposes
@@ -21,19 +21,21 @@ export const PlaygroundMinChars = () => {
   const RSPrefs = usePreferences();
   const columnCount = useAppSelector(state => state.settings.columnCount);
   const layoutStrategy = useAppSelector(state => state.settings.layoutStrategy);
-  const lineLength = useAppSelector(state => state.settings.tmpLineLengths[0]);
-  const minChars = useAppSelector(state => state.settings.tmpMinChars);
+  const minLineLength = useAppSelector(state => state.settings.lineLength?.min);
   const dispatch = useAppDispatch();
   
   const { submitPreferences } = useEpubNavigator();
 
-  const updatePreference = useCallback(async (value: number | null | undefined) => {
+  const updatePreference = useCallback(async (isSelected: boolean) => {
     await submitPreferences({ 
-      minimalLineLength: value
+      minimalLineLength: isSelected ? null : minLineLength?.chars || RSPrefs.typography.minimalLineLength
     });
   
-    dispatch(setTmpMinChars(value === null));
-  }, [submitPreferences, dispatch]);
+    dispatch(setLineLength({
+      key: "min",
+      isDisabled: isSelected
+    }));
+  }, [submitPreferences, dispatch, minLineLength, RSPrefs.typography.minimalLineLength]);
 
   return(
     <>
@@ -41,8 +43,8 @@ export const PlaygroundMinChars = () => {
       <div className={ layoutStrategyStyles.readerSettingsGroup }>
         <StatefulSwitch 
           label={ Locale.reader.layoutStrategy.minChars }
-          onChange={ async (isSelected: boolean) => await updatePreference(isSelected ? null : lineLength || RSPrefs.typography.minimalLineLength) }
-          isSelected={ minChars }
+          onChange={ async (isSelected: boolean) => await updatePreference(isSelected) }
+          isSelected={ minLineLength?.isDisabled }
           isDisabled={ layoutStrategy !== ThLayoutStrategy.columns && columnCount !== "2" }
         />
       </div>

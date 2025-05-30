@@ -14,26 +14,29 @@ import {
   usePreferences,
   useAppDispatch,
   useAppSelector,
-  setTmpMaxChars
+  setLineLength
 } from "@edrlab/thorium-web/epub";
 
 // TMP Component that is not meant to be implemented AS-IS, for testing purposes
 export const PlaygroundMaxChars = () => {
   const RSPrefs = usePreferences();
   const layoutStrategy = useAppSelector(state => state.settings.layoutStrategy);
-  const lineLength = useAppSelector(state => state.settings.tmpLineLengths[2]);
-  const maxChars = useAppSelector(state => state.settings.tmpMaxChars);
+  const maxLineLength = useAppSelector(state => state.settings.lineLength?.max);
+
   const dispatch = useAppDispatch();
   
   const { submitPreferences } = useEpubNavigator();
 
-  const updatePreference = useCallback(async (value: number | null | undefined) => {
+  const updatePreference = useCallback(async (isSelected: boolean) => {
     await submitPreferences({ 
-      maximalLineLength: value
+      maximalLineLength: isSelected ? null : maxLineLength?.chars || RSPrefs.typography.maximalLineLength
     });
   
-    dispatch(setTmpMaxChars(value === null));
-  }, [submitPreferences, dispatch]);
+    dispatch(setLineLength({
+      key: "max",
+      isDisabled: isSelected
+    }));
+  }, [submitPreferences, dispatch, maxLineLength, RSPrefs.typography.maximalLineLength]);
 
   return(
     <>
@@ -41,8 +44,8 @@ export const PlaygroundMaxChars = () => {
       <div className={ layoutStrategyStyles.readerSettingsGroup }>
         <StatefulSwitch 
           label={ Locale.reader.layoutStrategy.maxChars }
-          onChange={ async (isSelected: boolean) => await updatePreference(isSelected ? null : lineLength || RSPrefs.typography.maximalLineLength) }
-          isSelected={ maxChars }
+          onChange={ async (isSelected: boolean) => await updatePreference(isSelected) }
+          isSelected={ maxLineLength?.isDisabled }
           isDisabled={ layoutStrategy !== ThLayoutStrategy.lineLength }
         />
       </div>

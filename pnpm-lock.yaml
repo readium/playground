@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^0.12.0
-        version: 0.12.0(@babel/core@7.27.1)(@readium/css@2.0.0-beta.13)(@readium/navigator-html-injectables@2.0.0-beta.2)(@readium/navigator@2.0.0-beta.4)(@readium/shared@1.2.1)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.8.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.39.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.37.0(react@19.1.0))(react@19.1.0)
+        specifier: ^0.13.0
+        version: 0.13.0(@babel/core@7.27.1)(@readium/css@2.0.0-beta.14)(@readium/navigator-html-injectables@2.0.0-beta.3)(@readium/navigator@2.0.0-beta.6)(@readium/shared@1.2.1)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.8.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.39.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.37.0(react@19.1.0))(react@19.1.0)
       '@readium/css':
-        specifier: '>=2.0.0-beta.13'
-        version: 2.0.0-beta.13
+        specifier: '>=2.0.0-beta.14'
+        version: 2.0.0-beta.14
       '@readium/navigator':
-        specifier: '>=2.0.0-beta.4'
-        version: 2.0.0-beta.4
+        specifier: '>=2.0.0-beta.6'
+        version: 2.0.0-beta.6
       '@readium/navigator-html-injectables':
-        specifier: '>=2.0.0-beta.2'
-        version: 2.0.0-beta.2
+        specifier: '>=2.0.0-beta.3'
+        version: 2.0.0-beta.3
       '@readium/shared':
         specifier: ^1.2.1
         version: 1.2.1
@@ -635,12 +635,12 @@ packages:
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@0.12.0':
-    resolution: {integrity: sha512-A+DqtuNF1+qiVRVgZlxA0ZP8Jvrt0TvxNCODpVNDcGOd54CqIHaL7f1qpZxG4bw6IIWLoYHcmiVHtTMCHGu7Dg==}
+  '@edrlab/thorium-web@0.13.0':
+    resolution: {integrity: sha512-Usvyhq3lBxwHxBu9L8ufw3VVgVPyjtlQbaVHn6StSfAfOo1Evt1Cn4+AzptKYvBYt9bYGT2zzurqRRkoHism5A==}
     peerDependencies:
-      '@readium/css': '>=2.0.0-beta.13'
-      '@readium/navigator': '>=2.0.0-beta.3'
-      '@readium/navigator-html-injectables': '>=2.0.0-beta.1'
+      '@readium/css': '>=2.0.0-beta.14'
+      '@readium/navigator': '>=2.0.0-beta.6'
+      '@readium/navigator-html-injectables': '>=2.0.0-beta.3'
       '@readium/shared': ^1.2.1
       '@reduxjs/toolkit': '>=2.6.0'
       motion: '>=12.4.0'
@@ -1684,15 +1684,15 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
-  '@readium/css@2.0.0-beta.13':
-    resolution: {integrity: sha512-45WweTkywrRmPiaKE0gCKOxyMJjCyNzv/FG4H31vxeOdmGpZXeoQSpK7jm5DGnrlCUHUPQzkLSwJtNJhXBY3AQ==}
+  '@readium/css@2.0.0-beta.14':
+    resolution: {integrity: sha512-Js7kDFCJAoUCLqpWsesO/ywP+BwrLMzBUvKB7MnimHIZrkHAMZKzpm8W3O02vQkQm3mTW185Wa1KllQkA0tUhA==}
 
-  '@readium/navigator-html-injectables@2.0.0-beta.2':
-    resolution: {integrity: sha512-iQvkKjS6u6MYagAKppHxlXIyMP2PlQ+ijW90hMeFh+4qJxb/3BnPtWvL2NbXRlP8q7f+8+TRcRc0DVArCYXaYg==}
+  '@readium/navigator-html-injectables@2.0.0-beta.3':
+    resolution: {integrity: sha512-qpkPmKdNBY/2JHDqus1SL+5Ec3LKFOD4ONVkUVv4U6FnVaKObycCMC9c/AF+WRgSQ+BORUR4m6BziRgiMow1Bw==}
     engines: {node: '>=18'}
 
-  '@readium/navigator@2.0.0-beta.4':
-    resolution: {integrity: sha512-s6SI2R5QZ+w3S+hCt+U8BvBmoF9hQpjHKVP/P0HxLOOI0xhr2XBbJvqSdlI5PFo/uHYLEcMstY5A05FmrnZ2Vw==}
+  '@readium/navigator@2.0.0-beta.6':
+    resolution: {integrity: sha512-Q/N+dXLBKkur39VagjpUT9lQiPj+6n9m2X42kQfwZeD+DUCn0UP0047wUivGEto8UJlnJGw2+PAbS2qm2Q+how==}
     engines: {node: '>=18'}
 
   '@readium/shared@1.2.1':
@@ -4114,11 +4114,11 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@edrlab/thorium-web@0.12.0(@babel/core@7.27.1)(@readium/css@2.0.0-beta.13)(@readium/navigator-html-injectables@2.0.0-beta.2)(@readium/navigator@2.0.0-beta.4)(@readium/shared@1.2.1)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.8.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.39.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.37.0(react@19.1.0))(react@19.1.0)':
+  '@edrlab/thorium-web@0.13.0(@babel/core@7.27.1)(@readium/css@2.0.0-beta.14)(@readium/navigator-html-injectables@2.0.0-beta.3)(@readium/navigator@2.0.0-beta.6)(@readium/shared@1.2.1)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.8.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.39.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.37.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@readium/css': 2.0.0-beta.13
-      '@readium/navigator': 2.0.0-beta.4
-      '@readium/navigator-html-injectables': 2.0.0-beta.2
+      '@readium/css': 2.0.0-beta.14
+      '@readium/navigator': 2.0.0-beta.6
+      '@readium/navigator-html-injectables': 2.0.0-beta.3
       '@readium/shared': 1.2.1
       '@reduxjs/toolkit': 2.8.2(react-redux@9.2.0(@types/react@19.1.4)(react@19.1.0)(redux@5.0.1))(react@19.1.0)
       classnames: 2.5.1
@@ -5521,11 +5521,11 @@ snapshots:
       '@react-types/shared': 3.29.0(react@19.1.0)
       react: 19.1.0
 
-  '@readium/css@2.0.0-beta.13': {}
+  '@readium/css@2.0.0-beta.14': {}
 
-  '@readium/navigator-html-injectables@2.0.0-beta.2': {}
+  '@readium/navigator-html-injectables@2.0.0-beta.3': {}
 
-  '@readium/navigator@2.0.0-beta.4': {}
+  '@readium/navigator@2.0.0-beta.6': {}
 
   '@readium/shared@1.2.1': {}
 

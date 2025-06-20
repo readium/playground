@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -30,10 +30,10 @@
     "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^0.12.0",
-    "@readium/css": ">=2.0.0-beta.13",
-    "@readium/navigator": ">=2.0.0-beta.4",
-    "@readium/navigator-html-injectables": ">=2.0.0-beta.2",
+    "@edrlab/thorium-web": "^0.13.0",
+    "@readium/css": ">=2.0.0-beta.14",
+    "@readium/navigator": ">=2.0.0-beta.6",
+    "@readium/navigator-html-injectables": ">=2.0.0-beta.3",
     "@readium/shared": "^1.2.1",
     "@reduxjs/toolkit": "^2.8.2",
     "motion": "^12.14.0",

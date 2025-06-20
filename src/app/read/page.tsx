@@ -10,7 +10,6 @@ import "../app.css";
 import { ThThemeKeys } from "@edrlab/thorium-web/core/preferences";
 
 import { 
-  ThPlugin,
   useTheming,  
   usePreferences,
   useAppDispatch, 
@@ -24,13 +23,8 @@ import {
   setReducedTransparency
 } from "@edrlab/thorium-web/epub";
 
-import dynamic from "next/dynamic";
-const Reader = dynamic<{ rawManifest: object; selfHref: string; plugin?: ThPlugin }>(() => import("@/Components/CustomReader").then((mod) => mod.CustomReader), { ssr: false });
-
-const StatefulLoader = dynamic(() => 
-  import("@edrlab/thorium-web/epub").then((mod) => mod.StatefulLoader),
-  { ssr: false }
-);
+import { StatefulLoader } from "@edrlab/thorium-web/epub";
+import { CustomReader } from "@/Components/CustomReader";
 
 import { propsToCSSVars } from "@edrlab/thorium-web/core/helpers";
 
@@ -128,7 +122,7 @@ export default function ReaderPage({ searchParams }: { searchParams: Promise<{ [
     { error 
       ? <span>{ error }</span> 
       : <StatefulLoader isLoading={ readerIsLoading }>
-          { isClient && manifest && selfLink && <Reader rawManifest={ manifest } selfHref={ selfLink } /> }
+          { isClient && manifest && selfLink && <CustomReader rawManifest={ manifest } selfHref={ selfLink } /> }
         </StatefulLoader>        
     }
     </>

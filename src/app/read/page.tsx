@@ -7,26 +7,12 @@ import { Link } from "@readium/shared";
 
 import "../app.css";
 
-import { ThThemeKeys } from "@edrlab/thorium-web/core/preferences";
-
 import { 
-  useTheming,  
-  usePreferences,
-  useAppDispatch, 
-  useAppSelector,
-  setBreakpoint, 
-  setColorScheme, 
-  setContrast, 
-  setForcedColors, 
-  setMonochrome, 
-  setReducedMotion, 
-  setReducedTransparency
+  useAppSelector
 } from "@edrlab/thorium-web/epub";
 
 import { StatefulLoader } from "@edrlab/thorium-web/epub";
 import { CustomReader } from "@/Components/CustomReader";
-
-import { propsToCSSVars } from "@edrlab/thorium-web/core/helpers";
 
 // TODO page metadata w/ generateMetadata
 
@@ -38,34 +24,6 @@ export default function ReaderPage({ searchParams }: { searchParams: Promise<{ [
   const [selfLink, setSelfLink] = useState<string | undefined>(undefined);
 
   const readerIsLoading = useAppSelector(state => state.reader.isLoading);
-
-  const RSPrefs = usePreferences();
-  const theme = useAppSelector(state => state.theming.theme);
-
-  const dispatch = useAppDispatch();
-
-  // Init theming (breakpoints, theme, media queries…)
-  useTheming<ThThemeKeys>({ 
-    theme: theme,
-    themeKeys: RSPrefs.theming.themes.keys,
-    systemKeys: {
-      light: ThThemeKeys.light,
-      dark: ThThemeKeys.dark,
-    },
-    breakpointsMap: RSPrefs.theming.breakpoints,
-    initProps: {
-      ...propsToCSSVars(RSPrefs.theming.arrow, "arrow"), 
-      ...propsToCSSVars(RSPrefs.theming.icon, "icon"),
-      ...propsToCSSVars(RSPrefs.theming.layout, "layout")
-    },
-    onBreakpointChange: (breakpoint) => dispatch(setBreakpoint(breakpoint)),
-    onColorSchemeChange: (colorScheme) => dispatch(setColorScheme(colorScheme)),
-    onContrastChange: (contrast) => dispatch(setContrast(contrast)),
-    onForcedColorsChange: (forcedColors) => dispatch(setForcedColors(forcedColors)),
-    onMonochromeChange: (isMonochrome) => dispatch(setMonochrome(isMonochrome)),
-    onReducedMotionChange: (reducedMotion) => dispatch(setReducedMotion(reducedMotion)),
-    onReducedTransparencyChange: (reducedTransparency) => dispatch(setReducedTransparency(reducedTransparency))
-  });
 
   useEffect(() => {
     setIsClient(true);

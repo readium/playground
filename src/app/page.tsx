@@ -61,9 +61,10 @@ export default function Home() {
               <Image 
                 src={ book.cover } 
                 alt="" 
-                width={ 150 }
-                height={ 200 }
+                width={ 120 }
+                height={ 180 }
                 className="book-image"
+                objectFit="cover"
               />
             </figure>
             <div className="book-info">

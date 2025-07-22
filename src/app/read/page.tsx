@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { HttpFetcher } from "@readium/shared";
 import { Link } from "@readium/shared";
 
-import "../app.css";
+import "../base.css";
 
 import { 
   useAppSelector

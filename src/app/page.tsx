@@ -45,7 +45,7 @@ export default function Home() {
           <Image 
             src="/images/ReadiumLogo.png" 
             alt="Readium Logo" 
-            width={ 200 }
+            width={ 60 }
             height={ 60 }
             priority
           />

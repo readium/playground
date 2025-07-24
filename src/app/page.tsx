@@ -51,7 +51,7 @@ export default function Home() {
           />
         </figure>
         <h1>Welcome to Readium Playground</h1>
-        <p className="subtitle">Reference implementation of <a href="https://github.com/readium/thorium-web">Thorium Web</a>, <a href="https://github.com/readium/web">Readium Web</a> and <a href="https://github.com/readium/css">Readium CSS</a>.</p>
+        <p className="subtitle">Reference implementation of <a href="https://github.com/edrlab/thorium-web">Thorium Web</a>, <a href="https://github.com/readium/web">Readium Web</a> and <a href="https://github.com/readium/css">Readium CSS</a>.</p>
       </header>
 
       <div className="book-grid">

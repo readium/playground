@@ -30,7 +30,7 @@ const books = [
   },
   {
     title: "Bella the Dragon",
-    author: "Barbara Nick, Elaine, Steckler",
+    author: "Barbara Nick, Elaine Steckler",
     cover: "/images/Bella.jpg",
     url: "/read?book=https%3A%2F%2Fpublication-server.readium.org%2FZ3M6Ly9yZWFkaXVtLXBsYXlncm91bmQtZmlsZXMvZGVtby9CZWxsYU9yaWdpbmFsMy5lcHVi",
     rendition: "Fixed Layout"

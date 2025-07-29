@@ -2,7 +2,7 @@
 
 import Locale from "../../../resources/locales/en.json";
 
-import layoutStrategyStyles from "../../Settings/LayoutStrategy/assets/styles/layoutStrategy.module.css";
+import layoutPresetsStyles from "../../Settings/LayoutPresets/assets/styles/layoutPresets.module.css";
 
 import { PlaygroundActionsKeys } from "@/preferences/preferences";
 
@@ -15,18 +15,18 @@ import {
   useAppSelector,
   setHovering
 } from "@edrlab/thorium-web/epub";
-import { PlaygroundLayoutStrategyGroup } from "../../Settings/LayoutStrategy/PlaygroundLayoutStrategyGroup";
+import { PlaygroundLayoutPresetsGroup } from "../../Settings/LayoutPresets/PlaygroundLayoutPresets";
 
-export const PlaygroundLayoutStrategyContainer = ({ triggerRef }: StatefulActionContainerProps) => {
-  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutStrategy]);
+export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionContainerProps) => {
+  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutPresets]);
   const dispatch = useAppDispatch();
   
-  const docking = useDocking(PlaygroundActionsKeys.layoutStrategy);
+  const docking = useDocking(PlaygroundActionsKeys.layoutPresets);
   const sheetType = docking.sheetType;
 
   const setOpen = (value: boolean) => {    
     dispatch(setActionOpen({
-      key: PlaygroundActionsKeys.layoutStrategy,
+      key: PlaygroundActionsKeys.layoutPresets,
       isOpen: value
     }));
 
@@ -39,10 +39,10 @@ export const PlaygroundLayoutStrategyContainer = ({ triggerRef }: StatefulAction
     <StatefulSheetWrapper 
       sheetType={ sheetType }
       sheetProps={ {
-        id: PlaygroundActionsKeys.layoutStrategy,
+        id: PlaygroundActionsKeys.layoutPresets,
         triggerRef: triggerRef,
-        heading: Locale.reader.layoutStrategy.heading,
-        className: layoutStrategyStyles.readerSettings,
+        heading: Locale.reader.layoutPresets.heading,
+        className: layoutPresetsStyles.readerSettings,
         placement: "bottom", 
         isOpen: actionState?.isOpen || false,
         onOpenChange: setOpen, 
@@ -50,7 +50,7 @@ export const PlaygroundLayoutStrategyContainer = ({ triggerRef }: StatefulAction
         docker: docking.getDocker()
       } }
     >
-      <PlaygroundLayoutStrategyGroup />
+      <PlaygroundLayoutPresetsGroup />
     </StatefulSheetWrapper>
     </>
   )

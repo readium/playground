@@ -3,8 +3,8 @@
 import { PlaygroundActionsKeys } from "@/preferences/preferences";
 
 import { ThPlugin, createDefaultPlugin, StatefulReader, StatefulReaderProps } from "@edrlab/thorium-web/epub";
-import { PlaygroundLayoutStrategyTrigger } from "./Actions/LayoutStrategy/PlaygroundLayoutStrategyTrigger";
-import { PlaygroundLayoutStrategyContainer } from "./Actions/LayoutStrategy/PlaygroundLayoutStrategyContainer";
+import { PlaygroundLayoutPresetsTrigger } from "./Actions/LayoutPresets/PlaygroundLayoutPresetsTrigger";
+import { PlaygroundLayoutPresetsContainer } from "./Actions/LayoutPresets/PlaygroundLayoutPresetsContainer";
 
 export const CustomReader = ({
   rawManifest,
@@ -18,9 +18,9 @@ export const CustomReader = ({
       version: "0.10.0",
       components: {
         actions: {
-          [PlaygroundActionsKeys.layoutStrategy]: {
-            Trigger: PlaygroundLayoutStrategyTrigger,
-            Target: PlaygroundLayoutStrategyContainer
+          [PlaygroundActionsKeys.layoutPresets]: {
+            Trigger: PlaygroundLayoutPresetsTrigger,
+            Target: PlaygroundLayoutPresetsContainer
           }
         }
       }

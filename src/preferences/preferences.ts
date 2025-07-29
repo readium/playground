@@ -11,7 +11,7 @@ import {
 } from "@edrlab/thorium-web/core/preferences";
 
 export enum PlaygroundActionsKeys {
-  layoutStrategy = "layoutStrategy",
+  layoutPresets = "layoutPresets",
 }
 
 export const playgroundPreferences = createPreferences({
@@ -22,7 +22,7 @@ export const playgroundPreferences = createPreferences({
       ThActionsKeys.toc,
       ThActionsKeys.fullscreen,
       ThActionsKeys.jumpToPosition,
-      PlaygroundActionsKeys.layoutStrategy
+      PlaygroundActionsKeys.layoutPresets
     ],
     fxlOrder: [
       ThActionsKeys.settings,
@@ -33,7 +33,7 @@ export const playgroundPreferences = createPreferences({
     collapse: defaultPreferences.actions.collapse, 
     keys: {
       ...defaultPreferences.actions.keys,
-      [PlaygroundActionsKeys.layoutStrategy]: {
+      [PlaygroundActionsKeys.layoutPresets]: {
         visibility: ThCollapsibilityVisibility.overflow,
         shortcut: null,
         sheet: {

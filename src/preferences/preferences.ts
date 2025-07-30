@@ -5,6 +5,7 @@ import {
   createPreferences, 
   defaultPreferences, 
   ThActionsKeys, 
+  ThBackLinkVariant, 
   ThBreakpoints, 
   ThDockingTypes, 
   ThSheetTypes 
@@ -16,6 +17,16 @@ export enum PlaygroundActionsKeys {
 
 export const playgroundPreferences = createPreferences({
   ...defaultPreferences,
+  header: {
+    backLink: {
+      variant: ThBackLinkVariant.custom,
+      href: "/",
+      content: {
+        type: "img",
+        src: "/images/ReadiumLogo.png"
+      }
+    }
+  },
   actions: {
     reflowOrder: [
       ThActionsKeys.settings,

@@ -1,7 +1,5 @@
 "use client";
 
-import Locale from "../../../resources/locales/en.json";
-
 import LayoutIcon from "./assets/icons/fit_page_width.svg";
 
 import { ThActionsTriggerVariant } from "@edrlab/thorium-web/core/components";
@@ -10,6 +8,7 @@ import {
   StatefulActionIcon,
   StatefulOverflowMenuItem,
   usePreferences,
+  useI18n,
   useAppDispatch,
   useAppSelector,
   setActionOpen,
@@ -24,6 +23,8 @@ export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTrigge
   const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutPresets]);
   const dispatch = useAppDispatch();
 
+  const { t } = useI18n("playground");
+ 
   const setOpen = (value: boolean) => {    
     dispatch(setActionOpen({
       key: PlaygroundActionsKeys.layoutPresets,
@@ -38,7 +39,7 @@ export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTrigge
     <>
     { (variant && variant === ThActionsTriggerVariant.menu) 
       ? <StatefulOverflowMenuItem 
-          label={ Locale.reader.layoutPresets.trigger }
+          label={ t("reader.layoutPresets.trigger") }
           SVGIcon={ LayoutIcon }
           shortcut={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutPresets].shortcut } 
           id={ PlaygroundActionsKeys.layoutPresets }
@@ -46,9 +47,9 @@ export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTrigge
         />
       : <StatefulActionIcon 
           visibility={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutPresets].visibility }
-          aria-label={ Locale.reader.layoutPresets.trigger }
+          aria-label={ t("reader.layoutPresets.trigger") }
           placement="bottom" 
-          tooltipLabel={ Locale.reader.layoutPresets.tooltip } 
+          tooltipLabel={ t("reader.layoutPresets.tooltip") } 
           onPress={ () => setOpen(!actionState?.isOpen) }
         >
           <LayoutIcon aria-hidden="true" focusable="false" />

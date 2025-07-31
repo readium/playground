@@ -1,7 +1,5 @@
 "use client";
 
-import Locale from "../../../resources/locales/en.json";
-
 import layoutPresetsStyles from "../../Settings/LayoutPresets/assets/styles/layoutPresets.module.css";
 
 import { PlaygroundActionsKeys } from "@/preferences/preferences";
@@ -10,6 +8,7 @@ import {
   StatefulActionContainerProps,
   StatefulSheetWrapper,
   useDocking,
+  useI18n,
   setActionOpen,
   useAppDispatch,
   useAppSelector,
@@ -23,6 +22,8 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
   
   const docking = useDocking(PlaygroundActionsKeys.layoutPresets);
   const sheetType = docking.sheetType;
+
+  const { t } = useI18n("playground");
 
   const setOpen = (value: boolean) => {    
     dispatch(setActionOpen({
@@ -41,7 +42,7 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
       sheetProps={ {
         id: PlaygroundActionsKeys.layoutPresets,
         triggerRef: triggerRef,
-        heading: Locale.reader.layoutPresets.heading,
+        heading: t("reader.layoutPresets.heading"),
         className: layoutPresetsStyles.readerSettings,
         placement: "bottom", 
         isOpen: actionState?.isOpen || false,

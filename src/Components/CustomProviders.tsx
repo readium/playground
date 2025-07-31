@@ -1,7 +1,7 @@
 "use client";
 
 import { playgroundPreferences } from "@/preferences/preferences";
-import { makeStore, ThPreferencesProvider, ThStoreProvider } from "@edrlab/thorium-web/epub";
+import { makeStore, ThI18nProvider, ThPreferencesProvider, ThStoreProvider } from "@edrlab/thorium-web/epub";
 import customReducer from "@/lib/customReducer";
 
 export const CustomProviders = ({ children }: { children: React.ReactNode } ) => {
@@ -13,7 +13,9 @@ export const CustomProviders = ({ children }: { children: React.ReactNode } ) =>
       }
     }) }>
       <ThPreferencesProvider value={ playgroundPreferences }>
-        { children }
+        <ThI18nProvider ns={ ["thorium-web", "playground"] }>
+          { children }
+        </ThI18nProvider>
       </ThPreferencesProvider>
     </ThStoreProvider>
   )

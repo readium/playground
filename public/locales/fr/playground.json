@@ -1,0 +1,34 @@
+{
+  "reader": {
+    "layoutPresets": {
+      "tooltip": "Mise en page",
+      "trigger": "Mise en page",
+      "close": "Fermer le menu de la mise en page",
+      "heading": "Mise en page",
+      "title": "Préréglages",
+      "margin": "Marge",
+      "lineLength": "Longueur ligne",
+      "columns": "Colonnes",
+      "fullWidth": "Pleine largeur",
+      "newspaper": "Journal",
+      "custom": "Personnalisé",
+      "minChars": "Désactiver la longueur minimale",
+      "maxChars": "Désactiver la longueur maximale",
+      "minimalLineLength": {
+        "title": "Longueur minimale de ligne",
+        "increase": "Augmenter la longueur minimale",
+        "decrease": "Diminuer la longueur maximale"
+      },
+      "optimalLineLength": {
+        "title": "Longueur optimale de ligne",
+        "increase": "Augmenter la longueur optimale",
+        "decrease": "Diminuer la longueur optimale"
+      },
+      "maximalLineLength": {
+        "title": "Longueur maximale de ligne",
+        "increase": "Augmenter la longueur maximale",
+        "decrease": "Diminuer la longueur maximale"
+      }
+    }
+  }
+}

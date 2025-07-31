@@ -1,0 +1,37 @@
+#home {
+  margin: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.logo-container {
+  margin: 1.5rem auto;
+  width: 200px;
+  height: 60px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dev-books {
+  margin-top: 3rem;
+}

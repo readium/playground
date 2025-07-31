@@ -18,15 +18,15 @@ import {
 
 import { PlaygroundActionsKeys } from "@/preferences/preferences";
 
-export const PlaygroundLayoutStrategyTrigger = ({ variant }: StatefulActionTriggerProps) => {
+export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTriggerProps) => {
   const RSPrefs = usePreferences();
   
-  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutStrategy]);
+  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutPresets]);
   const dispatch = useAppDispatch();
 
   const setOpen = (value: boolean) => {    
     dispatch(setActionOpen({
-      key: PlaygroundActionsKeys.layoutStrategy,
+      key: PlaygroundActionsKeys.layoutPresets,
       isOpen: value
     }));
 
@@ -38,17 +38,17 @@ export const PlaygroundLayoutStrategyTrigger = ({ variant }: StatefulActionTrigg
     <>
     { (variant && variant === ThActionsTriggerVariant.menu) 
       ? <StatefulOverflowMenuItem 
-          label={ Locale.reader.layoutStrategy.trigger }
+          label={ Locale.reader.layoutPresets.trigger }
           SVGIcon={ LayoutIcon }
-          shortcut={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutStrategy].shortcut } 
-          id={ PlaygroundActionsKeys.layoutStrategy }
+          shortcut={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutPresets].shortcut } 
+          id={ PlaygroundActionsKeys.layoutPresets }
           onAction={ () => setOpen(!actionState?.isOpen) }
         />
       : <StatefulActionIcon 
-          visibility={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutStrategy].visibility }
-          aria-label={ Locale.reader.layoutStrategy.trigger }
+          visibility={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutPresets].visibility }
+          aria-label={ Locale.reader.layoutPresets.trigger }
           placement="bottom" 
-          tooltipLabel={ Locale.reader.layoutStrategy.tooltip } 
+          tooltipLabel={ Locale.reader.layoutPresets.tooltip } 
           onPress={ () => setOpen(!actionState?.isOpen) }
         >
           <LayoutIcon aria-hidden="true" focusable="false" />

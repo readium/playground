@@ -1,0 +1,12 @@
+/* Thorium Web ships components with css modules so if we set readerSettings
+ * from this module, the scope of components is actually different between the sheet 
+ * and the settingsGroups we add for LayoutPresets. We have to use :global
+ * and check for a class that contains "readerSettingsGroup" */
+
+.readerSettings :global([class*="readerSettingsGroup"]:first-of-type) {
+  margin-top: 0 !important;
+}
+
+.readerSettings :global([class*="readerSettingsGroup"]:last-of-type) {
+  margin-bottom: 0 !important;
+}

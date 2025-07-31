@@ -1,0 +1,17 @@
+:root {
+  --color-text: #333;
+  --color-text-secondary: #666;
+  --color-background: #fff;
+  --color-primary: #e0e0e0;
+}
+
+html, body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  height: 100%;
+  margin: 0;
+}
+
+body:has(#home) {
+  overflow: auto !important;
+}

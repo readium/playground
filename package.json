@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.7",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -30,33 +30,34 @@
     "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.0.0-beta.2",
-    "@readium/css": ">=2.0.0-beta.14",
-    "@readium/navigator": ">=2.0.0-beta.6",
-    "@readium/navigator-html-injectables": ">=2.0.0-beta.3",
-    "@readium/shared": "^1.2.1",
+    "@edrlab/thorium-web": "1.0.0-beta.7",
+    "@readium/css": "2.0.0-beta.18",
+    "@readium/navigator": "2.0.0-beta.14",
+    "@readium/navigator-html-injectables": "2.0.0-beta.7",
+    "@readium/shared": "1.3.0",
     "@reduxjs/toolkit": "^2.8.2",
-    "motion": "^12.14.0",
-    "next": "15.3.2",
+    "motion": "^12.23.10",
+    "next": "15.4.4",
     "react": "^19.0.0",
-    "react-aria": "^3.39.0",
-    "react-aria-components": "^1.8.0",
+    "react-aria": "^3.42.0",
+    "react-aria-components": "^1.11.0",
     "react-dom": "^19.0.0",
     "react-modal-sheet": "^4.4.0",
     "react-redux": "^9.2.0",
-    "react-resizable-panels": "^3.0.2",
-    "react-stately": "^3.37.0"
+    "react-resizable-panels": "^3.0.3",
+    "react-stately": "^3.40.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@svgr/webpack": "^8.1.0",
     "@types/css-modules": "^1.0.5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "^22.16.5",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "esbuild-plugin-svgr": "^3.1.1",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "typescript": "^5"
+    "eslint": "^9.32.0",
+    "eslint-config-next": "15.4.4",
+    "typescript": "^5",
+    "vercel": "44.5.1"
   }
 }

@@ -31,7 +31,31 @@ const nextConfig = {
     fileLoaderRule.exclude = /\.svg$/i
 
     return config
-  }
+  },
+  async headers() {
+    return [
+      {
+        // Match all requests
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: process.env.NODE_ENV === 'production' 
+              ? 'https://publication-server.readium.org' // Only allow production server in production
+              : '*', // Allow all origins in development
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET,HEAD,OPTIONS',
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

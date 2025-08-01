@@ -2,12 +2,11 @@
 
 import { useCallback } from "react";
 
-import Locale from "../../../resources/locales/en.json";
-
 import { 
   StatefulSwitch,
   useAppSelector,
-  usePreferences
+  usePreferences,
+  useI18n
 } from "@edrlab/thorium-web/epub";
 import { useLineLengths } from "./hooks/useLineLengths";
 
@@ -15,6 +14,7 @@ export const PlaygroundMaxChars = () => {
   const RSPrefs = usePreferences();
   const maxLineLength = useAppSelector(state => state.settings.lineLength?.max);
   const { toggleLineLength } = useLineLengths();
+  const { t } = useI18n("playground");
   
   const handleToggle = useCallback(async (isSelected: boolean) => {
     await toggleLineLength("max", isSelected);
@@ -24,7 +24,7 @@ export const PlaygroundMaxChars = () => {
     <>
     { RSPrefs.typography.maximalLineLength &&
       <StatefulSwitch 
-        label={ Locale.reader.layoutPresets.maxChars }
+        label={ t("reader.layoutPresets.maxChars") }
         onChange={ handleToggle }
         isSelected={ maxLineLength?.isDisabled ?? false }
       />

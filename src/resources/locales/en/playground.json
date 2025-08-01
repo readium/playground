@@ -1,0 +1,34 @@
+{
+  "reader": {
+    "layoutPresets": {
+      "tooltip": "Layout",
+      "trigger": "Layout presets",
+      "close": "Close layout presets menu",
+      "heading": "Layout presets",
+      "title": "Layout presets",
+      "margin": "Margin",
+      "lineLength": "Line length",
+      "columns": "Columns",
+      "fullWidth": "Full width",
+      "newspaper": "Newspaper",
+      "custom": "Custom",
+      "minChars": "Disable minimal line length",
+      "maxChars": "Disable maximal line length",
+      "minimalLineLength": {
+        "title": "Minimal line length",
+        "increase": "Increase minimal line length",
+        "decrease": "Decrease maximal line length"
+      },
+      "optimalLineLength": {
+        "title": "Optimal line length",
+        "increase": "Increase optimal line length",
+        "decrease": "Decrease optimal line length"
+      },
+      "maximalLineLength": {
+        "title": "Maximal line length",
+        "increase": "Increase maximal line length",
+        "decrease": "Decrease maximal line length"
+      }
+    }
+  }
+}

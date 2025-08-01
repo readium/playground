@@ -3,10 +3,10 @@
  * and the settingsGroups we add for LayoutPresets. We have to use :global
  * and check for a class that contains "readerSettingsGroup" */
 
-.readerSettings :global([class*="readerSettingsGroup"]:first-of-type) {
+.readerSettings :global([class*="sheetBody"] > [class*="readerSettingsGroup"]:first-of-type) {
   margin-top: 0 !important;
 }
 
-.readerSettings :global([class*="readerSettingsGroup"]:last-of-type) {
+.readerSettings :global([class*="sheetBody"] > [class*="readerSettingsGroup"]:last-of-type) {
   margin-bottom: 0 !important;
 }

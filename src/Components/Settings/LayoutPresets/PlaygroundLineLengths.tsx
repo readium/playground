@@ -1,12 +1,11 @@
 "use client";
 
-import Locale from "../../../resources/locales/en.json";
-
 import { 
   StatefulSettingsItemProps,
   StatefulNumberField,
   useEpubNavigator,
   usePreferences,
+  useI18n,
   useAppSelector,
 } from "@edrlab/thorium-web/epub";
 import { PlaygroundMaxChars } from "./PlaygroundMaxChars";
@@ -18,6 +17,7 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
   const lineLength = useAppSelector(state => state.settings.lineLength);
   const { preferencesEditor } = useEpubNavigator();
   const { updatePreference } = useLineLengths();
+  const { t } = useI18n("playground");
 
   const lineLengthRangeConfig = {
     range: preferencesEditor?.optimalLineLength.supportedRange || [20, 100],
@@ -32,12 +32,12 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
     <>
     <StatefulNumberField
       standalone={ standalone }
-      label={ Locale.reader.layoutPresets.minimalLineLength.title }
+      label={ t("reader.layoutPresets.minimalLineLength.title") }
       value={ minLineLength } 
       onChange={async (value: number) => await updatePreference("min", value)} 
       steppers={{
-        decrementLabel: Locale.reader.layoutPresets.minimalLineLength.decrease,
-        incrementLabel: Locale.reader.layoutPresets.minimalLineLength.increase
+        decrementLabel: t("reader.layoutPresets.minimalLineLength.decrease"),
+        incrementLabel: t("reader.layoutPresets.minimalLineLength.increase")
       }}
       range={ [lineLengthRangeConfig.range[0], optimalLineLength] }
       step={ lineLengthRangeConfig.step }
@@ -46,12 +46,12 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
 
     <StatefulNumberField
       standalone={ standalone }
-      label={ Locale.reader.layoutPresets.optimalLineLength.title }
+      label={ t("reader.layoutPresets.optimalLineLength.title") }
       value={ optimalLineLength } 
       onChange={async (value: number) => await updatePreference("optimal", value)} 
       steppers={{
-        decrementLabel: Locale.reader.layoutPresets.optimalLineLength.decrease,
-        incrementLabel: Locale.reader.layoutPresets.optimalLineLength.increase
+        decrementLabel: t("reader.layoutPresets.optimalLineLength.decrease"),
+        incrementLabel: t("reader.layoutPresets.optimalLineLength.increase")
       }}
       range={ lineLengthRangeConfig.range }
       step={ lineLengthRangeConfig.step }
@@ -59,12 +59,12 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
     
     <StatefulNumberField
       standalone={ standalone }
-      label={ Locale.reader.layoutPresets.maximalLineLength.title }
+      label={ t("reader.layoutPresets.maximalLineLength.title") }
       value={ maxLineLength } 
       onChange={async (value: number) => await updatePreference("max", value)}
       steppers={{
-        decrementLabel: Locale.reader.layoutPresets.maximalLineLength.decrease,
-        incrementLabel: Locale.reader.layoutPresets.maximalLineLength.increase
+        decrementLabel: t("reader.layoutPresets.maximalLineLength.decrease"),
+        incrementLabel: t("reader.layoutPresets.maximalLineLength.increase")
       }}
       range={ [optimalLineLength, lineLengthRangeConfig.range[1]] }
       step={ lineLengthRangeConfig.step }

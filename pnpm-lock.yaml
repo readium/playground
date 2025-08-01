@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: 1.0.0-beta.7
-        version: 1.0.0-beta.7(@babel/core@7.27.1)(@readium/css@2.0.0-beta.18)(@readium/navigator-html-injectables@2.0.0-beta.7)(@readium/navigator@2.0.0-beta.14)(@readium/shared@1.3.0)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.23.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.11.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.42.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.23.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.40.0(react@19.1.0))(react@19.1.0)
+        specifier: 1.0.0-beta.8
+        version: 1.0.0-beta.8(9a5d4cc860aefeb300cf047464a682a0)
       '@readium/css':
         specifier: 2.0.0-beta.18
         version: 2.0.0-beta.18
@@ -75,6 +75,9 @@ importers:
       '@types/react-dom':
         specifier: ^19.1.6
         version: 19.1.6(@types/react@19.1.8)
+      cpx2:
+        specifier: ^8.0.0
+        version: 8.0.0
       esbuild-plugin-svgr:
         specifier: ^3.1.1
         version: 3.1.1(esbuild@0.25.4)(typescript@5.8.3)
@@ -626,6 +629,10 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
+  '@babel/runtime@7.28.2':
+    resolution: {integrity: sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/template@7.27.2':
     resolution: {integrity: sha512-LPDZ85aEJyYSd18/DkjNh4/y1ntkE5KwUHWTiqgRxruuZL2F1yuHligVHLvcHY2vMHXttKFpJn6LwfI7cw7ODw==}
     engines: {node: '>=6.9.0'}
@@ -662,19 +669,23 @@ packages:
     resolution: {integrity: sha512-0dEVyRLM/lG4gp1R/Ik5bfPl/1wX00xFwd5KcNH602tzBa09oF7pbTKETEhR1GjZ75K6OJnYFu8II2dyMhONMw==}
     engines: {node: '>=16'}
 
-  '@edrlab/thorium-web@1.0.0-beta.7':
-    resolution: {integrity: sha512-vSjmKrvdocRwMCf6jLejRtloVefsVeFTIctI1DiSu+66N0ubaXlpLJ5lZuYkFjoiAYqcgEnEnpA5zOUbmvxk2g==}
+  '@edrlab/thorium-web@1.0.0-beta.8':
+    resolution: {integrity: sha512-wtQ73+ZY1vuPsshFzA4OQH5iMAE2Aa/RUZpyhDIQpifaTLE31kCGryPHbzweyg14/RXcrX5OMOuRaLSo79HZmw==}
     peerDependencies:
       '@readium/css': '>=2.0.0-beta.18'
       '@readium/navigator': 2.0.0-beta.14
       '@readium/navigator-html-injectables': 2.0.0-beta.7
       '@readium/shared': ^1.3.0
       '@reduxjs/toolkit': '>=2.6.0'
+      i18next: '>=23.0.0'
+      i18next-browser-languagedetector: ^7.2.0
+      i18next-http-backend: ^2.4.1
       motion: '>=12.4.0'
       react: '>=19.0.0'
       react-aria: '>=3.38.0'
       react-aria-components: '>=1.7.0'
       react-dom: '>=19.0.0'
+      react-i18next: '>=13.0.0'
       react-modal-sheet: '>=4.4.0'
       react-redux: '>=9.2.0'
       react-resizable-panels: '>=3.0.0'
@@ -1049,6 +1060,14 @@ packages:
 
   '@internationalized/string@3.2.7':
     resolution: {integrity: sha512-D4OHBjrinH+PFZPvfCXvG28n2LSykWcJ7GIioQL+ok0LON15SdfoUssoHzzOUmVZLbRoREsQXVzA6r8JKsbP6A==}
+
+  '@isaacs/balanced-match@4.0.1':
+    resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
+    engines: {node: 20 || >=22}
+
+  '@isaacs/brace-expansion@5.0.0':
+    resolution: {integrity: sha512-ZT55BDLV0yv0RBm2czMiZ+SqCGO7AvmOM3G/w2xhVPH+te0aKgFjmBvGlL1dH+ql2tgGO3MVrbb3jCKyvpgnxA==}
+    engines: {node: 20 || >=22}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2467,8 +2486,16 @@ packages:
       typescript:
         optional: true
 
+  cpx2@8.0.0:
+    resolution: {integrity: sha512-RxD9jrSVNSOmfcbiPlr3XnKbUKH9K1w2HCv0skczUKhsZTueiDBecxuaSAKQkYSLQaGVA4ZQJZlTj5hVNNEvKg==}
+    engines: {node: ^20.0.0 || >=22.0.0, npm: '>=10'}
+    hasBin: true
+
   create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
+
+  cross-fetch@4.0.0:
+    resolution: {integrity: sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -2594,6 +2621,9 @@ packages:
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
+
+  duplexer@0.1.2:
+    resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -2976,6 +3006,9 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
+  find-index@0.1.1:
+    resolution: {integrity: sha512-uJ5vWrfBKMcE6y2Z8834dwEZj9mNGxYa3t3I53OwFeuZ8D9oc2E5zcsrkuhX6h4iYrjhiv0T3szQmxlAV9uxDg==}
+
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
@@ -3058,8 +3091,17 @@ packages:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
     engines: {node: '>=10.13.0'}
 
+  glob2base@0.0.12:
+    resolution: {integrity: sha512-ZyqlgowMbfj2NPjxaZZ/EtsXlOch28FRXgMd64vqZWk1bT9+wvSRLYD1om9M7QfQru51zJPAT17qXm4/zd+9QA==}
+    engines: {node: '>= 0.10'}
+
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    hasBin: true
+
+  glob@11.0.3:
+    resolution: {integrity: sha512-2Nim7dha1KVkaiF4q6Dj+ngPPMdfvLJEOpZk/jKiUAkqKebpGAWQXAq9z1xu9HKu5lWfqw/FASuccEjyznjPaA==}
+    engines: {node: 20 || >=22}
     hasBin: true
 
   globals@11.12.0:
@@ -3111,6 +3153,9 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
+  html-parse-stringify@3.0.1:
+    resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
+
   http-errors@1.4.0:
     resolution: {integrity: sha512-oLjPqve1tuOl5aRhv8GK5eHpqP1C9fb+Ol+XTLjKfLltE44zdDbEdjPSbU7Ch5rSNsVFqZn97SrMmZLdu1/YMw==}
     engines: {node: '>= 0.6'}
@@ -3123,12 +3168,30 @@ packages:
     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
 
+  i18next-browser-languagedetector@7.2.2:
+    resolution: {integrity: sha512-6b7r75uIJDWCcCflmbof+sJ94k9UQO4X0YR62oUfqGI/GjCLVzlCwu8TFdRZIqVLzWbzNcmkmhfqKEr4TLz4HQ==}
+
+  i18next-http-backend@2.7.3:
+    resolution: {integrity: sha512-FgZxrXdRA5u44xfYsJlEBL4/KH3f2IluBpgV/7riW0YW2VEyM8FzVt2XHAOi6id0Ppj7vZvCZVpp5LrGXnc8Ig==}
+
+  i18next@25.3.2:
+    resolution: {integrity: sha512-JSnbZDxRVbphc5jiptxr3o2zocy5dEqpVm9qCGdJwRNO+9saUJS0/u4LnM/13C23fUEWxAylPqKU/NpMV/IjqA==}
+    peerDependencies:
+      typescript: ^5
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
+    engines: {node: '>= 4'}
+
+  ignore@6.0.2:
+    resolution: {integrity: sha512-InwqeHHN2XpumIkMvpl/DCJVrAHgCsG5+cn1XlnLWGwtZBm8QJfSusItfrwx81CTp5agNZqpKU2J/ccC5nGT4A==}
     engines: {node: '>= 4'}
 
   ignore@7.0.4:
@@ -3291,6 +3354,10 @@ packages:
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
+  jackspeak@4.1.1:
+    resolution: {integrity: sha512-zptv57P3GpL+O0I7VdMJNBZCu+BPHVQUk55Ft8/QCJjTVxrnJHuVuX/0Bl2A6/+2oyR/ZMEuFKwmzqqZ/U5nPQ==}
+    engines: {node: 20 || >=22}
+
   jose@5.9.6:
     resolution: {integrity: sha512-AMlnetc9+CV9asI19zHmrgS/WYsWUwCn2R7RzlbJWD7F9eWYUTGyBmU9o6PxngtLGOiDGPRu+Uc4fhKzbpteZQ==}
 
@@ -3385,6 +3452,10 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+  lru-cache@11.1.0:
+    resolution: {integrity: sha512-QIXZUBJUx+2zHUdQujWejBkcD9+cs94tLn0+YL8UrCh+D5sCXZ4c7LaEH48pNwRY3MLDgqUFyhlCyjJPf1WP0A==}
+    engines: {node: 20 || >=22}
+
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
@@ -3417,6 +3488,10 @@ packages:
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
+
+  minimatch@10.0.3:
+    resolution: {integrity: sha512-IPZ167aShDZZUMdRk66cyQAW3qr0WzbHkPdMYa8bzZhlHhO3jALbKdxcaak7W9FfT2rZNpQuUu4Od7ILEpXSaw==}
+    engines: {node: 20 || >=22}
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -3650,6 +3725,10 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
+  p-map@7.0.3:
+    resolution: {integrity: sha512-VkndIv2fIB99swvQoA65bm+fsmt6UNdGeIB0oxBs+WhAhdh08QA04JXpI7rbB9r08/nkbysKoya9rtDERYOYMA==}
+    engines: {node: '>=18'}
+
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
@@ -3685,6 +3764,10 @@ packages:
   path-scurry@1.11.1:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
+
+  path-scurry@2.0.0:
+    resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
+    engines: {node: 20 || >=22}
 
   path-to-regexp@1.9.0:
     resolution: {integrity: sha512-xIp7/apCFJuUHdDLWe8O1HIkb0kQrOMb/0u6FXQjemHn/ii5LrIzU6bdECnsiTF/GjZkMEKg1xdiZwNqDYlZ6g==}
@@ -3765,6 +3848,22 @@ packages:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
       react: ^19.1.0
+
+  react-i18next@15.6.1:
+    resolution: {integrity: sha512-uGrzSsOUUe2sDBG/+FJq2J1MM+Y4368/QW8OLEKSFvnDflHBbZhSd1u3UkW0Z06rMhZmnB/AQrhCpYfE5/5XNg==}
+    peerDependencies:
+      i18next: '>= 23.2.3'
+      react: '>= 16.8.0'
+      react-dom: '*'
+      react-native: '*'
+      typescript: ^5
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+      typescript:
+        optional: true
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3883,6 +3982,9 @@ packages:
     resolution: {integrity: sha512-AURm5f0jYEOydBj7VQlVvDrjeFgthDdEF5H1dP+6mNpoXOMo1quQqJ4wvJDyRZ9+pO3kGWoOdmV08cSv2aJV6Q==}
     engines: {node: '>=0.4'}
 
+  safe-buffer@5.2.1:
+    resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
+
   safe-push-apply@1.0.0:
     resolution: {integrity: sha512-iKE9w/Z7xCzUMIZqdBsp6pEQvwuEebH4vdpjcDWnyzaI6yl6O9FHvVpmGelvEHNsoY6wGblkxR6Zty/h00WiSA==}
     engines: {node: '>= 0.4'}
@@ -3937,6 +4039,10 @@ packages:
   shebang-regex@3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+
+  shell-quote@1.8.3:
+    resolution: {integrity: sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==}
+    engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.0:
     resolution: {integrity: sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==}
@@ -4047,6 +4153,9 @@ packages:
         optional: true
       babel-plugin-macros:
         optional: true
+
+  subarg@1.0.0:
+    resolution: {integrity: sha512-RIrIdRY0X1xojthNcVtgT9sjpOGagEUKpZdgBUi054OEPFo282yg+zE+t1Rj3+RqKq2xStL7uUHhY+AjbC4BXg==}
 
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
@@ -4230,6 +4339,10 @@ packages:
     resolution: {integrity: sha512-E3l9DFn+yAXBvSM8SzWSijca8aCt0LDIvZCrKqZygR9Ahqr1E1pDly7p2O0hxFfGkpMN1/N/UUtBGcMY4WCvDg==}
     engines: {node: '>= 18'}
     hasBin: true
+
+  void-elements@3.1.0:
+    resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
+    engines: {node: '>=0.10.0'}
 
   web-vitals@0.2.4:
     resolution: {integrity: sha512-6BjspCO9VriYy12z356nL6JBS0GYeEcA457YyRzD+dD6XYCQ75NKhcOHUMHentOE7OcVCIXXDvOm0jKFfQG2Gg==}
@@ -5010,6 +5123,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@babel/runtime@7.28.2': {}
+
   '@babel/template@7.27.2':
     dependencies:
       '@babel/code-frame': 7.27.1
@@ -5049,7 +5164,7 @@ snapshots:
     dependencies:
       '@edge-runtime/primitives': 4.1.0
 
-  '@edrlab/thorium-web@1.0.0-beta.7(@babel/core@7.27.1)(@readium/css@2.0.0-beta.18)(@readium/navigator-html-injectables@2.0.0-beta.7)(@readium/navigator@2.0.0-beta.14)(@readium/shared@1.3.0)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1))(react@19.1.0))(motion@12.23.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria-components@1.11.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-aria@3.42.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-modal-sheet@4.4.0(motion@12.23.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(react-redux@9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1))(react-resizable-panels@3.0.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-stately@3.40.0(react@19.1.0))(react@19.1.0)':
+  '@edrlab/thorium-web@1.0.0-beta.8(9a5d4cc860aefeb300cf047464a682a0)':
     dependencies:
       '@readium/css': 2.0.0-beta.18
       '@readium/navigator': 2.0.0-beta.14
@@ -5058,6 +5173,9 @@ snapshots:
       '@reduxjs/toolkit': 2.8.2(react-redux@9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1))(react@19.1.0)
       classnames: 2.5.1
       debounce: 2.2.0
+      i18next: 25.3.2(typescript@5.8.3)
+      i18next-browser-languagedetector: 7.2.2
+      i18next-http-backend: 2.7.3
       json-templates: 5.2.0
       motion: 12.23.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next: 15.4.3(@babel/core@7.27.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5065,6 +5183,7 @@ snapshots:
       react-aria: 3.42.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-aria-components: 1.11.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-dom: 19.1.0(react@19.1.0)
+      react-i18next: 15.6.1(i18next@25.3.2(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       react-modal-sheet: 4.4.0(motion@12.23.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       react-redux: 9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1)
       react-resizable-panels: 3.0.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5355,6 +5474,12 @@ snapshots:
   '@internationalized/string@3.2.7':
     dependencies:
       '@swc/helpers': 0.5.17
+
+  '@isaacs/balanced-match@4.0.1': {}
+
+  '@isaacs/brace-expansion@5.0.0':
+    dependencies:
+      '@isaacs/balanced-match': 4.0.1
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -7290,7 +7415,31 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
+  cpx2@8.0.0:
+    dependencies:
+      debounce: 2.2.0
+      debug: 4.4.1
+      duplexer: 0.1.2
+      fs-extra: 11.1.0
+      glob: 11.0.3
+      glob2base: 0.0.12
+      ignore: 6.0.2
+      minimatch: 10.0.3
+      p-map: 7.0.3
+      resolve: 1.22.10
+      safe-buffer: 5.2.1
+      shell-quote: 1.8.3
+      subarg: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   create-require@1.1.1: {}
+
+  cross-fetch@4.0.0:
+    dependencies:
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
 
   cross-spawn@7.0.6:
     dependencies:
@@ -7414,6 +7563,8 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       es-errors: 1.3.0
       gopd: 1.2.0
+
+  duplexer@0.1.2: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -7922,6 +8073,8 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
+  find-index@0.1.1: {}
+
   find-up@5.0.0:
     dependencies:
       locate-path: 6.0.0
@@ -8015,6 +8168,10 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
+  glob2base@0.0.12:
+    dependencies:
+      find-index: 0.1.1
+
   glob@10.4.5:
     dependencies:
       foreground-child: 3.3.1
@@ -8023,6 +8180,15 @@ snapshots:
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
+
+  glob@11.0.3:
+    dependencies:
+      foreground-child: 3.3.1
+      jackspeak: 4.1.1
+      minimatch: 10.0.3
+      minipass: 7.1.2
+      package-json-from-dist: 1.0.1
+      path-scurry: 2.0.0
 
   globals@11.12.0: {}
 
@@ -8061,6 +8227,10 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
+  html-parse-stringify@3.0.1:
+    dependencies:
+      void-elements: 3.1.0
+
   http-errors@1.4.0:
     dependencies:
       inherits: 2.0.1
@@ -8081,11 +8251,29 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  i18next-browser-languagedetector@7.2.2:
+    dependencies:
+      '@babel/runtime': 7.28.2
+
+  i18next-http-backend@2.7.3:
+    dependencies:
+      cross-fetch: 4.0.0
+    transitivePeerDependencies:
+      - encoding
+
+  i18next@25.3.2(typescript@5.8.3):
+    dependencies:
+      '@babel/runtime': 7.28.2
+    optionalDependencies:
+      typescript: 5.8.3
+
   iconv-lite@0.4.24:
     dependencies:
       safer-buffer: 2.1.2
 
   ignore@5.3.2: {}
+
+  ignore@6.0.2: {}
 
   ignore@7.0.4: {}
 
@@ -8256,6 +8444,10 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
+  jackspeak@4.1.1:
+    dependencies:
+      '@isaacs/cliui': 8.0.2
+
   jose@5.9.6: {}
 
   js-tokens@4.0.0: {}
@@ -8341,6 +8533,8 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+  lru-cache@11.1.0: {}
+
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
@@ -8369,6 +8563,10 @@ snapshots:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
+
+  minimatch@10.0.3:
+    dependencies:
+      '@isaacs/brace-expansion': 5.0.0
 
   minimatch@3.1.2:
     dependencies:
@@ -8577,6 +8775,8 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
+  p-map@7.0.3: {}
+
   package-json-from-dist@1.0.1: {}
 
   parent-module@1.0.1:
@@ -8608,6 +8808,11 @@ snapshots:
   path-scurry@1.11.1:
     dependencies:
       lru-cache: 10.4.3
+      minipass: 7.1.2
+
+  path-scurry@2.0.0:
+    dependencies:
+      lru-cache: 11.1.0
       minipass: 7.1.2
 
   path-to-regexp@1.9.0:
@@ -8747,6 +8952,16 @@ snapshots:
     dependencies:
       react: 19.1.0
       scheduler: 0.26.0
+
+  react-i18next@15.6.1(i18next@25.3.2(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3):
+    dependencies:
+      '@babel/runtime': 7.28.2
+      html-parse-stringify: 3.0.1
+      i18next: 25.3.2(typescript@5.8.3)
+      react: 19.1.0
+    optionalDependencies:
+      react-dom: 19.1.0(react@19.1.0)
+      typescript: 5.8.3
 
   react-is@16.13.1: {}
 
@@ -8888,6 +9103,8 @@ snapshots:
       has-symbols: 1.1.0
       isarray: 2.0.5
 
+  safe-buffer@5.2.1: {}
+
   safe-push-apply@1.0.0:
     dependencies:
       es-errors: 1.3.0
@@ -8970,6 +9187,8 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
+
+  shell-quote@1.8.3: {}
 
   side-channel-list@1.0.0:
     dependencies:
@@ -9111,6 +9330,10 @@ snapshots:
       react: 19.1.0
     optionalDependencies:
       '@babel/core': 7.27.1
+
+  subarg@1.0.0:
+    dependencies:
+      minimist: 1.2.8
 
   supports-color@7.2.0:
     dependencies:
@@ -9344,6 +9567,8 @@ snapshots:
       - encoding
       - rollup
       - supports-color
+
+  void-elements@3.1.0: {}
 
   web-vitals@0.2.4: {}
 

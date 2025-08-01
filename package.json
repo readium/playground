@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0-beta.8",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -23,14 +23,16 @@
   },
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "pnpm locales && next dev",
+    "build": "pnpm locales && next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy"
+    "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy",
+    "locales": "cpx \"node_modules/@edrlab/thorium-web/dist/locales/**/*\" public/locales/ && cpx \"src/resources/locales/**/*\" public/locales/",
+    "postinstall": "pnpm locales"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "1.0.0-beta.7",
+    "@edrlab/thorium-web": "1.0.0-beta.8",
     "@readium/css": "2.0.0-beta.18",
     "@readium/navigator": "2.0.0-beta.14",
     "@readium/navigator-html-injectables": "2.0.0-beta.7",
@@ -54,6 +56,7 @@
     "@types/node": "^22.16.5",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "cpx2": "^8.0.0",
     "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^9.32.0",
     "eslint-config-next": "15.4.4",

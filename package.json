@@ -63,10 +63,6 @@
     "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^9.33.0",
     "eslint-config-next": "15.5.0",
-    "typescript": "^5.9.2",
-    "vercel": "44.5.5"
-  },
-  "overrides": {
-    "vercel": "$vercel"
+    "typescript": "^5.9.2"
   }
 }

@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-08-21
+
+### Added
+
+- Lithuanian, Portuguese Brazilian, and Tamil locales for Thorium Web core components.
+
+### Changed
+
+- Focuses the selected entry in the ToC when displayed in a docked sheet.
+- Middleware was removed and replaced with redirect in `next.config.js`. `.env` file was moved to the root directory, allowed domains are now handled through `usePublication` hook.
+
+### Fixed
+
+- Fixes a regression where with the pagination component layout in Scroll UI.
+
 ## [1.0.0] - 2025-08-01
 
 ### Fixed

@@ -4,6 +4,7 @@ import { use } from "react";
 
 import { StatefulLoader, usePublication, useAppSelector } from "@edrlab/thorium-web/epub";
 import { CustomReader } from "@/Components/CustomReader";
+import { MANIFEST_CONFIG } from "@/config/manifest";
 
 import "../../../base.css";
 
@@ -19,6 +20,7 @@ export default function ManifestPage({ params }: Props) {
 
   const { error, manifest, selfLink } = usePublication({
     url: manifestUrl,
+    allowedDomains: MANIFEST_CONFIG.allowedDomains,
     onError: (error) => {
       console.error("Manifest loading error:", error);
     }

@@ -1,0 +1,220 @@
+{
+  "reader": {
+    "app": {
+      "loading": "Carregando",
+      "publicationWrapper": "Você está na publicação.",
+      "docking": {
+        "dockingLeft": "Painel ancorado à esquerda",
+        "dockingRight": "Painel ancorado à direita",
+        "dockingEmpty": "Atualmente vazio",
+        "dockingClosed": "Está fechado, contém {{ action }}",
+        "dockingCollapsed": "Está recolhido, contém {{ action }}"
+      },
+      "header": {
+        "backLink": {
+          "trigger": "Voltar à biblioteca",
+          "tooltip": "Biblioteca"
+        },
+        "label": "Barra superior",
+        "runningHead": "Cabeçalho",
+        "runningHeadFallback": "...",
+        "actions": "Ações"
+      },
+      "footer": {
+        "label": "Barra inferior"
+      },
+      "progression": {
+        "wrapper": "Progresso atual",
+        "of": "{{ current }} de {{ reference }}",
+        "referenceFallback": "capítulo atual",
+        "pubFallback": "a publicação"
+      },
+      "docker": {
+        "wrapper": "Opções de ancoragem",
+        "dockToLeft": {
+          "trigger": "Ancorar à esquerda",
+          "tooltip": "Ancorar à esquerda"
+        },
+        "dockToRight": {
+          "trigger": "Ancorar à direita",
+          "tooltip": "Ancorar à direita"
+        },
+        "popover": {
+          "trigger": "Exibir em uma janela",
+          "tooltip": "Pop-over"
+        },
+        "fullscreen": {
+          "trigger": "Exibir sobre o conteúdo",
+          "tooltip": "Sobreposição"
+        },
+        "close": {
+          "trigger": "Fechar",
+          "tooltip": "Fechar"
+        }
+      },
+      "back": {
+        "trigger": "Voltar"
+      }
+    },
+    "navigation": {
+      "goForward": "Avançar",
+      "goBackward": "Voltar",
+      "scroll": {
+        "wrapper": "Navegar pela publicação",
+        "prevLabel": "Anterior",
+        "nextLabel": "Próximo",
+        "prevA11yLabel": "Ir para o recurso anterior",
+        "nextA11yLabel": "Ir para o próximo recurso"
+      }
+    },
+    "fullscreen": {
+      "tooltip": "Tela cheia",
+      "trigger": "Alternar modo de tela cheia",
+      "close": "Sair do modo de tela cheia"    
+    },
+    "toc": {
+      "tooltip": "Sumário",
+      "trigger": "Sumário",
+      "close": "Fechar sumário",
+      "heading": "Sumário",
+      "entries": "Itens no sumário",
+      "empty": "O sumário não foi fornecido para esta publicação.",
+       "search": {
+         "label": "Pesquisar",
+         "placeholder": "Pesquisar",
+         "clear": "Limpar"
+       }
+    },
+    "jumpToPosition": {
+      "tooltip": "Ir para…",
+      "trigger": "Ir para a posição",
+       "heading": "Ir para a posição",
+       "go": "Ir",
+       "close": "Fechar 'Ir para a posição'",
+       "label": "Selecione uma posição de {{ positionStart }} a {{ positionEnd }}:"
+    },
+    "overflowMenu": {
+      "active": {
+        "tooltip": "Mais ações",
+        "trigger": "Alternar menu"
+      },
+      "hint": {
+        "tooltip": "Alternar ações",
+        "trigger": "Exibir ações"
+      }
+    },
+    "settings": {
+      "tooltip": "Configurações",
+      "trigger": "Menu de configurações",
+      "close": "Fechar menu de configurações",
+      "heading": "Configurações de exibição",
+      "themes": {
+        "title": "Temas",
+        "auto": "Automático",
+        "light": "Claro",
+        "sepia": "Sépia",
+        "paper": "Papel",
+        "dark": "Escuro",
+        "contrast1": "Contraste 1",
+        "contrast2": "Contraste 2",
+        "contrast3": "Contraste 3"
+      },
+      "zoom": {
+        "title": "Zoom",
+        "increase": "Aumentar o zoom",
+        "decrease": "Diminuir o zoom"
+      },
+      "fontSize": {
+        "title": "Tamanho da fonte",
+        "increase": "Aumentar tamanho da fonte",
+        "decrease": "Diminuir tamanho da fonte"
+      },
+      "fontFamily": {
+        "title": "Família da fonte",
+        "labels": {
+          "publisher": "Fonte do editor",
+          "oldStyle": "Serifa clássica",
+          "modern": "Serifa moderna",
+          "sans": "Sem serifa",
+          "humanist": "Sem serifa humanista",
+          "monospace": "Monoespaçada" 
+        }
+      },
+      "fontWeight": {
+        "title": "Peso da fonte",
+        "increase": "Aumentar o peso da fonte",
+        "decrease": "Diminuir o peso da fonte"
+      },
+      "normalizeText": {
+        "title": "Normalização do texto",
+        "label": "Remover toda a formatação do texto"
+      },
+      "align": {
+        "title": "Alinhamento do texto",
+        "publisher": "Padrão",
+        "left": "Esquerda",
+        "justify": "Justificar",
+        "right": "Direita"
+      },
+      "hyphens": {
+        "title": "Hifenização",
+        "label": "Ativar hifenização"
+      },
+      "text": {
+        "title": "Texto",
+        "advanced": {
+          "tooltip": "Mais opções",
+          "trigger": "Mais opções de formatação"
+        }
+      },
+      "lineHeight": {
+        "title": "Altura da linha",
+        "publisher": "Padrão",
+        "small": "Apertada",
+        "medium": "Equilibrada",
+        "large": "Solta"
+      },
+      "paraSpacing": {
+        "title": "Espaçamento entre parágrafos",
+        "increase": "Aumentar o espaçamento entre parágrafos",
+        "decrease": "Diminuir o espaçamento entre parágrafos"
+      },
+      "paraIndent": {
+        "title": "Recuo de parágrafo",
+        "increase": "Aumentar o recuo de parágrafo",
+        "decrease": "Diminuir o recuo de parágrafo"
+      },
+      "wordSpacing": {
+        "title": "Espaçamento entre palavras",
+        "increase": "Aumentar o espaçamento entre palavras",
+        "decrease": "Diminuir o espaçamento entre palavras"
+      },
+      "letterSpacing": {
+        "title": "Espaçamento entre letras",
+        "increase": "Aumentar o espaçamento entre letras",
+        "decrease": "Diminuir o espaçamento entre letras"
+      },
+      "publisherStyles": {
+        "label": "Usar a formatação original"
+      },
+      "spacing": {
+        "title": "Espaçamento",
+        "advanced": {
+          "tooltip": "Mais opções",
+          "trigger": "Mais opções de espaçamento"
+        }
+      },
+      "layout": {
+        "title": "Layout",
+        "scrolled": "Rolável",
+        "paginated": "Paginado"
+      },
+      "column": {
+        "title": "Colunas",
+        "auto": "Automático",
+        "one": "1 col.",
+        "two": "2 cols."
+      }
+    }
+  }
+}

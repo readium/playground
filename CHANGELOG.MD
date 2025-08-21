@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fixes a regression where with the pagination component layout in Scroll UI.
+- Fixes a regression with the pagination component layout in Scroll UI.
 
 ## [1.0.0] - 2025-08-01
 

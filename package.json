@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -32,11 +32,11 @@
     "postinstall": "pnpm locales"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.0.1",
-    "@readium/css": "2.0.0-beta.18",
-    "@readium/navigator": "2.0.0",
-    "@readium/navigator-html-injectables": "2.0.0",
-    "@readium/shared": "2.0.0",
+    "@edrlab/thorium-web": "^1.0.3",
+    "@readium/css": "2.0.0-beta.19",
+    "@readium/navigator": "^2.1.0",
+    "@readium/navigator-html-injectables": "^2.1.0",
+    "@readium/shared": "^2.1.0",
     "@reduxjs/toolkit": "^2.8.2",
     "i18next": "^25.4.0",
     "i18next-browser-languagedetector": "^8.2.0",

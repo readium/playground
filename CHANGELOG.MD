@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2025-09-03
+
+### Changed
+
+- paragraph spacing + indent settings have now a default variant of numberfield
+- new grid styling for radio items
+- Slider label is clipped when overflowing instead of wrapping
+- the Docked Sheet now scrolls into view instead of focusing so that it does not steal focus when open
+- the bottom sheet now snaps to its larger point if keyboard navigation is detected within the modal – this gets around a Safari bug where it would scroll the container in addition to the scroller on focus
+- ReadiumCSS has been updated to beta version 19
+
+### Fixed
+
+- the bottom sheet now autofocuses properly on opening
+- layout shift of the selected ToC entry has been resolved
+- The line-length inconsistency between auto and 1 column, and 2 columns when there is just enough space for 1, has been fixed
+
 ## [1.0.1] - 2025-08-21
 
 ### Added

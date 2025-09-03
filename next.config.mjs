@@ -2,8 +2,8 @@
 const nextConfig = {
   // Disable React running twice as it messes up with iframes
   reactStrictMode: false,
+  typedRoutes: true,
   experimental: {
-    typedRoutes: true,
     webpackBuildWorker: true,
   },
   webpack(config) {

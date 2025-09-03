@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",

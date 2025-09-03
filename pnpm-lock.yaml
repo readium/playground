@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.0.2
-        version: 1.0.2(@babel/core@7.28.3)(@readium/css@2.0.0-beta.19)(@readium/navigator-html-injectables@2.1.0)(@readium/navigator@2.1.0)(@readium/shared@2.1.0)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react@19.1.1))(i18next-browser-languagedetector@8.2.0)(i18next-http-backend@3.0.2)(i18next@25.4.0(typescript@5.9.2))(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria-components@1.11.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria@3.42.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react-i18next@15.6.1(i18next@25.4.0(typescript@5.9.2))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(react-modal-sheet@4.4.0(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1))(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react-resizable-panels@3.0.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-stately@3.40.0(react@19.1.1))(react@19.1.1)
+        specifier: ^1.0.3
+        version: 1.0.3(@babel/core@7.28.3)(@readium/css@2.0.0-beta.19)(@readium/navigator-html-injectables@2.1.0)(@readium/navigator@2.1.0)(@readium/shared@2.1.0)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react@19.1.1))(i18next-browser-languagedetector@8.2.0)(i18next-http-backend@3.0.2)(i18next@25.4.0(typescript@5.9.2))(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria-components@1.11.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria@3.42.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react-i18next@15.6.1(i18next@25.4.0(typescript@5.9.2))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(react-modal-sheet@4.4.0(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1))(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react-resizable-panels@3.0.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-stately@3.40.0(react@19.1.1))(react@19.1.1)
       '@readium/css':
         specifier: 2.0.0-beta.19
         version: 2.0.0-beta.19
@@ -661,8 +661,8 @@ packages:
     resolution: {integrity: sha512-ruv7Ae4J5dUYULmeXw1gmb7rYRz57OWCPM57pHojnLq/3Z1CK2lNSLTCVjxVk1F/TZHwOZZrOWi0ur95BbLxNQ==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.0.2':
-    resolution: {integrity: sha512-SuWiPafVsNt474+kYAE8MVsGOoBR6yLKnhUkwiYSJoSBL8G1on7tW+A7M/sv5mA4So9I7akO44IfUo9sZ/H8mA==}
+  '@edrlab/thorium-web@1.0.3':
+    resolution: {integrity: sha512-jtgQP3KDCh9/0HgRqojLaWkFiFZ9PX8mzhNhJfnvMp3TQ5+WXrsRVlrRMViI92gxzDMkC7DhioB8irWuj6sLtQ==}
     peerDependencies:
       '@readium/css': '>=2.0.0-beta.19'
       '@readium/navigator': ^2.1.0
@@ -4378,7 +4378,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  ? '@edrlab/thorium-web@1.0.2(@babel/core@7.28.3)(@readium/css@2.0.0-beta.19)(@readium/navigator-html-injectables@2.1.0)(@readium/navigator@2.1.0)(@readium/shared@2.1.0)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react@19.1.1))(i18next-browser-languagedetector@8.2.0)(i18next-http-backend@3.0.2)(i18next@25.4.0(typescript@5.9.2))(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria-components@1.11.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria@3.42.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react-i18next@15.6.1(i18next@25.4.0(typescript@5.9.2))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(react-modal-sheet@4.4.0(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1))(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react-resizable-panels@3.0.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-stately@3.40.0(react@19.1.1))(react@19.1.1)'
+  ? '@edrlab/thorium-web@1.0.3(@babel/core@7.28.3)(@readium/css@2.0.0-beta.19)(@readium/navigator-html-injectables@2.1.0)(@readium/navigator@2.1.0)(@readium/shared@2.1.0)(@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react@19.1.1))(i18next-browser-languagedetector@8.2.0)(i18next-http-backend@3.0.2)(i18next@25.4.0(typescript@5.9.2))(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria-components@1.11.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-aria@3.42.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react-i18next@15.6.1(i18next@25.4.0(typescript@5.9.2))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(react-modal-sheet@4.4.0(motion@12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1))(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react-resizable-panels@3.0.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-stately@3.40.0(react@19.1.1))(react@19.1.1)'
   : dependencies:
       '@readium/css': 2.0.0-beta.19
       '@readium/navigator': 2.1.0

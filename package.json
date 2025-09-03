@@ -32,7 +32,7 @@
     "postinstall": "pnpm locales"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.0.2",
+    "@edrlab/thorium-web": "^1.0.3",
     "@readium/css": "2.0.0-beta.19",
     "@readium/navigator": "^2.1.0",
     "@readium/navigator-html-injectables": "^2.1.0",

@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.2] - 2025-09-03
+## [1.0.3] - 2025-09-03
 
 ### Changed
 
@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - the bottom sheet now autofocuses properly on opening
+- the bottom sheet’s artifact of focus on opening has been resolved in Safari for Jump to Position Action
 - layout shift of the selected ToC entry has been resolved
 - The line-length inconsistency between auto and 1 column, and 2 columns when there is just enough space for 1, has been fixed
 

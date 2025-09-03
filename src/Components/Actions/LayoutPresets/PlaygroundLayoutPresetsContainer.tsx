@@ -48,7 +48,8 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
         isOpen: actionState?.isOpen || false,
         onOpenChange: setOpen, 
         onClosePress: () => setOpen(false),
-        docker: docking.getDocker()
+        docker: docking.getDocker(),
+        scrollTopOnFocus: true
       } }
     >
       <PlaygroundLayoutPresetsGroup />

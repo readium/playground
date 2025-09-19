@@ -13,7 +13,7 @@ import { PlaygroundMinChars } from "./PlaygroundMinChars";
 import { useLineLengths } from "./hooks/useLineLengths";
 
 export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsItemProps) => {
-  const RSPrefs = usePreferences();
+  const { preferences } = usePreferences();
   const lineLength = useAppSelector(state => state.settings.lineLength);
   const { preferencesEditor } = useEpubNavigator();
   const { updatePreference } = useLineLengths();
@@ -24,9 +24,9 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
     step: preferencesEditor?.optimalLineLength.step || 1
   };
 
-  const optimalLineLength = lineLength?.optimal || RSPrefs.typography.optimalLineLength;
-  const minLineLength = lineLength?.min?.chars || RSPrefs.typography.minimalLineLength || lineLengthRangeConfig.range[0];
-  const maxLineLength = lineLength?.max?.chars || RSPrefs.typography.maximalLineLength || lineLengthRangeConfig.range[1];
+  const optimalLineLength = lineLength?.optimal || preferences.typography.optimalLineLength;
+  const minLineLength = lineLength?.min?.chars || preferences.typography.minimalLineLength || lineLengthRangeConfig.range[0];
+  const maxLineLength = lineLength?.max?.chars || preferences.typography.maximalLineLength || lineLengthRangeConfig.range[1];
 
   return(
     <>

@@ -12,7 +12,7 @@ export const CustomProviders = ({ children }: { children: React.ReactNode } ) =>
         persist: true
       }
     }) }>
-      <ThPreferencesProvider value={ playgroundPreferences }>
+      <ThPreferencesProvider initialPreferences={ playgroundPreferences }>
         <ThI18nProvider ns={ ["thorium-web", "playground"] }>
           { children }
         </ThI18nProvider>

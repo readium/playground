@@ -15,10 +15,10 @@ import {
   setHovering
 } from "@edrlab/thorium-web/epub";
 
-import { PlaygroundActionsKeys } from "@/preferences/preferences";
+import { CustomKeys, PlaygroundActionsKeys } from "@/preferences/preferences";
 
 export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTriggerProps) => {
-  const RSPrefs = usePreferences();
+  const { preferences } = usePreferences<CustomKeys>();
   
   const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutPresets]);
   const dispatch = useAppDispatch();
@@ -41,12 +41,12 @@ export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTrigge
       ? <StatefulOverflowMenuItem 
           label={ t("reader.layoutPresets.trigger") }
           SVGIcon={ LayoutIcon }
-          shortcut={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutPresets].shortcut } 
+          shortcut={ preferences.actions.keys[PlaygroundActionsKeys.layoutPresets].shortcut } 
           id={ PlaygroundActionsKeys.layoutPresets }
           onAction={ () => setOpen(!actionState?.isOpen) }
         />
       : <StatefulActionIcon 
-          visibility={ RSPrefs.actions.keys[PlaygroundActionsKeys.layoutPresets].visibility }
+          visibility={ preferences.actions.keys[PlaygroundActionsKeys.layoutPresets].visibility }
           aria-label={ t("reader.layoutPresets.trigger") }
           placement="bottom" 
           tooltipLabel={ t("reader.layoutPresets.tooltip") } 

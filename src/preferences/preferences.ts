@@ -3,6 +3,7 @@
 import { ThCollapsibilityVisibility } from "@edrlab/thorium-web/core/components";
 import { 
   createPreferences, 
+  CustomizableKeys, 
   defaultPreferences, 
   ThActionsKeys, 
   ThBackLinkVariant, 
@@ -15,15 +16,24 @@ export enum PlaygroundActionsKeys {
   layoutPresets = "layoutPresets",
 }
 
-export const playgroundPreferences = createPreferences({
+export type CustomKeys = {
+  action: PlaygroundActionsKeys;
+  // Add other custom keys if needed (e.g. settings)
+} & CustomizableKeys;
+
+export const playgroundPreferences = createPreferences<CustomKeys>({
   ...defaultPreferences,
-  header: {
-    backLink: {
-      variant: ThBackLinkVariant.custom,
-      href: "/",
-      content: {
-        type: "img",
-        src: "/images/ReadiumLogo.png"
+  theming: {
+    ...defaultPreferences.theming,
+    header: {
+      ...defaultPreferences.theming.header,
+      backLink: {
+        variant: ThBackLinkVariant.custom,
+        href: "/",
+        content: {
+          type: "img",
+          src: "/images/ReadiumLogo.png"
+        }
       }
     }
   },

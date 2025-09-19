@@ -17,7 +17,6 @@
         },
         "label": "Top bar",
         "runningHead": "Running head",
-        "runningHeadFallback": "...",
         "actions": "Actions"
       },
       "footer": {
@@ -26,6 +25,7 @@
       "progression": {
         "wrapper": "Current progression",
         "of": "{{ current }} of {{ reference }}",
+        "positionsLeft": "{{ count }} left in {{ reference }}",
         "referenceFallback": "current chapter",
         "pubFallback": "the publication"
       },

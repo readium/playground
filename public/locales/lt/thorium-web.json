@@ -10,7 +10,6 @@
                 "dockingClosed": "Užvertas, viduje yra {{ action }}"
             },
             "header": {
-                "runningHeadFallback": "...",
                 "backLink": {
                     "tooltip": "Biblioteka",
                     "trigger": "Atgal į biblioteką"

@@ -9,24 +9,24 @@ export enum layoutPresets {
 
 export const layoutPresetsValues = {
   lineLength: {
-    min: 40,
-    optimal: 65,
-    max: 75 
+    min: 35,
+    optimal: 60,
+    max: 70
   },
   margin: {
-    min: 40,
-    optimal: 65,
-    max: 65 
+    min: 35,
+    optimal: 60,
+    max: 60 
   },
   fullWidth: {
-    min: 40,
-    optimal: 65,
+    min: 35,
+    optimal: 60,
     max: null 
   },
   columns: {
     min: null,
-    optimal: 65,
-    max: 75
+    optimal: 60,
+    max: 70
   },
   newspaper: {
     min: 30,

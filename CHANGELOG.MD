@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2025-09-19
+
+### Added
+
+- preference for progression in the bottom bar
+- preference for running head in the top bar
+- preference for document title in the browser’s tab
+- support for theme-color (browser’s address bar)
+- environment variable for asset prefix
+
+### Changed
+
+- updated layout presets values
+- gap and padding of radio items
+- preferences are now settable @ runtime
+
+### Fixed
+
+- logic for finding the first focusable element in sheets
+- layout shift of the draggable bottom sheet when focusing elements within its scroller
+
 ## [1.0.3] - 2025-09-03
 
 ### Changed

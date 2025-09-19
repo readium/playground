@@ -17,7 +17,6 @@
         },
         "label": "Barra superior",
         "runningHead": "Cabeçalho",
-        "runningHeadFallback": "...",
         "actions": "Ações"
       },
       "footer": {

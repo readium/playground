@@ -13,8 +13,7 @@
                     "trigger": "Voltar à biblioteca",
                     "tooltip": "Biblioteca"
                 },
-                "label": "Barra do topo",
-                "runningHeadFallback": "..."
+                "label": "Barra do topo"
             },
             "loading": "A carregar",
             "docker": {

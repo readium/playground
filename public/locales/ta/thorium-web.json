@@ -17,7 +17,6 @@
                 },
                 "label": "மேல் பட்டி",
                 "runningHead": "தலை",
-                "runningHeadFallback": "...",
                 "actions": "செயல்கள்"
             },
             "footer": {

@@ -11,7 +11,7 @@ import {
 import { useLineLengths } from "./hooks/useLineLengths";
 
 export const PlaygroundMaxChars = () => {
-  const RSPrefs = usePreferences();
+  const { preferences } = usePreferences();
   const maxLineLength = useAppSelector(state => state.settings.lineLength?.max);
   const { toggleLineLength } = useLineLengths();
   const { t } = useI18n("playground");
@@ -22,7 +22,7 @@ export const PlaygroundMaxChars = () => {
 
   return(
     <>
-    { RSPrefs.typography.maximalLineLength &&
+    { preferences.typography.maximalLineLength &&
       <StatefulSwitch 
         label={ t("reader.layoutPresets.maxChars") }
         onChange={ handleToggle }

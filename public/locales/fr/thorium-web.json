@@ -17,7 +17,6 @@
         },
         "label": "Barre supérieure",
         "runningHead": "Titre courant",
-        "runningHeadFallback": "…",
         "actions": "Actions"
       },
       "footer": {
@@ -26,6 +25,7 @@
       "progression": {
         "wrapper": "Progression dans la publication",
         "of": "{{ current }} de {{ reference }}",
+        "positionsLeft": "{{ count }} restantes dans {{ reference }}",
         "referenceFallback": "chapitre en cours",
         "pubFallback": "la publication"
       },

@@ -6,6 +6,8 @@ const nextConfig = {
   experimental: {
     webpackBuildWorker: true,
   },
+  // Configure asset prefix for CDN or subdirectory support
+  assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX || undefined,
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg"),

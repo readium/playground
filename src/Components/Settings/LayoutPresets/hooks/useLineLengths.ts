@@ -15,7 +15,7 @@ import { setLayoutPreset } from "@/lib/customReducer";
 export const useLineLengths = () => {
   const dispatch = useAppDispatch();
   const { submitPreferences, getSetting } = useEpubNavigator();
-  const RSPrefs = usePreferences();
+  const { preferences } = usePreferences();
   const layoutPreset = useAppSelector(state => state.custom.layoutPreset);
   const lineLength = useAppSelector(state => state.settings.lineLength);
   
@@ -37,23 +37,23 @@ export const useLineLengths = () => {
     
       dispatch(setLineLength({
         key: "min",
-        value: minimal ?? RSPrefs.typography.minimalLineLength,
+        value: minimal ?? preferences.typography.minimalLineLength,
         isDisabled: minimal === null
       }));
     
       dispatch(setLineLength({
         key: "optimal",
-        value: optimal ?? RSPrefs.typography.optimalLineLength,
+        value: optimal ?? preferences.typography.optimalLineLength,
         isDisabled: false
       }));
     
       dispatch(setLineLength({
         key: "max",
-        value: maximal ?? RSPrefs.typography.maximalLineLength,
+        value: maximal ?? preferences.typography.maximalLineLength,
         isDisabled: maximal === null
       }));
     }
-  }, [layoutPreset, dispatch, submitPreferences, getSetting, RSPrefs.typography]);
+  }, [layoutPreset, dispatch, submitPreferences, getSetting, preferences.typography]);
 
   // Helper function to get the correct preference key
   const getPreferenceKey = (type: "min" | "optimal" | "max") => {

@@ -11,7 +11,7 @@ import {
 import { useLineLengths } from "./hooks/useLineLengths";
 
 export const PlaygroundMinChars = () => {
-  const RSPrefs = usePreferences();
+  const { preferences } = usePreferences();
   const minLineLength = useAppSelector(state => state.settings.lineLength?.min);
   const { toggleLineLength } = useLineLengths();
   const { t } = useI18n("playground");
@@ -22,7 +22,7 @@ export const PlaygroundMinChars = () => {
 
   return(
     <>
-    { RSPrefs.typography.minimalLineLength &&
+    { preferences.typography.minimalLineLength &&
       <StatefulSwitch 
         label={ t("reader.layoutPresets.minChars") }
         onChange={ handleToggle }

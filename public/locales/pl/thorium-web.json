@@ -13,7 +13,6 @@
             "header": {
                 "label": "Górny pasek",
                 "runningHead": "Nagłówek bieżący",
-                "runningHeadFallback": "...",
                 "actions": "Akcje",
                 "backLink": {
                     "trigger": "Wróć do biblioteki",

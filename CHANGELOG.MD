@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.5] - 2025-10-08
+
+### Added
+
+- Spacing presets in settings
+- automatic support for visual keyboard arrow navigation in radio group settings
+
+### Changed
+
+- Spacing presets are used as default instead of publisher styles toggle
+- Spacing settings are now resettable
+- Simplified font-weight setting
+- Default line lengths are now 40, 55, and 70 characters
+- Validation of allowed domains is now done through an API route, and not client-side
+- All environment variables are now private
+
+### Fixed
+
+- Expand button will no longer shrink if the table of contents entry is particularly long and wraps several lines
+- Resource and total progressions are now updated correctly on location change
+
 ## [1.0.4] - 2025-09-19
 
 ### Added

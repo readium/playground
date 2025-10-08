@@ -35,31 +35,37 @@ export const PlaygroundLayoutPresetsGroup = () => {
       onChange={ async (val: string) => await updatePreset(val as layoutPresets) }
       items={[
         {
+          id: layoutPresets.lineLength,
           icon: RangeIcon,
           label: t("reader.layoutPresets.lineLength"),
           value: layoutPresets.lineLength
         },
         {
+          id: layoutPresets.margin,
           icon: FitIcon,
           label: t("reader.layoutPresets.margin"),
           value: layoutPresets.margin
         },
         {
+          id: layoutPresets.fullWidth,
           icon: FitPageWidthIcon,
           label: t("reader.layoutPresets.fullWidth"),
           value: layoutPresets.fullWidth
         },
         {
+          id: layoutPresets.columns,
           icon: AddColumnIcon,
           label: t("reader.layoutPresets.columns"),
           value: layoutPresets.columns
         },
         {
+          id: layoutPresets.newspaper,
           icon: NewspaperIcon,
           label: t("reader.layoutPresets.newspaper"),
           value: layoutPresets.newspaper
         },
         {
+          id: layoutPresets.custom,
           icon: TuneIcon,
           label: t("reader.layoutPresets.custom"),
           value: layoutPresets.custom

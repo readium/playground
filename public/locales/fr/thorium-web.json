@@ -131,6 +131,7 @@
       }
     },
     "settings": {
+      "reset": "Réinitialiser",
       "tooltip": "Préférences",
       "trigger": "Afficher le menu de préférences",
       "close": "Fermer le menu de préférences",
@@ -169,6 +170,8 @@
       },
       "fontWeight": {
         "title": "Graisse",
+        "default": "Normal",
+        "bolder": "Gras",
         "increase": "Augmenter la graisse",
         "decrease": "Diminuer la graisse"
       },
@@ -229,6 +232,15 @@
         "advanced": {
           "tooltip": "Options supplémentaires",
           "trigger": "Options d’espacement supplémentaires"
+        },
+        "presets": {
+          "title": "Préréglages",
+          "publisher": "Par défaut",
+          "tight": "Resserré",
+          "balanced": "Équilibré",
+          "loose": "Élargi",
+          "accessible": "Accessible",
+          "custom": "Personnalisé"
         }
       },
       "layout": {

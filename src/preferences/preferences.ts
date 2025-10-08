@@ -16,10 +16,9 @@ export enum PlaygroundActionsKeys {
   layoutPresets = "layoutPresets",
 }
 
-export type CustomKeys = {
-  action: PlaygroundActionsKeys;
-  // Add other custom keys if needed (e.g. settings)
-} & CustomizableKeys;
+export type CustomKeys = CustomizableKeys & {
+  action: ThActionsKeys | PlaygroundActionsKeys;
+};
 
 export const playgroundPreferences = createPreferences<CustomKeys>({
   ...defaultPreferences,

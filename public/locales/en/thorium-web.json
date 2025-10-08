@@ -104,6 +104,7 @@
       }
     },
     "settings": {
+      "reset": "Reset",
       "tooltip": "Settings",
       "trigger": "Settings menu",
       "close": "Close settings menu",
@@ -142,6 +143,8 @@
       },
       "fontWeight": {
         "title": "Font weight",
+        "default": "Normal",
+        "bolder": "Bolder",
         "increase": "Increase font weight",
         "decrease": "Decrease font weight"
       },
@@ -202,6 +205,15 @@
         "advanced": {
           "tooltip": "More options",
           "trigger": "More spacing options"
+        },
+        "presets": {
+          "title": "Presets",
+          "publisher": "Default",
+          "tight": "Tight",
+          "balanced": "Balanced",
+          "loose": "Loose",
+          "accessible": "Accessible",
+          "custom": "Custom"
         }
       },
       "layout": {

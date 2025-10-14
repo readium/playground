@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -32,23 +32,23 @@
     "postinstall": "pnpm locales"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.0.5",
+    "@edrlab/thorium-web": "^1.0.6",
     "@readium/css": "2.0.0-beta.19",
     "@readium/navigator": "^2.1.1",
     "@readium/navigator-html-injectables": "^2.1.1",
     "@readium/shared": "^2.1.1",
     "@reduxjs/toolkit": "^2.9.0",
-    "i18next": "^25.5.3",
+    "i18next": "^25.6.0",
     "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",
-    "motion": "^12.23.22",
-    "next": "15.5.3",
+    "motion": "^12.23.24",
+    "next": "15.5.5",
     "react": "^19.2.0",
     "react-aria": "^3.44.0",
     "react-aria-components": "^1.13.0",
     "react-dom": "^19.2.0",
-    "react-i18next": "^15.7.4",
-    "react-modal-sheet": "^5.2.0",
+    "react-i18next": "^16.0.1",
+    "react-modal-sheet": "^5.2.1",
     "react-redux": "^9.2.0",
     "react-resizable-panels": "^3.0.6",
     "react-stately": "^3.42.0"
@@ -57,13 +57,13 @@
     "@eslint/eslintrc": "^3.3.1",
     "@svgr/webpack": "^8.1.0",
     "@types/css-modules": "^1.0.5",
-    "@types/node": "^22.18.8",
+    "@types/node": "^22.18.10",
     "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.1",
+    "@types/react-dom": "^19.2.2",
     "cpx2": "^8.0.0",
     "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^9.37.0",
-    "eslint-config-next": "15.5.3",
+    "eslint-config-next": "15.5.5",
     "typescript": "^5.9.3"
   }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { layoutPresets } from "@/preferences/enums";
+import { PlaygroundActionsKeys } from "@/preferences/preferences";
 
 import AddColumnIcon from "./assets/icons/add_column_right.svg";
 import FitIcon from "./assets/icons/fit_width.svg";
@@ -12,10 +13,13 @@ import TuneIcon from "./assets/icons/tune.svg";
 import { 
   StatefulRadioGroup,
   useI18n,
-  useAppSelector
+  useAppSelector,
+  useAppDispatch,
+  setActionOpen
 } from "@edrlab/thorium-web/epub";
 
 import { PlaygroundLineLengths } from "./PlaygroundLineLengths";
+
 import { useLineLengths } from "./hooks/useLineLengths";
 
 export const PlaygroundLayoutPresetsGroup = () => {
@@ -25,6 +29,8 @@ export const PlaygroundLayoutPresetsGroup = () => {
 
   const { t } = useI18n("playground");
 
+  const dispatch = useAppDispatch();
+
   return(
     <>
     <StatefulRadioGroup 
@@ -33,6 +39,7 @@ export const PlaygroundLayoutPresetsGroup = () => {
       orientation="horizontal"
       value={ layoutPreset }
       onChange={ async (val: string) => await updatePreset(val as layoutPresets) }
+      onEscape={ () => dispatch(setActionOpen({ key: PlaygroundActionsKeys.layoutPresets, isOpen: false })) }
       items={[
         {
           id: layoutPresets.lineLength,

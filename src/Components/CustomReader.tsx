@@ -5,6 +5,8 @@ import { PlaygroundActionsKeys } from "@/preferences/preferences";
 import { ThPlugin, createDefaultPlugin, StatefulReader, StatefulReaderProps } from "@edrlab/thorium-web/epub";
 import { PlaygroundLayoutPresetsTrigger } from "./Actions/LayoutPresets/PlaygroundLayoutPresetsTrigger";
 import { PlaygroundLayoutPresetsContainer } from "./Actions/LayoutPresets/PlaygroundLayoutPresetsContainer";
+import { PlaygroundReaderSettingsTrigger } from "./Actions/ReaderSettings/PlaygroundReaderSettingsTrigger";
+import { PlaygroundReaderSettingsContainer } from "./Actions/ReaderSettings/PlaygroundReaderSettingsContainer";
 
 export const CustomReader = ({
   rawManifest,
@@ -21,6 +23,10 @@ export const CustomReader = ({
           [PlaygroundActionsKeys.layoutPresets]: {
             Trigger: PlaygroundLayoutPresetsTrigger,
             Target: PlaygroundLayoutPresetsContainer
+          },
+          [PlaygroundActionsKeys.readerSettings]: {
+            Trigger: PlaygroundReaderSettingsTrigger,
+            Target: PlaygroundReaderSettingsContainer
           }
         }
       }

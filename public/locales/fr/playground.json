@@ -29,6 +29,39 @@
         "increase": "Augmenter la longueur maximale",
         "decrease": "Diminuer la longueur maximale"
       }
+    },
+    "readerSettings": {
+      "tooltip": "Paramètres du lecteur",
+      "trigger": "Paramètres du lecteur",
+      "close": "Fermer le menu des paramètres du lecteur",
+      "heading": "Paramètres du lecteur",
+      "title": "Paramètres du lecteur",
+      "language": {
+        "title": "Langue"
+      },
+      "runningHead": {
+        "title": "En-tête",
+        "format": {
+          "title": "Titre",
+          "chapter": "Chapitre",
+          "titleAndChapter": "Titre et chapitre",
+          "none": "Aucun"
+        }
+      },
+      "progression": {
+        "title": "Progression",
+        "format": {
+          "positionsPercentOfTotal": "Positions de total (%)",
+          "positionsOfTotal": "Positions de total",
+          "positions": "Positions",
+          "overallProgression": "Progression globale",
+          "positionsLeft": "Positions restantes",
+          "readingOrderIndex": "Index de l’ordre de lecture",
+          "resourceProgression": "Progression locale",
+          "progressionOfResource": "Progression de ressource",
+          "none": "Aucun"
+        }
+      }
     }
   }
 }

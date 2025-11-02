@@ -29,6 +29,39 @@
         "increase": "Increase maximal line length",
         "decrease": "Decrease maximal line length"
       }
+    },
+    "readerSettings": {
+      "tooltip": "Reader settings",
+      "trigger": "Reader settings",
+      "close": "Close reader settings menu",
+      "heading": "Reader settings",
+      "title": "Reader settings",
+      "language": {
+        "title": "Language"
+      },
+      "runningHead": {
+        "title": "Running head",
+        "format": {
+          "title": "Title",
+          "chapter": "Chapter",
+          "titleAndChapter": "Title and chapter",
+          "none": "None"
+        }
+      },
+      "progression": {
+        "title": "Progression",
+        "format": {
+          "positionsPercentOfTotal": "Positions of total (%)",
+          "positionsOfTotal": "Positions of total",
+          "positions": "Positions",
+          "overallProgression": "Overall progression",
+          "positionsLeft": "Positions left",
+          "readingOrderIndex": "Reading order index",
+          "resourceProgression": "Local progression",
+          "progressionOfResource": "Progression of resource",
+          "none": "None"
+        }
+      }
     }
   }
 }

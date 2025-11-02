@@ -1,0 +1,74 @@
+/* Thorium Web ships components with css modules so if we set readerSettings
+ * from this module, the scope of components is actually different between the sheet 
+ * and the settingsGroups we add for LayoutPresets. We have to use :global
+ * and check for a class that contains "readerSettingsGroup" */
+
+.readerSettings :global([class*="sheetBody"] > [class*="readerSettingsGroup"]:first-of-type) {
+  margin-top: 0 !important;
+}
+
+.readerSettings :global([class*="sheetBody"] > [class*="readerSettingsGroup"]:last-of-type) {
+  margin-bottom: 0 !important;
+}
+
+/* TMP before new TW package */
+
+.readerSettingsGroup {
+  margin: calc(var(--layout-spacing) * 2) 0; 
+}
+
+.readerSettingsLabel {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Dropdown */
+
+.readerSettingsDropdownButton {
+  margin-top: var(--layout-spacing);
+  position: relative;
+  padding-block: calc(var(--layout-spacing) / 2);
+  padding-inline: calc(var(--layout-spacing) / 2) calc(var(--icon-size, 24px) * 6/5);
+  border-radius: var(--layout-radius);
+  box-sizing: border-box;
+  border: 1px solid var(--theme-subdue);
+  max-width: 100%;
+}
+
+.readerSettingsDropdownButton[data-focus-visible] {
+  outline: 2px solid var(--theme-focus);
+}
+
+.readerSettingsDropdownButton svg {
+  width: calc(var(--icon-size, 24px) * 5/6);
+  height: calc(var(--icon-size, 24px) * 5/6);
+  position: absolute;
+  inset-inline-end: calc(var(--layout-spacing) / 4);
+  inset-block-start: calc(var(--layout-spacing) / 2);
+  fill: currentColor;
+}
+
+/* Inline dropdown layout */
+.readerSettingsInlineDropdown {
+  display: flex;
+  align-items: center;
+  gap: var(--layout-spacing);
+  margin: var(--layout-spacing) 0;
+}
+
+.readerSettingsInlineDropdownLabel {
+  font-size: 1rem;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.readerSettingsInlineDropdown .readerSettingsDropdownButton {
+  flex: 1;
+  margin-top: 0;
+}
+
+.readerSettingsInlineDropdown[data-disabled] {
+  color: var(--theme-disable);
+}

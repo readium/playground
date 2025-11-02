@@ -14,20 +14,20 @@ import {
   useAppSelector,
   setHovering
 } from "@edrlab/thorium-web/epub";
-import { PlaygroundLayoutPresetsGroup } from "../../Settings/LayoutPresets/PlaygroundLayoutPresets";
+import { PlaygroundReaderSettingsGroup } from "@/Components/Settings/Reader/PlaygroundReaderSettings";
 
-export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionContainerProps) => {
-  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutPresets]);
+export const PlaygroundReaderSettingsContainer = ({ triggerRef }: StatefulActionContainerProps) => {
+  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.readerSettings]);
   const dispatch = useAppDispatch();
   
-  const docking = useDocking(PlaygroundActionsKeys.layoutPresets);
+  const docking = useDocking(PlaygroundActionsKeys.readerSettings);
   const sheetType = docking.sheetType;
 
   const { t } = useI18n("playground");
 
   const setOpen = (value: boolean) => {    
     dispatch(setActionOpen({
-      key: PlaygroundActionsKeys.layoutPresets,
+      key: PlaygroundActionsKeys.readerSettings,
       isOpen: value
     }));
 
@@ -40,9 +40,9 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
     <StatefulSheetWrapper 
       sheetType={ sheetType }
       sheetProps={ {
-        id: PlaygroundActionsKeys.layoutPresets,
+        id: PlaygroundActionsKeys.readerSettings,
         triggerRef: triggerRef,
-        heading: t("reader.layoutPresets.heading"),
+        heading: t("reader.readerSettings.heading"),
         className: readerSettingsStyles.readerSettings,
         placement: "bottom", 
         isOpen: actionState?.isOpen || false,
@@ -52,7 +52,7 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
         scrollTopOnFocus: true
       } }
     >
-      <PlaygroundLayoutPresetsGroup />
+      <PlaygroundReaderSettingsGroup />
     </StatefulSheetWrapper>
     </>
   )

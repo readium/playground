@@ -1,11 +1,8 @@
 "use client";
 
-import { useCallback, useMemo, Key } from "react";
-
-import settingsStyles from "../assets/styles/playgroundSettings.module.css";
+import { useCallback, useMemo } from "react";
 
 import { ThProgressionFormat, ThBreakpoints } from "@edrlab/thorium-web/core/preferences";
-import { Heading } from "react-aria-components";
 
 import { 
   useAppDispatch, 
@@ -13,11 +10,10 @@ import {
   useI18n,
   usePreferences,
   makeBreakpointsMap,
-  setProgressionFormat,
-  StatefulDropdown
+  setProgressionFormat
 } from "@edrlab/thorium-web/epub";
 
-import classNames from "classnames";
+import { PlaygroundDisclosureGroup } from "../PlaygroundDisclosureGroup";
 
 interface ProgressionOption {
   id: string;
@@ -77,39 +73,29 @@ export const PlaygroundProgressionSetting = () => {
   const { t } = useI18n("playground");
   const { preferences } = usePreferences();
 
-  const progressions = useAppSelector(state => state.preferences.progressionFormat) || {};
+  const rawProgressions = useAppSelector(state => state.preferences.progressionFormat);
+  const progressions = useMemo(() => rawProgressions ?? {}, [rawProgressions]);
   const profile = useAppSelector(state => state.reader.profile);
   const isWebPub = profile === "webPub";
   const isFXL = useAppSelector(state => state.publication.isFXL);
-  const currentBreakpoint = useAppSelector(state => state.theming.breakpoint);
-
-  const profileKey = isWebPub 
-    ? "webPub" 
-    : isFXL 
-      ? "fxl" 
-      : "reflow";
-
+  const profileKey = isWebPub ? "webPub" : isFXL ? "fxl" : "reflow";
   const dispatch = useAppDispatch();
 
   const breakpoints = useMemo(() => {
-    const breakpoints = Object.entries(preferences?.theming?.breakpoints || {})
+    return Object.entries(preferences?.theming?.breakpoints || {})
       .filter(([key, value]) => value !== null || key === ThBreakpoints.xLarge)
       .map(([key]) => key as ThBreakpoints);
-    
-    return breakpoints;
   }, [preferences]);
 
   const breakpointsMap = useMemo(() => {
     const formatPref = preferences?.theming?.progression?.format?.[profileKey];
     
-    // Get the default value from preferences or fallback to default
     const defaultValue = formatPref?.default || {
       variants: [ThProgressionFormat.positionsPercentOfTotal],
       displayInImmersive: true,
       displayInFullscreen: false
     };
     
-    // Create the breakpoints map using the helper
     return makeBreakpointsMap({
       defaultValue,
       fromEnum: ThProgressionFormat,
@@ -118,17 +104,49 @@ export const PlaygroundProgressionSetting = () => {
     });
   }, [preferences, profileKey]);
 
-  const handleProgressionChange = useCallback((breakpoint: ThBreakpoints, key: Key | null) => {
-    if (key) {
-      const selectedOption = progressionOptions.find(opt => opt.id === key.toString());
-      if (selectedOption) {
-        dispatch(setProgressionFormat({
-          key: profileKey,
-          value: selectedOption.value,
-          breakpoint
-        }));
+  // Prepare values for PlaygroundDisclosureGroup
+  const progressionValues = useMemo(() => {
+    const result: Record<string, ThProgressionFormat> = {};
+    
+    breakpoints.forEach(breakpoint => {
+      const breakpointValue = breakpointsMap[breakpoint];
+      const storedValue = progressions?.[profileKey]?.breakpoints?.[breakpoint];
+      
+      // Get the default value from breakpoint config
+      let breakpointDefault = ThProgressionFormat.positionsPercentOfTotal;
+      if (breakpointValue) {
+        // Handle the case where variants might be an array or a single value
+        if ('variants' in breakpointValue) {
+          const variants = Array.isArray(breakpointValue.variants) 
+            ? breakpointValue.variants 
+            : [breakpointValue.variants];
+          breakpointDefault = variants[0] || ThProgressionFormat.positionsPercentOfTotal;
+        } else if (typeof breakpointValue === "string") {
+          // If it's a string, use it directly
+          breakpointDefault = breakpointValue as ThProgressionFormat;
+        }
       }
-    }
+      
+      // Priority: stored value > breakpoint default > default
+      const finalValue = storedValue ?? breakpointDefault;
+      
+      // Ensure we always have a valid ThProgressionFormat
+      if (Array.isArray(finalValue)) {
+        result[breakpoint] = finalValue[0] || ThProgressionFormat.positionsPercentOfTotal;
+      } else {
+        result[breakpoint] = finalValue as ThProgressionFormat;
+      }
+    });
+    
+    return result;
+  }, [breakpoints, breakpointsMap, progressions, profileKey]);
+
+  const handleProgressionChange = useCallback((breakpoint: ThBreakpoints, value: ThProgressionFormat) => {
+    dispatch(setProgressionFormat({
+      key: profileKey,
+      value,
+      breakpoint
+    }));
   }, [dispatch, profileKey]);
 
   if (breakpoints.length === 0) {
@@ -136,61 +154,16 @@ export const PlaygroundProgressionSetting = () => {
   }
 
   return (
-    <div className={ settingsStyles.readerSettingsGroup }>
-      <Heading className={ settingsStyles.readerSettingsLabel }>
-        { t("reader.readerSettings.progression.title") }
-      </Heading>
-      { breakpoints.map(breakpoint => {
-        const breakpointValue = breakpointsMap[breakpoint];
-        const storedValue = progressions?.[profileKey]?.breakpoints?.[breakpoint];
-        
-        // Get the default value from breakpoint config
-        let breakpointDefault = ThProgressionFormat.positionsPercentOfTotal;
-        if (breakpointValue) {
-          if (breakpointValue.variants) {
-            breakpointDefault = Array.isArray(breakpointValue.variants) 
-              ? breakpointValue.variants[0] 
-              : breakpointValue.variants;
-          } else if (typeof breakpointValue === "string") {
-            breakpointDefault = breakpointValue;
-          }
-        }
-        
-        // Priority: stored value > breakpoint default > positionsPercentOfTotal
-        const currentValue = storedValue ?? breakpointDefault;
-
-        const selectedOption = progressionOptions.find(opt => 
-          opt.value === currentValue
-        ) || progressionOptions[0];
-
-        return (
-          <StatefulDropdown 
-            key={ breakpoint }
-            standalone={ true }
-            className={ settingsStyles.readerSettingsInlineDropdown }
-            label={ `${ breakpoint.charAt(0).toUpperCase() + breakpoint.slice(1) }:` }
-            selectedKey={ selectedOption.id }
-            isDisabled={ currentBreakpoint !== breakpoint }
-            onSelectionChange={ (key) => handleProgressionChange(breakpoint, key) }
-            items={ progressionOptions.map(option => ({
-              id: option.id,
-              label: t(option.label),
-              value: option.value
-            })) }
-            compounds={{
-              label: {
-                className: settingsStyles.readerSettingsInlineDropdownLabel
-              },
-              button: {
-                className: classNames(
-                  settingsStyles.readerSettingsDropdownButton,
-                  settingsStyles.readerSettingsInlineDropdownButton
-                )
-              }
-            }}
-          />
-        );
-      })}
-    </div>
+    <PlaygroundDisclosureGroup<ThProgressionFormat>
+      id="progression-format"
+      title={ t("reader.readerSettings.progression.title") }
+      breakpoints={ breakpoints }
+      value={ progressionValues }
+      options={ progressionOptions.map(option => ({
+        ...option,
+        label: t(option.label)
+      })) }
+      onChange={ handleProgressionChange }
+    />
   );
 };

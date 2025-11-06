@@ -6,7 +6,7 @@ import customReducer from "@/lib/customReducer";
 
 export const CustomProviders = ({ children }: { children: React.ReactNode } ) => {
   return(
-    <ThStoreProvider store={ makeStore("readium-playground-test", {
+    <ThStoreProvider store={ makeStore("readium-playground", {
       custom: {
         reducer: customReducer,
         persist: true

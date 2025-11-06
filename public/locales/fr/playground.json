@@ -36,6 +36,49 @@
       "close": "Fermer le menu des paramètres du lecteur",
       "heading": "Paramètres du lecteur",
       "title": "Paramètres du lecteur",
+      "scrollAffordances": {
+        "title": "Scroll",
+        "advanced": {
+          "trigger": "Paramètres avancés du scroll",
+          "tooltip": "Afficher les paramètres avancés du scroll"
+        },
+        "toggleOnMiddlePointer": {
+          "title": "Basculer les barres de navigation au centre",
+          "none": "Désactivé",
+          "tap": "Tap",
+          "click": "Clic"
+        },
+        "hideOnForwardScroll": "Masquer les barres lors du défilement en avant",
+        "showOnBackwardScroll": "Afficher les barres lors du défilement en arrière",
+        "hintInImmersive": "Afficher le menu en mode immersion"
+      },
+      "paginatedAffordance": {
+        "title": "Flèches de navigation (paginé)",
+        "advanced": {
+          "trigger": "Paramètres avancés des fleches de navigation",
+          "tooltip": "Afficher les paramètres avancés des fleches de navigation"
+        },
+        "variant": {
+          "title": "Affichage",
+          "layered": "Superposé",
+          "stacked": "De chaque côté",
+          "none": "Ne pas afficher"
+        },
+        "discard": {
+          "title": "Masquer",
+          "none": "Jamais",
+          "navigation": "Lors d’une navigation",
+          "immersive": "Lors de l’immersion",
+          "fullscreen": "En plein écran"
+        },
+        "hint": {
+          "title": "Afficher",
+          "none": "Jamais",
+          "immersiveChange": "Lors de la sortie du mode immersion",
+          "fullscreenChange": "Lors de la sortie du mode plein écran",
+          "layoutChange": "Lors du passage de scroll à paginé"
+        }
+      },
       "language": {
         "title": "Langue"
       },

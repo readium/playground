@@ -5,7 +5,8 @@
                 "of": "{{ current }} de {{ reference }}",
                 "referenceFallback": "capítulo atual",
                 "wrapper": "Progressão atual",
-                "pubFallback": "a publicação"
+                "pubFallback": "a publicação",
+                "positionsLeft": "{{ count }} restantes em {{ reference }}"
             },
             "header": {
                 "actions": "Ações",
@@ -25,7 +26,17 @@
                     "trigger": "Exibir numa janela"
                 },
                 "fullscreen": {
-                    "trigger": "Exibir no topo dos conteúdos"
+                    "trigger": "Exibir no topo dos conteúdos",
+                    "tooltip": "Sobreposição"
+                },
+                "wrapper": "Opções de ancoragem",
+                "dockToLeft": {
+                    "trigger": "Ancorar à esquerda",
+                    "tooltip": "Ancorar à esquerda"
+                },
+                "dockToRight": {
+                    "trigger": "Ancorar à direita",
+                    "tooltip": "Ancorar à direita"
                 }
             },
             "back": {
@@ -35,7 +46,9 @@
             "docking": {
                 "dockingEmpty": "Atualmente, vazio",
                 "dockingClosed": "Está fechado, contém {{ action }}",
-                "dockingCollapsed": "Está ocultado, contém {{ action }}"
+                "dockingCollapsed": "Está ocultado, contém {{ action }}",
+                "dockingLeft": "Painel ancorado à esquerda",
+                "dockingRight": "Painel ancorado à direita"
             },
             "footer": {
                 "label": "Barra do fim"
@@ -79,17 +92,53 @@
             "active": {
                 "tooltip": "Mais ações",
                 "trigger": "Alternar menu"
+            },
+            "hint": {
+                "tooltip": "Alternar ações",
+                "trigger": "Exibir ações"
             }
         },
         "settings": {
             "themes": {
-                "auto": "Automático"
+                "auto": "Automático",
+                "title": "Temas",
+                "light": "Claro",
+                "sepia": "Sépia",
+                "paper": "Papel",
+                "dark": "Escuro",
+                "contrast1": "Contraste 1",
+                "contrast2": "Contraste 2",
+                "contrast3": "Contraste 3"
             },
             "column": {
                 "title": "Colunas",
-                "auto": "Automático",
-                "one": "Uma coluna",
-                "two": "Duas colunas"
+                "auto": "Auto",
+                "one": "1 col.",
+                "two": "2 col."
+            },
+            "tooltip": "Configurações",
+            "trigger": "Menu de configurações",
+            "close": "Fechar menu de configurações",
+            "heading": "Configurações de visualização",
+            "align": {
+                "left": "Esquerda",
+                "publisher": "Padrão",
+                "justify": "Justificar",
+                "right": "Direita"
+            },
+            "hyphens": {
+                "title": "Hifenização",
+                "label": "Ativar hífenes"
+            },
+            "text": {
+                "title": "Texto",
+                "advanced": {
+                    "tooltip": "Mais opções",
+                    "trigger": "Mais opções de formatação"
+                }
+            },
+            "lineHeight": {
+                "title": "Altura da linha"
             }
         }
     }

@@ -36,6 +36,49 @@
       "close": "Close reader settings menu",
       "heading": "Reader settings",
       "title": "Reader settings",
+      "scrollAffordances": {
+        "title": "Scroll",
+        "advanced": {
+          "trigger": "Advanced scroll settings",
+          "tooltip": "Show advanced scroll settings"
+        },
+        "toggleOnMiddlePointer": {
+          "title": "Toggle UI bars with middle pointer",
+          "none": "Disabled",
+          "tap": "Tap",
+          "click": "Click"
+        },
+        "hideOnForwardScroll": "Hide UI bars on forward scroll",
+        "showOnBackwardScroll": "Show UI bars on backward scroll",
+        "hintInImmersive": "Show menu in immersive mode"
+      },
+      "paginatedAffordance": {
+        "title": "Navigation arrows",
+        "advanced": {
+          "trigger": "Advanced navigation arrows settings",
+          "tooltip": "Show advanced navigation arrows settings"
+        },
+        "variant": {
+          "title": "Display",
+          "layered": "Layered",
+          "stacked": "On each side",
+          "none": "Don’t show"
+        },
+        "discard": {
+          "title": "Discard",
+          "none": "Never",
+          "navigation": "When navigating",
+          "immersive": "When in immersive mode",
+          "fullscreen": "When in fullscreen mode"
+        },
+        "hint": {
+          "title": "Hint",
+          "none": "Never",
+          "immersiveChange": "When leaving immersive mode",
+          "fullscreenChange": "When leaving fullscreen mode",
+          "layoutChange": "When switching from scroll to paginated"
+        }
+      },
       "language": {
         "title": "Language"
       },

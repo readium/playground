@@ -67,7 +67,7 @@ export const playgroundPreferences = createPreferences<CustomKeys>({
           }
         },
         docked: {
-          dockable: ThDockingTypes.none
+          dockable: ThDockingTypes.none,
         },
         snapped: {
           scrim: true,
@@ -86,7 +86,11 @@ export const playgroundPreferences = createPreferences<CustomKeys>({
           }
         },
         docked: {
-          dockable: ThDockingTypes.none
+          dockable: ThDockingTypes.both,
+          dragIndicator: false,
+          width: 360,
+          minWidth: 320,
+          maxWidth: 450
         },
         snapped: {
           scrim: true,

@@ -1,0 +1,66 @@
+"use client";
+
+import { useCallback } from "react";
+import { readerPreferencesContainerKeys, PaginatedAffordanceKeys } from "@/preferences/enums";
+
+import { 
+  StatefulGroupWrapper, 
+  useI18n, 
+  useAppDispatch 
+} from "@edrlab/thorium-web/epub";
+
+import { PlaygroundPaginatedAffordanceVariantSetting } from "./PlaygroundPaginatedAffordanceVariantSetting";
+import { PlaygroundPaginatedAffordanceHintSetting } from "./PlaygroundPaginatedAffordanceHintSetting";
+import { PlaygroundPaginatedAffordanceDiscardSetting } from "./PlaygroundPaginatedAffordanceDiscardSetting";
+
+import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
+
+const componentsMap = {
+  [PaginatedAffordanceKeys.Variant]: {
+    Comp: PlaygroundPaginatedAffordanceVariantSetting,
+    standalone: false
+  },
+  [PaginatedAffordanceKeys.Hint]: {
+    Comp: PlaygroundPaginatedAffordanceHintSetting
+  },
+  [PaginatedAffordanceKeys.Discard]: {
+    Comp: PlaygroundPaginatedAffordanceDiscardSetting
+  }
+};
+
+export const PlaygroundPaginatedAffordancesGroup = () => {
+  const { t } = useI18n("playground");
+  const dispatch = useAppDispatch();
+
+  const handleMoreClick = useCallback(() => {
+    dispatch(setReaderPreferencesContainerKey(readerPreferencesContainerKeys.paginatedAffordances));
+  }, [dispatch]);
+
+  return (
+    <StatefulGroupWrapper<PaginatedAffordanceKeys>
+      heading={ t("reader.readerSettings.paginatedAffordance.title") }
+      moreLabel={ t("reader.readerSettings.paginatedAffordance.advanced.trigger") }
+      moreTooltip={ t("reader.readerSettings.paginatedAffordance.advanced.tooltip") }
+      onPressMore={ handleMoreClick }
+      componentsMap={ componentsMap }
+      defaultPrefs={{
+        main: [PaginatedAffordanceKeys.Variant],
+        subPanel: [
+          PaginatedAffordanceKeys.Variant,
+          PaginatedAffordanceKeys.Hint, 
+          PaginatedAffordanceKeys.Discard
+        ]
+      }}
+    />
+  );
+};
+
+export const PlaygroundPaginatedAffordancesGroupContainer = () => {
+  return (
+    <>
+      <PlaygroundPaginatedAffordanceVariantSetting />
+      <PlaygroundPaginatedAffordanceHintSetting />
+      <PlaygroundPaginatedAffordanceDiscardSetting />
+    </>
+  );
+};

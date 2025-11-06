@@ -17,7 +17,7 @@ export const CustomReader = ({
       id: "custom",
       name: "Custom Components",
       description: "Custom components for Readium Playground StatefulReader",
-      version: "1.0.0",
+      version: "1.0.7",
       components: {
         actions: {
           [PlaygroundActionsKeys.layoutPresets]: {

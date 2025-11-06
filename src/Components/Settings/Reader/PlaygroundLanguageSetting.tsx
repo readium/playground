@@ -4,7 +4,6 @@ import { useCallback, Key, useMemo } from "react";
 
 import settingsStyles from "../assets/styles/playgroundSettings.module.css";
 
-
 import { 
   useAppDispatch,  
   useI18n,
@@ -20,7 +19,7 @@ const SUPPORTED_LANGUAGES = [
 const DEFAULT_LANGUAGE = "en";
 
 export const PlaygroundLanguageSetting = () => {
-  const { t, currentLanguage, changeLanguage } = useI18n("playground");
+  const { t, currentLanguage } = useI18n("playground");
   const dispatch = useAppDispatch();
 
   // Match language code, handling cases like "en-US" matching "en"
@@ -55,13 +54,12 @@ export const PlaygroundLanguageSetting = () => {
     if (key) {
       const selectedLanguage = key.toString();
       try {
-        await changeLanguage(selectedLanguage);
         dispatch(setL10n({ locale: selectedLanguage }));
       } catch (error) {
         console.error("Failed to change language:", error);
       }
     }
-  }, [changeLanguage, dispatch]);
+  }, [dispatch]);
 
   return (
     <StatefulDropdown 

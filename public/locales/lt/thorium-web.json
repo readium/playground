@@ -52,7 +52,8 @@
                 "wrapper": "Dabartinė eiga",
                 "of": "{{ current }} iš {{ reference }}",
                 "referenceFallback": "dabartinis skyrius",
-                "pubFallback": "leidinys"
+                "pubFallback": "leidinys",
+                "positionsLeft": "{{ reference }} liko {{ count }}"
             }
         },
         "navigation": {
@@ -167,7 +168,9 @@
             "fontWeight": {
                 "title": "Šrifto storis",
                 "increase": "Padidinti šrifto storį",
-                "decrease": "Sumažinti šrifto storį"
+                "decrease": "Sumažinti šrifto storį",
+                "default": "Normalus",
+                "bolder": "Ryškesnis"
             },
             "layout": {
                 "title": "Išdėstymas",
@@ -179,6 +182,15 @@
                 "advanced": {
                     "tooltip": "Daugiau parinkčių",
                     "trigger": "Daugiau išretinimo parinkčių"
+                },
+                "presets": {
+                    "title": "Išankstiniai",
+                    "publisher": "Numatytasis",
+                    "tight": "Glaustas",
+                    "balanced": "Subalansuotas",
+                    "loose": "Erdvus",
+                    "accessible": "Prieinamas",
+                    "custom": "Tinkintas"
                 }
             },
             "publisherStyles": {
@@ -203,7 +215,8 @@
                 "title": "Raidžių išretinimas",
                 "increase": "Padidinti raidžių išretinimą",
                 "decrease": "Sumažinti raidžių išretinimą"
-            }
+            },
+            "reset": "Atkurti"
         },
         "overflowMenu": {
             "active": {

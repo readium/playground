@@ -41,6 +41,93 @@
   outline: 2px solid var(--theme-focus);
 }
 
+/* Disclosure styles */
+.readerSettingsDisclosureGroup {
+  margin-block: var(--layout-spacing);
+}
+
+.readerSettingsDisclosure {}
+
+.readerSettingsDisclosureHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: calc(var(--layout-spacing) / 2);
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: var(--layout-spacing) 0;
+}
+
+.readerSettingsDisclosureButton {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--layout-spacing) / 4);
+  margin: 0;
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+  cursor: pointer;
+  text-align: start;
+  font-weight: normal;
+  flex-grow: 1;
+  align-self: stretch;
+  padding: calc(var(--layout-spacing) / 2) calc(var(--layout-spacing) / 2) calc(var(--layout-spacing) / 2) 0;
+  border-radius: var(--layout-radius);
+}
+
+.readerSettingsDisclosureButton[data-hovered] {
+  background-color: var(--theme-hover);
+}
+
+.readerSettingsDisclosureButton[data-focus-visible] {
+  outline: 2px solid var(--theme-focus);
+  outline-offset: -2px;
+}
+
+.readerSettingsDisclosureButton[data-disabled] {
+  color: var(--theme-disable);
+  cursor: not-allowed;
+}
+
+.readerSettingsDisclosureButton[data-disabled] .readerSettingsChevronIcon svg {
+  fill: var(--theme-disable);
+  color: var(--theme-disable);
+}
+
+.readerSettingsDisclosureHeaderDropdown {
+  margin: 0;
+}
+
+.readerSettingsDisclosureHeaderDropdownButton {
+  margin: 0;
+}
+
+.readerSettingsDisclosurePanel {
+  padding-inline-start: calc((var(--icon-size, 24px) * 5/6));
+}
+
+.readerSettingsChevronIcon {
+  width: calc(var(--icon-size, 24px) * 5/6);
+  height: calc(var(--icon-size, 24px) * 5/6);
+  flex-shrink: 0;
+}
+
+.readerSettingsChevronIcon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--theme-text);
+  transition: rotate 200ms ease-in-out;
+  rotate: 0deg;
+}
+
+.readerSettingsDisclosure[data-expanded] .readerSettingsChevronIcon svg {
+  rotate: 90deg;
+}
+
+.readerSettingsDisclosureButton[data-disabled] .readerSettingsChevronIcon svg {
+  fill: var(--theme-disable);
+  color: var(--theme-disable);
+}
+
 .readerSettingsDropdownButton svg {
   width: calc(var(--icon-size, 24px) * 5/6);
   height: calc(var(--icon-size, 24px) * 5/6);
@@ -54,19 +141,21 @@
 .readerSettingsInlineDropdown {
   display: flex;
   align-items: center;
-  gap: var(--layout-spacing);
-  margin: var(--layout-spacing) 0;
+  margin: calc(var(--layout-spacing) / 2) 0;
+  padding: 0;
+  gap: calc(var(--layout-spacing) / 2);
+  width: 100%;
 }
 
 .readerSettingsInlineDropdownLabel {
   font-size: 1rem;
   white-space: nowrap;
   margin: 0;
+  flex-grow: 1;
 }
 
 .readerSettingsInlineDropdown .readerSettingsDropdownButton {
-  flex: 1;
-  margin-top: 0;
+  margin: 0;
 }
 
 .readerSettingsInlineDropdown[data-disabled] {

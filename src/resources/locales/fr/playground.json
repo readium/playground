@@ -72,7 +72,7 @@
           "fullscreen": "En plein écran"
         },
         "hint": {
-          "title": "Afficher",
+          "title": "Ré-afficher",
           "none": "Jamais",
           "immersiveChange": "Lors de la sortie du mode immersion",
           "fullscreenChange": "Lors de la sortie du mode plein écran",

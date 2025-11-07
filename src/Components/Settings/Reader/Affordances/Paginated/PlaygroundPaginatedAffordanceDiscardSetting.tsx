@@ -34,16 +34,6 @@ interface DiscardOption {
 
 const discardOptions: DiscardOption[] = [
   { 
-    id: "none", 
-    label: "reader.readerSettings.paginatedAffordance.discard.none", 
-    value: DiscardValue.None 
-  },
-  { 
-    id: "navigation", 
-    label: "reader.readerSettings.paginatedAffordance.discard.navigation", 
-    value: DiscardValue.Navigation
-  },
-  { 
     id: "immersive", 
     label: "reader.readerSettings.paginatedAffordance.discard.immersive", 
     value: DiscardValue.Immersive
@@ -52,6 +42,16 @@ const discardOptions: DiscardOption[] = [
     id: "fullscreen", 
     label: "reader.readerSettings.paginatedAffordance.discard.fullscreen", 
     value: DiscardValue.Fullscreen
+  },
+  { 
+    id: "navigation", 
+    label: "reader.readerSettings.paginatedAffordance.discard.navigation", 
+    value: DiscardValue.Navigation
+  },
+  { 
+    id: "none", 
+    label: "reader.readerSettings.paginatedAffordance.discard.none", 
+    value: DiscardValue.None 
   }
 ];
 

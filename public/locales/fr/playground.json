@@ -36,6 +36,10 @@
       "close": "Fermer le menu des paramètres du lecteur",
       "heading": "Paramètres du lecteur",
       "title": "Paramètres du lecteur",
+      "affordanceSwitcher": {
+        "indicator": "Vous êtes actuellement en breakpoint {{ breakpoint }} et mode {{ layout }}.",
+        "switcher": "Passer à {{ layout }} pour activer les paramètres"
+      },
       "scrollAffordances": {
         "title": "Scroll",
         "advanced": {

@@ -12,6 +12,7 @@ import {
 import { PlaygroundPaginatedAffordanceVariantSetting } from "./PlaygroundPaginatedAffordanceVariantSetting";
 import { PlaygroundPaginatedAffordanceHintSetting } from "./PlaygroundPaginatedAffordanceHintSetting";
 import { PlaygroundPaginatedAffordanceDiscardSetting } from "./PlaygroundPaginatedAffordanceDiscardSetting";
+import { PlaygroundAffordancesIndicator } from "../../../PlaygroundAffordancesIndicator";
 
 import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
 
@@ -58,6 +59,7 @@ export const PlaygroundPaginatedAffordancesGroup = () => {
 export const PlaygroundPaginatedAffordancesGroupContainer = () => {
   return (
     <>
+      <PlaygroundAffordancesIndicator variant="paginated"/>
       <PlaygroundPaginatedAffordanceVariantSetting />
       <PlaygroundPaginatedAffordanceHintSetting />
       <PlaygroundPaginatedAffordanceDiscardSetting />

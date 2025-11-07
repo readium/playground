@@ -16,6 +16,7 @@ import { PlaygroundPaginatedAffordancesGroup } from "@/Components/Settings/Reade
 import { PlaygroundScrollAffordancesGroup } from "@/Components/Settings/Reader/Affordances/Scroll/PlaygroundScrollAffordancesGroup";
 import { PlaygroundPaginatedAffordancesGroupContainer } from "@/Components/Settings/Reader/Affordances/Paginated/PlaygroundPaginatedAffordancesGroup";
 import { PlaygroundScrollAffordancesGroupContainer } from "@/Components/Settings/Reader/Affordances/Scroll/PlaygroundScrollAffordancesGroup";
+import { PlaygroundAffordancesIndicator } from "@/Components/Settings/PlaygroundAffordancesIndicator";
 
 import { 
   StatefulActionContainerProps,
@@ -62,6 +63,7 @@ export const PlaygroundReaderSettingsContainer = ({ triggerRef }: StatefulAction
       default:
         return (
           <>
+            <PlaygroundAffordancesIndicator />
             <PlaygroundLanguageSetting />
             <PlaygroundRunningHeadSetting />
             <PlaygroundProgressionSetting />

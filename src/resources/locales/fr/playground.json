@@ -36,6 +36,10 @@
       "close": "Fermer le menu des paramètres du lecteur",
       "heading": "Paramètres du lecteur",
       "title": "Paramètres du lecteur",
+      "affordanceSwitcher": {
+        "indicator": "Vous êtes actuellement en breakpoint {{ breakpoint }} et mode {{ layout }}.",
+        "switcher": "Passer à {{ layout }} pour activer les paramètres"
+      },
       "scrollAffordances": {
         "title": "Scroll",
         "advanced": {
@@ -48,13 +52,13 @@
         "hintInImmersive": "Afficher l’icône de menu en mode immersion"
       },
       "paginatedAffordance": {
-        "title": "Flèches de navigation (paginé)",
+        "title": "Flèches de navigation",
         "advanced": {
           "trigger": "Paramètres avancés des fleches de navigation",
           "tooltip": "Afficher les paramètres avancés des fleches de navigation"
         },
         "variant": {
-          "title": "Affichage",
+          "title": "Style",
           "layered": "Superposé",
           "stacked": "De chaque côté",
           "none": "Ne pas afficher"

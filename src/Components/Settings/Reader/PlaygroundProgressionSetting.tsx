@@ -23,36 +23,6 @@ interface ProgressionOption {
 
 const progressionOptions: ProgressionOption[] = [
   { 
-    id: "positionsPercentOfTotal", 
-    label: "reader.readerSettings.progression.format.positionsPercentOfTotal", 
-    value: ThProgressionFormat.positionsPercentOfTotal 
-  },
-  { 
-    id: "positionsOfTotal", 
-    label: "reader.readerSettings.progression.format.positionsOfTotal", 
-    value: ThProgressionFormat.positionsOfTotal 
-  },
-  { 
-    id: "positions", 
-    label: "reader.readerSettings.progression.format.positions", 
-    value: ThProgressionFormat.positions 
-  },
-  { 
-    id: "overallProgression", 
-    label: "reader.readerSettings.progression.format.overallProgression", 
-    value: ThProgressionFormat.overallProgression 
-  },
-  { 
-    id: "positionsLeft", 
-    label: "reader.readerSettings.progression.format.positionsLeft", 
-    value: ThProgressionFormat.positionsLeft 
-  },
-  { 
-    id: "readingOrderIndex", 
-    label: "reader.readerSettings.progression.format.readingOrderIndex", 
-    value: ThProgressionFormat.readingOrderIndex 
-  },
-  { 
     id: "resourceProgression", 
     label: "reader.readerSettings.progression.format.resourceProgression", 
     value: ThProgressionFormat.resourceProgression 
@@ -61,6 +31,36 @@ const progressionOptions: ProgressionOption[] = [
     id: "progressionOfResource", 
     label: "reader.readerSettings.progression.format.progressionOfResource", 
     value: ThProgressionFormat.progressionOfResource 
+  },
+  { 
+    id: "overallProgression", 
+    label: "reader.readerSettings.progression.format.overallProgression", 
+    value: ThProgressionFormat.overallProgression 
+  },
+  { 
+    id: "readingOrderIndex", 
+    label: "reader.readerSettings.progression.format.readingOrderIndex", 
+    value: ThProgressionFormat.readingOrderIndex 
+  },
+  { 
+    id: "positions", 
+    label: "reader.readerSettings.progression.format.positions", 
+    value: ThProgressionFormat.positions 
+  },
+  { 
+    id: "positionsLeft", 
+    label: "reader.readerSettings.progression.format.positionsLeft", 
+    value: ThProgressionFormat.positionsLeft 
+  },
+  { 
+    id: "positionsOfTotal", 
+    label: "reader.readerSettings.progression.format.positionsOfTotal", 
+    value: ThProgressionFormat.positionsOfTotal 
+  },
+  { 
+    id: "positionsPercentOfTotal", 
+    label: "reader.readerSettings.progression.format.positionsPercentOfTotal", 
+    value: ThProgressionFormat.positionsPercentOfTotal 
   },
   { 
     id: "none", 

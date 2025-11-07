@@ -42,8 +42,9 @@
 }
 
 /* Disclosure styles */
-.readerSettingsDisclosureGroup {
-  margin-block: var(--layout-spacing);
+
+.readerSettingsDisclosureLabelDisabled {
+  color: var(--theme-disable);
 }
 
 .readerSettingsDisclosure {}
@@ -160,4 +161,17 @@
 
 .readerSettingsInlineDropdown[data-disabled] {
   color: var(--theme-disable);
+}
+
+.readerSettingsAffordanceSwitcher {
+  margin-block: calc(var(--layout-spacing) / 2);
+  color: var(--theme-text);
+}
+
+.readerSettingsAffordanceSwitcherButton {
+  border-radius: var(--layout-radius);
+  border: 1px solid var(--theme-subdue);
+  padding: calc(var(--layout-spacing) / 2);
+  background-color: var(--theme-background);
+  color: var(--theme-text);
 }

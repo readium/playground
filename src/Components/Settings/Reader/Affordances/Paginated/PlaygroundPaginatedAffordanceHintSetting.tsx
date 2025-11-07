@@ -34,11 +34,6 @@ interface HintOption {
 
 const hintOptions: HintOption[] = [
   { 
-    id: "none", 
-    label: "reader.readerSettings.paginatedAffordance.hint.none", 
-    value: HintValue.None 
-  },
-  { 
     id: "immersiveChange", 
     label: "reader.readerSettings.paginatedAffordance.hint.immersiveChange", 
     value: HintValue.ImmersiveChange
@@ -52,6 +47,11 @@ const hintOptions: HintOption[] = [
     id: "layoutChange", 
     label: "reader.readerSettings.paginatedAffordance.hint.layoutChange", 
     value: HintValue.LayoutChange
+  },
+  { 
+    id: "none", 
+    label: "reader.readerSettings.paginatedAffordance.hint.none", 
+    value: HintValue.None 
   }
 ];
 

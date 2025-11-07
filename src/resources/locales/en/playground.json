@@ -36,6 +36,10 @@
       "close": "Close reader settings menu",
       "heading": "Reader settings",
       "title": "Reader settings",
+      "affordanceSwitcher": {
+        "indicator": "You are currently in breakpoint {{ breakpoint }} and {{ layout }} layout.",
+        "switcher": "Switch to {{ layout }} layout to enable the settings"
+      },
       "scrollAffordances": {
         "title": "Scroll",
         "advanced": {

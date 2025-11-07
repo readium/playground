@@ -49,7 +49,13 @@ export function PlaygroundDisclosureGroup<T>({
 
   return (
     <div className={ settingsStyles.readerSettingsGroup } data-settings-id={ id }>
-      { standalone && title && <Heading className={ settingsStyles.readerSettingsLabel }>{ title }</Heading> }
+      { standalone && title && 
+        <Heading className={ classNames(
+          settingsStyles.readerSettingsLabel,
+          isDisabled ? settingsStyles.readerSettingsDisclosureLabelDisabled : ""
+        ) }>
+          { title }
+        </Heading> }
 
       <Disclosure defaultExpanded={ false } className={ settingsStyles.readerSettingsDisclosure }>
         <div className={ settingsStyles.readerSettingsDisclosureHeader }>

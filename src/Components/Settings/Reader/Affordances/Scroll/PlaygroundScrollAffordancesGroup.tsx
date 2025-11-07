@@ -51,13 +51,13 @@ export const PlaygroundScrollAffordancesGroup = () => {
       componentsMap={ componentsMap }
       defaultPrefs={{
         main: [
-          ScrollAffordanceKeys.HintInImmersive
+          ScrollAffordanceKeys.ToggleOnMiddlePointer
         ],
         subPanel: [
-          ScrollAffordanceKeys.HintInImmersive,
           ScrollAffordanceKeys.ToggleOnMiddlePointer,
           ScrollAffordanceKeys.ShowOnBackwardScroll,
-          ScrollAffordanceKeys.HideOnForwardScroll
+          ScrollAffordanceKeys.HideOnForwardScroll,
+          ScrollAffordanceKeys.HintInImmersive
         ]
       }}
     />
@@ -69,10 +69,10 @@ export const PlaygroundScrollAffordancesGroupContainer = () => {
 
   return (
     <>
-      <PlaygroundScrollHintInImmersiveSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.hintInImmersive") }/>
+      <PlaygroundScrollToggleOnMiddlePointerSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.toggleOnMiddlePointer") }/>
       <PlaygroundScrollShowOnBackwardScrollSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.showOnBackwardScroll") }/>
       <PlaygroundScrollHideOnForwardScrollSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.hideOnForwardScroll") }/>
-      <PlaygroundScrollToggleOnMiddlePointerSetting standalone={ true }/>
+      <PlaygroundScrollHintInImmersiveSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.hintInImmersive") }/>
     </>
   );
 };

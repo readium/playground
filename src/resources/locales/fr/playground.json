@@ -42,15 +42,10 @@
           "trigger": "Paramètres avancés du scroll",
           "tooltip": "Afficher les paramètres avancés du scroll"
         },
-        "toggleOnMiddlePointer": {
-          "title": "Basculer les barres de navigation au centre",
-          "none": "Désactivé",
-          "tap": "Tap",
-          "click": "Clic"
-        },
+        "toggleOnMiddlePointer": "Masquer et afficher les barres au tap/click",
         "hideOnForwardScroll": "Masquer les barres lors du défilement en avant",
         "showOnBackwardScroll": "Afficher les barres lors du défilement en arrière",
-        "hintInImmersive": "Afficher le menu en mode immersion"
+        "hintInImmersive": "Afficher l’icône de menu en mode immersion"
       },
       "paginatedAffordance": {
         "title": "Flèches de navigation (paginé)",

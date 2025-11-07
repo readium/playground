@@ -42,15 +42,10 @@
           "trigger": "Advanced scroll settings",
           "tooltip": "Show advanced scroll settings"
         },
-        "toggleOnMiddlePointer": {
-          "title": "Toggle UI bars with middle pointer",
-          "none": "Disabled",
-          "tap": "Tap",
-          "click": "Click"
-        },
+        "toggleOnMiddlePointer": "Toggle UI bars with middle pointer",
         "hideOnForwardScroll": "Hide UI bars on forward scroll",
         "showOnBackwardScroll": "Show UI bars on backward scroll",
-        "hintInImmersive": "Show menu in immersive mode"
+        "hintInImmersive": "Show menu icon in immersive mode"
       },
       "paginatedAffordance": {
         "title": "Navigation arrows",

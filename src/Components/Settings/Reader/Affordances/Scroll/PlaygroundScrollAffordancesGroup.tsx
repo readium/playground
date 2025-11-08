@@ -4,6 +4,8 @@ import { useCallback } from "react";
 
 import { readerPreferencesContainerKeys, ScrollAffordanceKeys } from "@/preferences/enums";
 
+import { ThLayoutOptions } from "@edrlab/thorium-web/core/preferences";
+
 import { StatefulGroupWrapper, useI18n, useAppSelector, useAppDispatch } from "@edrlab/thorium-web/epub";
 
 import { PlaygroundScrollToggleOnMiddlePointerSetting } from "./PlaygroundScrollToggleOnMiddlePointerSetting";
@@ -70,7 +72,7 @@ export const PlaygroundScrollAffordancesGroupContainer = () => {
 
   return (
     <>
-      <PlaygroundAffordancesIndicator variant="scroll" />
+      <PlaygroundAffordancesIndicator variant={ ThLayoutOptions.scroll } />
       <PlaygroundScrollToggleOnMiddlePointerSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.toggleOnMiddlePointer") }/>
       <PlaygroundScrollShowOnBackwardScrollSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.showOnBackwardScroll") }/>
       <PlaygroundScrollHideOnForwardScrollSetting standalone={ true } label={ t("reader.readerSettings.scrollAffordances.hideOnForwardScroll") }/>

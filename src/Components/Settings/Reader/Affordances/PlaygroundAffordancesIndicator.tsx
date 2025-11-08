@@ -4,6 +4,8 @@ import { useCallback } from "react";
 
 import settingsStyles from "../../assets/styles/playgroundSettings.module.css";
 
+import { ThLayoutOptions } from "@edrlab/thorium-web/core/preferences";
+
 import { Button } from "react-aria-components";
 
 import { 
@@ -14,7 +16,7 @@ import {
   setScroll
 } from "@edrlab/thorium-web/epub";
 
-export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: "scroll" | "paginated" }) => {
+export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: ThLayoutOptions }) => {
   const { t } = useI18n();
   const scroll = useAppSelector(state => state.settings.scroll);
   const isFXL = useAppSelector(state => state.publication.isFXL);
@@ -32,16 +34,17 @@ export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: "scroll"
     dispatch(setScroll(getSetting("scroll")));
   }, [scroll, dispatch, submitPreferences, getSetting]);
 
-  const getVariant = (variant: "scroll" | "paginated") => {
-    if (variant === "scroll") return t("thorium-web:reader.settings.layout.scrolled").toLowerCase();
+  const getVariant = (variant: ThLayoutOptions) => {
+    if (variant === ThLayoutOptions.scroll) return t("thorium-web:reader.settings.layout.scrolled").toLowerCase();
     else return t("thorium-web:reader.settings.layout.paginated").toLowerCase();
   }
 
-  const shouldShowButton = (variant === "scroll" && !scroll) || (variant === "paginated" && scroll);
+  const shouldShowButton = (variant === ThLayoutOptions.scroll && !scroll) || (variant === ThLayoutOptions.paginated && scroll);
 
   return (
     <div className={ settingsStyles.readerSettingsAffordanceIndicator }>
-      <p>{ t("playground:reader.readerSettings.affordanceSwitcher.indicator", { breakpoint, layout: isScroll ? getVariant("scroll") : getVariant("paginated") } ) }</p>
+      <p>{ t("playground:reader.readerSettings.affordanceSwitcher.indicator", { breakpoint, layout: isScroll ? getVariant(ThLayoutOptions.scroll) : getVariant(ThLayoutOptions.paginated) } ) }</p>
+
       { shouldShowButton && <Button
         className={ settingsStyles.readerSettingsAffordanceIndicatorButton }
         onPress={ async () => await handleSwitch() }

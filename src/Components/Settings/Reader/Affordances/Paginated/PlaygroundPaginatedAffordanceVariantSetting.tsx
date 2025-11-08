@@ -93,7 +93,7 @@ export const PlaygroundPaginatedAffordanceVariantSetting = ({ standalone }: Stat
       // Get the default value from breakpoint config
       let breakpointDefault = ThArrowVariant.layered;
       if (breakpointValue) {
-        if ('variant' in breakpointValue) {
+        if ("variant" in breakpointValue) {
           breakpointDefault = breakpointValue.variant;
         } else if (typeof breakpointValue === "string") {
           breakpointDefault = breakpointValue as ThArrowVariant;
@@ -140,7 +140,7 @@ export const PlaygroundPaginatedAffordanceVariantSetting = ({ standalone }: Stat
       standalone={ standalone }
       breakpoints={ breakpoints }
       value={ variantValues }
-      isDisabled={ isScroll }
+      isDisabled={ isScroll || isFXL }
       options={ variantOptions.map(option => ({
         ...option,
         label: t(option.label)

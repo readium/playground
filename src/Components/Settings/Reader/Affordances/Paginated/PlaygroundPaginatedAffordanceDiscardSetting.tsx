@@ -14,7 +14,8 @@ import {
   useI18n,
   usePreferences,
   makeBreakpointsMap,
-  setPaginatedAffordance
+  setPaginatedAffordance,
+  StatefulDropdownProps
 } from "@edrlab/thorium-web/epub";
 
 import { PlaygroundDisclosureGroup } from "../../../PlaygroundDisclosureGroup";
@@ -55,7 +56,7 @@ const discardOptions: DiscardOption[] = [
   }
 ];
 
-export const PlaygroundPaginatedAffordanceDiscardSetting = () => {
+export const PlaygroundPaginatedAffordanceDiscardSetting = ({ standalone }: StatefulDropdownProps) => {
   const { t } = useI18n("playground");
   const { preferences } = usePreferences();
 
@@ -164,6 +165,7 @@ export const PlaygroundPaginatedAffordanceDiscardSetting = () => {
     <PlaygroundDisclosureGroup<string>
       id="paginated-affordance-discard"
       title={ t("reader.readerSettings.paginatedAffordance.discard.title") }
+      standalone={ standalone }
       breakpoints={ breakpoints }
       value={ discardValues }
       isDisabled={ isScroll }

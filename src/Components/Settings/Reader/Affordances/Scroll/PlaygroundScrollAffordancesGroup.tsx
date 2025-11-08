@@ -2,11 +2,20 @@
 
 import { useCallback } from "react";
 
+import settingsStyles from "../../../assets/styles/playgroundSettings.module.css";
+
 import { readerPreferencesContainerKeys, ScrollAffordanceKeys } from "@/preferences/enums";
 
 import { ThLayoutOptions } from "@edrlab/thorium-web/core/preferences";
 
-import { StatefulGroupWrapper, useI18n, useAppSelector, useAppDispatch } from "@edrlab/thorium-web/epub";
+import { 
+  StatefulGroupWrapper, 
+  useI18n, 
+  useAppSelector, 
+  useAppDispatch 
+} from "@edrlab/thorium-web/epub";
+
+import { Heading } from "react-aria-components";
 
 import { PlaygroundScrollToggleOnMiddlePointerSetting } from "./PlaygroundScrollToggleOnMiddlePointerSetting";
 import { PlaygroundScrollShowOnBackwardScrollSetting } from "./PlaygroundScrollShowOnBackwardScrollSetting";
@@ -15,6 +24,8 @@ import { PlaygroundScrollHintInImmersiveSetting } from "./PlaygroundScrollHintIn
 import { PlaygroundAffordancesIndicator } from "../PlaygroundAffordancesIndicator";
 
 import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
+
+import classNames from "classnames";
 
 const componentsMap = {
   [ScrollAffordanceKeys.ToggleOnMiddlePointer]: {
@@ -33,9 +44,11 @@ const componentsMap = {
 
 export const PlaygroundScrollAffordancesGroup = () => {
   const { t } = useI18n("playground");
-  const dispatch = useAppDispatch();
-  
+  const scroll = useAppSelector(state => state.settings.scroll);
   const isFXL = useAppSelector(state => state.publication.isFXL);
+  const isPaginated = !scroll || isFXL;
+
+  const dispatch = useAppDispatch();
 
   const handleMoreClick = useCallback(() => {
     dispatch(setReaderPreferencesContainerKey(readerPreferencesContainerKeys.scrollAffordances));
@@ -47,7 +60,7 @@ export const PlaygroundScrollAffordancesGroup = () => {
 
   return (
     <StatefulGroupWrapper<ScrollAffordanceKeys>
-      heading={ t("reader.readerSettings.scrollAffordances.title") }
+      label={ t("reader.readerSettings.scrollAffordances.title") }
       moreLabel={ t("reader.readerSettings.scrollAffordances.advanced.trigger") }
       moreTooltip={ t("reader.readerSettings.scrollAffordances.advanced.tooltip") }
       onPressMore={ handleMoreClick }
@@ -62,6 +75,19 @@ export const PlaygroundScrollAffordancesGroup = () => {
           ScrollAffordanceKeys.HideOnForwardScroll,
           ScrollAffordanceKeys.HintInImmersive
         ]
+      }}
+      compounds={{
+        heading: (
+          <Heading
+            className={ classNames(
+              settingsStyles.readerSettingsLabel,
+              settingsStyles.readerSettingsGroupLabel,
+              { [settingsStyles.readerSettingsGroupLabelDisabled]: isPaginated }
+            ) }
+          >
+            { t("reader.readerSettings.scrollAffordances.title") }
+          </Heading>
+        )
       }}
     />
   );

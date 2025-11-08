@@ -2,6 +2,8 @@
 
 import { useCallback } from "react";
 
+import settingsStyles from "../../../assets/styles/playgroundSettings.module.css";
+
 import { readerPreferencesContainerKeys, PaginatedAffordanceKeys } from "@/preferences/enums";
 
 import { ThLayoutOptions } from "@edrlab/thorium-web/core/preferences";
@@ -9,8 +11,11 @@ import { ThLayoutOptions } from "@edrlab/thorium-web/core/preferences";
 import { 
   StatefulGroupWrapper, 
   useI18n, 
-  useAppDispatch 
+  useAppDispatch, 
+  useAppSelector
 } from "@edrlab/thorium-web/epub";
+
+import { Heading } from "react-aria-components";
 
 import { PlaygroundPaginatedAffordanceVariantSetting } from "./PlaygroundPaginatedAffordanceVariantSetting";
 import { PlaygroundPaginatedAffordanceHintSetting } from "./PlaygroundPaginatedAffordanceHintSetting";
@@ -18,6 +23,8 @@ import { PlaygroundPaginatedAffordanceDiscardSetting } from "./PlaygroundPaginat
 import { PlaygroundAffordancesIndicator } from "../PlaygroundAffordancesIndicator";
 
 import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
+
+import classNames from "classnames";
 
 const componentsMap = {
   [PaginatedAffordanceKeys.Variant]: {
@@ -36,6 +43,9 @@ const componentsMap = {
 
 export const PlaygroundPaginatedAffordancesGroup = () => {
   const { t } = useI18n("playground");
+  const scroll = useAppSelector(state => state.settings.scroll);
+  const isFXL = useAppSelector(state => state.publication.isFXL);
+  const isScroll = scroll && !isFXL;
 
   const dispatch = useAppDispatch();
 
@@ -45,7 +55,7 @@ export const PlaygroundPaginatedAffordancesGroup = () => {
 
   return (
     <StatefulGroupWrapper<PaginatedAffordanceKeys>
-      heading={ t("reader.readerSettings.paginatedAffordance.title") }
+      label={ t("reader.readerSettings.paginatedAffordance.title") }
       moreLabel={ t("reader.readerSettings.paginatedAffordance.advanced.trigger") }
       moreTooltip={ t("reader.readerSettings.paginatedAffordance.advanced.tooltip") }
       onPressMore={ handleMoreClick }
@@ -57,6 +67,19 @@ export const PlaygroundPaginatedAffordancesGroup = () => {
           PaginatedAffordanceKeys.Hint, 
           PaginatedAffordanceKeys.Discard
         ]
+      }}
+      compounds={{
+        heading: (
+          <Heading
+            className={ classNames(
+              settingsStyles.readerSettingsLabel,
+              settingsStyles.readerSettingsGroupLabel,
+              { [settingsStyles.readerSettingsGroupLabelDisabled]: isScroll }
+            ) }
+          >
+            { t("reader.readerSettings.paginatedAffordance.title") }
+          </Heading>
+        )
       }}
     />
   );

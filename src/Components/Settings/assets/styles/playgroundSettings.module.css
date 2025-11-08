@@ -81,12 +81,10 @@
 
 .readerSettingsDisclosureButton[data-focus-visible] {
   outline: 2px solid var(--theme-focus);
-  outline-offset: -2px;
 }
 
 .readerSettingsDisclosureButton[data-disabled] {
   color: var(--theme-disable);
-  cursor: not-allowed;
 }
 
 .readerSettingsDisclosureButton[data-disabled] .readerSettingsChevronIcon svg {
@@ -163,15 +161,27 @@
   color: var(--theme-disable);
 }
 
-.readerSettingsAffordanceSwitcher {
+.readerSettingsAffordanceIndicator {
   margin-block: calc(var(--layout-spacing) / 2);
   color: var(--theme-text);
 }
 
-.readerSettingsAffordanceSwitcherButton {
+.readerSettingsAffordanceIndicatorButton {
   border-radius: var(--layout-radius);
   border: 1px solid var(--theme-subdue);
   padding: calc(var(--layout-spacing) / 2);
   background-color: var(--theme-background);
   color: var(--theme-text);
+}
+
+.readerSettingsAffordanceIndicatorButton[data-hovered] {
+  background-color: var(--theme-hover);
+}
+
+.readerSettingsAffordanceIndicatorButton[data-focus-visible] {
+  outline: 2px solid var(--theme-focus);
+}
+
+.readerSettingsAffordanceIndicatorButton[data-disabled] {
+  color: var(--theme-disable);
 }

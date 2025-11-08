@@ -12,7 +12,7 @@ import {
 import { PlaygroundPaginatedAffordanceVariantSetting } from "./PlaygroundPaginatedAffordanceVariantSetting";
 import { PlaygroundPaginatedAffordanceHintSetting } from "./PlaygroundPaginatedAffordanceHintSetting";
 import { PlaygroundPaginatedAffordanceDiscardSetting } from "./PlaygroundPaginatedAffordanceDiscardSetting";
-import { PlaygroundAffordancesIndicator } from "../../../PlaygroundAffordancesIndicator";
+import { PlaygroundAffordancesIndicator } from "../PlaygroundAffordancesIndicator";
 
 import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
 

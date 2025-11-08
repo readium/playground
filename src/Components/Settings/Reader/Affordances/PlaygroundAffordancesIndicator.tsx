@@ -2,7 +2,7 @@
 
 import { useCallback } from "react";
 
-import settingsStyles from "./assets/styles/playgroundSettings.module.css";
+import settingsStyles from "../../assets/styles/playgroundSettings.module.css";
 
 import { Button } from "react-aria-components";
 
@@ -40,10 +40,10 @@ export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: "scroll"
   const shouldShowButton = (variant === "scroll" && !scroll) || (variant === "paginated" && scroll);
 
   return (
-    <div className={ settingsStyles.readerSettingsAffordanceSwitcher }>
+    <div className={ settingsStyles.readerSettingsAffordanceIndicator }>
       <p>{ t("playground:reader.readerSettings.affordanceSwitcher.indicator", { breakpoint, layout: isScroll ? getVariant("scroll") : getVariant("paginated") } ) }</p>
       { shouldShowButton && <Button
-        className={ settingsStyles.readerSettingsAffordanceSwitcherButton }
+        className={ settingsStyles.readerSettingsAffordanceIndicatorButton }
         onPress={ async () => await handleSwitch() }
       >
         { t("playground:reader.readerSettings.affordanceSwitcher.switcher", { layout: getVariant(variant) }) }

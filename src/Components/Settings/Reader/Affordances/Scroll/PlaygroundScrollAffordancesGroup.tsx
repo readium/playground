@@ -10,7 +10,7 @@ import { PlaygroundScrollToggleOnMiddlePointerSetting } from "./PlaygroundScroll
 import { PlaygroundScrollShowOnBackwardScrollSetting } from "./PlaygroundScrollShowOnBackwardScrollSetting";
 import { PlaygroundScrollHideOnForwardScrollSetting } from "./PlaygroundScrollHideOnForwardScrollSetting";
 import { PlaygroundScrollHintInImmersiveSetting } from "./PlaygroundScrollHintInImmersiveSetting";
-import { PlaygroundAffordancesIndicator } from "../../../PlaygroundAffordancesIndicator";
+import { PlaygroundAffordancesIndicator } from "../PlaygroundAffordancesIndicator";
 
 import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
 

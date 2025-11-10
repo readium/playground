@@ -169,10 +169,12 @@ export const PlaygroundPaginatedAffordanceHintSetting = ({ standalone }: Statefu
       breakpoints={ breakpoints }
       value={ hintValues }
       isDisabled={ isScroll }
-      options={ hintOptions.map(option => ({
-        ...option,
-        label: t(option.label)
-      }))}
+      options={ hintOptions
+        .filter(option => !isFXL || option.value !== HintValue.LayoutChange)
+        .map(option => ({
+          ...option,
+          label: t(option.label)
+        }))}
       onChange={ handleHintChange }
     />
   );

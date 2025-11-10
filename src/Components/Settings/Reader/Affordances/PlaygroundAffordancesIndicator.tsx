@@ -10,7 +10,7 @@ import { Button } from "react-aria-components";
 
 import { 
   useI18n,
-  useEpubNavigator,
+  useNavigator,
   useAppSelector, 
   useAppDispatch,
   setScroll
@@ -25,7 +25,7 @@ export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: ThLayout
 
   const dispatch = useAppDispatch();
 
-  const { submitPreferences, getSetting } = useEpubNavigator();
+  const { submitPreferences, getSetting } = useNavigator();
 
   const handleSwitch = useCallback(async () => {
     await submitPreferences({

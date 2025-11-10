@@ -3,7 +3,7 @@ import { useEffect, useCallback } from "react";
 import { layoutPresets, layoutPresetsValues } from "@/preferences/enums";
 
 import { 
-  useEpubNavigator, 
+  useNavigator, 
   useAppDispatch, 
   useAppSelector, 
   setLineLength,
@@ -14,7 +14,7 @@ import { setLayoutPreset } from "@/lib/customReducer";
 
 export const useLineLengths = () => {
   const dispatch = useAppDispatch();
-  const { submitPreferences, getSetting } = useEpubNavigator();
+  const { submitPreferences, getSetting } = useNavigator();
   const { preferences } = usePreferences();
   const layoutPreset = useAppSelector(state => state.custom.layoutPreset);
   const lineLength = useAppSelector(state => state.settings.lineLength);

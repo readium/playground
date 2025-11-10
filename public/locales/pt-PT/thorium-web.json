@@ -14,19 +14,21 @@
                     "trigger": "Voltar à biblioteca",
                     "tooltip": "Biblioteca"
                 },
-                "label": "Barra do topo"
+                "label": "Barra superior",
+                "runningHead": "Cabeçalho em execução"
             },
-            "loading": "A carregar",
+            "loading": "A carregar…",
             "docker": {
                 "close": {
                     "trigger": "Fechar",
                     "tooltip": "Fechar"
                 },
                 "popover": {
-                    "trigger": "Exibir numa janela"
+                    "trigger": "Exibir numa janela",
+                    "tooltip": "Janela flutuante"
                 },
                 "fullscreen": {
-                    "trigger": "Exibir no topo dos conteúdos",
+                    "trigger": "Exibir sobre os conteúdos",
                     "tooltip": "Sobreposição"
                 },
                 "wrapper": "Opções de ancoragem",
@@ -42,23 +44,23 @@
             "back": {
                 "trigger": "Anterior"
             },
-            "publicationWrapper": "Agora está na publicação.",
+            "publicationWrapper": "Agora estás na publicação.",
             "docking": {
-                "dockingEmpty": "Atualmente, vazio",
+                "dockingEmpty": "Atualmente vazio",
                 "dockingClosed": "Está fechado, contém {{ action }}",
-                "dockingCollapsed": "Está ocultado, contém {{ action }}",
+                "dockingCollapsed": "Está recolhido, contém {{ action }}",
                 "dockingLeft": "Painel ancorado à esquerda",
                 "dockingRight": "Painel ancorado à direita"
             },
             "footer": {
-                "label": "Barra do fim"
+                "label": "Barra inferior"
             }
         },
         "navigation": {
             "scroll": {
                 "prevLabel": "Anterior",
                 "nextLabel": "Seguinte",
-                "wrapper": "Navegar na publicação",
+                "wrapper": "Navegar pela publicação",
                 "prevA11yLabel": "Ir para o recurso anterior",
                 "nextA11yLabel": "Ir para o recurso seguinte"
             },
@@ -67,9 +69,11 @@
         },
         "jumpToPosition": {
             "heading": "Saltar para a posição",
-            "tooltip": "Saltar para …",
+            "tooltip": "Saltar para…",
             "trigger": "Saltar para a posição",
-            "go": "Ir"
+            "go": "Ir",
+            "close": "Fechar painel de salto",
+            "label": "Selecionar uma posição entre {{ positionStart }} e {{ positionEnd }}:"
         },
         "toc": {
             "tooltip": "Índice",
@@ -81,12 +85,13 @@
                 "placeholder": "Pesquisar"
             },
             "close": "Fechar índice",
-            "heading": "Índice"
+            "heading": "Índice",
+            "empty": "O índice não foi fornecido para esta publicação."
         },
         "fullscreen": {
             "tooltip": "Ecrã completo",
             "trigger": "Alternar modo de ecrã completo",
-            "close": "Sair de modo de ecrã completo"
+            "close": "Sair do modo de ecrã completo"
         },
         "overflowMenu": {
             "active": {
@@ -124,7 +129,8 @@
                 "left": "Esquerda",
                 "publisher": "Padrão",
                 "justify": "Justificar",
-                "right": "Direita"
+                "right": "Direita",
+                "title": "Alinhamento do texto"
             },
             "hyphens": {
                 "title": "Hifenização",
@@ -138,7 +144,88 @@
                 }
             },
             "lineHeight": {
-                "title": "Altura da linha"
+                "title": "Altura da linha",
+                "publisher": "Predefinição",
+                "small": "Apertada",
+                "medium": "Equilibrada",
+                "large": "Solta"
+            },
+            "reset": "Repor",
+            "zoom": {
+                "title": "Ampliação",
+                "increase": "Aumentar ampliação",
+                "decrease": "Reduzir ampliação"
+            },
+            "fontSize": {
+                "title": "Tamanho do tipo de letra",
+                "increase": "Aumentar tamanho da letra",
+                "decrease": "Diminuir tamanho da letra"
+            },
+            "fontFamily": {
+                "title": "Tipo de letra",
+                "labels": {
+                    "publisher": "Fonte do editor",
+                    "oldStyle": "Serifa clássica",
+                    "modern": "Serifa moderna",
+                    "sans": "Sem serifa",
+                    "humanist": "Humanista sem serifa",
+                    "monospace": "Monoespaçado"
+                }
+            },
+            "fontWeight": {
+                "title": "Espessura do tipo de letra",
+                "default": "Normal",
+                "bolder": "Negrito",
+                "increase": "Aumentar espessura",
+                "decrease": "Diminuir espessura"
+            },
+            "normalizeText": {
+                "title": "Normalização do texto",
+                "label": "Remover toda a formatação do texto"
+            },
+            "paraSpacing": {
+                "title": "Espaçamento entre parágrafos",
+                "increase": "Aumentar espaçamento entre parágrafos",
+                "decrease": "Diminuir espaçamento entre parágrafos"
+            },
+            "paraIndent": {
+                "title": "Indentação do parágrafo",
+                "increase": "Aumentar indentação",
+                "decrease": "Diminuir indentação"
+            },
+            "wordSpacing": {
+                "title": "Espaçamento entre palavras",
+                "increase": "Aumentar espaçamento entre palavras",
+                "decrease": "Diminuir espaçamento entre palavras"
+            },
+            "letterSpacing": {
+                "title": "Espaçamento entre letras",
+                "increase": "Aumentar espaçamento entre letras",
+                "decrease": "Diminuir espaçamento entre letras"
+            },
+            "publisherStyles": {
+                "label": "Utilizar formatação original"
+            },
+            "spacing": {
+                "title": "Espaçamento",
+                "advanced": {
+                    "tooltip": "Mais opções",
+                    "trigger": "Mais opções de espaçamento"
+                },
+                "presets": {
+                    "title": "Predefinições",
+                    "publisher": "Predefinição",
+                    "tight": "Apertado",
+                    "balanced": "Equilibrado",
+                    "loose": "Solto",
+                    "accessible": "Acessível",
+                    "custom": "Personalizado"
+                }
+            },
+            "layout": {
+                "title": "Esquema",
+                "scrolled": "Com rolagem",
+                "paginated": "Paginado"
             }
         }
     }

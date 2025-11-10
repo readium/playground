@@ -2,9 +2,9 @@
     "reader": {
         "settings": {
             "column": {
-                "one": "1 kol",
+                "one": "1 kolumn",
                 "title": "Kolumner",
-                "two": "2 kol",
+                "two": "2 kolumner",
                 "auto": "Auto"
             },
             "tooltip": "Inställningar",

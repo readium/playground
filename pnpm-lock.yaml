@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.0.7
-        version: 1.0.7(d5373af56350ccc9c2153097d9a6250a)
+        specifier: ^1.0.8
+        version: 1.0.8(d5373af56350ccc9c2153097d9a6250a)
       '@readium/css':
         specifier: 2.0.0-beta.22
         version: 2.0.0-beta.22
@@ -663,8 +663,8 @@ packages:
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.0.7':
-    resolution: {integrity: sha512-8pRdOoP1m49PqK+FpA+Y4P82/iJEf7MB/A5EBm1S+EGw+TEe5WoyOwHb/S2iorp1l+yZUpzJUoxv6jjSmlrwEw==}
+  '@edrlab/thorium-web@1.0.8':
+    resolution: {integrity: sha512-q8bQVtAFvVEDDCo58aGOGeKvDmpgM0pCh12mRVucqA1coUl92pA6WP1lYBGXWpeymPVzVFLUh3IgIBMNGsSy7w==}
     peerDependencies:
       '@readium/css': 2.0.0-beta.22
       '@readium/navigator': ^2.2.4
@@ -4377,7 +4377,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@edrlab/thorium-web@1.0.7(d5373af56350ccc9c2153097d9a6250a)':
+  '@edrlab/thorium-web@1.0.8(d5373af56350ccc9c2153097d9a6250a)':
     dependencies:
       '@readium/css': 2.0.0-beta.22
       '@readium/navigator': 2.2.4

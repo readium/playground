@@ -9,7 +9,6 @@ import { readerPreferencesContainerKeys } from "@/preferences/enums";
 import { setReaderPreferencesContainerKey } from "@/lib/customReducer";
 import { ThSheetHeaderVariant } from "@edrlab/thorium-web/core/preferences";
 
-import { PlaygroundLanguageSetting } from "@/Components/Settings/Reader/PlaygroundLanguageSetting";
 import { PlaygroundProgressionSetting } from "@/Components/Settings/Reader/PlaygroundProgressionSetting";
 import { PlaygroundRunningHeadSetting } from "@/Components/Settings/Reader/PlaygroundRunningHeadSetting";
 import { PlaygroundPaginatedAffordancesGroup } from "@/Components/Settings/Reader/Affordances/Paginated/PlaygroundPaginatedAffordancesGroup";
@@ -64,7 +63,6 @@ export const PlaygroundReaderSettingsContainer = ({ triggerRef }: StatefulAction
         return (
           <>
             <PlaygroundAffordancesIndicator />
-            <PlaygroundLanguageSetting />
             <PlaygroundRunningHeadSetting />
             <PlaygroundProgressionSetting />
             <PlaygroundPaginatedAffordancesGroup />

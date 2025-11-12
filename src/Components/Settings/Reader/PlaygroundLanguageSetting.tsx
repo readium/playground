@@ -18,7 +18,9 @@ const SUPPORTED_LANGUAGES = [
 
 const DEFAULT_LANGUAGE = "en";
 
-export const PlaygroundLanguageSetting = () => {
+// This is not used because we are missing locales for Playground
+// so it does not demonstrate the full feature as it should
+export const UnstablePlaygroundLanguageSetting = () => {
   const { t, currentLanguage } = useI18n("playground");
   const dispatch = useAppDispatch();
 

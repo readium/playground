@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Some Reader Preferences such as language, running head, progression, navigation arrows and scroll affordances can now be set through a new Reader Settings Panel
+- Some Reader Preferences such as running head, progression, navigation arrows and scroll affordances can now be set through a new Reader Settings Panel
 
 ### Changed
 

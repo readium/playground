@@ -3,7 +3,7 @@
 import { 
   StatefulSettingsItemProps,
   StatefulNumberField,
-  useEpubNavigator,
+  useNavigator,
   usePreferences,
   useI18n,
   useAppSelector,
@@ -15,7 +15,7 @@ import { useLineLengths } from "./hooks/useLineLengths";
 export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsItemProps) => {
   const { preferences } = usePreferences();
   const lineLength = useAppSelector(state => state.settings.lineLength);
-  const { preferencesEditor } = useEpubNavigator();
+  const { preferencesEditor } = useNavigator();
   const { updatePreference } = useLineLengths();
   const { t } = useI18n("playground");
 

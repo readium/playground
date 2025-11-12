@@ -1,1 +1,232 @@
-{}
+{
+    "reader": {
+        "settings": {
+            "column": {
+                "one": "1 kolumn",
+                "title": "Kolumner",
+                "two": "2 kolumner",
+                "auto": "Auto"
+            },
+            "tooltip": "Inställningar",
+            "trigger": "Menyn Inställningar",
+            "close": "Stäng menyn Inställningar",
+            "heading": "Visningsinställningar",
+            "themes": {
+                "title": "Teman",
+                "auto": "Auto",
+                "light": "Ljus",
+                "sepia": "Sepia",
+                "paper": "Papper",
+                "dark": "Mörk",
+                "contrast1": "Kontrast 1",
+                "contrast2": "Kontrast 2",
+                "contrast3": "Kontrast 3"
+            },
+            "zoom": {
+                "title": "Zooma",
+                "increase": "Öka zoom",
+                "decrease": "Minska zoom"
+            },
+            "fontSize": {
+                "title": "Teckenstorlek",
+                "increase": "Öka teckenstorlek",
+                "decrease": "Minska teckenstorlek"
+            },
+            "fontFamily": {
+                "title": "Teckensnittsfamilj",
+                "labels": {
+                    "publisher": "Utgivarens teckensnitt",
+                    "oldStyle": "Old style serif",
+                    "modern": "Modern serif",
+                    "sans": "Sans-serif",
+                    "humanist": "Humanist sans-serif",
+                    "monospace": "Monospace"
+                }
+            },
+            "fontWeight": {
+                "title": "Teckentjocklek",
+                "increase": "Öka teckentjocklek",
+                "decrease": "Minska teckentjocklek",
+                "default": "Normal",
+                "bolder": "Fetare"
+            },
+            "normalizeText": {
+                "title": "Textnormalisering",
+                "label": "Ta bort all textformatering"
+            },
+            "align": {
+                "title": "Textjustering",
+                "publisher": "Standard",
+                "left": "Vänster",
+                "justify": "Justera",
+                "right": "Höger"
+            },
+            "hyphens": {
+                "title": "Avstavning",
+                "label": "Aktivera bindestreck"
+            },
+            "text": {
+                "title": "Text",
+                "advanced": {
+                    "tooltip": "Fler alternativ",
+                    "trigger": "Fler formateringsalternativ"
+                }
+            },
+            "lineHeight": {
+                "title": "Radavstånd",
+                "publisher": "Standard",
+                "small": "Tätt",
+                "medium": "Balanserat",
+                "large": "Luftigt"
+            },
+            "paraSpacing": {
+                "title": "Styckeavstånd",
+                "increase": "Öka styckeavstånd",
+                "decrease": "Minska styckeavstånd"
+            },
+            "paraIndent": {
+                "title": "Styckeindrag",
+                "increase": "Öka styckeindrag",
+                "decrease": "Minska styckeindrag"
+            },
+            "wordSpacing": {
+                "title": "Ordavstånd",
+                "increase": "Öka ordavstånd",
+                "decrease": "Minska ordavstånd"
+            },
+            "letterSpacing": {
+                "title": "Bokstavsavstånd",
+                "increase": "Öka bokstavsavstånd",
+                "decrease": "Minska bokstavsavstånd"
+            },
+            "publisherStyles": {
+                "label": "Använd ursprunglig formatering"
+            },
+            "spacing": {
+                "title": "Avstånd",
+                "advanced": {
+                    "tooltip": "Fler alternativ",
+                    "trigger": "Fler avståndsalternativ"
+                },
+                "presets": {
+                    "title": "Förinställningar",
+                    "publisher": "Standard",
+                    "tight": "Tät",
+                    "balanced": "Balanserad",
+                    "loose": "Lös",
+                    "accessible": "Tillgänglig",
+                    "custom": "Anpassad"
+                }
+            },
+            "layout": {
+                "title": "Layout",
+                "scrolled": "Bläddringsbar",
+                "paginated": "Sidnumrerad"
+            },
+            "reset": "Återställ"
+        },
+        "app": {
+            "loading": "Läser in",
+            "publicationWrapper": "Du befinner dig nu i publikationen.",
+            "docking": {
+                "dockingLeft": "Dockad panel till vänster",
+                "dockingRight": "Dockad panel till höger",
+                "dockingEmpty": "För närvarande tom",
+                "dockingClosed": "Är stängd, innehåller {{ action }}",
+                "dockingCollapsed": "Är minimerad, innehåller {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Tillbaka till biblioteket",
+                    "tooltip": "Bibliotek"
+                },
+                "label": "Övre fält",
+                "runningHead": "Löpande rubrikfält",
+                "actions": "Åtgärder"
+            },
+            "footer": {
+                "label": "Nedre fält"
+            },
+            "progression": {
+                "wrapper": "Aktuellt förlopp",
+                "of": "{{ current }} av {{ reference }}",
+                "referenceFallback": "aktuellt kapitel",
+                "pubFallback": "publikationen",
+                "positionsLeft": "{{ count }} kvar i {{ reference }}"
+            },
+            "docker": {
+                "wrapper": "Dockningsalternativ",
+                "dockToLeft": {
+                    "trigger": "Docka till vänster",
+                    "tooltip": "Docka vänster"
+                },
+                "dockToRight": {
+                    "trigger": "Docka till höger",
+                    "tooltip": "Docka höger"
+                },
+                "popover": {
+                    "trigger": "Visa i ett fönster",
+                    "tooltip": "Visa ovanpå"
+                },
+                "fullscreen": {
+                    "trigger": "Visa ovanpå innehåll",
+                    "tooltip": "Överlagra"
+                },
+                "close": {
+                    "trigger": "Stäng",
+                    "tooltip": "Stäng"
+                }
+            },
+            "back": {
+                "trigger": "Tillbaka"
+            }
+        },
+        "navigation": {
+            "goForward": "Gå framåt",
+            "goBackward": "Gå bakåt",
+            "scroll": {
+                "wrapper": "Navigera i publikationen",
+                "prevLabel": "Föregående",
+                "nextLabel": "Nästa",
+                "prevA11yLabel": "Gå till föregående resurs",
+                "nextA11yLabel": "Gå till nästa resurs"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "Helskärm",
+            "trigger": "Växla helskärmsläge",
+            "close": "Avsluta helskärmsläge"
+        },
+        "toc": {
+            "tooltip": "Innehållsförteckning",
+            "trigger": "Innehållsförteckning",
+            "close": "Stäng innehållsförteckning",
+            "heading": "Innehållsförteckning",
+            "entries": "Poster i förteckningen",
+            "empty": "Ingen innehållsförteckning har tillhandahållits för den här publikationen.",
+            "search": {
+                "label": "Sök",
+                "placeholder": "Sök",
+                "clear": "Rensa"
+            }
+        },
+        "jumpToPosition": {
+            "tooltip": "Hoppa till…",
+            "trigger": "Hoppa till position",
+            "heading": "Hoppa till position",
+            "go": "Kör",
+            "close": "Avsluta hoppa till position",
+            "label": "Välj en position från {{ positionStart }} till {{ positionEnd }}:"
+        },
+        "overflowMenu": {
+            "active": {
+                "tooltip": "Fler åtgärder",
+                "trigger": "Växla meny"
+            },
+            "hint": {
+                "tooltip": "Växla åtgärder",
+                "trigger": "Visa åtgärder"
+            }
+        }
+    }
+}

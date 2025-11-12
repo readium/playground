@@ -34,3 +34,24 @@ export const layoutPresetsValues = {
     max: 50
   }
 }
+
+export enum ScrollAffordanceKeys {
+  ToggleOnMiddlePointer = "toggleOnMiddlePointer",
+  ShowOnBackwardScroll = "showOnBackwardScroll",
+  HideOnForwardScroll = "hideOnForwardScroll",
+  HintInImmersive = "hintInImmersive"
+}
+
+export enum readerPreferencesContainerKeys {
+  initial = "initial",
+  runningHead = "runningHead",
+  progression = "progression",
+  paginatedAffordances = "paginatedAffordances",
+  scrollAffordances = "scrollAffordances",
+}
+
+export enum PaginatedAffordanceKeys {
+  Variant = "variant",
+  Hint = "hint",
+  Discard = "discard"
+}

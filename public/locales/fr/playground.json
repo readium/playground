@@ -29,6 +29,81 @@
         "increase": "Augmenter la longueur maximale",
         "decrease": "Diminuer la longueur maximale"
       }
+    },
+    "readerSettings": {
+      "tooltip": "Paramètres du lecteur",
+      "trigger": "Paramètres du lecteur",
+      "close": "Fermer le menu des paramètres du lecteur",
+      "heading": "Paramètres du lecteur",
+      "title": "Paramètres du lecteur",
+      "affordanceSwitcher": {
+        "indicator": "Vous êtes actuellement en breakpoint {{ breakpoint }} et mode {{ layout }}.",
+        "switcher": "Passer au mode {{ layout }} pour activer les paramètres"
+      },
+      "scrollAffordances": {
+        "title": "Scroll",
+        "advanced": {
+          "trigger": "Paramètres avancés du scroll",
+          "tooltip": "Afficher les paramètres avancés du scroll"
+        },
+        "toggleOnMiddlePointer": "Masquer et afficher les barres au tap/click",
+        "hideOnForwardScroll": "Masquer les barres lors du défilement en avant",
+        "showOnBackwardScroll": "Afficher les barres lors du défilement en arrière",
+        "hintInImmersive": "Afficher l’icône de menu en mode immersion"
+      },
+      "paginatedAffordance": {
+        "title": "Flèches de navigation",
+        "advanced": {
+          "trigger": "Paramètres avancés des fleches de navigation",
+          "tooltip": "Afficher les paramètres avancés des fleches de navigation"
+        },
+        "variant": {
+          "title": "Style",
+          "layered": "Superposé",
+          "stacked": "De chaque côté",
+          "none": "Ne pas afficher"
+        },
+        "discard": {
+          "title": "Masquer",
+          "none": "Jamais",
+          "navigation": "Lors d’une navigation",
+          "immersive": "Lors de l’immersion",
+          "fullscreen": "En plein écran"
+        },
+        "hint": {
+          "title": "Ré-afficher",
+          "none": "Jamais",
+          "immersiveChange": "Lors de la sortie du mode immersion",
+          "fullscreenChange": "Lors de la sortie du mode plein écran",
+          "layoutChange": "Lors du passage de scroll à paginé"
+        }
+      },
+      "language": {
+        "title": "Langue"
+      },
+      "runningHead": {
+        "title": "En-tête",
+        "format": {
+          "title": "Titre",
+          "chapter": "Chapitre",
+          "titleAndChapter": "Titre et chapitre",
+          "none": "Aucun"
+        }
+      },
+      "progression": {
+        "title": "Progression",
+        "format": {
+          "positionsPercentOfTotal": "Positions de total (%)",
+          "positionsOfTotal": "Positions de total",
+          "positions": "Positions",
+          "overallProgression": "Progression globale",
+          "positionsLeft": "Positions restantes",
+          "readingOrderIndex": "Index de l’ordre de lecture",
+          "resourceProgression": "Progression locale",
+          "progressionOfResource": "Progression de ressource",
+          "none": "Aucun"
+        }
+      }
     }
   }
 }

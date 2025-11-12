@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.7] - 2025-11-10
+
+### Added
+
+- Some Reader Preferences such as running head, progression, navigation arrows and scroll affordances can now be set through a new Reader Settings Panel
+
+### Changed
+
+- Default order of spacing settings in their subpanel has been updated
+
+### Fixed
+
+- Styling of the pagination component in scroll has been fixed and is no longer shifted when missing a previous link
+- Remaining positions in resource has been fixed to account for resources with a single position available
+
 ## [1.0.6] - 2025-10-14
 
 ### Fixed

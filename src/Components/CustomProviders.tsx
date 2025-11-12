@@ -1,7 +1,7 @@
 "use client";
 
 import { playgroundPreferences } from "@/preferences/preferences";
-import { makeStore, ThI18nProvider, ThPreferencesProvider, ThStoreProvider } from "@edrlab/thorium-web/epub";
+import { makeStore, ThI18nProvider, StatefulPreferencesProvider, ThStoreProvider } from "@edrlab/thorium-web/epub";
 import customReducer from "@/lib/customReducer";
 
 export const CustomProviders = ({ children }: { children: React.ReactNode } ) => {
@@ -12,11 +12,11 @@ export const CustomProviders = ({ children }: { children: React.ReactNode } ) =>
         persist: true
       }
     }) }>
-      <ThPreferencesProvider initialPreferences={ playgroundPreferences }>
+      <StatefulPreferencesProvider initialPreferences={ playgroundPreferences }>
         <ThI18nProvider ns={ ["thorium-web", "playground"] }>
           { children }
         </ThI18nProvider>
-      </ThPreferencesProvider>
+      </StatefulPreferencesProvider>
     </ThStoreProvider>
   )
 }

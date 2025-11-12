@@ -1,6 +1,6 @@
 "use client";
 
-import layoutPresetsStyles from "../../Settings/LayoutPresets/assets/styles/layoutPresets.module.css";
+import readerSettingsStyles from "../../Settings/assets/styles/playgroundSettings.module.css";
 
 import { PlaygroundActionsKeys } from "@/preferences/preferences";
 
@@ -43,7 +43,7 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
         id: PlaygroundActionsKeys.layoutPresets,
         triggerRef: triggerRef,
         heading: t("reader.layoutPresets.heading"),
-        className: layoutPresetsStyles.readerSettings,
+        className: readerSettingsStyles.readerSettings,
         placement: "bottom", 
         isOpen: actionState?.isOpen || false,
         onOpenChange: setOpen, 

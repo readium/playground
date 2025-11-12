@@ -1,0 +1,232 @@
+{
+    "reader": {
+        "app": {
+            "loading": "Ladataan",
+            "publicationWrapper": "Olet nyt julkaisussa.",
+            "docking": {
+                "dockingLeft": "Kiinnitetty näkymä, vasen",
+                "dockingRight": "Kiinnitetty näkymä, oikea",
+                "dockingEmpty": "Tällä hetkellä tyhjä",
+                "dockingClosed": "Suljettu, sisältää {{ action }}",
+                "dockingCollapsed": "Pienennetty, sisältää {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Takaisin kirjastoon",
+                    "tooltip": "Kirjasto"
+                },
+                "label": "Yläpalkki",
+                "runningHead": "Julkaisun otsikko",
+                "actions": "Toiminnot"
+            },
+            "footer": {
+                "label": "Alapalkki"
+            },
+            "progression": {
+                "wrapper": "Edistyminen",
+                "of": "{{ current }} / {{ reference }}",
+                "referenceFallback": "nykyinen luku",
+                "pubFallback": "julkaisu",
+                "positionsLeft": "{{ count }} jäljellä kohdassa {{ reference }}"
+            },
+            "docker": {
+                "wrapper": "Kiinnitysvaihtoehdot",
+                "dockToLeft": {
+                    "trigger": "Kiinnitä vasemmalle",
+                    "tooltip": "Kiinnitä vasemmalle"
+                },
+                "dockToRight": {
+                    "trigger": "Kiinnitä oikealle",
+                    "tooltip": "Kiinnitä oikealle"
+                },
+                "popover": {
+                    "trigger": "Näytä ikkunassa",
+                    "tooltip": "Popover-sisältö"
+                },
+                "fullscreen": {
+                    "trigger": "Näytä sisällön päällä",
+                    "tooltip": "Peittokuva"
+                },
+                "close": {
+                    "trigger": "Sulje",
+                    "tooltip": "Sulje"
+                }
+            },
+            "back": {
+                "trigger": "Takaisin"
+            }
+        },
+        "navigation": {
+            "goForward": "Siirry eteenpäin",
+            "goBackward": "Siirry taaksepäin",
+            "scroll": {
+                "wrapper": "Selaa julkaisua",
+                "prevLabel": "Edellinen",
+                "nextLabel": "Seuraava",
+                "prevA11yLabel": "Siirry edelliseen resurssiin",
+                "nextA11yLabel": "Siirry seuraavaan resurssiin"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "Koko näyttö",
+            "trigger": "Vaihda koko näytön tilaan",
+            "close": "Poistu koko näytön tilasta"
+        },
+        "toc": {
+            "tooltip": "Sisällysluettelo",
+            "trigger": "Sisällysluettelo",
+            "close": "Sulje sisällysluettelo",
+            "heading": "Sisällysluettelo",
+            "entries": "Luettelon sisältö",
+            "empty": "Tässä julkaisussa ei ole sisällysluetteloa.",
+            "search": {
+                "label": "Hae",
+                "placeholder": "Hae",
+                "clear": "Tyhjennä"
+            }
+        },
+        "jumpToPosition": {
+            "tooltip": "Siirry…",
+            "trigger": "Siirry kohtaan",
+            "heading": "Siirry kohtaan",
+            "go": "Siirry",
+            "close": "Sulje siirry kohtaan",
+            "label": "Valitse kohta väliltä {{ positionStart }} ja {{ positionEnd }}:"
+        },
+        "overflowMenu": {
+            "active": {
+                "tooltip": "Lisää toimintoja",
+                "trigger": "Valikko"
+            },
+            "hint": {
+                "tooltip": "Toiminnot",
+                "trigger": "Näytä toiminnot"
+            }
+        },
+        "settings": {
+            "tooltip": "Asetukset",
+            "trigger": "Asetusvalikko",
+            "close": "Sulje asetusvalikko",
+            "heading": "Näytön asetukset",
+            "themes": {
+                "title": "Teemat",
+                "auto": "Automaattinen",
+                "light": "Vaalea",
+                "sepia": "Seepia",
+                "paper": "Paperi",
+                "dark": "Tumma",
+                "contrast1": "Kontrasti 1",
+                "contrast2": "Kontrasti 2",
+                "contrast3": "Kontrasti 3"
+            },
+            "zoom": {
+                "title": "Tarkennus",
+                "increase": "Lähennä",
+                "decrease": "Loitonna"
+            },
+            "fontSize": {
+                "title": "Tekstin koko",
+                "increase": "Suurenna tekstin kokoa",
+                "decrease": "Pienennä tekstin kokoa"
+            },
+            "fontFamily": {
+                "title": "Kirjasintyyppi",
+                "labels": {
+                    "publisher": "Julkaisijan fontti",
+                    "oldStyle": "Old style serif",
+                    "modern": "Modern serif",
+                    "sans": "Sans-serif",
+                    "humanist": "Humanist sans-serif",
+                    "monospace": "Monospace"
+                }
+            },
+            "fontWeight": {
+                "title": "Tekstin korostus",
+                "increase": "Lisää lihavointia",
+                "decrease": "Vähennä lihavointia",
+                "default": "Normaali",
+                "bolder": "Lihavampi"
+            },
+            "normalizeText": {
+                "title": "Palauta teksti normaaliksi",
+                "label": "Poista kaikki tekstin muotoilut"
+            },
+            "align": {
+                "title": "Tekstin tasaus",
+                "publisher": "Oletus",
+                "left": "Vasen",
+                "justify": "Tasaa",
+                "right": "Oikea"
+            },
+            "hyphens": {
+                "title": "Tavutus",
+                "label": "Käytä tavuviivoja"
+            },
+            "text": {
+                "title": "Teksti",
+                "advanced": {
+                    "tooltip": "Lisää vaihtoehtoja",
+                    "trigger": "Lisää muotoiluasetuksia"
+                }
+            },
+            "lineHeight": {
+                "title": "Riviväli",
+                "publisher": "Oletus",
+                "small": "Tiivis",
+                "medium": "Tasapainoinen",
+                "large": "Väljä"
+            },
+            "paraSpacing": {
+                "title": "Kappaleväli",
+                "increase": "Suurenna kappaleväliä",
+                "decrease": "Pienennä kappaleväliä"
+            },
+            "paraIndent": {
+                "title": "Kappaleiden sisennys",
+                "increase": "Lisää kappaleiden sisennystä",
+                "decrease": "Vähennä kappaleiden sisennystä"
+            },
+            "wordSpacing": {
+                "title": "Sanaväli",
+                "increase": "Suurenna sanaväliä",
+                "decrease": "Pienennä sanaväliä"
+            },
+            "letterSpacing": {
+                "title": "Kirjainväli",
+                "increase": "Suurenna kirjainväliä",
+                "decrease": "Pienennä kirjainväliä"
+            },
+            "publisherStyles": {
+                "label": "Käytä alkuperäistä muotoilua"
+            },
+            "spacing": {
+                "title": "Välistys",
+                "advanced": {
+                    "tooltip": "Lisää vaihtoehtoja",
+                    "trigger": "Lisää välistysasetuksia"
+                },
+                "presets": {
+                    "title": "Esiasetukset",
+                    "publisher": "Oletus",
+                    "tight": "Tiivis",
+                    "balanced": "Tasapainoinen",
+                    "loose": "Väljä",
+                    "accessible": "Helppolukuinen",
+                    "custom": "Mukautettu"
+                }
+            },
+            "layout": {
+                "title": "Asettelu",
+                "scrolled": "Vieritettävä",
+                "paginated": "Sivutettu"
+            },
+            "column": {
+                "title": "Sarakkeet",
+                "auto": "Automaattinen",
+                "one": "1 sarake",
+                "two": "2 saraketta"
+            },
+            "reset": "Nollaa"
+        }
+    }
+}

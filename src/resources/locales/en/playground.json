@@ -29,6 +29,81 @@
         "increase": "Increase maximal line length",
         "decrease": "Decrease maximal line length"
       }
+    },
+    "readerSettings": {
+      "tooltip": "Reader settings",
+      "trigger": "Reader settings",
+      "close": "Close reader settings menu",
+      "heading": "Reader settings",
+      "title": "Reader settings",
+      "affordanceSwitcher": {
+        "indicator": "You are currently in breakpoint {{ breakpoint }} and {{ layout }} layout.",
+        "switcher": "Switch to {{ layout }} layout to enable the settings"
+      },
+      "scrollAffordances": {
+        "title": "Scroll",
+        "advanced": {
+          "trigger": "Advanced scroll settings",
+          "tooltip": "Show advanced scroll settings"
+        },
+        "toggleOnMiddlePointer": "Toggle UI bars with middle pointer",
+        "hideOnForwardScroll": "Hide UI bars on forward scroll",
+        "showOnBackwardScroll": "Show UI bars on backward scroll",
+        "hintInImmersive": "Show menu icon in immersive mode"
+      },
+      "paginatedAffordance": {
+        "title": "Navigation arrows",
+        "advanced": {
+          "trigger": "Advanced navigation arrows settings",
+          "tooltip": "Show advanced navigation arrows settings"
+        },
+        "variant": {
+          "title": "Display",
+          "layered": "Layered",
+          "stacked": "On each side",
+          "none": "Don’t show"
+        },
+        "discard": {
+          "title": "Discard",
+          "none": "Never",
+          "navigation": "When navigating",
+          "immersive": "When in immersive mode",
+          "fullscreen": "When in fullscreen mode"
+        },
+        "hint": {
+          "title": "Hint",
+          "none": "Never",
+          "immersiveChange": "When leaving immersive mode",
+          "fullscreenChange": "When leaving fullscreen mode",
+          "layoutChange": "When switching from scroll to paginated"
+        }
+      },
+      "language": {
+        "title": "Language"
+      },
+      "runningHead": {
+        "title": "Running head",
+        "format": {
+          "title": "Title",
+          "chapter": "Chapter",
+          "titleAndChapter": "Title and chapter",
+          "none": "None"
+        }
+      },
+      "progression": {
+        "title": "Progression",
+        "format": {
+          "positionsPercentOfTotal": "Positions of total (%)",
+          "positionsOfTotal": "Positions of total",
+          "positions": "Positions",
+          "overallProgression": "Overall progression",
+          "positionsLeft": "Positions left",
+          "readingOrderIndex": "Reading order index",
+          "resourceProgression": "Local progression",
+          "progressionOfResource": "Progression of resource",
+          "none": "None"
+        }
+      }
     }
   }
 }

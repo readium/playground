@@ -1,1 +1,232 @@
-{}
+{
+    "reader": {
+        "settings": {
+            "column": {
+                "one": "1 kolonne",
+                "title": "Kolonner",
+                "two": "2 kolonner",
+                "auto": "Auto"
+            },
+            "reset": "Nulstil",
+            "tooltip": "Indstillinger",
+            "trigger": "Menu for indstillinger",
+            "close": "Luk indstillinger",
+            "heading": "Visningsindstillinger",
+            "themes": {
+                "title": "Temaer",
+                "auto": "Automatisk",
+                "light": "Lys",
+                "sepia": "Sepia",
+                "paper": "Papir",
+                "dark": "Mørk",
+                "contrast1": "Kontrast 1",
+                "contrast2": "Kontrast 2",
+                "contrast3": "Kontrast 3"
+            },
+            "zoom": {
+                "title": "Zoom",
+                "increase": "Forøg zoom",
+                "decrease": "Reducer zoom"
+            },
+            "fontSize": {
+                "title": "Skriftstørrelse",
+                "increase": "Forøg skriftstørrelse",
+                "decrease": "Reducer skriftstørrelse"
+            },
+            "fontFamily": {
+                "title": "Skrifttype",
+                "labels": {
+                    "publisher": "Bogens skrifttype",
+                    "oldStyle": "Gammeldags serif",
+                    "modern": "Moderne serif",
+                    "sans": "Sans-serif",
+                    "humanist": "Humanist sans-serif",
+                    "monospace": "Monospace"
+                }
+            },
+            "fontWeight": {
+                "title": "Skrift tykkelse",
+                "default": "Normal",
+                "bolder": "Federe",
+                "increase": "Forøg skrift tykkelse",
+                "decrease": "Reducer skrift tykkelse"
+            },
+            "normalizeText": {
+                "title": "Normalisering af tekst",
+                "label": "Fjern al tekstformatering"
+            },
+            "align": {
+                "title": "Tekst justering",
+                "publisher": "Normal",
+                "left": "Venstre",
+                "justify": "Udfyld",
+                "right": "Højre"
+            },
+            "hyphens": {
+                "title": "Bindestreg",
+                "label": "Aktiver bindestreger"
+            },
+            "text": {
+                "title": "Tekst",
+                "advanced": {
+                    "tooltip": "Flere indstillinger",
+                    "trigger": "Flere formaterings-indstillinger"
+                }
+            },
+            "lineHeight": {
+                "title": "Linjehøjde",
+                "publisher": "Normal",
+                "small": "Tæt",
+                "medium": "Balanceret",
+                "large": "Løs"
+            },
+            "paraSpacing": {
+                "title": "Afsnitsafstand",
+                "increase": "Forøg afsnitsafstand",
+                "decrease": "Reducer afsnitsafstand"
+            },
+            "paraIndent": {
+                "title": "Afsnitsindrykning",
+                "increase": "Forøg afsnitsindrykning",
+                "decrease": "Reducer afsnitsindrykning"
+            },
+            "wordSpacing": {
+                "title": "Ordafstand",
+                "increase": "Forøg ordafstand",
+                "decrease": "Reducer ordafstand"
+            },
+            "letterSpacing": {
+                "title": "Tegn afstand",
+                "increase": "Forøg afstand mellem tegn",
+                "decrease": "Reducer afstand mellem tegn"
+            },
+            "publisherStyles": {
+                "label": "Brug original formatering"
+            },
+            "spacing": {
+                "title": "Afstande",
+                "advanced": {
+                    "tooltip": "Flere indstillinger",
+                    "trigger": "Flere afstands-indstillinger"
+                },
+                "presets": {
+                    "title": "Forudindstillinger",
+                    "publisher": "Normal",
+                    "tight": "Tæt",
+                    "balanced": "Balanceret",
+                    "loose": "Løs",
+                    "accessible": "Tilgængelig",
+                    "custom": "Brugerdefineret"
+                }
+            },
+            "layout": {
+                "title": "Layout",
+                "scrolled": "Scrollbar",
+                "paginated": "Sideopdelt"
+            }
+        },
+        "app": {
+            "loading": "Indlæser",
+            "publicationWrapper": "Du er nu i den åbnede bog.",
+            "docking": {
+                "dockingLeft": "Docket panel til venstre",
+                "dockingRight": "Docket panel til højre",
+                "dockingEmpty": "I øjeblikket tom",
+                "dockingClosed": "Lukket, indeholder {{ action }}",
+                "dockingCollapsed": "Skjult, indeholder {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Tilbage til biblioteket",
+                    "tooltip": "Bibliotek"
+                },
+                "label": "Øverste bjælke",
+                "runningHead": "Øverste titel",
+                "actions": "Handlinger"
+            },
+            "footer": {
+                "label": "Nederste bjælke"
+            },
+            "progression": {
+                "wrapper": "Nuværende position",
+                "of": "{{ current }} af {{ reference }}",
+                "positionsLeft": "{{ count }} tilbage i {{ reference }}",
+                "referenceFallback": "nuværende kapitel",
+                "pubFallback": "bogen"
+            },
+            "docker": {
+                "wrapper": "Dockingmuligheder",
+                "dockToLeft": {
+                    "trigger": "Dock til venstre",
+                    "tooltip": "Dock venstre"
+                },
+                "dockToRight": {
+                    "trigger": "Dock til højre",
+                    "tooltip": "Dock højre"
+                },
+                "popover": {
+                    "trigger": "Vis i et vindue",
+                    "tooltip": "Modal dialog"
+                },
+                "fullscreen": {
+                    "trigger": "Vis over indholdet",
+                    "tooltip": "Overlay"
+                },
+                "close": {
+                    "trigger": "Luk",
+                    "tooltip": "Luk"
+                }
+            },
+            "back": {
+                "trigger": "Tilbage"
+            }
+        },
+        "navigation": {
+            "goForward": "Naviger frem",
+            "goBackward": "Naviger tilbage",
+            "scroll": {
+                "wrapper": "Naviger igennem bogen",
+                "prevLabel": "Forrige",
+                "nextLabel": "Næste",
+                "prevA11yLabel": "Gå til forrige kapitel eller sektion",
+                "nextA11yLabel": "Gå til næste kapitel eller sektion"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "Fuldskærmstilstand",
+            "trigger": "Slå fuldskærmstilstand til/fra",
+            "close": "Afslut fuldskærmstilstand"
+        },
+        "toc": {
+            "tooltip": "Indholdsfortegnelse",
+            "trigger": "Indholdsfortegnelse",
+            "close": "Luk indholdsfortegnelse",
+            "heading": "Indholdsfortegnelse",
+            "entries": "Punkter i indholdsfortegnelsen",
+            "empty": "Der blev ikke fundet nogen indholdsfortegnelse for denne bog.",
+            "search": {
+                "label": "Søg",
+                "placeholder": "Søg",
+                "clear": "Nulstil"
+            }
+        },
+        "jumpToPosition": {
+            "tooltip": "Gå til…",
+            "trigger": "Gå til position",
+            "heading": "Gå til position",
+            "go": "Gå",
+            "close": "Luk gå til position",
+            "label": "Vælg en position fra {{ positionStart }} til {{ positionEnd }}:"
+        },
+        "overflowMenu": {
+            "active": {
+                "tooltip": "Flere handlinger",
+                "trigger": "Åben/luk menu"
+            },
+            "hint": {
+                "tooltip": "Vis flere handlinger",
+                "trigger": "Vis handlinger"
+            }
+        }
+    }
+}

@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.0.8
-        version: 1.0.8(d5373af56350ccc9c2153097d9a6250a)
+        specifier: ^1.0.9
+        version: 1.0.9(b8a0ba9ed1d595695dde03b5a80cd141)
       '@readium/css':
-        specifier: 2.0.0-beta.22
-        version: 2.0.0-beta.22
+        specifier: 2.0.0-beta.24
+        version: 2.0.0-beta.24
       '@readium/navigator':
-        specifier: ^2.2.4
-        version: 2.2.4
+        specifier: ^2.2.5
+        version: 2.2.5
       '@readium/navigator-html-injectables':
-        specifier: ^2.2.1
-        version: 2.2.1
+        specifier: ^2.2.2
+        version: 2.2.2
       '@readium/shared':
         specifier: ^2.1.1
         version: 2.1.1
@@ -663,13 +663,13 @@ packages:
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.0.8':
-    resolution: {integrity: sha512-q8bQVtAFvVEDDCo58aGOGeKvDmpgM0pCh12mRVucqA1coUl92pA6WP1lYBGXWpeymPVzVFLUh3IgIBMNGsSy7w==}
+  '@edrlab/thorium-web@1.0.9':
+    resolution: {integrity: sha512-0+HfgMAQ+9vKdRkz/SV4wMI87X1APfqv+ZYTjfPWLUbxwnop6xUBB+ZA/OfYa/VGEgwjT2EvdE78A4XuvtFj0w==}
     peerDependencies:
-      '@readium/css': 2.0.0-beta.22
-      '@readium/navigator': ^2.2.4
-      '@readium/navigator-html-injectables': ^2.2.1
-      '@readium/shared': ^2.1.1
+      '@readium/css': 2.0.0-beta.24
+      '@readium/navigator': 2.2.5
+      '@readium/navigator-html-injectables': 2.2.2
+      '@readium/shared': 2.1.1
       '@reduxjs/toolkit': ^2.9.0
       i18next: ^25.6.0
       i18next-browser-languagedetector: ^8.2.0
@@ -1738,15 +1738,15 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
-  '@readium/css@2.0.0-beta.22':
-    resolution: {integrity: sha512-mWQ5Rl7n74EofItTo+nKXHUjCMK57H+UYMtiuCX9PHED8wwaanmnQpNyWx9QL6a25iOMF4efg4+LKGrS8rIJjg==}
+  '@readium/css@2.0.0-beta.24':
+    resolution: {integrity: sha512-vBI5Sw6JwlbTuDBvcD/ahJZqw2NGe1CDGQ7msAByc/491Q8V76baCkYIMFWyj5gPS1GS9oltlmIAWZAzxx3djg==}
 
-  '@readium/navigator-html-injectables@2.2.1':
-    resolution: {integrity: sha512-U8tiz/45bqchqWsoy1+2rghuudDhI9aBa75cSRl7srT1uv4ukDKRHKLCjlblk6bRizoYMCO1t20mYKA9OVXpfw==}
+  '@readium/navigator-html-injectables@2.2.2':
+    resolution: {integrity: sha512-ukgUbCHvwbxPjtm7szJBYwo9L0psyZEI2Oww51rPWUrFZwQu/azmIspBQuqFBJ3oYJ0s9gaDx5LYJIMEhGboYw==}
     engines: {node: '>=18'}
 
-  '@readium/navigator@2.2.4':
-    resolution: {integrity: sha512-muShy4OP1nUFvvHx/j+ifrcQPBeSbsrz4aYPDQP6kcXxYaGZec1pLESC49LzLeLdDBvQa4LxMKUgF06pKImwVA==}
+  '@readium/navigator@2.2.5':
+    resolution: {integrity: sha512-Ewp1ucpYEtS4JJ+XDjbBxxb6GVcobkj9984I89xuZR0HuDSrXH9bbASt3F272zOvGImIdY6nhP2mEs39u2URNw==}
     engines: {node: '>=18'}
 
   '@readium/shared@2.1.1':
@@ -4377,11 +4377,11 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@edrlab/thorium-web@1.0.8(d5373af56350ccc9c2153097d9a6250a)':
+  '@edrlab/thorium-web@1.0.9(b8a0ba9ed1d595695dde03b5a80cd141)':
     dependencies:
-      '@readium/css': 2.0.0-beta.22
-      '@readium/navigator': 2.2.4
-      '@readium/navigator-html-injectables': 2.2.1
+      '@readium/css': 2.0.0-beta.24
+      '@readium/navigator': 2.2.5
+      '@readium/navigator-html-injectables': 2.2.2
       '@readium/shared': 2.1.1
       '@reduxjs/toolkit': 2.9.0(react-redux@9.2.0(@types/react@19.2.2)(react@19.2.0)(redux@5.0.1))(react@19.2.0)
       classnames: 2.5.1
@@ -5814,11 +5814,11 @@ snapshots:
       '@react-types/shared': 3.32.1(react@19.2.0)
       react: 19.2.0
 
-  '@readium/css@2.0.0-beta.22': {}
+  '@readium/css@2.0.0-beta.24': {}
 
-  '@readium/navigator-html-injectables@2.2.1': {}
+  '@readium/navigator-html-injectables@2.2.2': {}
 
-  '@readium/navigator@2.2.4': {}
+  '@readium/navigator@2.2.5': {}
 
   '@readium/shared@2.1.1': {}
 
@@ -6646,8 +6646,8 @@ snapshots:
       '@typescript-eslint/parser': 8.46.1(eslint@9.37.0)(typescript@5.9.3)
       eslint: 9.37.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.37.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.37.0)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0))(eslint@9.37.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.37.0)
       eslint-plugin-react: 7.37.5(eslint@9.37.0)
       eslint-plugin-react-hooks: 5.2.0(eslint@9.37.0)
@@ -6666,7 +6666,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.37.0):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.3
@@ -6677,22 +6677,22 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.37.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0))(eslint@9.37.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.37.0):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0))(eslint@9.37.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.46.1(eslint@9.37.0)(typescript@5.9.3)
       eslint: 9.37.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.37.0)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.37.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0))(eslint@9.37.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -6703,7 +6703,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.37.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.37.0)
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.46.1(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0))(eslint@9.37.0))(eslint@9.37.0)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3

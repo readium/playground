@@ -2,10 +2,14 @@
 
 import { use, useEffect, useState } from "react";
 
-import { StatefulLoader, usePublication, useAppSelector } from "@edrlab/thorium-web/epub";
+import "../../../base.css";
+import "@edrlab/thorium-web/misc/styles";
+import "@edrlab/thorium-web/epub/styles";
+
+import { StatefulLoader } from "@edrlab/thorium-web/misc";
+import { usePublication, useAppSelector } from "@edrlab/thorium-web/epub";
 import { CustomReader } from "@/Components/CustomReader";
 
-import "../../../base.css";
 import { verifyManifestUrl } from "@/app/api/verify-manifest/verifyDomain";
 
 type Params = { manifest: string };

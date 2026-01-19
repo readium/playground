@@ -12,7 +12,7 @@
             },
             "header": {
                 "label": "Górny pasek",
-                "runningHead": "Nagłówek bieżący",
+                "runningHead": "Bieżący nagłówek",
                 "actions": "Akcje",
                 "backLink": {
                     "trigger": "Wróć do biblioteki",
@@ -26,7 +26,8 @@
                 "wrapper": "Aktualny postęp",
                 "of": "{{ current }} z {{ reference }}",
                 "referenceFallback": "bieżący rozdział",
-                "pubFallback": "publikacja"
+                "pubFallback": "publikacja",
+                "positionsLeft": "{{ count }} pozostało w {{ reference }}"
             },
             "docker": {
                 "wrapper": "Opcje dokowania",
@@ -43,7 +44,7 @@
                     "tooltip": "Wyskakujące okno"
                 },
                 "fullscreen": {
-                    "trigger": "Wyświetl na treści",
+                    "trigger": "Wyświetlaj zawartość",
                     "tooltip": "Nakładka"
                 },
                 "close": {
@@ -159,17 +160,19 @@
                 "title": "Wybór czcionek",
                 "labels": {
                     "publisher": "Czcionka wydawcy",
-                    "oldStyle": "Old style serif",
-                    "modern": "Modern serif",
-                    "sans": "Sans-serif",
-                    "humanist": "Humanist sans-serif",
+                    "oldStyle": "Stary styl serif",
+                    "modern": "",
+                    "sans": "",
+                    "humanist": "Humanista sans-serif",
                     "monospace": "O stałej szerokości"
                 }
             },
             "fontWeight": {
                 "title": "Grubość kroju",
                 "increase": "Zwiększ grubość kroju",
-                "decrease": "Zmniejsz grubość kroju"
+                "decrease": "Zmniejsz grubość kroju",
+                "default": "Normalny",
+                "bolder": "Wyraźny"
             },
             "normalizeText": {
                 "title": "Normalizacja tekstu",
@@ -194,9 +197,9 @@
                 }
             },
             "lineHeight": {
-                "title": "Interlinia",
+                "title": "Wysokość linii",
                 "publisher": "Domyślna",
-                "small": "Ciasna",
+                "small": "wąska",
                 "medium": "Zbalansowana",
                 "large": "Luźna"
             },
@@ -228,19 +231,29 @@
                 "advanced": {
                     "tooltip": "Więcej opcji",
                     "trigger": "Więcej opcji odstępów"
+                },
+                "presets": {
+                    "title": "Ustawienia wstępne",
+                    "publisher": "Domyślne",
+                    "tight": "Wąska",
+                    "balanced": "zrównoważony",
+                    "loose": "Luźne",
+                    "accessible": "Dostępność",
+                    "custom": "Własne"
                 }
             },
             "layout": {
                 "title": "Układ",
                 "scrolled": "Ciągły",
-                "paginated": "Stronicowany"
+                "paginated": "Stronicowane"
             },
             "column": {
                 "title": "Kolumny",
-                "auto": "Automatycznie",
+                "auto": "",
                 "one": "1 kol",
                 "two": "2 kol"
-            }
+            },
+            "reset": "Reset"
         }
     }
 }

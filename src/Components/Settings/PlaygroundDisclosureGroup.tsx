@@ -48,10 +48,10 @@ export function PlaygroundDisclosureGroup<T>({
 
 
   return (
-    <div className={ settingsStyles.readerSettingsGroup } data-settings-id={ id }>
+    <div className="thorium_web_reader_settings_group" data-settings-id={ id }>
       { standalone && title && 
         <Heading className={ classNames(
-          settingsStyles.readerSettingsLabel,
+          "thorium_web_reader_settings_label",
           isDisabled ? settingsStyles.readerSettingsDisclosureLabelDisabled : ""
         ) }>
           { title }
@@ -101,7 +101,7 @@ export function PlaygroundDisclosureGroup<T>({
               compounds={ {
                 button: {
                   className: classNames(
-                    settingsStyles.readerSettingsDropdownButton,
+                    "thorium_web_reader_settings_dropdownButton",
                     settingsStyles.readerSettingsDisclosureHeaderDropdownButton
                   )
                 }
@@ -142,7 +142,7 @@ export function PlaygroundDisclosureGroup<T>({
                   },
                   button: {
                     className: classNames(
-                      settingsStyles.readerSettingsDropdownButton,
+                      "thorium_web_reader_settings_dropdownButton",
                       settingsStyles.readerSettingsInlineDropdownButton
                     )
                   }

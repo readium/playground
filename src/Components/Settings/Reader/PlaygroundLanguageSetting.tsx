@@ -66,7 +66,7 @@ export const UnstablePlaygroundLanguageSetting = () => {
   return (
     <StatefulDropdown 
       standalone={ true }
-      className={ settingsStyles.readerSettingsGroup }
+      className="thorium_web_reader_settings_group"
       label={ t("reader.readerSettings.language.title") }
       selectedKey={ selectedLanguage }
       onSelectionChange={ handleLanguageChange }

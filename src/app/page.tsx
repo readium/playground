@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-import { PublicationGrid } from "@edrlab/thorium-web/epub";
+import { PublicationGrid } from "@edrlab/thorium-web/misc";
 import Image from "next/image";
 
-import "./base.css";
 import "./home.css";
+import "@edrlab/thorium-web/misc/styles";
 
 import { isManifestRouteEnabled } from "./ManifestRouteEnabled";
 

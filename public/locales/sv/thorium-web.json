@@ -8,16 +8,16 @@
                 "auto": "Auto"
             },
             "tooltip": "Inställningar",
-            "trigger": "Menyn Inställningar",
-            "close": "Stäng menyn Inställningar",
+            "trigger": "Inställningsmeny",
+            "close": "Stäng inställningsmenyn",
             "heading": "Visningsinställningar",
             "themes": {
                 "title": "Teman",
                 "auto": "Auto",
-                "light": "Ljus",
+                "light": "Ljust",
                 "sepia": "Sepia",
                 "paper": "Papper",
-                "dark": "Mörk",
+                "dark": "Mörkt",
                 "contrast1": "Kontrast 1",
                 "contrast2": "Kontrast 2",
                 "contrast3": "Kontrast 3"
@@ -44,18 +44,18 @@
                 }
             },
             "fontWeight": {
-                "title": "Teckentjocklek",
-                "increase": "Öka teckentjocklek",
-                "decrease": "Minska teckentjocklek",
+                "title": "Teckenvikt",
+                "increase": "Öka teckenvikt",
+                "decrease": "Minska teckenvikt",
                 "default": "Normal",
                 "bolder": "Fetare"
             },
             "normalizeText": {
-                "title": "Textnormalisering",
+                "title": "Textformatering",
                 "label": "Ta bort all textformatering"
             },
             "align": {
-                "title": "Textjustering",
+                "title": "Justering",
                 "publisher": "Standard",
                 "left": "Vänster",
                 "justify": "Justera",
@@ -63,7 +63,7 @@
             },
             "hyphens": {
                 "title": "Avstavning",
-                "label": "Aktivera bindestreck"
+                "label": "Aktivera avstavning"
             },
             "text": {
                 "title": "Text",
@@ -95,12 +95,12 @@
                 "decrease": "Minska ordavstånd"
             },
             "letterSpacing": {
-                "title": "Bokstavsavstånd",
-                "increase": "Öka bokstavsavstånd",
-                "decrease": "Minska bokstavsavstånd"
+                "title": "Teckenavstånd",
+                "increase": "Öka teckenavstånd",
+                "decrease": "Minska teckenavstånd"
             },
             "publisherStyles": {
-                "label": "Använd ursprunglig formatering"
+                "label": "Använd originalformat"
             },
             "spacing": {
                 "title": "Avstånd",
@@ -120,18 +120,18 @@
             },
             "layout": {
                 "title": "Layout",
-                "scrolled": "Bläddringsbar",
-                "paginated": "Sidnumrerad"
+                "scrolled": "Rullningsbar",
+                "paginated": "Sidindelad"
             },
             "reset": "Återställ"
         },
         "app": {
-            "loading": "Läser in",
-            "publicationWrapper": "Du befinner dig nu i publikationen.",
+            "loading": "Laddar",
+            "publicationWrapper": "Du är nu i boken.",
             "docking": {
                 "dockingLeft": "Dockad panel till vänster",
                 "dockingRight": "Dockad panel till höger",
-                "dockingEmpty": "För närvarande tom",
+                "dockingEmpty": "Inget innehåll",
                 "dockingClosed": "Är stängd, innehåller {{ action }}",
                 "dockingCollapsed": "Är minimerad, innehåller {{ action }}"
             },
@@ -140,18 +140,18 @@
                     "trigger": "Tillbaka till biblioteket",
                     "tooltip": "Bibliotek"
                 },
-                "label": "Övre fält",
-                "runningHead": "Löpande rubrikfält",
+                "label": "Sidhuvud",
+                "runningHead": "Sidtitel",
                 "actions": "Åtgärder"
             },
             "footer": {
-                "label": "Nedre fält"
+                "label": "Sidfot"
             },
             "progression": {
-                "wrapper": "Aktuellt förlopp",
+                "wrapper": "Läsposition",
                 "of": "{{ current }} av {{ reference }}",
-                "referenceFallback": "aktuellt kapitel",
-                "pubFallback": "publikationen",
+                "referenceFallback": "nuvarande kapitel",
+                "pubFallback": "boken",
                 "positionsLeft": "{{ count }} kvar i {{ reference }}"
             },
             "docker": {
@@ -165,12 +165,12 @@
                     "tooltip": "Docka höger"
                 },
                 "popover": {
-                    "trigger": "Visa i ett fönster",
+                    "trigger": "Visa som fönster",
                     "tooltip": "Visa ovanpå"
                 },
                 "fullscreen": {
                     "trigger": "Visa ovanpå innehåll",
-                    "tooltip": "Överlagra"
+                    "tooltip": "Helskärm"
                 },
                 "close": {
                     "trigger": "Stäng",
@@ -185,25 +185,25 @@
             "goForward": "Gå framåt",
             "goBackward": "Gå bakåt",
             "scroll": {
-                "wrapper": "Navigera i publikationen",
+                "wrapper": "Navigera i boken",
                 "prevLabel": "Föregående",
                 "nextLabel": "Nästa",
-                "prevA11yLabel": "Gå till föregående resurs",
-                "nextA11yLabel": "Gå till nästa resurs"
+                "prevA11yLabel": "Gå till föregående avsnitt",
+                "nextA11yLabel": "Gå till nästa avsnitt"
             }
         },
         "fullscreen": {
-            "tooltip": "Helskärm",
-            "trigger": "Växla helskärmsläge",
+            "tooltip": "Helskärmsläge",
+            "trigger": "Starta eller avsluta helskärmsläge",
             "close": "Avsluta helskärmsläge"
         },
         "toc": {
             "tooltip": "Innehållsförteckning",
             "trigger": "Innehållsförteckning",
-            "close": "Stäng innehållsförteckning",
+            "close": "Stäng innehållsförteckningen",
             "heading": "Innehållsförteckning",
-            "entries": "Poster i förteckningen",
-            "empty": "Ingen innehållsförteckning har tillhandahållits för den här publikationen.",
+            "entries": "Poster i innehållsförteckningen",
+            "empty": "Den här boken saknar innehållsförteckning.",
             "search": {
                 "label": "Sök",
                 "placeholder": "Sök",
@@ -214,8 +214,8 @@
             "tooltip": "Hoppa till…",
             "trigger": "Hoppa till position",
             "heading": "Hoppa till position",
-            "go": "Kör",
-            "close": "Avsluta hoppa till position",
+            "go": "Hoppa",
+            "close": "Avbryt hoppa till position",
             "label": "Välj en position från {{ positionStart }} till {{ positionEnd }}:"
         },
         "overflowMenu": {

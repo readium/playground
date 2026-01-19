@@ -1,37 +1,5 @@
-.readerSettingsGroup {
-  margin: calc(var(--th-layout-spacing) * 2) 0; 
-}
-
-.readerSettingsLabel {
-  display: block;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.readerSettingsGroupLabel {
-  padding-top: calc(var(--th-icon-size, 24px) * (1/3));
-}
-
 .readerSettingsGroupLabelDisabled {
   color: var(--th-theme-disable);
-}
-
-/* Dropdown */
-
-.readerSettingsDropdownButton {
-  margin-top: var(--th-layout-spacing);
-  position: relative;
-  padding-block: calc(var(--th-layout-spacing) / 2);
-  padding-inline: calc(var(--th-layout-spacing) / 2) calc(var(--th-icon-size, 24px) * 6/5);
-  border-radius: var(--th-layout-radius);
-  box-sizing: border-box;
-  border: 1px solid var(--th-theme-subdue);
-  max-width: 100%;
-}
-
-.readerSettingsDropdownButton[data-focus-visible] {
-  outline: 2px solid var(--th-theme-focus);
 }
 
 /* Disclosure styles */
@@ -120,15 +88,6 @@
   color: var(--th-theme-disable);
 }
 
-.readerSettingsDropdownButton svg {
-  width: calc(var(--icon-size, 24px) * 5/6);
-  height: calc(var(--icon-size, 24px) * 5/6);
-  position: absolute;
-  inset-inline-end: calc(var(--layout-spacing) / 4);
-  inset-block-start: calc(var(--layout-spacing) / 2);
-  fill: currentColor;
-}
-
 /* Inline dropdown layout */
 .readerSettingsInlineDropdown {
   display: flex;
@@ -146,7 +105,7 @@
   flex-grow: 1;
 }
 
-.readerSettingsInlineDropdown .readerSettingsDropdownButton {
+.readerSettingsInlineDropdown :global(.thorium_web_reader_settings_dropdownButton) {
   margin: 0;
 }
 

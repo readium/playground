@@ -72,8 +72,8 @@ export const PlaygroundPaginatedAffordancesGroup = () => {
         heading: (
           <Heading
             className={ classNames(
-              settingsStyles.readerSettingsLabel,
-              settingsStyles.readerSettingsGroupLabel,
+              "thorium_web_reader_settings_label",
+              "thorium_web_reader_settings_groupLabel",
               { [settingsStyles.readerSettingsGroupLabelDisabled]: isScroll }
             ) }
           >

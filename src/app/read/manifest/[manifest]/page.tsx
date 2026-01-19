@@ -2,7 +2,6 @@
 
 import { use, useEffect, useState } from "react";
 
-import "../../../base.css";
 import "@edrlab/thorium-web/misc/styles";
 import "@edrlab/thorium-web/epub/styles";
 

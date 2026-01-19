@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Updated Thorium Web to `1.1.0`, updated import paths and styling.
+- Updated Thorium Web to `1.1.0`, updated import paths and styling
+- Switched sepia and paper themes
 
 ## [1.0.8] – 2025-12-03
 

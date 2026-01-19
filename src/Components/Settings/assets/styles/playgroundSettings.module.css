@@ -14,7 +14,7 @@
 /* TMP before new TW package */
 
 .readerSettingsGroup {
-  margin: calc(var(--layout-spacing) * 2) 0; 
+  margin: calc(var(--th-layout-spacing) * 2) 0; 
 }
 
 .readerSettingsLabel {
@@ -25,34 +25,34 @@
 }
 
 .readerSettingsGroupLabel {
-  padding-top: calc(var(--icon-size, 24px) * (1/3));
+  padding-top: calc(var(--th-icon-size, 24px) * (1/3));
 }
 
 .readerSettingsGroupLabelDisabled {
-  color: var(--theme-disable);
+  color: var(--th-theme-disable);
 }
 
 /* Dropdown */
 
 .readerSettingsDropdownButton {
-  margin-top: var(--layout-spacing);
+  margin-top: var(--th-layout-spacing);
   position: relative;
-  padding-block: calc(var(--layout-spacing) / 2);
-  padding-inline: calc(var(--layout-spacing) / 2) calc(var(--icon-size, 24px) * 6/5);
-  border-radius: var(--layout-radius);
+  padding-block: calc(var(--th-layout-spacing) / 2);
+  padding-inline: calc(var(--th-layout-spacing) / 2) calc(var(--th-icon-size, 24px) * 6/5);
+  border-radius: var(--th-layout-radius);
   box-sizing: border-box;
-  border: 1px solid var(--theme-subdue);
+  border: 1px solid var(--th-theme-subdue);
   max-width: 100%;
 }
 
 .readerSettingsDropdownButton[data-focus-visible] {
-  outline: 2px solid var(--theme-focus);
+  outline: 2px solid var(--th-theme-focus);
 }
 
 /* Disclosure styles */
 
 .readerSettingsDisclosureLabelDisabled {
-  color: var(--theme-disable);
+  color: var(--th-theme-disable);
 }
 
 .readerSettingsDisclosure {}
@@ -61,43 +61,43 @@
   display: flex;
   align-items: center;
   width: 100%;
-  gap: calc(var(--layout-spacing) / 2);
+  gap: calc(var(--th-layout-spacing) / 2);
   flex-wrap: nowrap;
   align-items: center;
-  margin: var(--layout-spacing) 0;
+  margin: var(--th-layout-spacing) 0;
 }
 
 .readerSettingsDisclosureButton {
   display: flex;
   align-items: center;
-  gap: calc(var(--layout-spacing) / 4);
+  gap: calc(var(--th-layout-spacing) / 4);
   margin: 0;
-  background-color: var(--theme-background);
-  color: var(--theme-text);
+  background-color: var(--th-theme-background);
+  color: var(--th-theme-text);
   cursor: pointer;
   text-align: start;
   font-weight: normal;
   flex-grow: 1;
   align-self: stretch;
-  padding: calc(var(--layout-spacing) / 2) calc(var(--layout-spacing) / 2) calc(var(--layout-spacing) / 2) 0;
-  border-radius: var(--layout-radius);
+  padding: calc(var(--th-layout-spacing) / 2) calc(var(--th-layout-spacing) / 2) calc(var(--th-layout-spacing) / 2) 0;
+  border-radius: var(--th-layout-radius);
 }
 
 .readerSettingsDisclosureButton[data-hovered] {
-  background-color: var(--theme-hover);
+  background-color: var(--th-theme-hover);
 }
 
 .readerSettingsDisclosureButton[data-focus-visible] {
-  outline: 2px solid var(--theme-focus);
+  outline: 2px solid var(--th-theme-focus);
 }
 
 .readerSettingsDisclosureButton[data-disabled] {
-  color: var(--theme-disable);
+  color: var(--th-theme-disable);
 }
 
 .readerSettingsDisclosureButton[data-disabled] .readerSettingsChevronIcon svg {
-  fill: var(--theme-disable);
-  color: var(--theme-disable);
+  fill: var(--th-theme-disable);
+  color: var(--th-theme-disable);
 }
 
 .readerSettingsDisclosureHeaderDropdown {
@@ -109,19 +109,19 @@
 }
 
 .readerSettingsDisclosurePanel {
-  padding-inline-start: calc((var(--icon-size, 24px) * 5/6));
+  padding-inline-start: calc((var(--th-icon-size, 24px) * 5/6));
 }
 
 .readerSettingsChevronIcon {
-  width: calc(var(--icon-size, 24px) * 5/6);
-  height: calc(var(--icon-size, 24px) * 5/6);
+  width: calc(var(--th-icon-size, 24px) * 5/6);
+  height: calc(var(--th-icon-size, 24px) * 5/6);
   flex-shrink: 0;
 }
 
 .readerSettingsChevronIcon svg {
   width: 100%;
   height: 100%;
-  fill: var(--theme-text);
+  fill: var(--th-theme-text);
   transition: rotate 200ms ease-in-out;
   rotate: 0deg;
 }
@@ -131,8 +131,8 @@
 }
 
 .readerSettingsDisclosureButton[data-disabled] .readerSettingsChevronIcon svg {
-  fill: var(--theme-disable);
-  color: var(--theme-disable);
+  fill: var(--th-theme-disable);
+  color: var(--th-theme-disable);
 }
 
 .readerSettingsDropdownButton svg {
@@ -166,30 +166,30 @@
 }
 
 .readerSettingsInlineDropdown[data-disabled] {
-  color: var(--theme-disable);
+  color: var(--th-theme-disable);
 }
 
 .readerSettingsAffordanceIndicator {
-  margin-block: calc(var(--layout-spacing) / 2);
-  color: var(--theme-text);
+  margin-block: calc(var(--th-layout-spacing) / 2);
+  color: var(--th-theme-text);
 }
 
 .readerSettingsAffordanceIndicatorButton {
-  border-radius: var(--layout-radius);
-  border: 1px solid var(--theme-subdue);
-  padding: calc(var(--layout-spacing) / 2);
-  background-color: var(--theme-background);
-  color: var(--theme-text);
+  border-radius: var(--th-layout-radius);
+  border: 1px solid var(--th-theme-subdue);
+  padding: calc(var(--th-layout-spacing) / 2);
+  background-color: var(--th-theme-background);
+  color: var(--th-theme-text);
 }
 
 .readerSettingsAffordanceIndicatorButton[data-hovered] {
-  background-color: var(--theme-hover);
+  background-color: var(--th-theme-hover);
 }
 
 .readerSettingsAffordanceIndicatorButton[data-focus-visible] {
-  outline: 2px solid var(--theme-focus);
+  outline: 2px solid var(--th-theme-focus);
 }
 
 .readerSettingsAffordanceIndicatorButton[data-disabled] {
-  color: var(--theme-disable);
+  color: var(--th-theme-disable);
 }

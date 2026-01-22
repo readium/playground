@@ -1,0 +1,33 @@
+{
+    "reader": {
+        "actions": {
+            "goBackward": "Mine tagasi",
+            "goForward": "Mine edasi",
+            "goToNextChapter": {
+                "compact": "Edasi",
+                "descriptive": "Järgmine peatükk"
+            },
+            "goToNextPage": {
+                "compact": "Edasi",
+                "descriptive": "Järgmine leht"
+            },
+            "goToPreviousPage": {
+                "descriptive": "Eelmine leht"
+            }
+        },
+        "progression": {
+            "pagesLeft": {
+                "one": "Jäänud on {{ count }} leht",
+                "other": "Jäänud on {{ count }} lehte"
+            },
+            "pagesLeftInChapter": {
+                "one": "Peatükis on jäänud {{ count }} leht",
+                "other": "Peatükis on jäänud {{ count }} lehte"
+            },
+            "pagesLeftInPublication": {
+                "one": "Köites on jäänud {{ count }} leht",
+                "other": "Köites on jäänud {{ count }} lehte"
+            }
+        }
+    }
+}

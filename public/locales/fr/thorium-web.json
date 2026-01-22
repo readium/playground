@@ -24,8 +24,6 @@
       },
       "progression": {
         "wrapper": "Progression dans la publication",
-        "of": "{{ current }} de {{ reference }}",
-        "positionsLeft": "{{ count }} restantes dans {{ reference }}",
         "referenceFallback": "chapitre en cours",
         "pubFallback": "la publication"
       },
@@ -46,10 +44,6 @@
         "fullscreen": {
           "trigger": "Afficher au-dessus du contenu",
           "tooltip": "Superposer"
-        },
-        "close": {
-          "trigger": "Fermer",
-          "tooltip": "Fermer"
         }
       },
       "back": {
@@ -57,14 +51,8 @@
       }
     },
     "navigation": {
-      "goForward": "Avancer",
-      "goBackward": "Reculer",
       "scroll": {
-        "wrapper": "Naviguer à travers la publication",
-        "prevLabel": "Précédent",
-        "nextLabel": "Suivant",
-        "prevA11yLabel": "Aller à la ressource précédente",
-        "nextA11yLabel": "Aller à la ressource suivante"
+        "wrapper": "Naviguer à travers la publication"
       }
     },
     "fullscreen": {
@@ -73,24 +61,10 @@
       "close": "Quitter le mode plein-écran"
     },
     "toc": {
-      "tooltip": "Table des matières",
-      "trigger": "Afficher la table des matières",
-      "close": "Fermer la table des matières",
-      "heading": "Table des matières",
-      "entries": "Entrées de la table des matières",
-      "empty": "La table des matières n’est pas disponible pour cette publication.",
-      "search": {
-        "label": "Chercher",
-        "placeholder": "Chercher",
-        "clear": "Effacer"
-      }
+      "entries": "Entrées de la table des matières"
     },
     "jumpToPosition": {
-      "tooltip": "Aller à …",
-      "trigger": "Aller à la position",
-      "heading": "Aller à la position",
       "go": "Aller",
-      "close": "Fermer le panneau aller à la position",
       "label": "Sélectionner une position entre {{ positionStart }} et {{ positionEnd }} :"
     },
     "overflowMenu": {
@@ -103,156 +77,18 @@
         "trigger": "Afficher les actions"
       }
     },
-    "layoutStrategy": {
-      "tooltip": "Mise en page",
-      "trigger": "Afficher le panneau Stratégie de mise en page",
-      "close": "Fermer le panneau Stratégie de mise en page",
-      "heading": "Stratégie de mise en page",
-      "title": "Stratégie",
-      "margin": "Marge",
-      "lineLength": "Longueur de ligne",
-      "columns": "Colonnes",
-      "minChars": "Désactiver la longue de ligne minimale",
-      "maxChars": "Désactiver la longueur de ligne maximale",
-      "minimalLineLength": {
-        "title": "Longueur de ligne minimale",
-        "increase": "Augmenter la longueur de ligne minimale",
-        "decrease": "Diminuer la longue de ligne minimale"
-      },
-      "optimalLineLength": {
-        "title": "Longueur de ligne optimale",
-        "increase": "Augmenter la longueur de ligne optimale",
-        "decrease": "Diminuer la longueur de ligne optimale"
-      },
-      "maximalLineLength": {
-        "title": "Longueur de ligne maximale",
-        "increase": "Augmenter la longueur de ligne maximale",
-        "decrease": "Diminuer la longueur de ligne maximale"
-      }
-    },
     "settings": {
-      "reset": "Réinitialiser",
-      "tooltip": "Préférences",
-      "trigger": "Afficher le menu de préférences",
-      "close": "Fermer le menu de préférences",
-      "heading": "Préférences d’affichage",
-      "themes": {
-        "title": "Thèmes",
-        "auto": "Auto",
-        "light": "Clair",
-        "sepia": "Sépia",
-        "paper": "Papier",
-        "dark": "Sombre",
-        "contrast1": "Contraste 1",
-        "contrast2": "Contraste 2",
-        "contrast3": "Contraste 3"
-      },
-      "zoom": {
-        "title": "Zoom",
-        "increase": "Augmenter la taille de zoom",
-        "decrease": "Diminuer la taille de zoom"
-      },
-      "fontSize": {
-        "title": "Taille de police",
-        "increase": "Augmenter la taille de police",
-        "decrease": "Diminuer la taille de police"
-      },
-      "fontFamily": {
-        "title": "Police de caractères",
-        "labels": {
-          "publisher": "Police par défaut",
-          "oldStyle": "Sérif classique",
-          "modern": "Sérif moderne",
-          "sans": "Sans sérif",
-          "humanist": "Humaniste",
-          "monospace": "Chasse fixe"
-        }
-      },
-      "fontWeight": {
-        "title": "Graisse",
-        "default": "Normal",
-        "bolder": "Gras",
-        "increase": "Augmenter la graisse",
-        "decrease": "Diminuer la graisse"
-      },
-      "normalizeText": {
-        "title": "Styles du texte",
-        "label": "Désactiver le formatage du texte"
-      },
-      "align": {
-        "title": "Alignement du texte",
-        "publisher": "Par défaut",
-        "left": "Ferré à gauche",
-        "justify": "Justifié",
-        "right": "Ferré à droite"
-      },
-      "hyphens": {
-        "title": "Césures",
-        "label": "Activer la césure du texte"
-      },
       "text": {
-        "title": "Texte",
         "advanced": {
           "tooltip": "Options supplémentaires",
           "trigger": "Options de formatage supplémentaires"
         }
       },
-      "lineHeight": {
-        "title": "Interligne",
-        "publisher": "Par défaut",
-        "small": "Resserré",
-        "medium": "Équilibré",
-        "large": "Élargi"
-      },
-      "paraSpacing": {
-        "title": "Espacement des paragraphes",
-        "increase": "Augmenter l’espacement des paragraphes",
-        "decrease": "Diminuer l’espacement des paragraphes"
-      },
-      "paraIndent": {
-        "title": "Indentation du texte",
-        "increase": "Augmenter l’indentation du texte",
-        "decrease": "Diminuer l’indentation du texte"
-      },
-      "wordSpacing": {
-        "title": "Espacement des mots",
-        "increase": "Augmenter l’espacement entre les mots",
-        "decrease": "Diminuer l’espacement entre les mots"
-      },
-      "letterSpacing": {
-        "title": "Espacement interlettre",
-        "increase": "Augmenter l’espacement entre les lettres",
-        "decrease": "Diminuer l’espacement entre les lettres"
-      },
-      "publisherStyles": {
-        "label": "Utiliser le formatage original"
-      },
       "spacing": {
-        "title": "Espacement",
         "advanced": {
           "tooltip": "Options supplémentaires",
           "trigger": "Options d’espacement supplémentaires"
-        },
-        "presets": {
-          "title": "Préréglages",
-          "publisher": "Par défaut",
-          "tight": "Resserré",
-          "balanced": "Équilibré",
-          "loose": "Élargi",
-          "accessible": "Accessible",
-          "custom": "Personnalisé"
         }
-      },
-      "layout": {
-        "title": "Mise en page",
-        "scrolled": "Scrollé",
-        "paginated": "Paginé"
-      },
-      "column": {
-        "title": "Colonnes",
-        "auto": "Auto",
-        "one": "1 colonne",
-        "two": "2 colonnes"
       }
     }
   }

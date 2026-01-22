@@ -35,8 +35,8 @@ export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: ThLayout
   }, [scroll, dispatch, submitPreferences, getSetting]);
 
   const getVariant = (variant: ThLayoutOptions) => {
-    if (variant === ThLayoutOptions.scroll) return t("thorium-web:reader.settings.layout.scrolled").toLowerCase();
-    else return t("thorium-web:reader.settings.layout.paginated").toLowerCase();
+    if (variant === ThLayoutOptions.scroll) return t("reader.preferences.layout.scrolled").toLowerCase();
+    else return t("reader.preferences.layout.paginated").toLowerCase();
   }
 
   const shouldShowButton = (variant === ThLayoutOptions.scroll && !scroll) || (variant === ThLayoutOptions.paginated && scroll);

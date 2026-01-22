@@ -1,0 +1,138 @@
+{
+    "common": {
+        "actions": {
+            "clear": "Tyhjennä",
+            "close": "Sulje",
+            "decrease": "Pienennä",
+            "increase": "Suurenna",
+            "reset": "Nollaa",
+            "search": "Hae"
+        }
+    },
+    "reader": {
+        "actions": {
+            "goBackward": "Siirry taaksepäin",
+            "goForward": "Siirry eteenpäin",
+            "goToPosition": {
+                "compact": "Siirry…",
+                "descriptive": "Siirry kohtaan"
+            }
+        },
+        "preferences": {
+            "columns": {
+                "auto": "Automaattinen",
+                "dual": {
+                    "descriptive": "2 saraketta"
+                },
+                "single": {
+                    "descriptive": "1 sarake"
+                },
+                "title": "Sarakkeet"
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "Humanist",
+                    "descriptive": "Humanist sans-serif"
+                },
+                "modern": {
+                    "compact": "Modern",
+                    "descriptive": "Modern serif"
+                },
+                "monospace": "Monospace",
+                "oldStyle": {
+                    "compact": "Old style",
+                    "descriptive": "Old style serif"
+                },
+                "publisher": "Julkaisijan fontti",
+                "sans": "Sans-serif",
+                "title": "Kirjasintyyppi"
+            },
+            "fontSize": "Tekstin koko",
+            "fontWeight": {
+                "bold": "Lihavampi",
+                "normal": "Normaali",
+                "title": "Tekstin korostus"
+            },
+            "hyphens": {
+                "label": "Käytä tavuviivoja",
+                "title": "Tavutus"
+            },
+            "layout": {
+                "paginated": "Sivutettu",
+                "scrolled": "Vieritettävä",
+                "title": "Asettelu"
+            },
+            "letterSpacing": "Kirjainväli",
+            "lineHeight": {
+                "default": "Oletus",
+                "large": "Väljä",
+                "medium": "Tasapainoinen",
+                "small": "Tiivis",
+                "title": "Riviväli"
+            },
+            "paragraphIndent": "Kappaleiden sisennys",
+            "paragraphSpacing": "Kappaleväli",
+            "publisherStyles": {
+                "label": "Käytä alkuperäistä muotoilua"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "Helppolukuinen",
+                    "balanced": "Tasapainoinen",
+                    "custom": "Mukautettu",
+                    "default": "Oletus",
+                    "loose": "Väljä",
+                    "tight": "Tiivis",
+                    "title": "Esiasetukset"
+                },
+                "title": "Välistys"
+            },
+            "text": "Teksti",
+            "textAlign": {
+                "default": "Oletus",
+                "justify": "Tasaa",
+                "left": "Vasen",
+                "right": "Oikea",
+                "title": "Tekstin tasau"
+            },
+            "textNormalization": {
+                "label": "Poista kaikki tekstin muotoilut",
+                "title": "Palauta teksti normaaliksi"
+            },
+            "themes": {
+                "auto": "Automaattinen",
+                "contrast1": "Kontrasti 1",
+                "contrast2": "Kontrasti 2",
+                "contrast3": "Kontrasti 3",
+                "dark": "Tumma",
+                "light": "Vaalea",
+                "paper": "Paperi",
+                "sepia": "Seepia",
+                "title": "Teemat"
+            },
+            "title": "Näytön asetukset",
+            "wordSpacing": "Sanaväli",
+            "zoom": "Tarkennus"
+        },
+        "progression": {
+            "percentage": "{{ percentage }}%",
+            "positionsLeftInChapter": {
+                "other": "{{ count }} jäljellä kohdassa nykyinen luku"
+            },
+            "positionsLeftInPublication": {
+                "other": "{{ count }} jäljellä kohdassa julkaisu"
+            },
+            "range": "{{ start }}–{{ end }}",
+            "xOfY": {
+                "compact": "{{ x }} / {{ y }}",
+                "descriptive": "{{ x }} / {{ y }} ({{ z }})"
+            }
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "Tässä julkaisussa ei ole sisällysluetteloa."
+            },
+            "title": "TSisällysluettelo"
+        }
+    }
+}

@@ -19,10 +19,6 @@
                 "runningHead": "Besikeičianti antraštė"
             },
             "docker": {
-                "close": {
-                    "trigger": "Užverti",
-                    "tooltip": "Užverti"
-                },
                 "fullscreen": {
                     "trigger": "Atvaizduoti virš turinio",
                     "tooltip": "Užklojimas"
@@ -50,20 +46,12 @@
             "publicationWrapper": "Dabar esate leidinyje.",
             "progression": {
                 "wrapper": "Dabartinė eiga",
-                "of": "{{ current }} iš {{ reference }}",
                 "referenceFallback": "dabartinis skyrius",
-                "pubFallback": "leidinys",
-                "positionsLeft": "{{ reference }} liko {{ count }}"
+                "pubFallback": "leidinys"
             }
         },
         "navigation": {
-            "goForward": "Eiti pirmyn",
-            "goBackward": "Eiti atgal",
             "scroll": {
-                "nextLabel": "Kitas",
-                "prevA11yLabel": "Eiti į ankstesnį išteklių",
-                "nextA11yLabel": "Eiti į kitą išteklių",
-                "prevLabel": "Ankstesnis",
                 "wrapper": "Naršyti leidinyje"
             }
         },
@@ -73,150 +61,11 @@
             "close": "Išeiti iš viso ekrano režimo"
         },
         "toc": {
-            "tooltip": "Turinys",
-            "trigger": "Turinys",
-            "heading": "Turinys",
-            "close": "Užverti turinį",
-            "search": {
-                "clear": "Išvalyti",
-                "label": "Paieška",
-                "placeholder": "Paieška"
-            },
-            "entries": "Turinio įrašai",
-            "empty": "Šiam leidiniui nebuvo pateiktas turinys."
+            "entries": "Turinio įrašai"
         },
         "jumpToPosition": {
             "go": "Eiti",
-            "label": "Pasirinkite poziciją nuo {{ positionStart }} iki {{ positionEnd }}:",
-            "trigger": "Peršokti į poziciją",
-            "heading": "Peršokti į poziciją",
-            "tooltip": "Peršokti į…",
-            "close": "Užverti peršokti į poziciją skydelį"
-        },
-        "settings": {
-            "tooltip": "Nuostatos",
-            "trigger": "Nuostatų meniu",
-            "close": "Užverti nuostatų meniu",
-            "heading": "Atvaizdavimo nuostatos",
-            "themes": {
-                "title": "Temos",
-                "light": "Šviesi",
-                "sepia": "Sepija",
-                "paper": "Popierius",
-                "dark": "Tamsi",
-                "contrast1": "Kontrastas 1",
-                "contrast2": "Kontrastas 2",
-                "contrast3": "Kontrastas 3",
-                "auto": "Automatinė"
-            },
-            "zoom": {
-                "title": "Mastelis",
-                "increase": "Didinti",
-                "decrease": "Mažinti"
-            },
-            "fontSize": {
-                "title": "Šrifto dydis",
-                "increase": "Didinti šrifto dydį",
-                "decrease": "Mažinti šrifto dydį"
-            },
-            "fontFamily": {
-                "title": "Šriftų šeima",
-                "labels": {
-                    "publisher": "Leidėjo šriftas",
-                    "sans": "Be užraitų",
-                    "monospace": "Lygiaplotis",
-                    "oldStyle": "Seno stiliaus su užraitais",
-                    "modern": "Modernus su užraitais",
-                    "humanist": "Humanistinis be užraitų"
-                }
-            },
-            "align": {
-                "title": "Teksto lygiuotė",
-                "publisher": "Numatytoji",
-                "left": "Kairinė",
-                "justify": "Abipusė",
-                "right": "Dešininė"
-            },
-            "hyphens": {
-                "title": "Skiemenavimas",
-                "label": "Įgalinti brūkšnelius"
-            },
-            "lineHeight": {
-                "title": "Eilutės aukštis",
-                "publisher": "Numatytasis",
-                "small": "Glaudus",
-                "medium": "Subalansuotas",
-                "large": "Erdvus"
-            },
-            "column": {
-                "title": "Stulpeliai",
-                "auto": "Auto",
-                "one": "1 stulpelis",
-                "two": "2 stulpeliai"
-            },
-            "normalizeText": {
-                "title": "Teksto normalizavimas",
-                "label": "Šalinti visą teksto formatavimą"
-            },
-            "text": {
-                "title": "Tekstas",
-                "advanced": {
-                    "tooltip": "Daugiau parinkčių",
-                    "trigger": "Daugiau formatavimo parinkčių"
-                }
-            },
-            "fontWeight": {
-                "title": "Šrifto storis",
-                "increase": "Padidinti šrifto storį",
-                "decrease": "Sumažinti šrifto storį",
-                "default": "Normalus",
-                "bolder": "Ryškesnis"
-            },
-            "layout": {
-                "title": "Išdėstymas",
-                "paginated": "Puslapiuotas",
-                "scrolled": "Slenkamasis"
-            },
-            "spacing": {
-                "title": "Išretinimas",
-                "advanced": {
-                    "tooltip": "Daugiau parinkčių",
-                    "trigger": "Daugiau išretinimo parinkčių"
-                },
-                "presets": {
-                    "title": "Išankstiniai",
-                    "publisher": "Numatytasis",
-                    "tight": "Glaustas",
-                    "balanced": "Subalansuotas",
-                    "loose": "Erdvus",
-                    "accessible": "Prieinamas",
-                    "custom": "Tinkintas"
-                }
-            },
-            "publisherStyles": {
-                "label": "Naudoti originalų formatavimą"
-            },
-            "paraSpacing": {
-                "title": "Tarpas tarp pastraipų",
-                "increase": "Padidinti tarpą tarp pastraipų",
-                "decrease": "Sumažinti tarpą tarp pastraipų"
-            },
-            "paraIndent": {
-                "title": "Pastraipos įtrauka",
-                "increase": "Padidinti pastraipos įtrauką",
-                "decrease": "Sumažinti pastraipos įtrauką"
-            },
-            "wordSpacing": {
-                "title": "Protarpis tarp žodžių",
-                "increase": "Padidinti protarpį tarp žodžių",
-                "decrease": "Sumažinti protarpį tarp žodžių"
-            },
-            "letterSpacing": {
-                "title": "Raidžių išretinimas",
-                "increase": "Padidinti raidžių išretinimą",
-                "decrease": "Sumažinti raidžių išretinimą"
-            },
-            "reset": "Atkurti"
+            "label": "Pasirinkite poziciją nuo {{ positionStart }} iki {{ positionEnd }}:"
         },
         "overflowMenu": {
             "active": {
@@ -226,6 +75,20 @@
             "hint": {
                 "tooltip": "Perjungti veiksmus",
                 "trigger": "Atvaizduoti veiksmus"
+            }
+        },
+        "settings": {
+            "text": {
+                "advanced": {
+                    "tooltip": "Daugiau parinkčių",
+                    "trigger": "Daugiau formatavimo parinkčių"
+                }
+            },
+            "spacing": {
+                "advanced": {
+                    "tooltip": "Daugiau parinkčių",
+                    "trigger": "Daugiau išretinimo parinkčių"
+                }
             }
         }
     }

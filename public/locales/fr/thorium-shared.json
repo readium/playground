@@ -1,0 +1,152 @@
+{
+    "common": {
+        "actions": {
+            "clear": "Effacer",
+            "close": "Fermer",
+            "decrease": "Diminuer",
+            "disable": "Désactiver",
+            "enable": "Activer",
+            "exit": "Quitter",
+            "increase": "Augmenter",
+            "reset": "Réinitialiser",
+            "search": "Chercher",
+            "toggle": "Basculer"
+        }
+    },
+    "reader": {
+        "actions": {
+            "goBackward": "Reculer",
+            "goForward": "Avancer",
+            "goToPosition": {
+                "compact": "Aller à …",
+                "descriptive": "Aller à la position"
+            }
+        },
+        "preferences": {
+            "columns": {
+                "auto": "Auto",
+                "dual": {
+                    "compact": "2 cols",
+                    "descriptive": "2 colonnes"
+                },
+                "single": {
+                    "compact": "1 col",
+                    "descriptive": "1 colonne"
+                },
+                "title": "Colonnes"
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "Humaniste",
+                    "descriptive": "Sans sérif humaniste"
+                },
+                "modern": {
+                    "compact": "Moderne",
+                    "descriptive": "Sérif moderne"
+                },
+                "monospace": "Chasse fixe",
+                "oldStyle": {
+                    "compact": "Classique",
+                    "descriptive": "Sérif classique"
+                },
+                "publisher": "Police par défaut",
+                "sans": "Sans sérif",
+                "title": "Police de caractères"
+            },
+            "fontSize": "Taille de police",
+            "fontWeight": {
+                "bold": "Gras",
+                "normal": "Normal",
+                "title": "Graisse"
+            },
+            "hyphens": {
+                "label": "Activer la césure du texte",
+                "title": "Césures"
+            },
+            "layout": {
+                "paginated": "Paginé",
+                "scrolled": "Scrollé",
+                "title": "Mise en page"
+            },
+            "letterSpacing": "Espacement interlettre",
+            "lineHeight": {
+                "default": "Par défaut",
+                "large": "Élargi",
+                "medium": "Équilibré",
+                "small": "Resserré",
+                "title": "Interligne"
+            },
+            "paragraphIndent": "Indentation du texte",
+            "paragraphSpacing": "Espacement des paragraphes",
+            "publisherStyles": {
+                "label": "Utiliser le formatage original",
+                "title": "Styles éditeur"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "Accessible",
+                    "balanced": "Équilibré",
+                    "custom": "Personnalisé",
+                    "default": "Par défaut",
+                    "loose": "Élargi",
+                    "tight": "Resserré",
+                    "title": "Préréglages"
+                },
+                "title": "Espacement"
+            },
+            "text": "Texte",
+            "textAlign": {
+                "default": "Par défaut",
+                "justify": "Justifié",
+                "left": "Ferré à gauche",
+                "right": "Ferré à droite",
+                "title": "Alignement du texte"
+            },
+            "textNormalization": {
+                "label": "Désactiver le formatage du texte",
+                "title": "Styles du texte"
+            },
+            "themes": {
+                "auto": "Auto",
+                "contrast1": "Contraste 1",
+                "contrast2": "Contraste 2",
+                "contrast3": "Contraste 3",
+                "dark": "Sombre",
+                "light": "Clair",
+                "paper": "Papier",
+                "sepia": "Sépia",
+                "title": "Thèmes"
+            },
+            "title": "Préférences d'affichage",
+            "wordSpacing": "Espacement des mots",
+            "zoom": "Zoom"
+        },
+        "progression": {
+            "percentage": "{{ percentage }}%",
+            "positionsLeft": {
+                "one": "{{ count }} position restante",
+                "other": "{{ count }} positions restantes"
+            },
+            "positionsLeftInChapter": {
+                "one": "{{ count }} position restante dans le chapitre",
+                "other": "{{ count }} positions restantes dans le chapitre"
+            },
+            "positionsLeftInPublication": {
+                "one": "{{ count }} position restante dans la publication",
+                "other": "{{ count }} positions restantes dans la publication"
+            },
+            "range": "{{ start }}–{{ end }}",
+            "xOfY": {
+                "compact": "{{ x }} de {{ y }}",
+                "descriptive": "{{ x }} de {{ y }} ({{ z }})"
+            }
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "La table des matières n'est pas disponible pour cette publication.",
+                "title": "Aucune table des matières"
+            },
+            "title": "Table des matières"
+        }
+    }
+}

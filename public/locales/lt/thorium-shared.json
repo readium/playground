@@ -1,0 +1,192 @@
+{
+    "common": {
+        "actions": {
+            "cancel": "Atšaukti",
+            "clear": "Išvalyti",
+            "close": "Užverti",
+            "collapse": "Suskleisti",
+            "collapseAll": "Suskleisti visus",
+            "decrease": "Mažinti",
+            "disable": "Išjungti",
+            "enable": "Įjungti",
+            "exit": "Išeiti",
+            "expand": "Išskleisti",
+            "expandAll": "Išskleisti visus",
+            "filter": "Filtruoti",
+            "hide": "Slėpti",
+            "hideAll": "Slėpti visus",
+            "increase": "Didinti",
+            "open": "Atverti",
+            "reset": "Atkurti",
+            "search": "Paieška",
+            "show": "Rodyti",
+            "showAll": "Rodyti visus",
+            "sortBy": "Rikiuoti pagal",
+            "toggle": "Perjungti"
+        }
+    },
+    "reader": {
+        "actions": {
+            "goBackward": "Eiti atgal",
+            "goForward": "Eiti pirmyn",
+            "goToNextChapter": {
+                "compact": "Kitas",
+                "descriptive": "Kitas skyrius"
+            },
+            "goToNextPage": {
+                "compact": "Kitas",
+                "descriptive": "Kitas puslapis"
+            },
+            "goToPosition": {
+                "compact": "Peršokti į…",
+                "descriptive": "Peršokti į poziciją"
+            },
+            "goToPreviousChapter": {
+                "compact": "Ankstesnis",
+                "descriptive": "Ankstesnis skyrius"
+            },
+            "goToPreviousPage": {
+                "compact": "Ankstesnis",
+                "descriptive": "Ankstesnis puslapis"
+            }
+        },
+        "preferences": {
+            "columns": {
+                "auto": "Auto",
+                "dual": {
+                    "compact": "2 stulpeliai",
+                    "descriptive": "2 stulpeliai"
+                },
+                "single": {
+                    "compact": "1 stulpelis",
+                    "descriptive": "1 stulpelis"
+                },
+                "title": "Stulpeliai"
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "Humanistinis",
+                    "descriptive": "Humanistinis be užraitų"
+                },
+                "modern": {
+                    "compact": "Modernus",
+                    "descriptive": "Modernus su užraitais"
+                },
+                "monospace": "Lygiaplotis",
+                "oldStyle": {
+                    "compact": "Seno stiliaus",
+                    "descriptive": "Seno stiliaus su užraitais"
+                },
+                "publisher": "Leidėjo šriftas",
+                "sans": "Be užraitų",
+                "title": "Šriftų šeima"
+            },
+            "fontSize": "Šrifto dydis",
+            "fontWeight": {
+                "bold": "Ryškesnis",
+                "normal": "Normalus",
+                "title": "Šrifto storis"
+            },
+            "hyphens": {
+                "label": "Įgalinti brūkšnelius",
+                "title": "Skiemenavimas"
+            },
+            "layout": {
+                "paginated": "Puslapiuotas",
+                "scrolled": "Slenkamasis",
+                "title": "Išdėstymas"
+            },
+            "letterSpacing": "Raidžių išretinimas",
+            "lineHeight": {
+                "default": "Numatytasis",
+                "large": "Erdvus",
+                "medium": "Subalansuotas",
+                "small": "Glaudus",
+                "title": "Eilutės aukštis"
+            },
+            "paragraphIndent": "Pastraipos įtrauka",
+            "paragraphSpacing": "Tarpas tarp pastraipų",
+            "publisherStyles": {
+                "label": "Naudoti originalų formatavimą",
+                "title": "Leidėjo stiliai"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "Prieinamas",
+                    "balanced": "Subalansuotas",
+                    "custom": "Tinkintas",
+                    "default": "Numatytasis",
+                    "loose": "Erdvus",
+                    "tight": "Glaustas",
+                    "title": "Išankstiniai"
+                },
+                "title": "Išretinimas"
+            },
+            "text": "Tekstas",
+            "textAlign": {
+                "default": "Numatytoji",
+                "justify": "Abipusė",
+                "left": "Kairinė",
+                "right": "Dešininė",
+                "title": "Teksto lygiuotė"
+            },
+            "textNormalization": {
+                "label": "Šalinti visą teksto formatavimą",
+                "title": "Teksto normalizavimas"
+            },
+            "themes": {
+                "auto": "Auto",
+                "contrast1": "Kontrastas 1",
+                "contrast2": "Kontrastas 2",
+                "contrast3": "Kontrastas 3",
+                "dark": "Tamsi",
+                "light": "Šviesi",
+                "paper": "Popierius",
+                "sepia": "Sepija",
+                "title": "Temos"
+            },
+            "title": "Atvaizdavimo nuostatos",
+            "wordSpacing": "Protarpis tarp žodžių",
+            "zoom": "Mastelis"
+        },
+        "progression": {
+            "pagesLeft": {
+                "one": "Liko {{ count }} puslapis",
+                "other": "Liko {{ count }} puslapiai (-ių)"
+            },
+            "pagesLeftInChapter": {
+                "one": "Skyriuje liko {{ count }} puslapis",
+                "other": "Skyriuje liko {{ count }} puslapiai"
+            },
+            "pagesLeftInPublication": {
+                "one": "Leidinyje liko {{ count }} puslapis",
+                "other": "Leidinyje liko {{ count }} puslapiai (-ių)"
+            },
+            "percentage": "{{ percentage }}%",
+            "positionsLeft": {
+                "one": "Liko {{ count }} pozicija",
+                "other": "{{ count }} positions left"
+            },
+            "positionsLeftInChapter": {
+                "one": "Skyriuje liko {{ count }} pozicija",
+                "other": "Skyriuje liko {{ count }} pozicijos (-ų)"
+            },
+            "positionsLeftInPublication": {
+                "one": "Leidinyje liko {{ count }} pozicija",
+                "other": "Leidinyje liko {{ count }} pozicijos (-ų)"
+            },
+            "range": "{{ start }}–{{ end }}",
+            "xOfY": {
+                "compact": "{{ x }} iš {{ y }}",
+                "descriptive": "{{ x }} iš {{ y }} ({{ z }})"
+            }
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "Šiam leidiniui nebuvo pateiktas turinys.",
+                "title": "Nėra turinio"
+            },
+            "title": "Turinys"
+        }
+    }
+}

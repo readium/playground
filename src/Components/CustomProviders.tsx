@@ -13,7 +13,7 @@ export const CustomProviders = ({ children }: { children: React.ReactNode } ) =>
       }
     }) }>
       <StatefulPreferencesProvider initialPreferences={ playgroundPreferences }>
-        <ThI18nProvider ns={ ["thorium-web", "playground"] }>
+        <ThI18nProvider ns={ ["thorium-web", "thorium-shared", "playground"] }>
           { children }
         </ThI18nProvider>
       </StatefulPreferencesProvider>

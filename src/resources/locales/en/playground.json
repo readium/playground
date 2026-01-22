@@ -43,8 +43,8 @@
       "scrollAffordances": {
         "title": "Scroll",
         "advanced": {
-          "trigger": "Advanced scroll settings",
-          "tooltip": "Show advanced scroll settings"
+          "tooltip": "More settings",
+          "trigger": "Show advanced scroll settings"
         },
         "toggleOnMiddlePointer": "Toggle UI bars with middle pointer",
         "hideOnForwardScroll": "Hide UI bars on forward scroll",
@@ -54,8 +54,8 @@
       "paginatedAffordance": {
         "title": "Navigation arrows",
         "advanced": {
-          "trigger": "Advanced navigation arrows settings",
-          "tooltip": "Show advanced navigation arrows settings"
+          "tooltip": "More settings",
+          "trigger": "Show advanced navigation arrows settings"
         },
         "variant": {
           "title": "Display",

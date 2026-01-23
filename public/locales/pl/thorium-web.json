@@ -24,10 +24,8 @@
             },
             "progression": {
                 "wrapper": "Aktualny postęp",
-                "of": "{{ current }} z {{ reference }}",
                 "referenceFallback": "bieżący rozdział",
-                "pubFallback": "publikacja",
-                "positionsLeft": "{{ count }} pozostało w {{ reference }}"
+                "pubFallback": "publikacja"
             },
             "docker": {
                 "wrapper": "Opcje dokowania",
@@ -46,10 +44,6 @@
                 "fullscreen": {
                     "trigger": "Wyświetlaj zawartość",
                     "tooltip": "Nakładka"
-                },
-                "close": {
-                    "trigger": "Zamknij",
-                    "tooltip": "Zamknij"
                 }
             },
             "back": {
@@ -57,14 +51,8 @@
             }
         },
         "navigation": {
-            "goForward": "Do przodu",
-            "goBackward": "Do tyłu",
             "scroll": {
-                "wrapper": "Nawiguj przez publikację",
-                "prevLabel": "Poprzedni",
-                "nextLabel": "Następny",
-                "prevA11yLabel": "Przejdź do poprzedniego zasobu",
-                "nextA11yLabel": "Przejdź do następnego zasobu"
+                "wrapper": "Nawiguj przez publikację"
             }
         },
         "fullscreen": {
@@ -73,24 +61,10 @@
             "close": "Wyjdź z trybu pełnoekranowego"
         },
         "toc": {
-            "tooltip": "Spis treści",
-            "trigger": "Spis treści",
-            "close": "Zamknij spis treści",
-            "heading": "Spis treści",
-            "entries": "Pozycje w spisie treści",
-            "empty": "Spis treści nie został dostarczony dla tej publikacji.",
-            "search": {
-                "label": "Szukaj",
-                "placeholder": "Szukaj",
-                "clear": "Wyczyść"
-            }
+            "entries": "Pozycje w spisie treści"
         },
         "jumpToPosition": {
-            "tooltip": "Przejdź do…",
-            "trigger": "Przejdź do pozycji",
-            "heading": "Przejdź do pozycji",
             "go": "Idź",
-            "close": "Zamknij (przejście do pozycji)",
             "label": "Wybierz pozycję od {{ positionStart }} do {{ positionEnd }}:"
         },
         "overflowMenu": {
@@ -103,157 +77,19 @@
                 "trigger": "Wyświetl akcje"
             }
         },
-        "layoutStrategy": {
-            "tooltip": "Układ",
-            "trigger": "Strategia układu",
-            "close": "Zamknij menu strategii układu",
-            "heading": "Strategia układu",
-            "title": "Strategia",
-            "margin": "Margines",
-            "lineLength": "Długość wersu",
-            "columns": "Kolumny",
-            "minChars": "Wyłącz minimalną długość wersu",
-            "maxChars": "Wyłącz maksymalną długość wersu",
-            "minimalLineLength": {
-                "title": "Minimalna długość wersu",
-                "increase": "Zwiększ minimalną długość wersu",
-                "decrease": "Zmniejsz minimalną długość wersu"
-            },
-            "optimalLineLength": {
-                "title": "Optymalna długość wersu",
-                "increase": "Zwiększ optymalną długość wersu",
-                "decrease": "Zmniejsz optymalną długość wersu"
-            },
-            "maximalLineLength": {
-                "title": "Maksymalna długość wersu",
-                "increase": "Zwiększ maksymalną długość wersu",
-                "decrease": "Zmniejsz maksymalną długość wersu"
-            }
-        },
         "settings": {
-            "tooltip": "Ustawienia",
-            "trigger": "Menu ustawień",
-            "close": "Zamknij menu ustawień",
-            "heading": "Ustawienia wyświetlania",
-            "themes": {
-                "title": "Motywy",
-                "auto": "Automatyczny",
-                "light": "Jasny",
-                "sepia": "Sepia",
-                "paper": "Papier",
-                "dark": "Ciemny",
-                "contrast1": "Kontrast 1",
-                "contrast2": "Kontrast 2",
-                "contrast3": "Kontrast 3"
-            },
-            "zoom": {
-                "title": "Powiększenie",
-                "increase": "Zwiększ powiększenie",
-                "decrease": "Zmniejsz powiększenie"
-            },
-            "fontSize": {
-                "title": "Rozmiar czcionki",
-                "increase": "Zwiększ rozmiar czcionki",
-                "decrease": "Zmniejsz rozmiar czcionki"
-            },
-            "fontFamily": {
-                "title": "Wybór czcionek",
-                "labels": {
-                    "publisher": "Czcionka wydawcy",
-                    "oldStyle": "Stary styl serif",
-                    "modern": "",
-                    "sans": "",
-                    "humanist": "Humanista sans-serif",
-                    "monospace": "O stałej szerokości"
-                }
-            },
-            "fontWeight": {
-                "title": "Grubość kroju",
-                "increase": "Zwiększ grubość kroju",
-                "decrease": "Zmniejsz grubość kroju",
-                "default": "Normalny",
-                "bolder": "Wyraźny"
-            },
-            "normalizeText": {
-                "title": "Normalizacja tekstu",
-                "label": "Usuń całe formatowanie tekstu"
-            },
-            "align": {
-                "title": "Wyrównanie tekstu",
-                "publisher": "Domyślne",
-                "left": "Do lewej",
-                "justify": "Wyjustuj",
-                "right": "Do prawej"
-            },
-            "hyphens": {
-                "title": "Dzielenie wyrazów",
-                "label": "Włącz dzielenie wyrazów"
-            },
             "text": {
-                "title": "Tekst",
                 "advanced": {
                     "tooltip": "Więcej opcji",
                     "trigger": "Więcej opcji formatowania"
                 }
             },
-            "lineHeight": {
-                "title": "Wysokość linii",
-                "publisher": "Domyślna",
-                "small": "wąska",
-                "medium": "Zbalansowana",
-                "large": "Luźna"
-            },
-            "paraSpacing": {
-                "title": "Odstęp między akapitami",
-                "increase": "Zwiększ odstęp między akapitami",
-                "decrease": "Zmniejsz odstęp między akapitami"
-            },
-            "paraIndent": {
-                "title": "Wcięcie akapitu",
-                "increase": "Zwiększ wcięcie akapitu",
-                "decrease": "Zmniejsz wcięcie akapitu"
-            },
-            "wordSpacing": {
-                "title": "Odstępy między wyrazami",
-                "increase": "Zwiększ odstępy między wyrazami",
-                "decrease": "Zmniejsz odstępy między wyrazami"
-            },
-            "letterSpacing": {
-                "title": "Odstępy między literami",
-                "increase": "Zwiększ odstępy między literami",
-                "decrease": "Zmniejsz odstępy między literami"
-            },
-            "publisherStyles": {
-                "label": "Użyj oryginalnego formatowania"
-            },
             "spacing": {
-                "title": "Odstępy",
                 "advanced": {
                     "tooltip": "Więcej opcji",
                     "trigger": "Więcej opcji odstępów"
-                },
-                "presets": {
-                    "title": "Ustawienia wstępne",
-                    "publisher": "Domyślne",
-                    "tight": "Wąska",
-                    "balanced": "zrównoważony",
-                    "loose": "Luźne",
-                    "accessible": "Dostępność",
-                    "custom": "Własne"
                 }
-            },
-            "layout": {
-                "title": "Układ",
-                "scrolled": "Ciągły",
-                "paginated": "Stronicowane"
-            },
-            "column": {
-                "title": "Kolumny",
-                "auto": "",
-                "one": "1 kol",
-                "two": "2 kol"
-            },
-            "reset": "Reset"
+            }
         }
     }
 }

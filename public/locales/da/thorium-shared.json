@@ -1,0 +1,144 @@
+{
+    "common": {
+        "actions": {
+            "clear": "Nulstil",
+            "close": "Luk",
+            "decrease": "Reducer",
+            "enable": "Aktiver",
+            "exit": "Afslut",
+            "increase": "Forøg",
+            "reset": "Nulstil",
+            "search": "Søg",
+            "toggle": "Vis"
+        }
+    },
+    "reader": {
+        "actions": {
+            "goBackward": "Naviger tilbage",
+            "goForward": "Naviger frem",
+            "goToPosition": {
+                "compact": "Gå til…",
+                "descriptive": "Gå til position"
+            }
+        },
+        "preferences": {
+            "columns": {
+                "auto": "Auto",
+                "dual": {
+                    "descriptive": "2 kolonner"
+                },
+                "single": {
+                    "descriptive": "1 kolonne"
+                },
+                "title": "Kolonner"
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "Humanist",
+                    "descriptive": "Humanist sans-serif"
+                },
+                "modern": {
+                    "compact": "Moderne",
+                    "descriptive": "Moderne serif"
+                },
+                "monospace": "Monospace",
+                "oldStyle": {
+                    "compact": "Gammeldags",
+                    "descriptive": "Gammeldags serif"
+                },
+                "publisher": "Bogens Skrifttype",
+                "sans": "Sans-serif",
+                "title": "Skrifttype"
+            },
+            "fontSize": "Skriftstørrelse",
+            "fontWeight": {
+                "bold": "Federe",
+                "normal": "Normal",
+                "title": "Skrift tykkelse"
+            },
+            "hyphens": {
+                "label": "Aktiver bindestreger",
+                "title": "Bindestreg"
+            },
+            "layout": {
+                "paginated": "Sideopdelt",
+                "scrolled": "Scrollbar",
+                "title": "Layout"
+            },
+            "letterSpacing": "Tegn afstand",
+            "lineHeight": {
+                "default": "Normal",
+                "large": "Løs",
+                "medium": "Balanceret",
+                "small": "Tæt",
+                "title": "Linjehøjde"
+            },
+            "paragraphIndent": "Afsnitsindrykning",
+            "paragraphSpacing": "Afsnitsafstand",
+            "publisherStyles": {
+                "label": "Brug original formatering"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "Tilgængelig",
+                    "balanced": "Balanceret",
+                    "custom": "Brugerdefineret",
+                    "default": "Normal",
+                    "loose": "Løs",
+                    "tight": "Tæt",
+                    "title": "Forudindstillinger"
+                },
+                "title": "Afstande"
+            },
+            "text": "Tekst",
+            "textAlign": {
+                "default": "Normal",
+                "justify": "Udfyld",
+                "left": "Venstre",
+                "right": "Højre",
+                "title": "Tekst justering"
+            },
+            "textNormalization": {
+                "label": "Fjern al tekstformatering",
+                "title": "Normalisering af tekst"
+            },
+            "themes": {
+                "auto": "Automatisk",
+                "contrast1": "Kontrast 1",
+                "contrast2": "Kontrast 2",
+                "contrast3": "Kontrast 3",
+                "dark": "Mørk",
+                "light": "Lys",
+                "paper": "Papir",
+                "sepia": "Sepia",
+                "title": "Temaer"
+            },
+            "title": "Visningsindstillinger",
+            "wordSpacing": "Ordafstand",
+            "zoom": "Zoom"
+        },
+        "progression": {
+            "percentage": "{{ percentage }}%",
+            "positionsLeft": {
+                "other": "{{ count }} tilbage"
+            },
+            "positionsLeftInChapter": {
+                "other": "{{ count }} tilbage i nuværende kapitel"
+            },
+            "positionsLeftInPublication": {
+                "other": "{{ count }} tilbage i bogen"
+            },
+            "range": "{{ start }}–{{ end }}",
+            "xOfY": {
+                "compact": "{{ x }} af {{ y }}",
+                "descriptive": "{{ x }} af {{ y }} ({{ z }})"
+            }
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "Der blev ikke fundet nogen indholdsfortegnelse for denne bog."
+            },
+            "title": "Indholdsfortegnelse"
+        }
+    }
+}

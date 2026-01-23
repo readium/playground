@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.1.0
-        version: 1.1.0(59832807d9bb7d5f53a201a58e5ad7c6)
+        specifier: ^1.1.1
+        version: 1.1.1(59832807d9bb7d5f53a201a58e5ad7c6)
       '@readium/css':
         specifier: 2.0.0-beta.24
         version: 2.0.0-beta.24
@@ -663,8 +663,8 @@ packages:
     resolution: {integrity: sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.1.0':
-    resolution: {integrity: sha512-VtbKqFMq0T+f0u6UaGJsO+Iwxip9TwrnizkkEDgG9npDLgKY98bz87T9NP/9to3hyeyFQ4ezK9PVROOPJ57FJQ==}
+  '@edrlab/thorium-web@1.1.1':
+    resolution: {integrity: sha512-BWENSNbZJtHP1/o5wJmD5G2P48DJM7MnaqilHqOrGiOQzYQXhhg3nq1eEY51N7LBMF9PtizkHSsZGKGHAdVB7A==}
     peerDependencies:
       '@readium/css': 2.0.0-beta.24
       '@readium/navigator': 2.2.5
@@ -3581,6 +3581,10 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c:
+    resolution: {tarball: https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c}
+    version: 1.0.0
+
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
@@ -4457,8 +4461,9 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@edrlab/thorium-web@1.1.0(59832807d9bb7d5f53a201a58e5ad7c6)':
+  '@edrlab/thorium-web@1.1.1(59832807d9bb7d5f53a201a58e5ad7c6)':
     dependencies:
+      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c
       '@readium/css': 2.0.0-beta.24
       '@readium/navigator': 2.2.5
       '@readium/navigator-html-injectables': 2.2.2
@@ -8065,6 +8070,8 @@ snapshots:
       css-what: 6.2.2
       csso: 5.0.5
       picocolors: 1.1.1
+
+  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c: {}
 
   tinyglobby@0.2.15:
     dependencies:

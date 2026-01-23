@@ -1,0 +1,10 @@
+{
+    "reader": {
+        "preferences": {
+            "lineHeight": {
+                "large": "واسع"
+            },
+            "paragraphSpacing": "تباعد الفقرات"
+        }
+    }
+}

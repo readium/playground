@@ -43,8 +43,8 @@
       "scrollAffordances": {
         "title": "Scroll",
         "advanced": {
-          "trigger": "Paramètres avancés du scroll",
-          "tooltip": "Afficher les paramètres avancés du scroll"
+          "tooltip": "Paramètres avancés",
+          "trugger": "Afficher les paramètres avancés du scroll"
         },
         "toggleOnMiddlePointer": "Masquer et afficher les barres au tap/click",
         "hideOnForwardScroll": "Masquer les barres lors du défilement en avant",
@@ -54,8 +54,8 @@
       "paginatedAffordance": {
         "title": "Flèches de navigation",
         "advanced": {
-          "trigger": "Paramètres avancés des fleches de navigation",
-          "tooltip": "Afficher les paramètres avancés des fleches de navigation"
+          "tooltip": "Paramètres avancés",
+          "trigger": "Afficher les paramètres avancés des fleches de navigation"
         },
         "variant": {
           "title": "Style",

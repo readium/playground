@@ -119,15 +119,9 @@
         },
         "progression": {
             "percentage": "{{ percentage }}%",
-            "positionsLeft": {
-                "other": "{{ count }} tilbage"
-            },
-            "positionsLeftInChapter": {
-                "other": "{{ count }} tilbage i nuværende kapitel"
-            },
-            "positionsLeftInPublication": {
-                "other": "{{ count }} tilbage i bogen"
-            },
+            "positionsLeftInChapter_other": "{{ count }} tilbage i nuværende kapitel",
+            "positionsLeftInPublication_other": "{{ count }} tilbage i bogen",
+            "positionsLeft_other": "{{ count }} tilbage",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} af {{ y }}",

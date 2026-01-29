@@ -1,30 +1,73 @@
 {
     "common": {
         "actions": {
+            "cancel": "Peru",
             "clear": "Tyhjennä",
             "close": "Sulje",
+            "collapse": "Kutista",
+            "collapseAll": "Kutista kaikki",
             "decrease": "Pienennä",
+            "disable": "Poista käytöstä",
+            "enable": "Ota käyttöön",
+            "exit": "Poistu",
+            "expand": "Laajenna",
+            "expandAll": "Laajenna kaikki",
+            "filter": "Suodata",
+            "hide": "Piilota",
+            "hideAll": "Piilota kaikki",
             "increase": "Suurenna",
+            "open": "Avaa",
             "reset": "Nollaa",
-            "search": "Hae"
+            "search": "Hae",
+            "show": "Näytä",
+            "showAll": "Näytä kaikki",
+            "sortBy": "Lajittele",
+            "toggle": "Vaihda"
         }
     },
     "reader": {
         "actions": {
             "goBackward": "Siirry taaksepäin",
             "goForward": "Siirry eteenpäin",
+            "goToNextChapter": {
+                "compact": "Seuraava",
+                "descriptive": "Seuraava luku"
+            },
+            "goToNextPage": {
+                "compact": "Seuraava",
+                "descriptive": "Seuraava sivu"
+            },
+            "goToNextSentence": {
+                "compact": "Seuraava",
+                "descriptive": "Seuraava lause"
+            },
             "goToPosition": {
                 "compact": "Siirry…",
                 "descriptive": "Siirry kohtaan"
+            },
+            "goToPreviousChapter": {
+                "compact": "Edellinen",
+                "descriptive": "Edellinen luku"
+            },
+            "goToPreviousPage": {
+                "compact": "Edellinen",
+                "descriptive": "Edellinen sivu"
+            },
+            "goToPreviousSentence": {
+                "compact": "Edellinen",
+                "descriptive": "Edellinen lause"
             }
         },
         "preferences": {
+            "brightness": "Kirkkaus",
             "columns": {
                 "auto": "Automaattinen",
                 "dual": {
+                    "compact": "2 palstaa",
                     "descriptive": "2 saraketta"
                 },
                 "single": {
+                    "compact": "1 palsta",
                     "descriptive": "1 sarake"
                 },
                 "title": "Sarakkeet"
@@ -73,7 +116,8 @@
             "paragraphIndent": "Kappaleiden sisennys",
             "paragraphSpacing": "Kappaleväli",
             "publisherStyles": {
-                "label": "Käytä alkuperäistä muotoilua"
+                "label": "Käytä alkuperäistä muotoilua",
+                "title": "Kustantajan tyylit"
             },
             "spacing": {
                 "presets": {
@@ -115,13 +159,19 @@
             "zoom": "Tarkennus"
         },
         "progression": {
+            "pagesLeftInChapter_one": "{{ count }} sivu jäljellä luvussa",
+            "pagesLeftInChapter_other": "{{ count }} sivua jäljellä luvussa",
+            "pagesLeftInPublication_one": "{{ count }} sivu jäljellä julkaisussa",
+            "pagesLeftInPublication_other": "{{ count }} sivua jäljellä julkaisussa",
+            "pagesLeft_one": "{{ count }} sivu jäljellä",
+            "pagesLeft_other": "{{ count }} sivua jäljellä",
             "percentage": "{{ percentage }}%",
-            "positionsLeftInChapter": {
-                "other": "{{ count }} jäljellä kohdassa nykyinen luku"
-            },
-            "positionsLeftInPublication": {
-                "other": "{{ count }} jäljellä kohdassa julkaisu"
-            },
+            "positionsLeftInChapter_one": "{{ count }} sijainti jäljellä luvussa",
+            "positionsLeftInChapter_other": "{{ count }} jäljellä kohdassa nykyinen luku",
+            "positionsLeftInPublication_one": "{{ count }} sijaintia jäljellä luvussa",
+            "positionsLeftInPublication_other": "{{ count }} jäljellä kohdassa julkaisu",
+            "positionsLeft_one": "{{ count }} sijainti jäljellä",
+            "positionsLeft_other": "{{ count }} sijaintia jäljellä",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} / {{ y }}",
@@ -130,7 +180,8 @@
         },
         "tableOfContents": {
             "emptyState": {
-                "description": "Tässä julkaisussa ei ole sisällysluetteloa."
+                "description": "Tässä julkaisussa ei ole sisällysluetteloa.",
+                "title": "Ei sisällysluetteloa"
             },
             "title": "TSisällysluettelo"
         }

@@ -148,31 +148,19 @@
             "zoom": "Zooma"
         },
         "progression": {
-            "pagesLeft": {
-                "one": "{{ count }} sida kvar",
-                "other": "{{ count }} sidor kvar"
-            },
-            "pagesLeftInChapter": {
-                "one": "{{ count }} sida kvar i kapitlet",
-                "other": "{{ count }} sidor kvar i kapitlet"
-            },
-            "pagesLeftInPublication": {
-                "one": "{{ count }} sida kvar i publikationen",
-                "other": "{{ count }} sidor kvar i publikationen"
-            },
+            "pagesLeftInChapter_one": "{{ count }} sida kvar i kapitlet",
+            "pagesLeftInChapter_other": "{{ count }} sidor kvar i kapitlet",
+            "pagesLeftInPublication_one": "{{ count }} sida kvar i publikationen",
+            "pagesLeftInPublication_other": "{{ count }} sidor kvar i publikationen",
+            "pagesLeft_one": "{{ count }} sida kvar",
+            "pagesLeft_other": "{{ count }} sidor kvar",
             "percentage": "{{ percentage }}%",
-            "positionsLeft": {
-                "one": "{{ count }} position kvar",
-                "other": "{{ count }} positioner kvar"
-            },
-            "positionsLeftInChapter": {
-                "one": "{{ count }} position kvar i kapitlet",
-                "other": "{{ count }} positioner kvar i nuvarande kapitel"
-            },
-            "positionsLeftInPublication": {
-                "one": "{{ count }} position kvar i publikation",
-                "other": "{{ count }} kvar i boken"
-            },
+            "positionsLeftInChapter_one": "{{ count }} position kvar i kapitlet",
+            "positionsLeftInChapter_other": "{{ count }} positioner kvar i nuvarande kapitel",
+            "positionsLeftInPublication_one": "{{ count }} position kvar i publikation",
+            "positionsLeftInPublication_other": "{{ count }} kvar i boken",
+            "positionsLeft_one": "{{ count }} position kvar",
+            "positionsLeft_other": "{{ count }} positioner kvar",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} av {{ y }}",

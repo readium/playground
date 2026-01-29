@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.1.1
-        version: 1.1.1(59832807d9bb7d5f53a201a58e5ad7c6)
+        specifier: ^1.1.2
+        version: 1.1.2(59832807d9bb7d5f53a201a58e5ad7c6)
       '@readium/css':
         specifier: 2.0.0-beta.24
         version: 2.0.0-beta.24
@@ -663,8 +663,8 @@ packages:
     resolution: {integrity: sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.1.1':
-    resolution: {integrity: sha512-BWENSNbZJtHP1/o5wJmD5G2P48DJM7MnaqilHqOrGiOQzYQXhhg3nq1eEY51N7LBMF9PtizkHSsZGKGHAdVB7A==}
+  '@edrlab/thorium-web@1.1.2':
+    resolution: {integrity: sha512-f2/l34YPwS314cEGrxggdeqWgwr5/x/jjNUb/pxXrFFrRS6b65g6j7byyycjIfSJvibY+irOxtyZHzYIg2V7ZA==}
     peerDependencies:
       '@readium/css': 2.0.0-beta.24
       '@readium/navigator': 2.2.5
@@ -3581,8 +3581,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c:
-    resolution: {tarball: https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c}
+  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/5783c457bef097845917288a329cb1d7c346c50c:
+    resolution: {tarball: https://codeload.github.com/edrlab/thorium-locales/tar.gz/5783c457bef097845917288a329cb1d7c346c50c}
     version: 1.0.0
 
   tinyglobby@0.2.15:
@@ -4461,9 +4461,9 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@edrlab/thorium-web@1.1.1(59832807d9bb7d5f53a201a58e5ad7c6)':
+  '@edrlab/thorium-web@1.1.2(59832807d9bb7d5f53a201a58e5ad7c6)':
     dependencies:
-      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c
+      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/5783c457bef097845917288a329cb1d7c346c50c
       '@readium/css': 2.0.0-beta.24
       '@readium/navigator': 2.2.5
       '@readium/navigator-html-injectables': 2.2.2
@@ -6765,8 +6765,8 @@ snapshots:
       '@typescript-eslint/parser': 8.53.0(eslint@9.39.2)(typescript@5.9.3)
       eslint: 9.39.2
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.2)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.2)
       eslint-plugin-react: 7.37.5(eslint@9.39.2)
       eslint-plugin-react-hooks: 5.2.0(eslint@9.39.2)
@@ -6785,7 +6785,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.2):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.3
@@ -6796,22 +6796,22 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.53.0(eslint@9.39.2)(typescript@5.9.3)
       eslint: 9.39.2
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.2)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -6822,7 +6822,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.2
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2)
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -8071,7 +8071,7 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
 
-  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/d69c5dadb0f4d30b5068665adaa131303da07c5c: {}
+  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/5783c457bef097845917288a329cb1d7c346c50c: {}
 
   tinyglobby@0.2.15:
     dependencies:

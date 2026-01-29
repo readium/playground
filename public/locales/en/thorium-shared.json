@@ -37,6 +37,10 @@
                 "compact": "Next",
                 "descriptive": "Next page"
             },
+            "goToNextSentence": {
+                "compact": "Next",
+                "descriptive": "Next sentence"
+            },
             "goToPosition": {
                 "compact": "Go to…",
                 "descriptive": "Go to position"
@@ -48,9 +52,14 @@
             "goToPreviousPage": {
                 "compact": "Previous",
                 "descriptive": "Previous page"
+            },
+            "goToPreviousSentence": {
+                "compact": "Previous",
+                "descriptive": "Previous sentence"
             }
         },
         "preferences": {
+            "brightness": "Brightness",
             "columns": {
                 "auto": "Auto",
                 "dual": {
@@ -62,6 +71,18 @@
                     "descriptive": "Single column"
                 },
                 "title": "Columns"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "Auto"
+                },
+                "page": {
+                    "compact": "Page"
+                },
+                "title": "Fit",
+                "width": {
+                    "compact": "Width"
+                }
             },
             "fontFamily": {
                 "humanist": {
@@ -104,11 +125,27 @@
                 "small": "Tight",
                 "title": "Line height"
             },
+            "offsetFirstPage": "Display first page on its own",
             "paragraphIndent": "Paragraph indent",
             "paragraphSpacing": "Paragraph spacing",
             "publisherStyles": {
                 "label": "Use original formatting",
                 "title": "Publisher styles"
+            },
+            "readingDirection": {
+                "default": {
+                    "compact": "Default",
+                    "descriptive": "Use original reading direction"
+                },
+                "ltr": {
+                    "compact": "Right",
+                    "descriptive": "Left to right"
+                },
+                "rtl": {
+                    "compact": "Left",
+                    "descriptive": "Right to left"
+                },
+                "title": "Reading direction"
             },
             "spacing": {
                 "presets": {
@@ -121,6 +158,18 @@
                     "title": "Presets"
                 },
                 "title": "Spacing"
+            },
+            "spread": {
+                "always": {
+                    "compact": "Dual page"
+                },
+                "auto": {
+                    "compact": "Auto"
+                },
+                "never": {
+                    "compact": "Single page"
+                },
+                "title": "Spread"
             },
             "text": "Text",
             "textAlign": {
@@ -140,6 +189,7 @@
                 "contrast2": "Contrast 2",
                 "contrast3": "Contrast 3",
                 "dark": "Dark",
+                "gray": "Gray",
                 "light": "Light",
                 "paper": "Paper",
                 "sepia": "Sepia",
@@ -150,31 +200,19 @@
             "zoom": "Zoom"
         },
         "progression": {
-            "pagesLeft": {
-                "one": "{{ count }} page left",
-                "other": "{{ count }} pages left"
-            },
-            "pagesLeftInChapter": {
-                "one": "{{ count }} page left in chapter",
-                "other": "{{ count }} pages left in chapter"
-            },
-            "pagesLeftInPublication": {
-                "one": "{{ count }} page left in publication",
-                "other": "{{ count }} pages left in publication"
-            },
+            "pagesLeftInChapter_one": "{{ count }} page left in chapter",
+            "pagesLeftInChapter_other": "{{ count }} pages left in chapter",
+            "pagesLeftInPublication_one": "{{ count }} page left in publication",
+            "pagesLeftInPublication_other": "{{ count }} pages left in publication",
+            "pagesLeft_one": "{{ count }} page left",
+            "pagesLeft_other": "{{ count }} pages left",
             "percentage": "{{ percentage }}%",
-            "positionsLeft": {
-                "one": "{{ count }} position left",
-                "other": "{{ count }} positions left"
-            },
-            "positionsLeftInChapter": {
-                "one": "{{ count }} position left in chapter",
-                "other": "{{ count }} positions left in chapter"
-            },
-            "positionsLeftInPublication": {
-                "one": "{{ count }} position left in publication",
-                "other": "{{ count }} positions left in publication"
-            },
+            "positionsLeftInChapter_one": "{{ count }} position left in chapter",
+            "positionsLeftInChapter_other": "{{ count }} positions left in chapter",
+            "positionsLeftInPublication_one": "{{ count }} position left in publication",
+            "positionsLeftInPublication_other": "{{ count }} positions left in publication",
+            "positionsLeft_one": "{{ count }} position left",
+            "positionsLeft_other": "{{ count }} positions left",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} of {{ y }}",

@@ -150,31 +150,19 @@
             "zoom": "Mastelis"
         },
         "progression": {
-            "pagesLeft": {
-                "one": "Liko {{ count }} puslapis",
-                "other": "Liko {{ count }} puslapiai (-ių)"
-            },
-            "pagesLeftInChapter": {
-                "one": "Skyriuje liko {{ count }} puslapis",
-                "other": "Skyriuje liko {{ count }} puslapiai"
-            },
-            "pagesLeftInPublication": {
-                "one": "Leidinyje liko {{ count }} puslapis",
-                "other": "Leidinyje liko {{ count }} puslapiai (-ių)"
-            },
+            "pagesLeftInChapter_one": "Skyriuje liko {{ count }} puslapis",
+            "pagesLeftInChapter_other": "Skyriuje liko {{ count }} puslapiai",
+            "pagesLeftInPublication_one": "Leidinyje liko {{ count }} puslapis",
+            "pagesLeftInPublication_other": "Leidinyje liko {{ count }} puslapiai (-ių)",
+            "pagesLeft_one": "Liko {{ count }} puslapis",
+            "pagesLeft_other": "Liko {{ count }} puslapiai (-ių)",
             "percentage": "{{ percentage }}%",
-            "positionsLeft": {
-                "one": "Liko {{ count }} pozicija",
-                "other": "{{ count }} positions left"
-            },
-            "positionsLeftInChapter": {
-                "one": "Skyriuje liko {{ count }} pozicija",
-                "other": "Skyriuje liko {{ count }} pozicijos (-ų)"
-            },
-            "positionsLeftInPublication": {
-                "one": "Leidinyje liko {{ count }} pozicija",
-                "other": "Leidinyje liko {{ count }} pozicijos (-ų)"
-            },
+            "positionsLeftInChapter_one": "Skyriuje liko {{ count }} pozicija",
+            "positionsLeftInChapter_other": "Skyriuje liko {{ count }} pozicijos (-ų)",
+            "positionsLeftInPublication_one": "Leidinyje liko {{ count }} pozicija",
+            "positionsLeftInPublication_other": "Leidinyje liko {{ count }} pozicijos (-ų)",
+            "positionsLeft_one": "Liko {{ count }} pozicija",
+            "positionsLeft_other": "{{ count }} positions left",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} iš {{ y }}",

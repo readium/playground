@@ -1,1 +1,95 @@
-{}
+{
+    "reader": {
+        "app": {
+            "loading": "Caricamento in corso",
+            "publicationWrapper": "State navigando nella pubblicazione.",
+            "docking": {
+                "dockingLeft": "Riquadro dello schermo a sinistra",
+                "dockingRight": "Riquadro dello schermo a destra",
+                "dockingEmpty": "Attualmente vuoto",
+                "dockingClosed": "Attualmente chiuso, contiene {{ action }}",
+                "dockingCollapsed": "Attualmente ridotto. Contiene {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Ritorna alla tua libreria",
+                    "tooltip": "Libreria"
+                },
+                "label": "Barra in alto",
+                "runningHead": "Titolo principale",
+                "actions": "Azioni"
+            },
+            "footer": {
+                "label": "Barra in basso"
+            },
+            "progression": {
+                "wrapper": "Progressione nella pubblicazione",
+                "referenceFallback": "capitolo in lettura",
+                "pubFallback": "la pubblicazione"
+            },
+            "docker": {
+                "wrapper": "Opzioni di visualizzazione",
+                "dockToLeft": {
+                    "trigger": "Visualizzare il riquadro a sinistra",
+                    "tooltip": "Visualizzare a sinistra"
+                },
+                "dockToRight": {
+                    "trigger": "Visualizzare il riquadro a destra",
+                    "tooltip": "Visualizzare a destra"
+                },
+                "popover": {
+                    "trigger": "Visualizzare in una finestra",
+                    "tooltip": "Pop over"
+                },
+                "fullscreen": {
+                    "trigger": "Visualizza sopra il contenuto",
+                    "tooltip": "Sovrapporre"
+                }
+            },
+            "back": {
+                "trigger": "Indietro"
+            }
+        },
+        "navigation": {
+            "scroll": {
+                "wrapper": "Navigare nella pubblicazione"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "Schermo intero",
+            "trigger": "Attivare la modalità schermo intero",
+            "close": "Abbandona la modalità schermo intero"
+        },
+        "toc": {
+            "entries": "Contenuti dell'indice"
+        },
+        "jumpToPosition": {
+            "go": "Vai",
+            "label": "Selezionare una posizione tra {{ positionStart }} e {{ positionEnd }}:"
+        },
+        "overflowMenu": {
+            "active": {
+                "tooltip": "Azioni avanzate",
+                "trigger": "Cambiare il menu"
+            },
+            "hint": {
+                "tooltip": "Modifica le azioni",
+                "trigger": "Visualizza le azioni"
+            }
+        },
+        "settings": {
+            "text": {
+                "advanced": {
+                    "tooltip": "Opzioni avanzate",
+                    "trigger": "Opzioni avanzate di formattazione"
+                }
+            },
+            "spacing": {
+                "advanced": {
+                    "tooltip": "Opzioni avanzate",
+                    "trigger": "Opzioni avanzate di spaziatura"
+                }
+            }
+        }
+    }
+}

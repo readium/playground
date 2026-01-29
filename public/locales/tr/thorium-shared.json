@@ -39,36 +39,26 @@
             },
             "fontFamily": {
                 "publisher": "Yayımcının yazı biçimi",
+                "sans": "Sans-serif",
                 "title": "Yazı biçimi ailesi"
             },
+            "fontSize": "Yazı tipi boyutu",
             "title": "Görüntüleme Ayarları"
         },
         "progression": {
-            "pagesLeft": {
-                "one": "{{ count }} sayfa kaldı",
-                "other": "{{ count }} sayfa kaldı"
-            },
-            "pagesLeftInChapter": {
-                "one": "Bölümde, {{ count }} sayfa kaldı",
-                "other": "Bölümde, {{ count }} sayfa kaldı"
-            },
-            "pagesLeftInPublication": {
-                "one": "Eserde, {{ count }} sayfa kaldı",
-                "other": "Eserde, {{ count }} sayfa kaldı"
-            },
+            "pagesLeftInChapter_one": "Bölümde, {{ count }} sayfa kaldı",
+            "pagesLeftInChapter_other": "Bölümde, {{ count }} sayfa kaldı",
+            "pagesLeftInPublication_one": "Eserde, {{ count }} sayfa kaldı",
+            "pagesLeftInPublication_other": "Eserde, {{ count }} sayfa kaldı",
+            "pagesLeft_one": "{{ count }} sayfa kaldı",
+            "pagesLeft_other": "{{ count }} sayfa kaldı",
             "percentage": "%{{ percentage }}",
-            "positionsLeft": {
-                "one": "Geriye {{ count }} kaldı",
-                "other": "Geriye {{ count }} kaldı"
-            },
-            "positionsLeftInChapter": {
-                "one": "Bölümde, geriye {{ count }} kaldı",
-                "other": "Bölümde, geriye {{ count }} kaldı"
-            },
-            "positionsLeftInPublication": {
-                "one": "Eserde, geriye {{ count }} kaldı",
-                "other": "Eserde, geriye {{ count }} kaldı"
-            },
+            "positionsLeftInChapter_one": "Bölümde, geriye {{ count }} kaldı",
+            "positionsLeftInChapter_other": "Bölümde, geriye {{ count }} kaldı",
+            "positionsLeftInPublication_one": "Eserde, geriye {{ count }} kaldı",
+            "positionsLeftInPublication_other": "Eserde, geriye {{ count }} kaldı",
+            "positionsLeft_one": "Geriye {{ count }} kaldı",
+            "positionsLeft_other": "Geriye {{ count }} kaldı",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} / {{ y }}",

@@ -1,15 +1,20 @@
 {
     "common": {
         "actions": {
+            "cancel": "Annuler",
             "clear": "Effacer",
             "close": "Fermer",
+            "collapse": "Réduire",
+            "collapseAll": "Tout réduire",
             "decrease": "Diminuer",
             "disable": "Désactiver",
             "enable": "Activer",
             "exit": "Quitter",
+            "expand": "Développer",
+            "expandAll": "Tout développer",
             "increase": "Augmenter",
             "reset": "Réinitialiser",
-            "search": "Chercher",
+            "search": "Rechercher",
             "toggle": "Basculer"
         }
     },
@@ -123,18 +128,12 @@
         },
         "progression": {
             "percentage": "{{ percentage }}%",
-            "positionsLeft": {
-                "one": "{{ count }} position restante",
-                "other": "{{ count }} positions restantes"
-            },
-            "positionsLeftInChapter": {
-                "one": "{{ count }} position restante dans le chapitre",
-                "other": "{{ count }} positions restantes dans le chapitre"
-            },
-            "positionsLeftInPublication": {
-                "one": "{{ count }} position restante dans la publication",
-                "other": "{{ count }} positions restantes dans la publication"
-            },
+            "positionsLeftInChapter_one": "{{ count }} position restante dans le chapitre",
+            "positionsLeftInChapter_other": "{{ count }} positions restantes dans le chapitre",
+            "positionsLeftInPublication_one": "{{ count }} position restante dans la publication",
+            "positionsLeftInPublication_other": "{{ count }} positions restantes dans la publication",
+            "positionsLeft_one": "{{ count }} position restante",
+            "positionsLeft_other": "{{ count }} positions restantes",
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} de {{ y }}",

@@ -1,4 +1,15 @@
 {
+    "common": {
+        "actions": {
+            "cancel": "Katkesta",
+            "close": "Sulge",
+            "collapse": "Ahenda vaadet",
+            "collapseAll": "Ahenda kõik",
+            "expand": "Laienda vaadet",
+            "expandAll": "Laienda kõik",
+            "search": "Otsi"
+        }
+    },
     "reader": {
         "actions": {
             "goBackward": "Mine tagasi",
@@ -16,18 +27,12 @@
             }
         },
         "progression": {
-            "pagesLeft": {
-                "one": "Jäänud on {{ count }} leht",
-                "other": "Jäänud on {{ count }} lehte"
-            },
-            "pagesLeftInChapter": {
-                "one": "Peatükis on jäänud {{ count }} leht",
-                "other": "Peatükis on jäänud {{ count }} lehte"
-            },
-            "pagesLeftInPublication": {
-                "one": "Köites on jäänud {{ count }} leht",
-                "other": "Köites on jäänud {{ count }} lehte"
-            }
+            "pagesLeftInChapter_one": "Peatükis on jäänud {{ count }} leht",
+            "pagesLeftInChapter_other": "Peatükis on jäänud {{ count }} lehte",
+            "pagesLeftInPublication_one": "Köites on jäänud {{ count }} leht",
+            "pagesLeftInPublication_other": "Köites on jäänud {{ count }} lehte",
+            "pagesLeft_one": "Jäänud on {{ count }} leht",
+            "pagesLeft_other": "Jäänud on {{ count }} lehte"
         }
     }
 }

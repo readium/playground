@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -26,7 +26,7 @@
     "dev": "pnpm copy-assets && next dev",
     "build": "pnpm copy-assets && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy",
     "locales": "cpx \"node_modules/@edrlab/thorium-web/dist/locales/**/*\" public/locales/ && cpx \"src/resources/locales/**/*\" public/locales/",
     "fonts": "cpx \"node_modules/@edrlab/thorium-web/dist/fonts/**/*\" public/fonts/",
@@ -43,8 +43,8 @@
     "i18next": "^25.8.4",
     "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",
-    "motion": "^12.27.1",
-    "next": "15.5.9",
+    "motion": "^12.34.0",
+    "next": "16.1.6",
     "react": "^19.2.4",
     "react-aria": "^3.46.0",
     "react-aria-components": "^1.15.1",
@@ -60,12 +60,12 @@
     "@svgr/webpack": "^8.1.0",
     "@types/css-modules": "^1.0.5",
     "@types/node": "^22.19.7",
-    "@types/react": "^19.2.8",
+    "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "cpx2": "^8.0.0",
     "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^9.39.2",
-    "eslint-config-next": "15.5.9",
+    "eslint-config-next": "16.1.6",
     "typescript": "^5.9.3"
   }
 }

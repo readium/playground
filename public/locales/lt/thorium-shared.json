@@ -37,6 +37,10 @@
                 "compact": "Kitas",
                 "descriptive": "Kitas puslapis"
             },
+            "goToNextSentence": {
+                "compact": "Kitas",
+                "descriptive": "Kitas sakinys"
+            },
             "goToPosition": {
                 "compact": "Peršokti į…",
                 "descriptive": "Peršokti į poziciją"
@@ -48,9 +52,14 @@
             "goToPreviousPage": {
                 "compact": "Ankstesnis",
                 "descriptive": "Ankstesnis puslapis"
+            },
+            "goToPreviousSentence": {
+                "compact": "Ankstesnis",
+                "descriptive": "Ankstesnis sakinys"
             }
         },
         "preferences": {
+            "brightness": "Ryškumas",
             "columns": {
                 "auto": "Auto",
                 "dual": {
@@ -62,6 +71,18 @@
                     "descriptive": "1 stulpelis"
                 },
                 "title": "Stulpeliai"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "Automatinis"
+                },
+                "page": {
+                    "compact": "Puslapis"
+                },
+                "title": "Talpinimas",
+                "width": {
+                    "compact": "Plotis"
+                }
             },
             "fontFamily": {
                 "humanist": {
@@ -104,11 +125,27 @@
                 "small": "Glaudus",
                 "title": "Eilutės aukštis"
             },
+            "offsetFirstPage": "Atvaizduoti pirmąjį puslapį atskirai",
             "paragraphIndent": "Pastraipos įtrauka",
             "paragraphSpacing": "Tarpas tarp pastraipų",
             "publisherStyles": {
                 "label": "Naudoti originalų formatavimą",
                 "title": "Leidėjo stiliai"
+            },
+            "readingDirection": {
+                "default": {
+                    "compact": "Numatytoji",
+                    "descriptive": "Naudoti numatytąją skaitymo kryptį"
+                },
+                "ltr": {
+                    "compact": "Dešinėn",
+                    "descriptive": "Iš kairės į dešinę"
+                },
+                "rtl": {
+                    "compact": "Kairėn",
+                    "descriptive": "Iš dešinės į kairę"
+                },
+                "title": "Skaitymo kryptis"
             },
             "spacing": {
                 "presets": {
@@ -121,6 +158,18 @@
                     "title": "Išankstiniai"
                 },
                 "title": "Išretinimas"
+            },
+            "spread": {
+                "always": {
+                    "compact": "Du puslapiai"
+                },
+                "auto": {
+                    "compact": "Automatinė"
+                },
+                "never": {
+                    "compact": "Vienas puslapis"
+                },
+                "title": "Sklaida"
             },
             "text": "Tekstas",
             "textAlign": {
@@ -140,6 +189,7 @@
                 "contrast2": "Kontrastas 2",
                 "contrast3": "Kontrastas 3",
                 "dark": "Tamsi",
+                "gray": "Pilka",
                 "light": "Šviesi",
                 "paper": "Popierius",
                 "sepia": "Sepija",
@@ -150,19 +200,37 @@
             "zoom": "Mastelis"
         },
         "progression": {
-            "pagesLeftInChapter_one": "Skyriuje liko {{ count }} puslapis",
-            "pagesLeftInChapter_other": "Skyriuje liko {{ count }} puslapiai",
-            "pagesLeftInPublication_one": "Leidinyje liko {{ count }} puslapis",
-            "pagesLeftInPublication_other": "Leidinyje liko {{ count }} puslapiai (-ių)",
-            "pagesLeft_one": "Liko {{ count }} puslapis",
-            "pagesLeft_other": "Liko {{ count }} puslapiai (-ių)",
+            "pagesLeft": {
+                "descriptive_few": "",
+                "descriptive_one": "Liko {{ count }} puslapis",
+                "descriptive_other": "Liko {{ count }} puslapiai (-ių)"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_few": "",
+                "descriptive_one": "Skyriuje liko {{ count }} puslapis",
+                "descriptive_other": "Skyriuje liko {{ count }} puslapiai"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_few": "",
+                "descriptive_one": "Leidinyje liko {{ count }} puslapis",
+                "descriptive_other": "Leidinyje liko {{ count }} puslapiai (-ių)"
+            },
             "percentage": "{{ percentage }}%",
-            "positionsLeftInChapter_one": "Skyriuje liko {{ count }} pozicija",
-            "positionsLeftInChapter_other": "Skyriuje liko {{ count }} pozicijos (-ų)",
-            "positionsLeftInPublication_one": "Leidinyje liko {{ count }} pozicija",
-            "positionsLeftInPublication_other": "Leidinyje liko {{ count }} pozicijos (-ų)",
-            "positionsLeft_one": "Liko {{ count }} pozicija",
-            "positionsLeft_other": "{{ count }} positions left",
+            "positionsLeft": {
+                "descriptive_few": "",
+                "descriptive_one": "Liko {{ count }} pozicija",
+                "descriptive_other": ""
+            },
+            "positionsLeftInChapter": {
+                "descriptive_few": "",
+                "descriptive_one": "Skyriuje liko {{ count }} pozicija",
+                "descriptive_other": "Skyriuje liko {{ count }} pozicijos (-ų)"
+            },
+            "positionsLeftInPublication": {
+                "descriptive_few": "",
+                "descriptive_one": "Leidinyje liko {{ count }} pozicija",
+                "descriptive_other": "Leidinyje liko {{ count }} pozicijos (-ų)"
+            },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} iš {{ y }}",

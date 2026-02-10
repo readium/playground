@@ -5,8 +5,60 @@
             "publicationWrapper": "Τώρα βρίσκεστε στην έκδοση.",
             "docking": {
                 "dockingLeft": "Το παράθυρο είναι τοποθετημένο αριστερά",
-                "dockingRight": "Το παράθυρο είναι τοποθετημένο δεξία"
+                "dockingRight": "Το παράθυρο είναι τοποθετημένο δεξία",
+                "dockingEmpty": "Προς το παρόν κενό",
+                "dockingClosed": "Είναι κλειστό, περιέχει {{ action }}",
+                "dockingCollapsed": "Είναι κατεστραμμένο, περιέχει {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Πίσω στη βιβλιοθήκη",
+                    "tooltip": "Βιβλιοθήκη"
+                },
+                "label": "Πάνω μπάρα",
+                "runningHead": "Τρέχον τίτλος",
+                "actions": "Ενέργειες"
+            },
+            "footer": {
+                "label": "Κάτω μπάρα"
+            },
+            "progression": {
+                "wrapper": "Τρέχουσα εξέλιξη",
+                "referenceFallback": "τρέχον κεφάλαιο",
+                "pubFallback": "η έκδοση"
+            },
+            "docker": {
+                "wrapper": "Επιλογές σύνδεσης",
+                "dockToLeft": {
+                    "trigger": "Dock στα αριστερά",
+                    "tooltip": "Dock αριστερά"
+                },
+                "dockToRight": {
+                    "trigger": "Dock στα δεξιά",
+                    "tooltip": "Dock δεξιά"
+                },
+                "popover": {
+                    "trigger": "Εμφάνιση σε παράθυρο",
+                    "tooltip": "Άνοιγμα παραθύρου"
+                },
+                "fullscreen": {
+                    "trigger": "Εμφάνιση πάνω από το περιεχόμενο",
+                    "tooltip": "Επικάλυψη"
+                }
+            },
+            "back": {
+                "trigger": "Πίσω"
             }
+        },
+        "navigation": {
+            "scroll": {
+                "wrapper": "Πλοήγηση μέσα στην έκδοση"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "Πλήρης οθόνη",
+            "trigger": "Εναλλαγή σε λειτουργία πλήρους οθόνης",
+            "close": "Έξοδος από την πλήρη οθόνη"
         }
     }
 }

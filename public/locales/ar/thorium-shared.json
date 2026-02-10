@@ -1,10 +1,266 @@
 {
+    "common": {
+        "actions": {
+            "cancel": "إلغاء",
+            "clear": "مسح",
+            "close": "إغلاق",
+            "collapse": "طيّ",
+            "collapseAll": "طيّ الكل",
+            "decrease": "تقليل",
+            "disable": "تعطيل",
+            "enable": "تفعيل",
+            "exit": "خروج",
+            "expand": "توسيع",
+            "expandAll": "توسيع الكل",
+            "filter": "تصفية",
+            "hide": "إخفاء",
+            "hideAll": "إخفاء الكل",
+            "increase": "زيادة",
+            "open": "فتح",
+            "reset": "إعادة ضبط",
+            "search": "بحث",
+            "show": "عرض",
+            "showAll": "عرض الكل",
+            "sortBy": "الفرز حسب",
+            "toggle": "تبديل"
+        }
+    },
     "reader": {
-        "preferences": {
-            "lineHeight": {
-                "large": "واسع"
+        "actions": {
+            "goBackward": "الرجوع للخلف",
+            "goForward": "التقدم للأمام",
+            "goToNextChapter": {
+                "compact": "التالي",
+                "descriptive": "الفصل التالي"
             },
-            "paragraphSpacing": "تباعد الفقرات"
+            "goToNextPage": {
+                "compact": "التالي",
+                "descriptive": "الصفحة التالية"
+            },
+            "goToNextSentence": {
+                "compact": "التالي",
+                "descriptive": "العبارة التالية"
+            },
+            "goToPosition": {
+                "compact": "اذهب إلى…",
+                "descriptive": "اذهب إلى الموضع"
+            },
+            "goToPreviousChapter": {
+                "compact": "السابق",
+                "descriptive": "الفصل السابق"
+            },
+            "goToPreviousPage": {
+                "compact": "السابق",
+                "descriptive": "الصفحة السابقة"
+            },
+            "goToPreviousSentence": {
+                "compact": "السابق",
+                "descriptive": "العبارة السابقة"
+            }
+        },
+        "preferences": {
+            "brightness": "السطوع",
+            "columns": {
+                "auto": "تلقائي",
+                "dual": {
+                    "compact": "2 عمود",
+                    "descriptive": "عمودان"
+                },
+                "single": {
+                    "compact": "عمود",
+                    "descriptive": "عمود واحد"
+                },
+                "title": "عواميد"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "تلقائي"
+                },
+                "page": {
+                    "compact": "صفحة"
+                },
+                "title": "ملاءمة",
+                "width": {
+                    "compact": "العرض"
+                }
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "Humanist",
+                    "descriptive": "Humanist sans-serif"
+                },
+                "modern": {
+                    "compact": "Modern",
+                    "descriptive": "Modern serif"
+                },
+                "monospace": "Monospace",
+                "oldStyle": {
+                    "compact": "Old style",
+                    "descriptive": "Old style serif"
+                },
+                "publisher": "Publisher's font",
+                "sans": "Sans-serif",
+                "title": "عائلة الخط"
+            },
+            "fontSize": "حجم الخط",
+            "fontWeight": {
+                "bold": "غامق",
+                "normal": "عادي",
+                "title": "سمك الخط"
+            },
+            "hyphens": {
+                "label": "تفعيل الشرطات",
+                "title": "تقسيم الكلمات"
+            },
+            "layout": {
+                "paginated": "مقسم إلى صفحات",
+                "scrolled": "قابل للتمرير",
+                "title": "تخطيط"
+            },
+            "letterSpacing": "تباعد الأحرف",
+            "lineHeight": {
+                "default": "افتراضي",
+                "large": "واسع",
+                "medium": "متوازن",
+                "small": "ضيق",
+                "title": "ارتفاع السطر"
+            },
+            "offsetFirstPage": "عرض الصفحة الأولى بمفردها",
+            "paragraphIndent": "مسافة البادئة للفقرات",
+            "paragraphSpacing": "تباعد الفقرات",
+            "publisherStyles": {
+                "label": "استخدام التنسيق الأصلي",
+                "title": "أنماط الناشر"
+            },
+            "readingDirection": {
+                "default": {
+                    "compact": "افتراضي",
+                    "descriptive": "ستخدام اتجاه القراءة الأصلي"
+                },
+                "ltr": {
+                    "compact": "يمين",
+                    "descriptive": "من اليسار إلى اليمين"
+                },
+                "rtl": {
+                    "compact": "يسار",
+                    "descriptive": "من اليمين إلى اليسار"
+                },
+                "title": "اتجاه القراءة"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "ميسّر",
+                    "balanced": "متوازن",
+                    "custom": "مخصص",
+                    "default": "افتراضي",
+                    "loose": "واسع",
+                    "tight": "ضيق",
+                    "title": "الإعدادات المسبقة"
+                },
+                "title": "تباعد"
+            },
+            "spread": {
+                "always": {
+                    "compact": "صفحتان"
+                },
+                "auto": {
+                    "compact": "تلقائي"
+                },
+                "never": {
+                    "compact": "صفحة واحدة"
+                },
+                "title": "امتداد الصفحات"
+            },
+            "text": "نص",
+            "textAlign": {
+                "default": "تلقائي",
+                "justify": "ضبط النص",
+                "left": "يسار",
+                "right": "يمين",
+                "title": "محاذاة النص"
+            },
+            "textNormalization": {
+                "label": "مسح كل تنسيق النص",
+                "title": "تطبيع النص"
+            },
+            "themes": {
+                "auto": "تلقائي",
+                "contrast1": "تباين 1",
+                "contrast2": "تباين 2",
+                "contrast3": "تباين 3",
+                "dark": "داكن",
+                "gray": "رمادي",
+                "light": "فاتح",
+                "paper": "ورقي",
+                "sepia": "سيبيا",
+                "title": "أنماط"
+            },
+            "title": "إعدادات العرض",
+            "wordSpacing": "تباعد الكلمات",
+            "zoom": "تكبير/تصغير"
+        },
+        "progression": {
+            "pagesLeft": {
+                "descriptive_few": "تبقى{{ count }} صفحات",
+                "descriptive_many": "تبقى{{ count }} صفحة",
+                "descriptive_one": "تبقى صفحة واحدة",
+                "descriptive_other": "تبقى{{ count }} صفحة",
+                "descriptive_two": "تبقى صفحتان",
+                "descriptive_zero": "لا يوجد صفحات متبقية"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_few": "تبقى {{ count }} صفحات في الفصل",
+                "descriptive_many": "تبقى {{ count }} صفحة في الفصل",
+                "descriptive_one": "تبقى صفحة واحدة في الفصل",
+                "descriptive_other": "تبقى {{ count }} صفحة في الفصل",
+                "descriptive_two": "تبقي صفحتان في الفصل",
+                "descriptive_zero": "لا توجد صفحات متبقية في الفصل"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_few": "تبقى{{ count }}صفحات في الفصل",
+                "descriptive_many": "تبقى{{ count }}صفحة في الفصل",
+                "descriptive_one": "تبقى صفحة واحدة في المنشور",
+                "descriptive_other": "تبقى{{ count }}صفحة في الفصل",
+                "descriptive_two": "تبقى صفحاتان في الفصل",
+                "descriptive_zero": "لا توجد صفحات متبقية في المنشور"
+            },
+            "percentage": "{{ percentage }}%",
+            "positionsLeft": {
+                "descriptive_few": "تبقى{{ count }} مواضع",
+                "descriptive_many": "تبقى{{ count }} موضع",
+                "descriptive_one": "تبقى موضع واحد",
+                "descriptive_other": "تبقى{{ count }} موضع",
+                "descriptive_two": "تبقى موضعان",
+                "descriptive_zero": "لا توجد مواضع متبقية"
+            },
+            "positionsLeftInChapter": {
+                "descriptive_few": "تبقى {{ count }}مواضع الفصل",
+                "descriptive_many": "تبقى {{ count }}موضع الفصل",
+                "descriptive_one": "تبقى موضع واحد في الفصل",
+                "descriptive_other": "تبقى {{ count }}موضع الفصل",
+                "descriptive_two": "تبقى موضعان في الفصل",
+                "descriptive_zero": "لا توجد مواضع متبقية في الفصل"
+            },
+            "positionsLeftInPublication": {
+                "descriptive_few": "تبقى{{ count }} مواضع في المنشور",
+                "descriptive_many": "تبقى{{ count }} موضع في المنشور",
+                "descriptive_one": "تبقى موضع واحد في المنشور",
+                "descriptive_other": "تبقى{{ count }} موضع في المنشور",
+                "descriptive_two": "تبقى موضعان في المنشور",
+                "descriptive_zero": "لا توجد مواضع متبقية في المنشور"
+            },
+            "range": "{{ start }}–{{ end }}",
+            "xOfY": {
+                "compact": "{{ x }} من{{ y }}",
+                "descriptive": "{{ x }} من{{ y }} ({{ z }})"
+            }
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "لم يتم توفير جدول المحتويات لهذا المنشور.",
+                "title": "لا يوجد جدول محتويات"
+            },
+            "title": "جدول محتويات"
         }
     }
 }

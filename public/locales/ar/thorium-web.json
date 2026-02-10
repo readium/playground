@@ -5,8 +5,66 @@
             "publicationWrapper": "أنت الآن داخل المنشور.",
             "docking": {
                 "dockingLeft": "لوحة مثبتة على اليسار",
-                "dockingRight": "لوحة مثبتة على اليمين"
+                "dockingRight": "لوحة مثبتة على اليمين",
+                "dockingEmpty": "فارغ حاليًا",
+                "dockingClosed": "مغلق، ويحتوي على {{ action }}",
+                "dockingCollapsed": "مطوي، ويحتوي على{{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "العودة إلى المكتبة",
+                    "tooltip": "مكتبة"
+                },
+                "label": "الشريط العلوي",
+                "runningHead": "رأس الصفحة",
+                "actions": "الإجراءات"
+            },
+            "footer": {
+                "label": "الشريط السفلي"
+            },
+            "progression": {
+                "wrapper": "التقدّم الحالي",
+                "referenceFallback": "الفصل الحالي",
+                "pubFallback": "المنشور"
+            },
+            "docker": {
+                "wrapper": "خيارات التثبيت",
+                "dockToLeft": {
+                    "trigger": "تثبيت إلى اليسار",
+                    "tooltip": "تثبيت إلى اليسار"
+                },
+                "dockToRight": {
+                    "trigger": "تثبيت اللوحة إلى اليمين",
+                    "tooltip": "تثبيت إلى اليمين"
+                },
+                "popover": {
+                    "trigger": "عرض في نافذة",
+                    "tooltip": "نافذة منبثقة"
+                },
+                "fullscreen": {
+                    "trigger": "العرض فوق المحتوى",
+                    "tooltip": "طبقة فوقية"
+                }
+            },
+            "back": {
+                "trigger": "رجوع"
             }
+        },
+        "navigation": {
+            "scroll": {
+                "wrapper": "التنقّل داخل المنشور"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "ملء الشاشة",
+            "trigger": "تبديل وضع ملء الشاشة",
+            "close": "الخروج من وضع ملء الشاشة"
+        },
+        "toc": {
+            "entries": "مدخلات الجدول"
+        },
+        "jumpToPosition": {
+            "go": "اذهب"
         }
     }
 }

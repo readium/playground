@@ -128,12 +128,18 @@
         },
         "progression": {
             "percentage": "{{ percentage }}%",
-            "positionsLeftInChapter_one": "{{ count }} position restante dans le chapitre",
-            "positionsLeftInChapter_other": "{{ count }} positions restantes dans le chapitre",
-            "positionsLeftInPublication_one": "{{ count }} position restante dans la publication",
-            "positionsLeftInPublication_other": "{{ count }} positions restantes dans la publication",
-            "positionsLeft_one": "{{ count }} position restante",
-            "positionsLeft_other": "{{ count }} positions restantes",
+            "positionsLeft": {
+                "descriptive_one": "{{ count }} position restante",
+                "descriptive_other": "{{ count }} positions restantes"
+            },
+            "positionsLeftInChapter": {
+                "descriptive_one": "{{ count }} position restante dans le chapitre",
+                "descriptive_other": "{{ count }} positions restantes dans le chapitre"
+            },
+            "positionsLeftInPublication": {
+                "descriptive_one": "{{ count }} position restante dans la publication",
+                "descriptive_other": "{{ count }} positions restantes dans la publication"
+            },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} de {{ y }}",

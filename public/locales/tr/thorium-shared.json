@@ -46,19 +46,31 @@
             "title": "Görüntüleme Ayarları"
         },
         "progression": {
-            "pagesLeftInChapter_one": "Bölümde, {{ count }} sayfa kaldı",
-            "pagesLeftInChapter_other": "Bölümde, {{ count }} sayfa kaldı",
-            "pagesLeftInPublication_one": "Eserde, {{ count }} sayfa kaldı",
-            "pagesLeftInPublication_other": "Eserde, {{ count }} sayfa kaldı",
-            "pagesLeft_one": "{{ count }} sayfa kaldı",
-            "pagesLeft_other": "{{ count }} sayfa kaldı",
+            "pagesLeft": {
+                "descriptive_one": "{{ count }} sayfa kaldı",
+                "descriptive_other": "{{ count }} sayfa kaldı"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_one": "Bölümde, {{ count }} sayfa kaldı",
+                "descriptive_other": "Bölümde, {{ count }} sayfa kaldı"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_one": "Eserde, {{ count }} sayfa kaldı",
+                "descriptive_other": "Eserde, {{ count }} sayfa kaldı"
+            },
             "percentage": "%{{ percentage }}",
-            "positionsLeftInChapter_one": "Bölümde, geriye {{ count }} kaldı",
-            "positionsLeftInChapter_other": "Bölümde, geriye {{ count }} kaldı",
-            "positionsLeftInPublication_one": "Eserde, geriye {{ count }} kaldı",
-            "positionsLeftInPublication_other": "Eserde, geriye {{ count }} kaldı",
-            "positionsLeft_one": "Geriye {{ count }} kaldı",
-            "positionsLeft_other": "Geriye {{ count }} kaldı",
+            "positionsLeft": {
+                "descriptive_one": "Geriye {{ count }} kaldı",
+                "descriptive_other": "Geriye {{ count }} kaldı"
+            },
+            "positionsLeftInChapter": {
+                "descriptive_one": "Bölümde, geriye {{ count }} kaldı",
+                "descriptive_other": "Bölümde, geriye {{ count }} kaldı"
+            },
+            "positionsLeftInPublication": {
+                "descriptive_one": "Eserde, geriye {{ count }} kaldı",
+                "descriptive_other": "Eserde, geriye {{ count }} kaldı"
+            },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} / {{ y }}",

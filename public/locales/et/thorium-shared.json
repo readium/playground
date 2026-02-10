@@ -2,12 +2,27 @@
     "common": {
         "actions": {
             "cancel": "Katkesta",
+            "clear": "Tühjenda",
             "close": "Sulge",
             "collapse": "Ahenda vaadet",
             "collapseAll": "Ahenda kõik",
+            "decrease": "Vähenda",
+            "disable": "Eemalda kasutuselt",
+            "enable": "Võta kasutusele",
+            "exit": "Välju",
             "expand": "Laienda vaadet",
             "expandAll": "Laienda kõik",
-            "search": "Otsi"
+            "filter": "Filtreeri",
+            "hide": "Peida",
+            "hideAll": "Peida kõik",
+            "increase": "Suurenda",
+            "open": "Ava",
+            "reset": "Lähtesta",
+            "search": "Otsi",
+            "show": "Näita",
+            "showAll": "Näita kõiki",
+            "sortBy": "Järjestus",
+            "toggle": "Lülita sisse/välja"
         }
     },
     "reader": {
@@ -22,17 +37,94 @@
                 "compact": "Edasi",
                 "descriptive": "Järgmine leht"
             },
+            "goToNextSentence": {
+                "compact": "Järgmine",
+                "descriptive": "Järgmine lause"
+            },
+            "goToPosition": {
+                "compact": "Mine…",
+                "descriptive": "Mine asukohta"
+            },
+            "goToPreviousChapter": {
+                "compact": "Tagasi",
+                "descriptive": "Eelmine peatükk"
+            },
             "goToPreviousPage": {
+                "compact": "Eelmine",
                 "descriptive": "Eelmine leht"
+            },
+            "goToPreviousSentence": {
+                "compact": "Tagasi",
+                "descriptive": "Eelmine lause"
+            }
+        },
+        "preferences": {
+            "brightness": "Eredus",
+            "columns": {
+                "auto": "Automaatne",
+                "dual": {
+                    "compact": "2 veergu",
+                    "descriptive": "Kaks veergu"
+                },
+                "single": {
+                    "compact": "1 veerg",
+                    "descriptive": "Üks veerg"
+                },
+                "title": "Veerge"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "Automaatne"
+                },
+                "page": {
+                    "compact": "Leht"
+                },
+                "title": "Sobitamine",
+                "width": {
+                    "compact": "Laius"
+                }
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "Humanist"
+                }
+            },
+            "readingDirection": {
+                "ltr": {
+                    "compact": "Paremale",
+                    "descriptive": "Vasakult paremale"
+                },
+                "rtl": {
+                    "compact": "Vasakule",
+                    "descriptive": "Paremalt vasakule"
+                },
+                "title": "Lugemise suund"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "Hõlbus",
+                    "balanced": "Tasakaalustatud",
+                    "custom": "Kohendatud",
+                    "default": "Vaikimisi",
+                    "loose": "Hõre",
+                    "tight": "Tihe",
+                    "title": "Eelseadistused"
+                }
             }
         },
         "progression": {
-            "pagesLeftInChapter_one": "Peatükis on jäänud {{ count }} leht",
-            "pagesLeftInChapter_other": "Peatükis on jäänud {{ count }} lehte",
-            "pagesLeftInPublication_one": "Köites on jäänud {{ count }} leht",
-            "pagesLeftInPublication_other": "Köites on jäänud {{ count }} lehte",
-            "pagesLeft_one": "Jäänud on {{ count }} leht",
-            "pagesLeft_other": "Jäänud on {{ count }} lehte"
+            "pagesLeft": {
+                "descriptive_one": "Jäänud on {{ count }} leht",
+                "descriptive_other": "Jäänud on {{ count }} lehte"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_one": "Peatükis on jäänud {{ count }} leht",
+                "descriptive_other": "Peatükis on jäänud {{ count }} lehte"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_one": "Köites on jäänud {{ count }} leht",
+                "descriptive_other": "Köites on jäänud {{ count }} lehte"
+            }
         }
     }
 }

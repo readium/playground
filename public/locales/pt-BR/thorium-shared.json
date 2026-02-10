@@ -150,19 +150,31 @@
             "zoom": "Zoom"
         },
         "progression": {
-            "pagesLeftInChapter_one": "{{ count }} página restante no capítulo",
-            "pagesLeftInChapter_other": "{{ count }} páginas restantes no capítulo",
-            "pagesLeftInPublication_one": "{{ count }} página restante em publicação",
-            "pagesLeftInPublication_other": "{{ count }} páginas restantes em publicação",
-            "pagesLeft_one": "{{ count }} página restante",
-            "pagesLeft_other": "{{ count }} páginas restantes",
+            "pagesLeft": {
+                "descriptive_one": "{{ count }} página restante",
+                "descriptive_other": "{{ count }} páginas restantes"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_one": "{{ count }} página restante no capítulo",
+                "descriptive_other": "{{ count }} páginas restantes no capítulo"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_one": "{{ count }} página restante em publicação",
+                "descriptive_other": "{{ count }} páginas restantes em publicação"
+            },
             "percentage": "{{ percentage }}%",
-            "positionsLeftInChapter_one": "{{ count }} posição restante no capítulo",
-            "positionsLeftInChapter_other": "{{ count }} posições restantes no capítulo",
-            "positionsLeftInPublication_one": "{{ count }} posição restante na publicação",
-            "positionsLeftInPublication_other": "{{ count }} posições restantes na publicação",
-            "positionsLeft_one": "{{ count }} posição restante",
-            "positionsLeft_other": "{{ count }} posições restantes",
+            "positionsLeft": {
+                "descriptive_one": "{{ count }} posição restante",
+                "descriptive_other": "{{ count }} posições restantes"
+            },
+            "positionsLeftInChapter": {
+                "descriptive_one": "{{ count }} posição restante no capítulo",
+                "descriptive_other": "{{ count }} posições restantes no capítulo"
+            },
+            "positionsLeftInPublication": {
+                "descriptive_one": "{{ count }} posição restante na publicação",
+                "descriptive_other": "{{ count }} posições restantes na publicação"
+            },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} de {{ y }}",

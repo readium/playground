@@ -148,19 +148,31 @@
             "zoom": "Zooma"
         },
         "progression": {
-            "pagesLeftInChapter_one": "{{ count }} sida kvar i kapitlet",
-            "pagesLeftInChapter_other": "{{ count }} sidor kvar i kapitlet",
-            "pagesLeftInPublication_one": "{{ count }} sida kvar i publikationen",
-            "pagesLeftInPublication_other": "{{ count }} sidor kvar i publikationen",
-            "pagesLeft_one": "{{ count }} sida kvar",
-            "pagesLeft_other": "{{ count }} sidor kvar",
+            "pagesLeft": {
+                "descriptive_one": "{{ count }} sida kvar",
+                "descriptive_other": "{{ count }} sidor kvar"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_one": "{{ count }} sida kvar i kapitlet",
+                "descriptive_other": "{{ count }} sidor kvar i kapitlet"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_one": "{{ count }} sida kvar i publikationen",
+                "descriptive_other": "{{ count }} sidor kvar i publikationen"
+            },
             "percentage": "{{ percentage }}%",
-            "positionsLeftInChapter_one": "{{ count }} position kvar i kapitlet",
-            "positionsLeftInChapter_other": "{{ count }} positioner kvar i nuvarande kapitel",
-            "positionsLeftInPublication_one": "{{ count }} position kvar i publikation",
-            "positionsLeftInPublication_other": "{{ count }} kvar i boken",
-            "positionsLeft_one": "{{ count }} position kvar",
-            "positionsLeft_other": "{{ count }} positioner kvar",
+            "positionsLeft": {
+                "descriptive_one": "{{ count }} position kvar",
+                "descriptive_other": "{{ count }} positioner kvar"
+            },
+            "positionsLeftInChapter": {
+                "descriptive_one": "{{ count }} position kvar i kapitlet",
+                "descriptive_other": "{{ count }} positioner kvar i nuvarande kapitel"
+            },
+            "positionsLeftInPublication": {
+                "descriptive_one": "{{ count }} position kvar i publikation",
+                "descriptive_other": "{{ count }} kvar i boken"
+            },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
                 "compact": "{{ x }} av {{ y }}",

@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.1.3
-        version: 1.1.3(7367b58c18f37cb17499eb85e13ad5c0)
+        specifier: ^1.1.4
+        version: 1.1.4(7367b58c18f37cb17499eb85e13ad5c0)
       '@readium/css':
         specifier: 2.0.0-beta.24
         version: 2.0.0-beta.24
@@ -663,8 +663,8 @@ packages:
     resolution: {integrity: sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.1.3':
-    resolution: {integrity: sha512-CEDmOHT8nEEIP0wkAWmLJEDwCF4irBgp7Y5RS2FKpMNDjmb6ChMHFH/UXVPDf4co0S+5Vdh3EIpj8o8FJfxEvA==}
+  '@edrlab/thorium-web@1.1.4':
+    resolution: {integrity: sha512-QPzed0KhQzFRBxV0lX4/z0sNG+YVg9z0h/ef9+MK2ZJuAbUxHdX0XDwMMvQNuPxFVJlDCiKW2ts8H/LV3ETAIw==}
     peerDependencies:
       '@readium/css': 2.0.0-beta.24
       '@readium/navigator': 2.2.9
@@ -3516,8 +3516,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/3d7655394adf826cbcb3c5a12374fb651f64566e:
-    resolution: {tarball: https://codeload.github.com/edrlab/thorium-locales/tar.gz/3d7655394adf826cbcb3c5a12374fb651f64566e}
+  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/231f162d98309a2ed9d885ea7fa441cbc55fa9ba:
+    resolution: {tarball: https://codeload.github.com/edrlab/thorium-locales/tar.gz/231f162d98309a2ed9d885ea7fa441cbc55fa9ba}
     version: 1.0.0
 
   tinyglobby@0.2.15:
@@ -4412,9 +4412,9 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@edrlab/thorium-web@1.1.3(7367b58c18f37cb17499eb85e13ad5c0)':
+  '@edrlab/thorium-web@1.1.4(7367b58c18f37cb17499eb85e13ad5c0)':
     dependencies:
-      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/3d7655394adf826cbcb3c5a12374fb651f64566e
+      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/231f162d98309a2ed9d885ea7fa441cbc55fa9ba
       '@readium/css': 2.0.0-beta.24
       '@readium/navigator': 2.2.9
       '@readium/navigator-html-injectables': 2.2.5
@@ -5867,7 +5867,7 @@ snapshots:
 
   '@readium/shared@2.1.5':
     dependencies:
-      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/3d7655394adf826cbcb3c5a12374fb651f64566e
+      '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/231f162d98309a2ed9d885ea7fa441cbc55fa9ba
 
   '@reduxjs/toolkit@2.11.2(react-redux@9.2.0(@types/react@19.2.13)(react@19.2.4)(redux@5.0.1))(react@19.2.4)':
     dependencies:
@@ -7989,7 +7989,7 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
 
-  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/3d7655394adf826cbcb3c5a12374fb651f64566e: {}
+  thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/231f162d98309a2ed9d885ea7fa441cbc55fa9ba: {}
 
   tinyglobby@0.2.15:
     dependencies:

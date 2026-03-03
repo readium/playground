@@ -2,6 +2,7 @@
   "reader": {
     "app": {
       "loading": "Loading",
+      "printingDisabled": "Printing has been disabled",
       "publicationWrapper": "You’re now in the publication.",
       "docking": {
         "dockingLeft": "Docked panel left",

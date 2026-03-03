@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -33,17 +33,17 @@
     "copy-assets": "pnpm locales && pnpm fonts"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.1.4",
-    "@readium/css": "2.0.0-beta.24",
-    "@readium/navigator": "^2.2.9",
-    "@readium/navigator-html-injectables": "^2.2.5",
+    "@edrlab/thorium-web": "^1.1.5",
+    "@readium/css": "^2.0.0",
+    "@readium/navigator": "^2.3.0",
+    "@readium/navigator-html-injectables": "^2.3.0",
     "@readium/shared": "^2.1.5",
     "@reduxjs/toolkit": "^2.11.2",
     "classnames": "^2.5.1",
-    "i18next": "^25.8.4",
-    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next": "^25.8.13",
+    "i18next-browser-languagedetector": "^8.2.1",
     "i18next-http-backend": "^3.0.2",
-    "motion": "^12.34.0",
+    "motion": "^12.34.4",
     "next": "16.1.6",
     "react": "^19.2.4",
     "react-aria": "^3.46.0",
@@ -56,11 +56,11 @@
     "react-stately": "^3.44.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/eslintrc": "^3.3.4",
     "@svgr/webpack": "^8.1.0",
     "@types/css-modules": "^1.0.5",
     "@types/node": "^22.19.7",
-    "@types/react": "^19.2.13",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "cpx2": "^8.0.0",
     "esbuild-plugin-svgr": "^3.1.1",

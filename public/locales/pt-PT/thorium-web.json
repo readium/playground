@@ -38,7 +38,7 @@
             "back": {
                 "trigger": "Anterior"
             },
-            "publicationWrapper": "Agora estás na publicação.",
+            "publicationWrapper": "Agora está na publicação.",
             "docking": {
                 "dockingEmpty": "Atualmente vazio",
                 "dockingClosed": "Está fechado, contém {{ action }}",
@@ -48,7 +48,8 @@
             },
             "footer": {
                 "label": "Barra inferior"
-            }
+            },
+            "printingDisabled": "A impressão foi desativada"
         },
         "navigation": {
             "scroll": {

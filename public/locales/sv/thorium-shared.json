@@ -3,13 +3,15 @@
         "actions": {
             "cancel": "Avbryt",
             "clear": "Rensa",
-            "close": "Avsluta",
+            "close": "Stäng",
+            "collapse": "Minimera",
+            "collapseAll": "Minimera alla",
             "decrease": "Minska",
             "disable": "Inaktivera",
             "enable": "Aktivera",
             "exit": "Lämna",
-            "expand": "Utvidga",
-            "expandAll": "Expandera alla",
+            "expand": "Utöka",
+            "expandAll": "Utöka alla",
             "filter": "Filter",
             "hide": "Dölj",
             "hideAll": "Dölj alla",
@@ -35,6 +37,10 @@
                 "compact": "Nästa",
                 "descriptive": "Nästa sida"
             },
+            "goToNextSentence": {
+                "compact": "Nästa",
+                "descriptive": "Nästa mening"
+            },
             "goToPosition": {
                 "compact": "Hoppa till…",
                 "descriptive": "Hoppa till position"
@@ -46,9 +52,14 @@
             "goToPreviousPage": {
                 "compact": "Föregående",
                 "descriptive": "Föregående sida"
+            },
+            "goToPreviousSentence": {
+                "compact": "Föregående",
+                "descriptive": "Föregående mening"
             }
         },
         "preferences": {
+            "brightness": "Ljusstyrka",
             "columns": {
                 "auto": "Auto",
                 "dual": {
@@ -60,6 +71,18 @@
                     "descriptive": "1 kolumn"
                 },
                 "title": "Kolumner"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "Automatisk"
+                },
+                "page": {
+                    "compact": "Sida"
+                },
+                "title": "Anpassa",
+                "width": {
+                    "compact": "Bredd"
+                }
             },
             "fontFamily": {
                 "humanist": {
@@ -102,11 +125,27 @@
                 "small": "Tätt",
                 "title": "Radavstånd"
             },
+            "offsetFirstPage": "Visa första sidan på egen hand",
             "paragraphIndent": "Styckeindrag",
             "paragraphSpacing": "Styckeavstånd",
             "publisherStyles": {
                 "label": "Använd originalformat",
                 "title": "Utgivarens stilar"
+            },
+            "readingDirection": {
+                "default": {
+                    "compact": "Standard",
+                    "descriptive": "Använd orginal läsriktning"
+                },
+                "ltr": {
+                    "compact": "Höger",
+                    "descriptive": "Vänster till höger"
+                },
+                "rtl": {
+                    "compact": "Vänster",
+                    "descriptive": "Höger till vänster"
+                },
+                "title": "Läsriktning"
             },
             "spacing": {
                 "presets": {
@@ -119,6 +158,18 @@
                     "title": "Förinställningar"
                 },
                 "title": "Avstånd"
+            },
+            "spread": {
+                "always": {
+                    "compact": "Dubbelsidig"
+                },
+                "auto": {
+                    "compact": "Automatisk"
+                },
+                "never": {
+                    "compact": "Ensidig"
+                },
+                "title": "Spridning"
             },
             "text": "Text",
             "textAlign": {
@@ -138,6 +189,7 @@
                 "contrast2": "Kontrast 2",
                 "contrast3": "Kontrast 3",
                 "dark": "Mörkt",
+                "gray": "Grå",
                 "light": "Ljust",
                 "paper": "Papper",
                 "sepia": "Sepia",
@@ -162,14 +214,20 @@
             },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "compact_one": "{{ count }} vänster",
+                "compact_other": "{{ count }} vänster",
                 "descriptive_one": "{{ count }} position kvar",
                 "descriptive_other": "{{ count }} positioner kvar"
             },
             "positionsLeftInChapter": {
+                "compact_one": "{{ count }} kvar i kapitel",
+                "compact_other": "{{ count }} kvar i kapitel",
                 "descriptive_one": "{{ count }} position kvar i kapitlet",
                 "descriptive_other": "{{ count }} positioner kvar i nuvarande kapitel"
             },
             "positionsLeftInPublication": {
+                "compact_one": "{{ count }} kvar i publikationen",
+                "compact_other": "{{ count }} kvar i publikationen",
                 "descriptive_one": "{{ count }} position kvar i publikation",
                 "descriptive_other": "{{ count }} kvar i boken"
             },

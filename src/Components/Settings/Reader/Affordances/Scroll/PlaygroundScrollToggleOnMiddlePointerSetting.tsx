@@ -10,7 +10,7 @@ import {
   useAppDispatch,
   useAppSelector,
   setScrollAffordances
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 export const PlaygroundScrollToggleOnMiddlePointerSetting = ({ standalone }: StatefulSwitchProps) => {
   const { t } = useI18n("playground");

@@ -1,45 +1,41 @@
 "use client";
 
-import { PlaygroundActionsKeys } from "@/preferences/preferences";
+import { ThPlugin } from "@edrlab/thorium-web/epub";
+import { StatefulReaderWrapper, ReaderComponentProps } from "@edrlab/thorium-web/reader";
 
-import { ThPlugin, createDefaultPlugin, StatefulReader, StatefulReaderProps } from "@edrlab/thorium-web/epub";
-import { PlaygroundLayoutPresetsTrigger } from "./Actions/LayoutPresets/PlaygroundLayoutPresetsTrigger";
-import { PlaygroundLayoutPresetsContainer } from "./Actions/LayoutPresets/PlaygroundLayoutPresetsContainer";
-import { PlaygroundReaderSettingsTrigger } from "./Actions/ReaderSettings/PlaygroundReaderSettingsTrigger";
-import { PlaygroundReaderSettingsContainer } from "./Actions/ReaderSettings/PlaygroundReaderSettingsContainer";
+const epubPlugins = async (): Promise<ThPlugin[]> => {
+  const { createDefaultPlugin } = await import("@edrlab/thorium-web/epub");
+  const { PlaygroundActionsKeys } = await import("@/preferences/preferences");
+  const { PlaygroundLayoutPresetsTrigger } = await import("./Actions/LayoutPresets/PlaygroundLayoutPresetsTrigger");
+  const { PlaygroundLayoutPresetsContainer } = await import("./Actions/LayoutPresets/PlaygroundLayoutPresetsContainer");
+  const { PlaygroundReaderSettingsTrigger } = await import("./Actions/ReaderSettings/PlaygroundReaderSettingsTrigger");
+  const { PlaygroundReaderSettingsContainer } = await import("./Actions/ReaderSettings/PlaygroundReaderSettingsContainer");
 
-export const CustomReader = ({
-  rawManifest,
-  selfHref
-}: Omit<StatefulReaderProps, "plugins"> ) => {
-    const defaultPlugin: ThPlugin = createDefaultPlugin();
-    const customPlugins: ThPlugin[] = [ defaultPlugin, {
-      id: "custom",
-      name: "Custom Components",
-      description: "Custom components for Readium Playground StatefulReader",
-      version: "1.1.5",
-      components: {
-        actions: {
-          [PlaygroundActionsKeys.layoutPresets]: {
-            Trigger: PlaygroundLayoutPresetsTrigger,
-            Target: PlaygroundLayoutPresetsContainer
-          },
-          [PlaygroundActionsKeys.readerSettings]: {
-            Trigger: PlaygroundReaderSettingsTrigger,
-            Target: PlaygroundReaderSettingsContainer
-          }
+  return [ createDefaultPlugin(), {
+    id: "custom",
+    name: "Custom Components",
+    description: "Custom components for Readium Playground StatefulReader",
+    version: "1.0.7",
+    components: {
+      actions: {
+        [PlaygroundActionsKeys.layoutPresets]: {
+          Trigger: PlaygroundLayoutPresetsTrigger,
+          Target: PlaygroundLayoutPresetsContainer
+        },
+        [PlaygroundActionsKeys.readerSettings]: {
+          Trigger: PlaygroundReaderSettingsTrigger,
+          Target: PlaygroundReaderSettingsContainer
         }
       }
-    }];
-    
-    return (
-      <>
-        <StatefulReader 
-          rawManifest={ rawManifest } 
-          selfHref={ selfHref } 
-          plugins={ customPlugins }
-        />
-      </>
-    )
+    }
+  }];
+};
 
-}
+export const CustomReader = (props: Omit<ReaderComponentProps, "plugins">) => {
+  return (
+    <StatefulReaderWrapper
+      { ...props }
+      plugins={{ epub: epubPlugins }}
+    />
+  );
+};

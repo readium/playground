@@ -7,7 +7,7 @@ import {
   usePreferences,
   useI18n,
   useAppSelector,
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 import { PlaygroundMaxChars } from "./PlaygroundMaxChars";
 import { PlaygroundMinChars } from "./PlaygroundMinChars";
 import { useLineLengths } from "./hooks/useLineLengths";

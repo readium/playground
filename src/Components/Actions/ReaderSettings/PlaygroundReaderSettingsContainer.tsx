@@ -26,7 +26,7 @@ import {
   useAppDispatch,
   useAppSelector,
   setHovering
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 export const PlaygroundReaderSettingsContainer = ({ triggerRef }: StatefulActionContainerProps) => {
   const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.readerSettings]);

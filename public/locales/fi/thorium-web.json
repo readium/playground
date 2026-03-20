@@ -48,7 +48,8 @@
             },
             "back": {
                 "trigger": "Takaisin"
-            }
+            },
+            "printingDisabled": "Tulostus on poistettu käytöstä"
         },
         "navigation": {
             "scroll": {

@@ -8,7 +8,7 @@ import {
   useAppSelector, 
   setLineLength,
   usePreferences
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 import { setLayoutPreset } from "@/lib/customReducer";
 

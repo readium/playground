@@ -15,7 +15,7 @@ import {
   makeBreakpointsMap,
   setPaginatedAffordance,
   StatefulDropdownProps
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 import { PlaygroundDisclosureGroup } from "../../../PlaygroundDisclosureGroup";
 

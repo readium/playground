@@ -11,7 +11,7 @@ import { ThBreakpoints } from "@edrlab/thorium-web/core/preferences";
 import { Disclosure, DisclosurePanel, Button, Heading } from "react-aria-components";
 import classNames from "classnames";
 
-import { useAppSelector, StatefulDropdown } from "@edrlab/thorium-web/epub";
+import { useAppSelector, StatefulDropdown } from "@edrlab/thorium-web/reader";
 
 interface PlaygroundDisclosureGroupProps<T> {
   id: string;

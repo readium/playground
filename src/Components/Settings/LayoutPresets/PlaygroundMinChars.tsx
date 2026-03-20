@@ -7,7 +7,7 @@ import {
   useAppSelector,
   usePreferences,
   useI18n
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 import { useLineLengths } from "./hooks/useLineLengths";
 
 export const PlaygroundMinChars = () => {

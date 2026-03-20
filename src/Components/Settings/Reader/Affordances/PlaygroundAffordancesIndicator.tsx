@@ -14,7 +14,7 @@ import {
   useAppSelector, 
   useAppDispatch,
   setScroll
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: ThLayoutOptions }) => {
   const { t } = useI18n();

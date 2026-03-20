@@ -48,7 +48,8 @@
             },
             "back": {
                 "trigger": "Tagasi"
-            }
+            },
+            "printingDisabled": "Printimise võimalus on lülitatud välja"
         },
         "navigation": {
             "scroll": {
@@ -65,7 +66,10 @@
         },
         "jumpToPosition": {
             "go": "Suundu",
-            "label": "Vali asukoht vahemikust {{ positionStart }} kuni {{ positionEnd }}:"
+            "label": "Vali asukoht vahemikust {{ positionStart }} kuni {{ positionEnd }}:",
+            "error": {
+                "notFound": "Asukohta ei leidu."
+            }
         },
         "overflowMenu": {
             "active": {

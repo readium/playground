@@ -13,7 +13,7 @@ import {
   useI18n, 
   useAppSelector, 
   useAppDispatch 
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 import { Heading } from "react-aria-components";
 

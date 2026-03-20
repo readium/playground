@@ -13,7 +13,7 @@ import {
   useAppDispatch,
   useAppSelector,
   setHovering
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 import { PlaygroundLayoutPresetsGroup } from "../../Settings/LayoutPresets/PlaygroundLayoutPresets";
 
 export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionContainerProps) => {

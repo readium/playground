@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "pnpm copy-assets && next dev",
     "build": "pnpm copy-assets && next build",
+    "build:analyze": "npx next experimental-analyze",
     "start": "next start",
     "lint": "eslint .",
     "deploy": "npx @cloudflare/next-on-pages && npx wrangler pages deploy",

@@ -2,12 +2,13 @@
 
 import { use, useEffect, useState } from "react";
 
+import { StatefulLoader, ErrorDisplay, ErrorHandler, ProcessedError } from "@edrlab/thorium-web/misc";
+import { usePublication } from "@edrlab/thorium-web/reader";
+import { useAppSelector } from "@edrlab/thorium-web/epub";
+import { CustomReader } from "@/Components/CustomReader";
+
 import "@edrlab/thorium-web/misc/styles";
 import "@edrlab/thorium-web/epub/styles";
-
-import { StatefulLoader } from "@edrlab/thorium-web/misc";
-import { usePublication, useAppSelector } from "@edrlab/thorium-web/epub";
-import { CustomReader } from "@/Components/CustomReader";
 
 import { verifyManifestUrl } from "@/app/api/verify-manifest/verifyDomain";
 
@@ -18,7 +19,7 @@ type Props = {
 };
 
 export default function ManifestPage({ params }: Props) {
-  const [domainError, setDomainError] = useState<string | null>(null);
+  const [domainError, setDomainError] = useState<ProcessedError | null>(null);
   const isLoading = useAppSelector(state => state.reader.isLoading);
   const manifestUrl = use(params).manifest;
 
@@ -26,13 +27,19 @@ export default function ManifestPage({ params }: Props) {
     if (manifestUrl) {
       verifyManifestUrl(manifestUrl).then(allowed => {
         if (!allowed) {
-          setDomainError(`Domain not allowed: ${ new URL(manifestUrl).hostname }`);
+          setDomainError(ErrorHandler.process(new Error("Domain not allowed"), "Domain Validation"));
         }
       });
     }
   }, [manifestUrl]);
 
-  const { error, manifest, selfLink } = usePublication({
+  const {
+    isLoading: publicationLoading,
+    error,
+    publication,
+    profile,
+    localDataKey
+  } = usePublication({
     url: manifestUrl,
     onError: (error) => {
       console.error("Manifest loading error:", error);
@@ -41,25 +48,28 @@ export default function ManifestPage({ params }: Props) {
 
   if (domainError) {
     return (
-      <div className="container">
-        <h1>Access Denied</h1>
-        <p>{ domainError }</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="container">
-        <h1>Error</h1>
-        <p>{ error }</p>
-      </div>
+      <ErrorDisplay
+        error={ domainError }
+        title="reader.app.errors.accessDeniedTitle"
+      />
     );
   }
 
   return (
-    <StatefulLoader isLoading={ isLoading }>
-      { manifest && selfLink && <CustomReader rawManifest={ manifest } selfHref={ selfLink } /> }
-    </StatefulLoader>
+    <>
+      { error ? (
+        <ErrorDisplay error={ error } />
+      ) : (
+        <StatefulLoader isLoading={ isLoading || publicationLoading }>
+          { publication && (
+            <CustomReader
+              profile={ profile }
+              publication={ publication }
+              localDataKey={ localDataKey }
+            />
+          )}
+        </StatefulLoader>
+      )}
+    </>
   );
 }

@@ -21,7 +21,7 @@
             "search": "Hae",
             "show": "Näytä",
             "showAll": "Näytä kaikki",
-            "sortBy": "Lajittele",
+            "sortBy": "Lajittelutapa",
             "toggle": "Vaihda"
         }
     },
@@ -64,13 +64,13 @@
                 "auto": "Automaattinen",
                 "dual": {
                     "compact": "2 palstaa",
-                    "descriptive": "2 saraketta"
+                    "descriptive": "2 palstaa"
                 },
                 "single": {
                     "compact": "1 palsta",
-                    "descriptive": "1 sarake"
+                    "descriptive": "1 palsta"
                 },
-                "title": "Sarakkeet"
+                "title": "Palstat"
             },
             "fit": {
                 "auto": {
@@ -177,7 +177,7 @@
                 "justify": "Tasaa",
                 "left": "Vasen",
                 "right": "Oikea",
-                "title": "Tekstin tasau"
+                "title": "Tekstin tasaus"
             },
             "textNormalization": {
                 "label": "Poista kaikki tekstin muotoilut",
@@ -214,16 +214,22 @@
             },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "compact_one": "{{ count }} jäljellä",
+                "compact_other": "{{ count }} jäljellä",
                 "descriptive_one": "{{ count }} sijainti jäljellä",
                 "descriptive_other": "{{ count }} sijaintia jäljellä"
             },
             "positionsLeftInChapter": {
+                "compact_one": "{{ count }} jäljellä luvussa",
+                "compact_other": "{{ count }} jäljellä luvussa",
                 "descriptive_one": "{{ count }} sijainti jäljellä luvussa",
-                "descriptive_other": "{{ count }} jäljellä kohdassa nykyinen luku"
+                "descriptive_other": "{{ count }} sijaintia jäljellä luvussa"
             },
             "positionsLeftInPublication": {
-                "descriptive_one": "{{ count }} sijaintia jäljellä luvussa",
-                "descriptive_other": "{{ count }} jäljellä kohdassa julkaisu"
+                "compact_one": "{{ count }} jäljellä julkaisussa",
+                "compact_other": "{{ count }} jäljellä julkaisussa",
+                "descriptive_one": "{{ count }} sijainti jäljellä julkaisussa",
+                "descriptive_other": "{{ count }} sijaintia jäljellä julkaisussa"
             },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {

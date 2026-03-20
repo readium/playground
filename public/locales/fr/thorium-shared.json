@@ -12,9 +12,16 @@
             "exit": "Quitter",
             "expand": "Développer",
             "expandAll": "Tout développer",
+            "filter": "Filtrer",
+            "hide": "Masquer",
+            "hideAll": "Tout masquer",
             "increase": "Augmenter",
+            "open": "Ouvrir",
             "reset": "Réinitialiser",
             "search": "Rechercher",
+            "show": "Afficher",
+            "showAll": "Tout afficher",
+            "sortBy": "Trier par",
             "toggle": "Basculer"
         }
     },
@@ -22,12 +29,37 @@
         "actions": {
             "goBackward": "Reculer",
             "goForward": "Avancer",
+            "goToNextChapter": {
+                "compact": "Suivant",
+                "descriptive": "Chapitre suivant"
+            },
+            "goToNextPage": {
+                "compact": "Suivant",
+                "descriptive": "Page suivante"
+            },
+            "goToNextSentence": {
+                "compact": "Suivant",
+                "descriptive": "Phrase suivante"
+            },
             "goToPosition": {
                 "compact": "Aller à …",
                 "descriptive": "Aller à la position"
+            },
+            "goToPreviousChapter": {
+                "compact": "Précédent",
+                "descriptive": "Chapitre précédent"
+            },
+            "goToPreviousPage": {
+                "compact": "Précédent",
+                "descriptive": "Page précédente"
+            },
+            "goToPreviousSentence": {
+                "compact": "Précédent",
+                "descriptive": "Phrase précédente"
             }
         },
         "preferences": {
+            "brightness": "Luminosité",
             "columns": {
                 "auto": "Auto",
                 "dual": {
@@ -39,6 +71,18 @@
                     "descriptive": "1 colonne"
                 },
                 "title": "Colonnes"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "Auto"
+                },
+                "page": {
+                    "compact": "Page"
+                },
+                "title": "Ajustement",
+                "width": {
+                    "compact": "Largeur"
+                }
             },
             "fontFamily": {
                 "humanist": {
@@ -81,11 +125,27 @@
                 "small": "Resserré",
                 "title": "Interligne"
             },
+            "offsetFirstPage": "Afficher la première page seule",
             "paragraphIndent": "Indentation du texte",
             "paragraphSpacing": "Espacement des paragraphes",
             "publisherStyles": {
                 "label": "Utiliser le formatage original",
                 "title": "Styles éditeur"
+            },
+            "readingDirection": {
+                "default": {
+                    "compact": "Par défaut",
+                    "descriptive": "Utiliser la direction de lecture originale"
+                },
+                "ltr": {
+                    "compact": "Droite",
+                    "descriptive": "Gauche à droite"
+                },
+                "rtl": {
+                    "compact": "Gauche",
+                    "descriptive": "Droite à gauche"
+                },
+                "title": "Direction de lecture"
             },
             "spacing": {
                 "presets": {
@@ -98,6 +158,18 @@
                     "title": "Préréglages"
                 },
                 "title": "Espacement"
+            },
+            "spread": {
+                "always": {
+                    "compact": "Double page"
+                },
+                "auto": {
+                    "compact": "Auto"
+                },
+                "never": {
+                    "compact": "Page unique"
+                },
+                "title": "Affichage double page"
             },
             "text": "Texte",
             "textAlign": {
@@ -117,6 +189,7 @@
                 "contrast2": "Contraste 2",
                 "contrast3": "Contraste 3",
                 "dark": "Sombre",
+                "gray": "Gris",
                 "light": "Clair",
                 "paper": "Papier",
                 "sepia": "Sépia",
@@ -127,16 +200,43 @@
             "zoom": "Zoom"
         },
         "progression": {
+            "pagesLeft": {
+                "descriptive_many": "{{ count }} pages restantes",
+                "descriptive_one": "{{ count }} page restante",
+                "descriptive_other": "{{ count }} pages restantes"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_many": "{{ count }} pages restantes dans le chapitre",
+                "descriptive_one": "{{ count }} page restante dans le chapitre",
+                "descriptive_other": "{{ count }} pages restantes dans le chapitre"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_many": "{{ count }} pages restantes dans la publication",
+                "descriptive_one": "{{ count }} page restante dans la publication",
+                "descriptive_other": "{{ count }} pages restantes dans la publication"
+            },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "compact_many": "{{ count }} restantes",
+                "compact_one": "{{ count }} restante",
+                "compact_other": "{{ count }} restantes",
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} position restante",
                 "descriptive_other": "{{ count }} positions restantes"
             },
             "positionsLeftInChapter": {
+                "compact_many": "{{ count }} restantes dans le chapitre",
+                "compact_one": "{{ count }} restante dans le chapitre",
+                "compact_other": "{{ count }} restantes dans le chapitre",
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} position restante dans le chapitre",
                 "descriptive_other": "{{ count }} positions restantes dans le chapitre"
             },
             "positionsLeftInPublication": {
+                "compact_many": "{{ count }} restantes dans la publication",
+                "compact_one": "{{ count }} restante dans la publication",
+                "compact_other": "{{ count }} restantes dans la publication",
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} position restante dans la publication",
                 "descriptive_other": "{{ count }} positions restantes dans la publication"
             },

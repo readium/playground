@@ -217,16 +217,25 @@
             },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "compact_many": "{{ count }} rimaste",
+                "compact_one": "{{ count }} rimasta",
+                "compact_other": "{{ count }} rimaste",
                 "descriptive_many": "{{ count }} posizioni rimaste",
                 "descriptive_one": "{{ count }} posizione rimasta",
                 "descriptive_other": "{{ count }} posizioni rimaste"
             },
             "positionsLeftInChapter": {
+                "compact_many": "{{ count }} rimaste nel capitolo",
+                "compact_one": "{{ count }} rimasta nel capitolo",
+                "compact_other": "{{ count }} rimaste nel capitolo",
                 "descriptive_many": "{{ count }} posizioni rimaste nel capitolo",
                 "descriptive_one": "{{ count }} posizione rimasta nel capitolo",
                 "descriptive_other": "{{ count }} posizioni rimaste nel capitolo"
             },
             "positionsLeftInPublication": {
+                "compact_many": "{{ count }} rimaste nella pubblicazione",
+                "compact_one": "{{ count }} rimasta nella pubblicazione",
+                "compact_other": "{{ count }} rimaste nella pubblicazione",
                 "descriptive_many": "{{ count }} posizioni rimaste nella pubblicazione",
                 "descriptive_one": "{{ count }} posizione rimasta nella pubblicazione",
                 "descriptive_other": "{{ count }} posizioni rimaste nella pubblicazione"

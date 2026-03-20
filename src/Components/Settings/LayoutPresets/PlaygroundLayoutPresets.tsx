@@ -16,7 +16,7 @@ import {
   useAppSelector,
   useAppDispatch,
   setActionOpen
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 import { PlaygroundLineLengths } from "./PlaygroundLineLengths";
 

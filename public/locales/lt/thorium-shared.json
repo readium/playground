@@ -64,7 +64,7 @@
                 "auto": "Auto",
                 "dual": {
                     "compact": "2 stulpeliai",
-                    "descriptive": "2 stulpeliai"
+                    "descriptive": "Du stulpeliai"
                 },
                 "single": {
                     "compact": "1 stulpelis",
@@ -201,35 +201,44 @@
         },
         "progression": {
             "pagesLeft": {
-                "descriptive_few": "",
+                "descriptive_few": "Liko {{ count }} puslapiai",
                 "descriptive_one": "Liko {{ count }} puslapis",
-                "descriptive_other": "Liko {{ count }} puslapiai (-ių)"
+                "descriptive_other": "Liko {{ count }} puslapių"
             },
             "pagesLeftInChapter": {
-                "descriptive_few": "",
+                "descriptive_few": "Skyriuje liko {{ count }} puslapiai",
                 "descriptive_one": "Skyriuje liko {{ count }} puslapis",
-                "descriptive_other": "Skyriuje liko {{ count }} puslapiai"
+                "descriptive_other": "Skyriuje liko {{ count }} puslapių"
             },
             "pagesLeftInPublication": {
-                "descriptive_few": "",
+                "descriptive_few": "Leidinyje liko {{ count }} puslapiai",
                 "descriptive_one": "Leidinyje liko {{ count }} puslapis",
-                "descriptive_other": "Leidinyje liko {{ count }} puslapiai (-ių)"
+                "descriptive_other": "Leidinyje liko {{ count }} puslapių"
             },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
-                "descriptive_few": "",
+                "compact_few": "Liko {{ count }}",
+                "compact_one": "Liko {{ count }}",
+                "compact_other": "Liko {{ count }}",
+                "descriptive_few": "Liko {{ count }} pozicijos",
                 "descriptive_one": "Liko {{ count }} pozicija",
-                "descriptive_other": ""
+                "descriptive_other": "Liko {{ count }} pozicijų"
             },
             "positionsLeftInChapter": {
-                "descriptive_few": "",
+                "compact_few": "Skyriuje lijo {{ count }}",
+                "compact_one": "Skyriuje lijo {{ count }}",
+                "compact_other": "Skyriuje lijo {{ count }}",
+                "descriptive_few": "Skyriuje liko {{ count }} pozicijos",
                 "descriptive_one": "Skyriuje liko {{ count }} pozicija",
-                "descriptive_other": "Skyriuje liko {{ count }} pozicijos (-ų)"
+                "descriptive_other": "Skyriuje liko {{ count }} pozicijų"
             },
             "positionsLeftInPublication": {
-                "descriptive_few": "",
+                "compact_few": "Leidinyje liko {{ count }}",
+                "compact_one": "Leidinyje liko {{ count }}",
+                "compact_other": "Leidinyje liko {{ count }}",
+                "descriptive_few": "Leidinyje liko {{ count }} pozicijos",
                 "descriptive_one": "Leidinyje liko {{ count }} pozicija",
-                "descriptive_other": "Leidinyje liko {{ count }} pozicijos (-ų)"
+                "descriptive_other": "Leidinyje liko {{ count }} pozicijų"
             },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {

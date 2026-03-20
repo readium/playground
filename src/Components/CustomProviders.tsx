@@ -1,7 +1,7 @@
 "use client";
 
 import { playgroundPreferences } from "@/preferences/preferences";
-import { makeStore, ThI18nProvider, StatefulPreferencesProvider, ThStoreProvider } from "@edrlab/thorium-web/epub";
+import { makeStore, ThI18nProvider, StatefulPreferencesProvider, ThStoreProvider } from "@edrlab/thorium-web/reader";
 import customReducer from "@/lib/customReducer";
 
 export const CustomProviders = ({ children }: { children: React.ReactNode } ) => {

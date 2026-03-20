@@ -48,7 +48,8 @@
                 "wrapper": "Dabartinė eiga",
                 "referenceFallback": "dabartinis skyrius",
                 "pubFallback": "leidinys"
-            }
+            },
+            "printingDisabled": "Spausdinimas išjungtas"
         },
         "navigation": {
             "scroll": {

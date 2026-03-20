@@ -7,7 +7,7 @@ import {
   useI18n,
   setL10n,
   StatefulDropdown
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 const SUPPORTED_LANGUAGES = [
   { code: "en", name: "English" },

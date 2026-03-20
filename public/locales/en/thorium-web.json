@@ -3,7 +3,16 @@
     "app": {
       "loading": "Loading",
       "printingDisabled": "Printing has been disabled",
-      "publicationWrapper": "You’re now in the publication.",
+      "publicationWrapper": "You're now in the publication.",
+      "errors": {
+        "title": "Error",
+        "notFound": "Publication not found.",
+        "accessDenied": "Access denied.",
+        "network": "Server unavailable - please try again later.",
+        "serverError": "Server error - please try again later.",
+        "clientError": "Invalid request.",
+        "generic": "Unable to load publication."
+      },
       "docking": {
         "dockingLeft": "Docked panel left",
         "dockingRight": "Docked panel right",
@@ -66,7 +75,10 @@
     },
     "jumpToPosition": {
       "go": "Go",
-      "label": "Select a position from {{ positionStart }} to {{ positionEnd }}:"
+      "label": "Select a position from {{ positionStart }} to {{ positionEnd }}:",
+      "error": {
+        "notFound": "Position not found."
+      }
     },
     "overflowMenu": {
       "active": {

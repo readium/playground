@@ -11,7 +11,7 @@ import {
   usePreferences,
   makeBreakpointsMap,
   setProgressionFormat
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 import { PlaygroundDisclosureGroup } from "../PlaygroundDisclosureGroup";
 

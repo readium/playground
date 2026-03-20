@@ -13,7 +13,7 @@ import {
   useAppSelector,
   setActionOpen,
   setHovering
-} from "@edrlab/thorium-web/epub";
+} from "@edrlab/thorium-web/reader";
 
 import { CustomKeys, PlaygroundActionsKeys } from "@/preferences/preferences";
 

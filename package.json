@@ -33,7 +33,7 @@
     "copy-assets": "pnpm locales && pnpm fonts"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.1.5",
+    "@edrlab/thorium-web": "^1.2.0",
     "@readium/css": "^2.0.0",
     "@readium/navigator": "^2.3.0",
     "@readium/navigator-html-injectables": "^2.3.0",

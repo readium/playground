@@ -37,6 +37,10 @@
                 "compact": "Seguinte",
                 "descriptive": "Página seguinte"
             },
+            "goToNextSentence": {
+                "compact": "Seguinte",
+                "descriptive": "Frase seguinte"
+            },
             "goToPosition": {
                 "compact": "Saltar para…",
                 "descriptive": "Saltar para a posição"
@@ -48,9 +52,14 @@
             "goToPreviousPage": {
                 "compact": "Anterior",
                 "descriptive": "Página anterior"
+            },
+            "goToPreviousSentence": {
+                "compact": "Anterior",
+                "descriptive": "Frase anterior"
             }
         },
         "preferences": {
+            "brightness": "Brilho",
             "columns": {
                 "auto": "Auto",
                 "dual": {
@@ -62,6 +71,18 @@
                     "descriptive": "Uma coluna"
                 },
                 "title": "Colunas"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "Automático"
+                },
+                "page": {
+                    "compact": "Página"
+                },
+                "title": "Ajustar",
+                "width": {
+                    "compact": "Largura"
+                }
             },
             "fontFamily": {
                 "humanist": {
@@ -110,6 +131,20 @@
                 "label": "Utilizar formatação original",
                 "title": "Estilos do editor"
             },
+            "readingDirection": {
+                "default": {
+                    "compact": "Predefinição"
+                },
+                "ltr": {
+                    "compact": "Direita",
+                    "descriptive": "Esquerda para a direita"
+                },
+                "rtl": {
+                    "compact": "Esquerda",
+                    "descriptive": "Direita para a esquerda"
+                },
+                "title": "Direção de leitura"
+            },
             "spacing": {
                 "presets": {
                     "accessible": "Acessível",
@@ -122,9 +157,21 @@
                 },
                 "title": "Espaçamento"
             },
+            "spread": {
+                "always": {
+                    "compact": "Página dupla"
+                },
+                "auto": {
+                    "compact": "Automático"
+                },
+                "never": {
+                    "compact": "Página única"
+                },
+                "title": "Espelhamento"
+            },
             "text": "Texto",
             "textAlign": {
-                "default": "Padrão",
+                "default": "Predefinição",
                 "justify": "Justificar",
                 "left": "Esquerda",
                 "right": "Direita",
@@ -140,6 +187,7 @@
                 "contrast2": "Contraste 2",
                 "contrast3": "Contraste 3",
                 "dark": "Escuro",
+                "gray": "Cinza",
                 "light": "Claro",
                 "paper": "Papel",
                 "sepia": "Sépia",
@@ -151,27 +199,42 @@
         },
         "progression": {
             "pagesLeft": {
+                "descriptive_many": "{{ count }} páginas restantes",
                 "descriptive_one": "{{ count }} página restante",
                 "descriptive_other": "{{ count }} páginas restantes"
             },
             "pagesLeftInChapter": {
+                "descriptive_many": "{{ count }} páginas restantes no capítulo",
                 "descriptive_one": "{{ count }} página restante no capítulo",
                 "descriptive_other": "{{ count }} páginas restantes no capítulo"
             },
             "pagesLeftInPublication": {
+                "descriptive_many": "{{ count }} páginas restantes na publicação",
                 "descriptive_one": "{{ count }} página restante na publicação",
                 "descriptive_other": "{{ count }} páginas restantes na publicação"
             },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "compact_many": "{{ count }} restantes",
+                "compact_one": "{{ count }} restante",
+                "compact_other": "{{ count }} restantes",
+                "descriptive_many": "{{ count }} posições restantes",
                 "descriptive_one": "{{ count }} posição restante",
                 "descriptive_other": "{{ count }} posições restantes"
             },
             "positionsLeftInChapter": {
+                "compact_many": "{{ count }} restantes no capítulo",
+                "compact_one": "{{ count }} restante no capítulo",
+                "compact_other": "{{ count }} restantes no capítulo",
+                "descriptive_many": "{{ count }} posições restantes no capítulo",
                 "descriptive_one": "{{ count }} posição restante no capítulo",
                 "descriptive_other": "{{ count }} posições restantes no capítulo"
             },
             "positionsLeftInPublication": {
+                "compact_many": "{{ count }} restantes no documento",
+                "compact_one": "{{ count }} restante no documento",
+                "compact_other": "{{ count }} restantes no documento",
+                "descriptive_many": "{{ count }} posições restantes na publicação",
                 "descriptive_one": "{{ count }} posição restante na publicação",
                 "descriptive_other": "{{ count }} posições restantes na publicação"
             },

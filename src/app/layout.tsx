@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { CustomProviders } from "@/Components/CustomProviders";
-
 export const runtime = "edge";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ inter.className }>
-        <CustomProviders>
-          { children }
-        </CustomProviders>
+        { children }
       </body>
     </html>
   );

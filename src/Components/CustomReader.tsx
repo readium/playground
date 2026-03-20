@@ -1,7 +1,12 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { ThPlugin } from "@edrlab/thorium-web/epub";
-import { StatefulReaderWrapper, ReaderComponentProps } from "@edrlab/thorium-web/reader";
+import { ReaderComponentProps } from "@edrlab/thorium-web/reader";
+
+const StatefulReaderWrapper = dynamic(() =>
+  import("@edrlab/thorium-web/reader").then((m) => m.StatefulReaderWrapper)
+);
 
 const epubPlugins = async (): Promise<ThPlugin[]> => {
   const { createDefaultPlugin } = await import("@edrlab/thorium-web/epub");

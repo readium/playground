@@ -19,7 +19,8 @@ export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsIte
   const { updatePreference } = useLineLengths();
   const { t } = useI18n("playground");
 
-  const epubEditor = preferencesEditor && "optimalLineLength" in preferencesEditor ? preferencesEditor : null;
+  const epubEditor = preferencesEditor && "optimalLineLength" in preferencesEditor ? preferencesEditor : undefined;
+
   const lineLengthRangeConfig = {
     range: epubEditor?.optimalLineLength.supportedRange || [20, 100],
     step: epubEditor?.optimalLineLength.step || 1

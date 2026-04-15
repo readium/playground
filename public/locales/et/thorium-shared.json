@@ -58,6 +58,62 @@
                 "descriptive": "Eelmine lause"
             }
         },
+        "annotations": {
+            "actions": {
+                "editNote": {
+                    "compact": "Muuda märget"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "Lisa järjehoidja"
+                    },
+                    "delete": {
+                        "compact": "Kustuta järjehoidja",
+                        "confirmation": "Kas oled kindel, et soovid selle järjehoidja kustutada?"
+                    }
+                },
+                "emptyState": {
+                    "description": "Ühtegi järjehoidjat pole veel lisatud.",
+                    "title": "Järjehoidjaid pole"
+                },
+                "title": "Järjehoidjad"
+            },
+            "note": {
+                "title": "Märge"
+            },
+            "sort": {
+                "lastAdded": {
+                    "compact": "Viimati lisatud"
+                },
+                "lastEdited": {
+                    "compact": "Viimati muudetud"
+                },
+                "progression": {
+                    "compact": "Edenemine"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "Peata",
+                "play": "Esita",
+                "skipBackward": {
+                    "compact": "Keri tagasi",
+                    "descriptive": "Keri tagasi"
+                },
+                "skipForward": {
+                    "compact": "Edasi",
+                    "descriptive": "Keri edasi"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "skipBackwardInterval": "Tagasikerimise samm"
+                }
+            }
+        },
         "preferences": {
             "brightness": "Eredus",
             "columns": {
@@ -87,7 +143,30 @@
             "fontFamily": {
                 "humanist": {
                     "compact": "Humanist"
-                }
+                },
+                "modern": {
+                    "compact": "Moodne"
+                },
+                "monospace": "Fikseeritud laiusega kirjatüüp",
+                "sans": "Seriifideta"
+            },
+            "fontWeight": {
+                "bold": "Paksem",
+                "normal": "Tavaline"
+            },
+            "hyphens": {
+                "title": "Poolitamine"
+            },
+            "layout": {
+                "paginated": "Jagatud lehtedeks",
+                "scrolled": "Keritav",
+                "title": "Paigutus"
+            },
+            "lineHeight": {
+                "default": "Vaikimisi",
+                "large": "Hõre",
+                "medium": "Tasakaalustatud",
+                "small": "Tihe"
             },
             "readingDirection": {
                 "ltr": {
@@ -109,7 +188,19 @@
                     "loose": "Hõre",
                     "tight": "Tihe",
                     "title": "Eelseadistused"
-                }
+                },
+                "title": "Sõrendus"
+            },
+            "text": "Tekst",
+            "textAlign": {
+                "default": "Vaikimisi",
+                "justify": "Rööpne",
+                "left": "Vasakul",
+                "right": "Paremal"
+            },
+            "themes": {
+                "auto": "Automaatne",
+                "title": "Kujundused"
             }
         },
         "progression": {

@@ -14,7 +14,7 @@ import { setLayoutPreset } from "@/lib/customReducer";
 
 export const useLineLengths = () => {
   const dispatch = useAppDispatch();
-  const { submitPreferences, getSetting } = useNavigator();
+  const { submitPreferences, getSetting } = useNavigator().visual;
   const { preferences } = usePreferences();
   const layoutPreset = useAppSelector(state => state.custom.layoutPreset);
   const lineLength = useAppSelector(state => state.settings.lineLength);

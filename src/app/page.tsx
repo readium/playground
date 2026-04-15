@@ -58,6 +58,26 @@ const onlineBooks = [
   }
 ];
 
+const webPublications = [
+  {
+    title: "Readium CSS Implementers’ Documentation",
+    author: "Jiminy Panoz",
+    cover: "/images/readium-css.jpg",
+    url: "/read/readium-css",
+    rendition: "Web Publication"
+  }
+];
+
+const audiobooks = [
+  {
+    title: "Flatland",
+    author: "Edwin Abbott Abbott",
+    cover: "https://www.archive.org/download/LibrivoxCdCoverArt12/Flatland_1109.jpg",
+    url: "/read/flatland",
+    rendition: "Audiobook"
+  }
+]
+
 export default function Home() {
   const [isManifestEnabled, setIsManifestEnabled] = useState<boolean>(true);
 
@@ -92,7 +112,7 @@ export default function Home() {
       </header>
 
       <PublicationGrid
-        publications={ books }
+        publications={ [...books, ...audiobooks] }
         renderCover={ (publication) => (
           <Image
             src={ publication.cover }

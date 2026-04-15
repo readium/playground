@@ -25,7 +25,7 @@ export const PlaygroundAffordancesIndicator = ({ variant }: { variant?: ThLayout
 
   const dispatch = useAppDispatch();
 
-  const { submitPreferences, getSetting } = useNavigator();
+  const { submitPreferences, getSetting } = useNavigator().visual;
 
   const handleSwitch = useCallback(async () => {
     await submitPreferences({

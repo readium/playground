@@ -23,7 +23,7 @@ const epubPlugins = async (): Promise<ThPlugin[]> => {
     id: "custom",
     name: "Custom Components",
     description: "Custom components for Readium Playground StatefulReader",
-    version: "1.0.7",
+    version: "1.3.0",
     components: {
       actions: {
         [PlaygroundActionsKeys.layoutPresets]: {

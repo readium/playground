@@ -13,7 +13,7 @@ In addition to the [Thorium Web feature set](https://github.com/edrlab/thorium-w
 
 - [x] Layout policy to play with the TypeScript Toolkit and Readium CSS capabilities for drawing layouts based on an optimal line length
 - [ ] Theming to create custom themes and play with how images are processed when applying them
-- [ ] Customization to illustrate how various components of Thorium Web can be tweaked (localization, running headers, progression display, component styles and affordances)
+- [x] Customization to illustrate how various components of Thorium Web can be tweaked (localization, running headers, progression display, component styles and affordances)
 
 All of these features are implemented using UI components and APIs available to implementers, showcasing how anyone can build on top of our projects using built-in extensibility.
 

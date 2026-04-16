@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] – 2026-04-16
+
+### Added
+
+- Support for audiobooks – through Thorium Web `1.3.0`
+- WebPublications are now exposed
+- Two new containers are available, `compactPopover` (audio specific) and `Modal`
+- Two new variants for settings are available: `SliderWithPresets` and `PresetsGroup`
+
+### Changed
+
+- Actions are now using profile-based keys, per Thorium Web `1.3.1` change
+- Updated spacing presets
+- The docking system will not check if the key/component is available and clean up the panels if it is not
+- Numberfield now listens for input change to enable/disable buttons when the value change
+
+### Fixed
+
+- Resolves a bug where `useWebkitPatch` fires continuously in scroll
+- Fixes bottom sheet snapping and fallback scrim
+- Corrects application of `onHover` theme color for `hover` state
+- Slider now gets the formatted value for output
+
 ## [1.2.0] – 2026-03-20
 
 ### Changed

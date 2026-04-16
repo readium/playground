@@ -6,6 +6,16 @@ const nextConfig = {
   
   // Configure asset prefix for CDN or subdirectory support
   assetPrefix: process.env.ASSET_PREFIX || undefined,
+
+  // Configure image domains for Next.js Image component
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.archive.org",
+      },
+    ],
+  },
   
   // Turbopack configuration
   turbopack: {

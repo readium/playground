@@ -2,13 +2,10 @@
 
 import { use, useEffect, useState } from "react";
 
-import { StatefulLoader, ErrorDisplay, ErrorHandler, ProcessedError } from "@edrlab/thorium-web/misc";
+import { ErrorDisplay, ErrorHandler, ProcessedError } from "@edrlab/thorium-web/misc";
 import { usePublication } from "@edrlab/thorium-web/reader";
 import { useAppSelector } from "@edrlab/thorium-web/epub";
 import { CustomReader } from "@/Components/CustomReader";
-
-import "@edrlab/thorium-web/misc/styles";
-import "@edrlab/thorium-web/epub/styles";
 
 import { verifyManifestUrl } from "@/app/api/verify-manifest/verifyDomain";
 
@@ -20,14 +17,18 @@ type Props = {
 
 export default function ManifestPage({ params }: Props) {
   const [domainError, setDomainError] = useState<ProcessedError | null>(null);
-  const isLoading = useAppSelector(state => state.reader.isLoading);
+  const readerLoading = useAppSelector(state => state.reader.isLoading);
   const manifestUrl = use(params).manifest;
 
   useEffect(() => {
     if (manifestUrl) {
       verifyManifestUrl(manifestUrl).then(allowed => {
         if (!allowed) {
-          setDomainError(ErrorHandler.process(new Error("Domain not allowed"), "Domain Validation"));
+          const processedDomainError = ErrorHandler.process(
+            new Error("Domain not allowed"), 
+            "Domain Validation"
+          );
+          setDomainError(processedDomainError);
         }
       });
     }
@@ -50,7 +51,6 @@ export default function ManifestPage({ params }: Props) {
     return (
       <ErrorDisplay
         error={ domainError }
-        title="reader.app.errors.accessDeniedTitle"
       />
     );
   }
@@ -60,15 +60,14 @@ export default function ManifestPage({ params }: Props) {
       { error ? (
         <ErrorDisplay error={ error } />
       ) : (
-        <StatefulLoader isLoading={ isLoading || publicationLoading }>
-          { publication && (
-            <CustomReader
-              profile={ profile }
-              publication={ publication }
-              localDataKey={ localDataKey }
-            />
-          )}
-        </StatefulLoader>
+        publication && (
+          <CustomReader
+            profile={ profile ?? undefined }
+            publication={ publication }
+            localDataKey={ localDataKey }
+            isLoading={ publicationLoading || readerLoading }
+          />
+        )
       )}
     </>
   );

@@ -58,6 +58,74 @@
                 "descriptive": "Edellinen lause"
             }
         },
+        "annotations": {
+            "actions": {
+                "editNote": {
+                    "compact": "Muokkaa muistiinpanoa"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "Lisää kirjanmerkki"
+                    },
+                    "delete": {
+                        "compact": "Poista kirjanmerkki",
+                        "confirmation": "Haluatko varmasti poistaa tämän kirjanmerkin?"
+                    }
+                },
+                "emptyState": {
+                    "description": "Yhtään kirjanmerkkiä ei ole vielä lisätty.",
+                    "title": "Ei kirjanmerkkejä"
+                },
+                "title": "Kirjanmerkit"
+            },
+            "note": {
+                "title": "Muistiinpano"
+            },
+            "sort": {
+                "lastAdded": {
+                    "compact": "Viimeksi lisätty"
+                },
+                "lastEdited": {
+                    "compact": "Vimeksi muokattu"
+                },
+                "progression": {
+                    "compact": "Edistyminen"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "Pysäytä",
+                "play": "Toista",
+                "skipBackward": {
+                    "compact": "Pikakelaa",
+                    "descriptive": "Ohita taaksepäin"
+                },
+                "skipForward": {
+                    "compact": "Eteenpäin",
+                    "descriptive": "Ohita eteenpäin"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "skipBackwardInterval": "Taaksepäin ohittamisen väli",
+                    "skipForwardInterval": "Eteenpäin ohittamisen väli",
+                    "skipInterval": "Ohita väli",
+                    "title": "Ääniasetukset",
+                    "volume": "Äänenvoimakkuus"
+                },
+                "autoPlay": {
+                    "label": "Jatkuva toisto",
+                    "title": "Automaattinen toisto"
+                },
+                "playbackRate": {
+                    "compact": "Nopeus",
+                    "descriptive": "Toistonopeus"
+                }
+            }
+        },
         "preferences": {
             "brightness": "Kirkkaus",
             "columns": {

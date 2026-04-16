@@ -15,13 +15,15 @@ import { useLineLengths } from "./hooks/useLineLengths";
 export const PlaygroundLineLengths = ({ standalone = true }: StatefulSettingsItemProps) => {
   const { preferences } = usePreferences();
   const lineLength = useAppSelector(state => state.settings.lineLength);
-  const { preferencesEditor } = useNavigator();
+  const { preferencesEditor } = useNavigator().visual;
   const { updatePreference } = useLineLengths();
   const { t } = useI18n("playground");
 
+  const epubEditor = preferencesEditor && "optimalLineLength" in preferencesEditor ? preferencesEditor : undefined;
+
   const lineLengthRangeConfig = {
-    range: preferencesEditor?.optimalLineLength.supportedRange || [20, 100],
-    step: preferencesEditor?.optimalLineLength.step || 1
+    range: epubEditor?.optimalLineLength.supportedRange || [20, 100],
+    step: epubEditor?.optimalLineLength.step || 1
   };
 
   const optimalLineLength = lineLength?.optimal || preferences.typography.optimalLineLength;

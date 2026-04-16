@@ -14,7 +14,7 @@ import { setLayoutPreset } from "@/lib/customReducer";
 
 export const useLineLengths = () => {
   const dispatch = useAppDispatch();
-  const { submitPreferences, getSetting } = useNavigator();
+  const { submitPreferences, getSetting } = useNavigator().visual;
   const { preferences } = usePreferences();
   const layoutPreset = useAppSelector(state => state.custom.layoutPreset);
   const lineLength = useAppSelector(state => state.settings.lineLength);
@@ -29,31 +29,42 @@ export const useLineLengths = () => {
         optimalLineLength: preset.optimal,
         maximalLineLength: preset.max
       });
-    
-    // Always sync Redux with current preferences
+    }
+
+    // Sync Redux with current preferences only if values changed
     const minimal = getSetting("minimalLineLength");
     const optimal = getSetting("optimalLineLength");
     const maximal = getSetting("maximalLineLength");
-    
+
+    const minValue = minimal ?? preferences.typography.minimalLineLength;
+    const optimalValue = optimal ?? preferences.typography.optimalLineLength;
+    const maxValue = maximal ?? preferences.typography.maximalLineLength;
+
+    // Only dispatch if values actually changed
+    if (lineLength?.min?.chars !== minValue || lineLength?.min?.isDisabled !== (minimal === null)) {
       dispatch(setLineLength({
         key: "min",
-        value: minimal ?? preferences.typography.minimalLineLength,
+        value: minValue,
         isDisabled: minimal === null
       }));
-    
+    }
+
+    if (lineLength?.optimal !== optimalValue) {
       dispatch(setLineLength({
         key: "optimal",
-        value: optimal ?? preferences.typography.optimalLineLength,
+        value: optimalValue,
         isDisabled: false
       }));
-    
+    }
+
+    if (lineLength?.max?.chars !== maxValue || lineLength?.max?.isDisabled !== (maximal === null)) {
       dispatch(setLineLength({
         key: "max",
-        value: maximal ?? preferences.typography.maximalLineLength,
+        value: maxValue,
         isDisabled: maximal === null
       }));
     }
-  }, [layoutPreset, dispatch, submitPreferences, getSetting, preferences.typography]);
+  }, [layoutPreset, dispatch, submitPreferences, getSetting, preferences.typography.minimalLineLength, preferences.typography.optimalLineLength, preferences.typography.maximalLineLength, lineLength]);
 
   // Helper function to get the correct preference key
   const getPreferenceKey = (type: "min" | "optimal" | "max") => {

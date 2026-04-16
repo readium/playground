@@ -1,7 +1,15 @@
 "use client";
 
+import { useEffect } from "react";
 import { ThPlugin } from "@edrlab/thorium-web/epub";
-import { StatefulReaderWrapper, ReaderComponentProps } from "@edrlab/thorium-web/reader";
+import { StatefulReaderWrapper, ReaderComponentProps, ReaderProfile, ThReduxPreferencesAdapter } from "@edrlab/thorium-web/reader";
+import { defaultAudioPreferences } from "@edrlab/thorium-web/core/preferences";
+import { playgroundPreferences, CustomKeys } from "@/preferences/preferences";
+import { store } from "./CustomProviders";
+
+import "@edrlab/thorium-web/misc/styles";
+
+const adapter = new ThReduxPreferencesAdapter<CustomKeys>(store, playgroundPreferences);
 
 const epubPlugins = async (): Promise<ThPlugin[]> => {
   const { createDefaultPlugin } = await import("@edrlab/thorium-web/epub");
@@ -15,7 +23,7 @@ const epubPlugins = async (): Promise<ThPlugin[]> => {
     id: "custom",
     name: "Custom Components",
     description: "Custom components for Readium Playground StatefulReader",
-    version: "1.0.7",
+    version: "1.3.0",
     components: {
       actions: {
         [PlaygroundActionsKeys.layoutPresets]: {
@@ -31,11 +39,29 @@ const epubPlugins = async (): Promise<ThPlugin[]> => {
   }];
 };
 
-export const CustomReader = (props: Omit<ReaderComponentProps, "plugins">) => {
+export const CustomReader = (props: Omit<ReaderComponentProps<ReaderProfile | null>, "plugins">) => {
+  useEffect(() => {
+    if (props.profile === "epub") {
+      import("@edrlab/thorium-web/epub/styles");
+    } else if (props.profile === "webPub") {
+      import("@edrlab/thorium-web/webpub/styles");
+    } else if (props.profile === "audio") {
+      import("@edrlab/thorium-web/audio/styles");
+    }
+  }, [props.profile]);
+
   return (
     <StatefulReaderWrapper
       { ...props }
       plugins={{ epub: epubPlugins }}
+      preferences={
+        props.profile === "audio"
+          ? { initialPreferences: defaultAudioPreferences }
+          : { initialPreferences: playgroundPreferences, adapter }
+      }
+      i18n={{
+        ns: ["thorium-shared", "thorium-web", "playground"]
+      }}
     />
   );
 };

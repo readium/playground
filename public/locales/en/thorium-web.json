@@ -104,5 +104,27 @@
         }
       }
     }
+  },
+  "audio": {
+    "player": {
+      "progress": "Playback progress",
+      "controls": "Playback controls",
+      "mediaControls": "Audio settings",
+      "coverAlt": "Audiobook cover"
+    },
+    "remotePlayback": {
+      "trigger": "Remote Playback",
+      "connected": "Remote connected"
+    },
+    "settings": {
+      "sleepTimer": {
+        "hours": "h",
+        "minutes": "min",
+        "seconds": "s",
+        "start": "Start",
+        "instruction": "Playback will pause after the set duration.",
+        "remaining": "Pausing in {{ remaining }}"
+      }
+    }
   }
 }

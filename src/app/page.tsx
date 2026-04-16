@@ -112,7 +112,7 @@ export default function Home() {
       </header>
 
       <PublicationGrid
-        publications={ [...books, ...audiobooks] }
+        publications={ [...books, ...webPublications, ...audiobooks] }
         renderCover={ (publication) => (
           <Image
             src={ publication.cover }

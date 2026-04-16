@@ -29,7 +29,8 @@ import {
 } from "@edrlab/thorium-web/reader";
 
 export const PlaygroundReaderSettingsContainer = ({ triggerRef }: StatefulActionContainerProps) => {
-  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.readerSettings]);
+  const profile = useAppSelector(state => state.reader.profile);
+  const actionState = useAppSelector(state => profile ? state.actions.keys[profile][PlaygroundActionsKeys.readerSettings] : undefined);
   const contains = useAppSelector(state => state.custom.readerPreferencesContainerKey);
   const dispatch = useAppDispatch();
   
@@ -38,13 +39,16 @@ export const PlaygroundReaderSettingsContainer = ({ triggerRef }: StatefulAction
 
   const { t } = useI18n("playground");
 
-  const setOpen = useCallback((isOpen: boolean) => {    
-    dispatch(setActionOpen({
-      key: PlaygroundActionsKeys.readerSettings,
-      isOpen
-    }));
+  const setOpen = useCallback((isOpen: boolean) => {
+    if (profile) {
+      dispatch(setActionOpen({
+        key: PlaygroundActionsKeys.readerSettings,
+        isOpen,
+        profile
+      }));
+    }
     if (!isOpen) dispatch(setHovering(false));
-  }, [dispatch]);
+  }, [dispatch, profile]);
 
   const setInitial = useCallback(() => {
     dispatch(setReaderPreferencesContainerKey(readerPreferencesContainerKeys.initial));

@@ -17,7 +17,8 @@ import {
 import { PlaygroundLayoutPresetsGroup } from "../../Settings/LayoutPresets/PlaygroundLayoutPresets";
 
 export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionContainerProps) => {
-  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.layoutPresets]);
+  const profile = useAppSelector(state => state.reader.profile);
+  const actionState = useAppSelector(state => profile ? state.actions.keys[profile][PlaygroundActionsKeys.layoutPresets] : undefined);
   const dispatch = useAppDispatch();
   
   const docking = useDocking(PlaygroundActionsKeys.layoutPresets);
@@ -25,11 +26,14 @@ export const PlaygroundLayoutPresetsContainer = ({ triggerRef }: StatefulActionC
 
   const { t } = useI18n("playground");
 
-  const setOpen = (value: boolean) => {    
-    dispatch(setActionOpen({
-      key: PlaygroundActionsKeys.layoutPresets,
-      isOpen: value
-    }));
+  const setOpen = (value: boolean) => {
+    if (profile) {
+      dispatch(setActionOpen({
+        key: PlaygroundActionsKeys.layoutPresets,
+        isOpen: value,
+        profile
+      }));
+    }
 
     // hover false otherwise it tends to stay on close button press…
     if (!value) dispatch(setHovering(false));

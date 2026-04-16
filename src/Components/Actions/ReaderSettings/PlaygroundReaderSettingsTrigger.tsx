@@ -20,16 +20,20 @@ import { CustomKeys, PlaygroundActionsKeys } from "@/preferences/preferences";
 export const PlaygroundReaderSettingsTrigger = ({ variant }: StatefulActionTriggerProps) => {
   const { preferences } = usePreferences<CustomKeys>();
   
-  const actionState = useAppSelector(state => state.actions.keys[PlaygroundActionsKeys.readerSettings]);
+  const profile = useAppSelector(state => state.reader.profile);
+  const actionState = useAppSelector(state => profile ? state.actions.keys[profile][PlaygroundActionsKeys.readerSettings] : undefined);
   const dispatch = useAppDispatch();
 
   const { t } = useI18n("playground");
  
-  const setOpen = (value: boolean) => {    
-    dispatch(setActionOpen({
-      key: PlaygroundActionsKeys.readerSettings,
-      isOpen: value
-    }));
+  const setOpen = (value: boolean) => {
+    if (profile) {
+      dispatch(setActionOpen({
+        key: PlaygroundActionsKeys.readerSettings,
+        isOpen: value,
+        profile
+      }));
+    }
 
     // hover false otherwise it tends to stay on close button press…
     if (!value) dispatch(setHovering(false));

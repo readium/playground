@@ -23,6 +23,7 @@ import { PlaygroundLineLengths } from "./PlaygroundLineLengths";
 import { useLineLengths } from "./hooks/useLineLengths";
 
 export const PlaygroundLayoutPresetsGroup = () => {
+  const profile = useAppSelector(state => state.reader.profile);
   const layoutPreset = useAppSelector(state => state.custom.layoutPreset);
 
   const { updatePreset } = useLineLengths();
@@ -39,7 +40,7 @@ export const PlaygroundLayoutPresetsGroup = () => {
       orientation="horizontal"
       value={ layoutPreset }
       onChange={ async (val: string) => await updatePreset(val as layoutPresets) }
-      onEscape={ () => dispatch(setActionOpen({ key: PlaygroundActionsKeys.layoutPresets, isOpen: false })) }
+      onEscape={ () => { if (profile) dispatch(setActionOpen({ key: PlaygroundActionsKeys.layoutPresets, isOpen: false, profile })) } }
       items={[
         {
           id: layoutPresets.lineLength,

@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@edrlab/thorium-web':
-        specifier: ^1.3.0
-        version: 1.3.0(aca883c24c913eb0fd1baa38583aed44)
+        specifier: ^1.3.1
+        version: 1.3.1(aca883c24c913eb0fd1baa38583aed44)
       '@readium/css':
         specifier: ^2.0.1
         version: 2.0.1
@@ -60,7 +60,7 @@ importers:
         specifier: ^16.5.4
         version: 16.5.4(i18next@25.8.13(typescript@5.9.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
       react-modal-sheet:
-        specifier: ^5.2.1
+        specifier: 5.2.1
         version: 5.2.1(motion@12.34.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react-redux:
         specifier: ^9.2.0
@@ -663,8 +663,8 @@ packages:
     resolution: {integrity: sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==}
     engines: {node: '>=6.9.0'}
 
-  '@edrlab/thorium-web@1.3.0':
-    resolution: {integrity: sha512-nHASebiTN0qCqb1WFsV3KzG+vcWEWHU9+pGZNX6oCvetKxWzH0P8e+sZcP/eli3rfc94/SLuefZzbayF0TayoA==}
+  '@edrlab/thorium-web@1.3.1':
+    resolution: {integrity: sha512-ND++uawMx47h32AcGkHkUgMVWv4mqpqXvtotqtkQ584XKy+IX8ysZJsweRLs56HAmjVfLozdVKGOVkCFIr6r/g==}
     peerDependencies:
       '@readium/css': ^2.0.1
       '@readium/navigator': 2.4.0
@@ -680,7 +680,7 @@ packages:
       react-aria-components: ^1.15.1
       react-dom: ^19.2.4
       react-i18next: ^16.5.4
-      react-modal-sheet: ^5.2.1
+      react-modal-sheet: 5.2.1
       react-redux: ^9.2.0
       react-resizable-panels: ^3.0.6
       react-stately: ^3.44.0
@@ -4427,7 +4427,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@edrlab/thorium-web@1.3.0(aca883c24c913eb0fd1baa38583aed44)':
+  '@edrlab/thorium-web@1.3.1(aca883c24c913eb0fd1baa38583aed44)':
     dependencies:
       '@edrlab/thorium-locales': thorium-locales@https://codeload.github.com/edrlab/thorium-locales/tar.gz/e175badc67ac33dcda6911dd5ebcf7a1570bee8c
       '@readium/css': 2.0.1

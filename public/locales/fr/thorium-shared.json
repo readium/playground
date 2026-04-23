@@ -37,6 +37,10 @@
                 "compact": "Suivant",
                 "descriptive": "Page suivante"
             },
+            "goToNextResource": {
+                "compact": "Suivant",
+                "descriptive": "Ressource suivante"
+            },
             "goToNextSentence": {
                 "compact": "Suivant",
                 "descriptive": "Phrase suivante"
@@ -53,9 +57,89 @@
                 "compact": "Précédent",
                 "descriptive": "Page précédente"
             },
+            "goToPreviousResource": {
+                "compact": "Précédent",
+                "descriptive": "Ressource précédente"
+            },
             "goToPreviousSentence": {
                 "compact": "Précédent",
                 "descriptive": "Phrase précédente"
+            }
+        },
+        "annotations": {
+            "actions": {
+                "editNote": {
+                    "compact": "Modifier la note"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "Ajouter un marque-page"
+                    },
+                    "delete": {
+                        "compact": "Supprimer un marque-page",
+                        "confirmation": "Êtes-vous certain·e de vouloir supprimer ce marque-page ?"
+                    }
+                },
+                "emptyState": {
+                    "description": "Les nouveaux marque-pages ajoutés pendant la lecture s'afficheront ici.",
+                    "title": "Aucun marque-page"
+                },
+                "title": "Marque-pages"
+            },
+            "note": {
+                "title": "Note"
+            },
+            "sort": {
+                "lastAdded": {
+                    "compact": "Dernier ajouté"
+                },
+                "lastEdited": {
+                    "compact": "Dernier mis à jour"
+                },
+                "progression": {
+                    "compact": "Progression"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "Pause",
+                "play": "Lecture",
+                "skipBackward": {
+                    "compact": "Retour",
+                    "descriptive": "Retour rapide"
+                },
+                "skipForward": {
+                    "compact": "Avancer",
+                    "descriptive": "Avance rapide"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "skipBackwardInterval": "Intervalle de retour rapide",
+                    "skipForwardInterval": "Intervalle d'avance rapide",
+                    "skipInterval": "Intervalle de saut",
+                    "title": "Réglages audio",
+                    "volume": "Volume"
+                },
+                "autoPlay": {
+                    "label": "Lecture continue",
+                    "title": "Lecture automatique"
+                },
+                "playbackRate": {
+                    "compact": "Vitesse",
+                    "descriptive": "Vitesse de lecture"
+                },
+                "sleepTimer": {
+                    "compact": "Minuteur",
+                    "descriptive": "Minuteur de sommeil",
+                    "presets": {
+                        "endOfChapter": "Fin du chapitre",
+                        "endOfResource": "Fin de la ressource"
+                    }
+                }
             }
         },
         "preferences": {
@@ -118,12 +202,20 @@
                 "title": "Mise en page"
             },
             "letterSpacing": "Espacement interlettre",
+            "ligatures": {
+                "label": "Activer les ligatures",
+                "title": "Ligatures"
+            },
             "lineHeight": {
                 "default": "Par défaut",
                 "large": "Élargi",
                 "medium": "Équilibré",
                 "small": "Resserré",
                 "title": "Interligne"
+            },
+            "noRuby": {
+                "label": "Cacher les annotations ruby",
+                "title": "Annotations ruby"
             },
             "offsetFirstPage": "Afficher la première page seule",
             "paragraphIndent": "Indentation du texte",
@@ -246,9 +338,24 @@
                 "descriptive": "{{ x }} de {{ y }} ({{ z }})"
             }
         },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "Résultat suivant"
+                },
+                "previous": {
+                    "compact": "Résultat précédent"
+                }
+            },
+            "placeholder": "Rechercher des mots clés ou une phrase",
+            "result_many": "{{ current }} sur {{ count }} résultats",
+            "result_one": "{{ current }} sur {{ count }} résultat",
+            "result_other": "{{ current }} sur {{ count }} résultats",
+            "title": "Rechercher"
+        },
         "tableOfContents": {
             "emptyState": {
-                "description": "La table des matières n'est pas disponible pour cette publication.",
+                "description": "La table des matières n'a pas été renseignée par l'auteur.",
                 "title": "Aucune table des matières"
             },
             "title": "Table des matières"

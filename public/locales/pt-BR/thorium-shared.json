@@ -151,27 +151,33 @@
         },
         "progression": {
             "pagesLeft": {
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} página restante",
                 "descriptive_other": "{{ count }} páginas restantes"
             },
             "pagesLeftInChapter": {
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} página restante no capítulo",
                 "descriptive_other": "{{ count }} páginas restantes no capítulo"
             },
             "pagesLeftInPublication": {
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} página restante em publicação",
                 "descriptive_other": "{{ count }} páginas restantes em publicação"
             },
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} posição restante",
                 "descriptive_other": "{{ count }} posições restantes"
             },
             "positionsLeftInChapter": {
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} posição restante no capítulo",
                 "descriptive_other": "{{ count }} posições restantes no capítulo"
             },
             "positionsLeftInPublication": {
+                "descriptive_many": "",
                 "descriptive_one": "{{ count }} posição restante na publicação",
                 "descriptive_other": "{{ count }} posições restantes na publicação"
             },

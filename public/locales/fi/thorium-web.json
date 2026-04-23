@@ -49,7 +49,16 @@
             "back": {
                 "trigger": "Takaisin"
             },
-            "printingDisabled": "Tulostus on poistettu käytöstä"
+            "printingDisabled": "Tulostus on poistettu käytöstä",
+            "errors": {
+                "title": "Virhe",
+                "notFound": "Julkaisua ei löytynyt.",
+                "accessDenied": "Pääsy evätty.",
+                "network": "Palvelin ei saatavilla - yritä myöhemmin uudelleen.",
+                "serverError": "Palvelinvirhe - yritä myöhemmin uudelleen.",
+                "clientError": "Epäkelpo pyyntö.",
+                "generic": "Ei voitu ladata julkaisua."
+            }
         },
         "navigation": {
             "scroll": {
@@ -66,7 +75,10 @@
         },
         "jumpToPosition": {
             "go": "Siirry",
-            "label": "Valitse kohta väliltä {{ positionStart }} ja {{ positionEnd }}:"
+            "label": "Valitse kohta väliltä {{ positionStart }} ja {{ positionEnd }}:",
+            "error": {
+                "notFound": "Sijaintia ei löytynyt."
+            }
         },
         "overflowMenu": {
             "active": {
@@ -90,6 +102,28 @@
                     "tooltip": "Lisää vaihtoehtoja",
                     "trigger": "Lisää välistysasetuksia"
                 }
+            }
+        }
+    },
+    "audio": {
+        "player": {
+            "progress": "Toiston eteneminen",
+            "controls": "Toistotoiminnot",
+            "mediaControls": "Ääniasetukset",
+            "coverAlt": "Äänikirjan kansi"
+        },
+        "remotePlayback": {
+            "trigger": "Etätoisto",
+            "connected": "Etäyhteys päällä"
+        },
+        "settings": {
+            "sleepTimer": {
+                "hours": "h",
+                "minutes": "min",
+                "seconds": "s",
+                "start": "Aloita",
+                "instruction": "Toisto keskeytyy, kun asetettu aika on kulunut.",
+                "remaining": "Keskeytyy {{ remaining }} kuluttua"
             }
         }
     }

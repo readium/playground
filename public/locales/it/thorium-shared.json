@@ -37,6 +37,10 @@
                 "compact": "Successivo",
                 "descriptive": "Pagina successiva"
             },
+            "goToNextResource": {
+                "compact": "Successiva",
+                "descriptive": "Risorsa successiva"
+            },
             "goToNextSentence": {
                 "compact": "Successivo",
                 "descriptive": "Frase seguente"
@@ -53,9 +57,89 @@
                 "compact": "Precedente",
                 "descriptive": "Pagina precedente"
             },
+            "goToPreviousResource": {
+                "compact": "Precedente",
+                "descriptive": "Risorsa precedente"
+            },
             "goToPreviousSentence": {
                 "compact": "Precedente",
                 "descriptive": "Frase precedente"
+            }
+        },
+        "annotations": {
+            "actions": {
+                "editNote": {
+                    "compact": "Modifica la nota"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "Aggiungi segnalibro"
+                    },
+                    "delete": {
+                        "compact": "Elimina segnalibro",
+                        "confirmation": "Sei sicuro che vuoi eliminare questo segnalibro?"
+                    }
+                },
+                "emptyState": {
+                    "description": "I nuovi segnalibri aggiunti durante la lettura verranno visualizzati qui.",
+                    "title": "Nessun segnalibro"
+                },
+                "title": "Segnalibri"
+            },
+            "note": {
+                "title": "Nota"
+            },
+            "sort": {
+                "lastAdded": {
+                    "compact": "Ultima aggiunta"
+                },
+                "lastEdited": {
+                    "compact": "Ultima modificata"
+                },
+                "progression": {
+                    "compact": "Progressione"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "Pausa",
+                "play": "Play",
+                "skipBackward": {
+                    "compact": "Torna indietro",
+                    "descriptive": "Salta indietro"
+                },
+                "skipForward": {
+                    "compact": "Avanti",
+                    "descriptive": "Salta avanti"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "skipBackwardInterval": "Salta un intervallo indietro",
+                    "skipForwardInterval": "Salta un intervallo avanti",
+                    "skipInterval": "Salta intervallo",
+                    "title": "Impostazioni audio",
+                    "volume": "Volume"
+                },
+                "autoPlay": {
+                    "label": "Riproduci fino alla fine",
+                    "title": "Autoplay"
+                },
+                "playbackRate": {
+                    "compact": "Velocità",
+                    "descriptive": "Velocità della riproduzione"
+                },
+                "sleepTimer": {
+                    "compact": "Timer",
+                    "descriptive": "Timer di spegnimento",
+                    "presets": {
+                        "endOfChapter": "Fine del capitolo",
+                        "endOfResource": "Fine della risorsa"
+                    }
+                }
             }
         },
         "preferences": {
@@ -118,12 +202,20 @@
                 "title": "Impaginazione"
             },
             "letterSpacing": "Spaziatura caratteri",
+            "ligatures": {
+                "label": "Attiva le legature",
+                "title": "Legature"
+            },
             "lineHeight": {
                 "default": "Predefinita",
                 "large": "Allargata",
                 "medium": "Bilanciata",
                 "small": "Stretta",
                 "title": "Interlinea"
+            },
+            "noRuby": {
+                "label": "Nascondi le annotazioni ruby",
+                "title": "Annotazioni ruby"
             },
             "offsetFirstPage": "Visualizza solo la prima pagina",
             "paragraphIndent": "Rientro del paragrafo",
@@ -246,9 +338,24 @@
                 "descriptive": "{{ x }} di {{ y }} ({{ z }})"
             }
         },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "Risultato successivo"
+                },
+                "previous": {
+                    "compact": "Risultato precedente"
+                }
+            },
+            "placeholder": "Cerca parole chiave o una frase",
+            "result_many": "{{ current }} di {{ count }} risultati",
+            "result_one": "{{ current }} di {{ count }} risultato",
+            "result_other": "{{ current }} di {{ count }} risultati",
+            "title": "Cerca"
+        },
         "tableOfContents": {
             "emptyState": {
-                "description": "Il sommario non è disponibile per questa pubblicazione.",
+                "description": "Il sommario non è stato fornito dall'autore.",
                 "title": "Nessun sommario"
             },
             "title": "Sommario"

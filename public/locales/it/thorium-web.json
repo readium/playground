@@ -48,7 +48,17 @@
             },
             "back": {
                 "trigger": "Indietro"
-            }
+            },
+            "errors": {
+                "title": "Errore",
+                "notFound": "Pubblicazione non trovata.",
+                "accessDenied": "Accesso negato.",
+                "network": "Server non disponibile, si prega di riprovare.",
+                "serverError": "Errore del server. Si prega di riprovare.",
+                "clientError": "Richiesta non valida.",
+                "generic": "Impossible caricare la pubblicazione."
+            },
+            "printingDisabled": "La stampa è stata disabilitata"
         },
         "navigation": {
             "scroll": {
@@ -65,7 +75,10 @@
         },
         "jumpToPosition": {
             "go": "Vai",
-            "label": "Selezionare una posizione tra {{ positionStart }} e {{ positionEnd }}:"
+            "label": "Selezionare una posizione tra {{ positionStart }} e {{ positionEnd }}:",
+            "error": {
+                "notFound": "Posizione non trovata."
+            }
         },
         "overflowMenu": {
             "active": {

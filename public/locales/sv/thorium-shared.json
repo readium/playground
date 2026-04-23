@@ -37,6 +37,10 @@
                 "compact": "Nästa",
                 "descriptive": "Nästa sida"
             },
+            "goToNextResource": {
+                "compact": "Nästa",
+                "descriptive": "Nästa resurs"
+            },
             "goToNextSentence": {
                 "compact": "Nästa",
                 "descriptive": "Nästa mening"
@@ -53,9 +57,89 @@
                 "compact": "Föregående",
                 "descriptive": "Föregående sida"
             },
+            "goToPreviousResource": {
+                "compact": "Föregående",
+                "descriptive": "Föregående resurs"
+            },
             "goToPreviousSentence": {
                 "compact": "Föregående",
                 "descriptive": "Föregående mening"
+            }
+        },
+        "annotations": {
+            "actions": {
+                "editNote": {
+                    "compact": "Redigera anteckning"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "Lägg till bokmärke"
+                    },
+                    "delete": {
+                        "compact": "Radera bokmärke",
+                        "confirmation": "Är du säker på att du vill ta bort detta bokmärke?"
+                    }
+                },
+                "emptyState": {
+                    "description": "Nya bokmärken läggs till när du läser kommer att visas i den här listan.",
+                    "title": "Inga bokmärken"
+                },
+                "title": "Bokmärken"
+            },
+            "note": {
+                "title": "Anteckning"
+            },
+            "sort": {
+                "lastAdded": {
+                    "compact": "Senast tillagd"
+                },
+                "lastEdited": {
+                    "compact": "Senast redigerad"
+                },
+                "progression": {
+                    "compact": "Framsteg"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "Paus",
+                "play": "Spela",
+                "skipBackward": {
+                    "compact": "Spola tillbaka",
+                    "descriptive": "Hoppa bakåt"
+                },
+                "skipForward": {
+                    "compact": "Framåt",
+                    "descriptive": "Hoppa framåt"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "skipBackwardInterval": "Hoppa bakåt intervall",
+                    "skipForwardInterval": "Hoppa framåt intervall",
+                    "skipInterval": "Hoppa intervall",
+                    "title": "Ljudinställningar",
+                    "volume": "Volym"
+                },
+                "autoPlay": {
+                    "label": "Kontinuerlig uppspelning",
+                    "title": "Autoplay"
+                },
+                "playbackRate": {
+                    "compact": "Hastighet",
+                    "descriptive": "Uppspelningshastighet"
+                },
+                "sleepTimer": {
+                    "compact": "Timer",
+                    "descriptive": "Sovtimer",
+                    "presets": {
+                        "endOfChapter": "Kapitlets slut",
+                        "endOfResource": "Slut på resurs"
+                    }
+                }
             }
         },
         "preferences": {
@@ -118,12 +202,20 @@
                 "title": "Layout"
             },
             "letterSpacing": "Teckenavstånd",
+            "ligatures": {
+                "label": "Aktivera ligaturer",
+                "title": "Ligaturer"
+            },
             "lineHeight": {
                 "default": "Standard",
                 "large": "Luftigt",
                 "medium": "Balanserat",
                 "small": "Tätt",
                 "title": "Radavstånd"
+            },
+            "noRuby": {
+                "label": "Dölj ruby-annoteringar",
+                "title": "Ruby-annoteringar"
             },
             "offsetFirstPage": "Visa första sidan på egen hand",
             "paragraphIndent": "Styckeindrag",
@@ -229,7 +321,7 @@
                 "compact_one": "{{ count }} kvar i publikationen",
                 "compact_other": "{{ count }} kvar i publikationen",
                 "descriptive_one": "{{ count }} position kvar i publikation",
-                "descriptive_other": "{{ count }} kvar i boken"
+                "descriptive_other": "{{ count }} positioner kvar i publikationen"
             },
             "range": "{{ start }}–{{ end }}",
             "xOfY": {
@@ -237,9 +329,23 @@
                 "descriptive": "{{ x }} av {{ y }} ({{ z }})"
             }
         },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "Nästa träff"
+                },
+                "previous": {
+                    "compact": "Föregående träff"
+                }
+            },
+            "placeholder": "Sök efter nyckelord eller fraser",
+            "result_one": "{{ current }} av {{ count }} träff",
+            "result_other": "{{ current }} av {{ count }} träffar",
+            "title": "Sök"
+        },
         "tableOfContents": {
             "emptyState": {
-                "description": "Den här boken saknar innehållsförteckning.",
+                "description": "En innehållsförteckning lämnades inte av författaren.",
                 "title": "Ingen innehållsförteckning"
             },
             "title": "Innehållsförteckning"

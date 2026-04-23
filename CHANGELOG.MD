@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] – 2026-04-23
+
+### Added
+
+- Support for RTL and CJK
+- New ligatures and ruby annotations settings
+- Settings are automatically filtered out depending on the script and writing mode of the publication
+- RTL and CJK font collections in default preferences
+
+### Changed
+
+- Availability and usage of settings is now checked before submitting preferences to the Navigator on instantiation
+- Table of Contents’ tree is now displayed in the direction of the publication
+- Scroll Affordances are now displayed in the direction of the publication
+
+### Fixed
+
+- The paginated arrows will now be disabled correctly at the start and end of publications with a RTL progression-direction
+- Audio Progression bar is now direction LTR in all languages, like playback controls
+
 ## [1.3.0] – 2026-04-16
 
 ### Added

@@ -37,6 +37,10 @@
                 "compact": "Edasi",
                 "descriptive": "Järgmine leht"
             },
+            "goToNextResource": {
+                "compact": "Järgmine",
+                "descriptive": "Järgmine ressurss"
+            },
             "goToNextSentence": {
                 "compact": "Järgmine",
                 "descriptive": "Järgmine lause"
@@ -52,6 +56,10 @@
             "goToPreviousPage": {
                 "compact": "Eelmine",
                 "descriptive": "Eelmine leht"
+            },
+            "goToPreviousResource": {
+                "compact": "Eelmine",
+                "descriptive": "Eelmine ressurss"
             },
             "goToPreviousSentence": {
                 "compact": "Tagasi",
@@ -75,7 +83,7 @@
                     }
                 },
                 "emptyState": {
-                    "description": "Ühtegi järjehoidjat pole veel lisatud.",
+                    "description": "Lugemise ajal lisatud järjehoidjad saavad olema nähtavad siin.",
                     "title": "Järjehoidjaid pole"
                 },
                 "title": "Järjehoidjad"
@@ -110,7 +118,27 @@
             },
             "preferences": {
                 "audio": {
-                    "skipBackwardInterval": "Tagasikerimise samm"
+                    "skipBackwardInterval": "Tagasikerimise samm",
+                    "skipForwardInterval": "Edasikerimise välp",
+                    "skipInterval": "Vahelejätmise välp",
+                    "title": "Heliseadistused",
+                    "volume": "Helivaljus"
+                },
+                "autoPlay": {
+                    "label": "Jätkuv taasesitus",
+                    "title": "Automaatne esitus"
+                },
+                "playbackRate": {
+                    "compact": "Kiirus",
+                    "descriptive": "Taasesituse kiirus"
+                },
+                "sleepTimer": {
+                    "compact": "Taimer",
+                    "descriptive": "Unetaimer",
+                    "presets": {
+                        "endOfChapter": "Peatüki lõpp",
+                        "endOfResource": "Ressursi lõpp"
+                    }
                 }
             }
         },
@@ -142,19 +170,30 @@
             },
             "fontFamily": {
                 "humanist": {
-                    "compact": "Humanist"
+                    "compact": "Humanist",
+                    "descriptive": "Humanist seriifideta"
                 },
                 "modern": {
-                    "compact": "Moodne"
+                    "compact": "Moodne",
+                    "descriptive": "Moodne seriifidega"
                 },
                 "monospace": "Fikseeritud laiusega kirjatüüp",
-                "sans": "Seriifideta"
+                "oldStyle": {
+                    "compact": "Vanamoodne",
+                    "descriptive": "Vanamoodne seriifidega"
+                },
+                "publisher": "Kirjastaja määratud kirjatüüp",
+                "sans": "Seriifideta",
+                "title": "Kirjatüübi perekond"
             },
+            "fontSize": "Kirjatüübi suurus",
             "fontWeight": {
                 "bold": "Paksem",
-                "normal": "Tavaline"
+                "normal": "Tavaline",
+                "title": "Kirjatüübi kaal"
             },
             "hyphens": {
+                "label": "Luba sidekriipsud",
                 "title": "Poolitamine"
             },
             "layout": {
@@ -162,13 +201,34 @@
                 "scrolled": "Keritav",
                 "title": "Paigutus"
             },
+            "letterSpacing": "Tähevahed",
+            "ligatures": {
+                "label": "Kasuta liittähti (ligatuure)",
+                "title": "Liittähed (ligatuurid)"
+            },
             "lineHeight": {
                 "default": "Vaikimisi",
                 "large": "Hõre",
                 "medium": "Tasakaalustatud",
-                "small": "Tihe"
+                "small": "Tihe",
+                "title": "Rea kõrgus"
+            },
+            "noRuby": {
+                "label": "Peida „ruby“ märkused",
+                "title": "„Ruby“ märkused"
+            },
+            "offsetFirstPage": "Näita esimest lehte eraldi",
+            "paragraphIndent": "Lõikude taandrida",
+            "paragraphSpacing": "Lõikude reavahe",
+            "publisherStyles": {
+                "label": "Kasuta algset vormingut",
+                "title": "Kirjastaja stiilid"
             },
             "readingDirection": {
+                "default": {
+                    "compact": "Vaikimisi",
+                    "descriptive": "Kasuta algset lugemise suunda"
+                },
                 "ltr": {
                     "compact": "Paremale",
                     "descriptive": "Vasakult paremale"
@@ -191,17 +251,45 @@
                 },
                 "title": "Sõrendus"
             },
+            "spread": {
+                "always": {
+                    "compact": "Topeltleht"
+                },
+                "auto": {
+                    "compact": "Automaatne"
+                },
+                "never": {
+                    "compact": "Üks leht"
+                },
+                "title": "Kuvamine kahe lehekülje kaupa"
+            },
             "text": "Tekst",
             "textAlign": {
                 "default": "Vaikimisi",
                 "justify": "Rööpne",
                 "left": "Vasakul",
-                "right": "Paremal"
+                "right": "Paremal",
+                "title": "Teksti joondumine"
+            },
+            "textNormalization": {
+                "label": "Eemalda kõik tekst vormindus",
+                "title": "Teksti normaliseerimine"
             },
             "themes": {
                 "auto": "Automaatne",
+                "contrast1": "Kontrastne kujundus 1",
+                "contrast2": "Kontrastne kujundus 2",
+                "contrast3": "Kontrastne kujundus 3",
+                "dark": "Tume kujundus",
+                "gray": "Hall kujundus",
+                "light": "Hele kujundus",
+                "paper": "Paberlik kujundus",
+                "sepia": "Seepia kujundus",
                 "title": "Kujundused"
-            }
+            },
+            "title": "Ekraanivaate seadistused",
+            "wordSpacing": "Sõnavahed",
+            "zoom": "Suumimine"
         },
         "progression": {
             "pagesLeft": {
@@ -215,7 +303,31 @@
             "pagesLeftInPublication": {
                 "descriptive_one": "Köites on jäänud {{ count }} leht",
                 "descriptive_other": "Köites on jäänud {{ count }} lehte"
+            },
+            "percentage": "{{ percentage }}%",
+            "positionsLeft": {
+                "compact_one": "Jäänud on {{ count }}",
+                "compact_other": "Jäänud on {{ count }}"
             }
+        },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "Järgmine tulemus"
+                },
+                "previous": {
+                    "compact": "Eelmine tulemus"
+                }
+            },
+            "placeholder": "Otsi märksõnu või fraase",
+            "title": "Otsi"
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "Autor pole lisanud sisukorda.",
+                "title": "Sisukorda ei leidu"
+            },
+            "title": "Sisukord"
         }
     }
 }

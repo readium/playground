@@ -2,10 +2,10 @@
 
 import { useCallback, Key, useMemo } from "react";
 
-import { 
-  useAppDispatch,  
+import {
+  useAppDispatch,
   useI18n,
-  setL10n,
+  setLocale,
   StatefulDropdown
 } from "@edrlab/thorium-web/reader";
 
@@ -54,7 +54,7 @@ export const UnstablePlaygroundLanguageSetting = () => {
     if (key) {
       const selectedLanguage = key.toString();
       try {
-        dispatch(setL10n({ locale: selectedLanguage }));
+        dispatch(setLocale(selectedLanguage));
       } catch (error) {
         console.error("Failed to change language:", error);
       }

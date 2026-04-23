@@ -49,7 +49,16 @@
             "back": {
                 "trigger": "Tagasi"
             },
-            "printingDisabled": "Printimise võimalus on lülitatud välja"
+            "printingDisabled": "Printimise võimalus on lülitatud välja",
+            "errors": {
+                "title": "Viga",
+                "notFound": "Avaldatud sisu ei leidu.",
+                "accessDenied": "Ligipääs on keelatud.",
+                "network": "Teenus pole saadaval, palun proovi hiljem uuesti.",
+                "serverError": "Serveri viga, palun proovi hiljem uuesti.",
+                "clientError": "Vigane päring.",
+                "generic": "Avaldatud sisu laadimine ei õnnestu."
+            }
         },
         "navigation": {
             "scroll": {
@@ -93,6 +102,28 @@
                     "tooltip": "Lisavalikud",
                     "trigger": "Täiendavad sõrendamise valikud"
                 }
+            }
+        }
+    },
+    "audio": {
+        "player": {
+            "progress": "Taasesituse edenemine",
+            "controls": "Taasesituse juhtnupud",
+            "mediaControls": "Heliseadistused",
+            "coverAlt": "Heliraamatu kaanepilt"
+        },
+        "remotePlayback": {
+            "trigger": "Taasesitus kaugseadmes",
+            "connected": "Kaugseade on ühendatud"
+        },
+        "settings": {
+            "sleepTimer": {
+                "hours": "t",
+                "minutes": "min",
+                "seconds": "sek",
+                "start": "Käivita",
+                "instruction": "Taasesitus peatub seadistatud aja möödumisel.",
+                "remaining": "Peatumiseni on jäänud {{ remaining }}"
             }
         }
     }

@@ -68,6 +68,44 @@ const webPublications = [
   }
 ];
 
+const epub3samples = [
+  {
+    title: "ハルコさんの彼氏",
+    author: "Riko Kratsuka",
+    cover: "/images/Haruko.jpg",
+    url: "/read/haruko",
+    rendition: "Fixed-Layout EPUB"
+  },
+  {
+    title: "מפליגים בישראל",
+    author: "אורי עידן",
+    cover: "/images/israelSailing.jpg",
+    url: "/read/israel-sailing",
+    rendition: "Reflowable EPUB"
+  },
+  {
+    title: "日本語組版処理の要件（日本語版）",
+    author: "W3C® (MIT, ERCIM, Keio)",
+    cover: "/images/jlreq.png",
+    url: "/read/jlreq",
+    rendition: "Reflowable EPUB"
+  },
+  {
+    title: "草枕",
+    author: "夏目 漱石",
+    cover: "/images/Kusamakura.png",
+    url: "/read/kusamakura",
+    rendition: "Reflowable EPUB"
+  },
+  {
+    title: "السرطان من  للوقاية الصحيح الغذائي  النظام",
+    author: "دافيد  خيّاط لبروفيسورا",
+    cover: "/images/RegimeAnticancerArabic.jpg",
+    url: "/read/regime-anticancer-arabic",
+    rendition: "Reflowable EPUB"
+  }
+];
+
 const audiobooks = [
   {
     title: "Flatland",
@@ -111,8 +149,25 @@ export default function Home() {
         <p className="subtitle">Reference implementation of <a href="https://github.com/edrlab/thorium-web">Thorium Web</a>, <a href="https://github.com/readium/web">Readium Web</a> and <a href="https://github.com/readium/css">Readium CSS</a>.</p>
       </header>
 
+      <h2>Our selection</h2>
+
       <PublicationGrid
         publications={ [...books, ...webPublications, ...audiobooks] }
+        renderCover={ (publication) => (
+          <Image
+            src={ publication.cover }
+            alt=""
+            loading="lazy"
+            width={ 120 }
+            height={ 180 }
+          />
+        ) }
+      />
+
+      <h2>EPUB3 Samples</h2>
+
+      <PublicationGrid
+        publications={ epub3samples }
         renderCover={ (publication) => (
           <Image
             src={ publication.cover }

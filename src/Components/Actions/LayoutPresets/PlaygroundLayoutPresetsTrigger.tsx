@@ -21,10 +21,12 @@ export const PlaygroundLayoutPresetsTrigger = ({ variant }: StatefulActionTrigge
   const { preferences } = usePreferences<CustomKeys>();
   
   const profile = useAppSelector(state => state.reader.profile);
+  const isFXL = useAppSelector(state => state.publication.isFXL);
   const actionState = useAppSelector(state => profile ? state.actions.keys[profile][PlaygroundActionsKeys.layoutPresets] : undefined);
   const dispatch = useAppDispatch();
-
   const { t } = useI18n("playground");
+
+  if (profile !== "epub" || isFXL) return null;
  
   const setOpen = (value: boolean) => {
     if (profile) {

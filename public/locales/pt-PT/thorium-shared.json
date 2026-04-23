@@ -37,6 +37,10 @@
                 "compact": "Seguinte",
                 "descriptive": "Página seguinte"
             },
+            "goToNextResource": {
+                "compact": "Seguinte",
+                "descriptive": "Recurso seguinte"
+            },
             "goToNextSentence": {
                 "compact": "Seguinte",
                 "descriptive": "Frase seguinte"
@@ -53,9 +57,81 @@
                 "compact": "Anterior",
                 "descriptive": "Página anterior"
             },
+            "goToPreviousResource": {
+                "compact": "Anterior",
+                "descriptive": "Recurso anterior"
+            },
             "goToPreviousSentence": {
                 "compact": "Anterior",
                 "descriptive": "Frase anterior"
+            }
+        },
+        "annotations": {
+            "actions": {
+                "editNote": {
+                    "compact": "Editar anotação"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "Adicionar marcador"
+                    },
+                    "delete": {
+                        "compact": "Eliminar marcador",
+                        "confirmation": "Tem a certeza de que deseja eliminar este marcador?"
+                    }
+                },
+                "emptyState": {
+                    "description": "Ainda não foram adicionados marcadores.",
+                    "title": "Sem marcadores"
+                },
+                "title": "Marcadores"
+            },
+            "note": {
+                "title": "Anotação"
+            },
+            "sort": {
+                "lastEdited": {
+                    "compact": "Última edição"
+                },
+                "progression": {
+                    "compact": "Progresso"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "Pausa",
+                "play": "Tocar",
+                "skipBackward": {
+                    "compact": "Rebobinar",
+                    "descriptive": "Salta para trás"
+                },
+                "skipForward": {
+                    "compact": "Avançar",
+                    "descriptive": "Avanço rápido"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "volume": "Volume"
+                },
+                "autoPlay": {
+                    "label": "Reprodução contínua",
+                    "title": "Reprodução automática"
+                },
+                "playbackRate": {
+                    "compact": "Velocidade",
+                    "descriptive": "Velocidade de reprodução"
+                },
+                "sleepTimer": {
+                    "compact": "Temporizador",
+                    "presets": {
+                        "endOfChapter": "Fim do capítulo",
+                        "endOfResource": "Fim do recurso"
+                    }
+                }
             }
         },
         "preferences": {
@@ -243,6 +319,21 @@
                 "compact": "{{ x }} de {{ y }}",
                 "descriptive": "{{ x }} de {{ y }} ({{ z }})"
             }
+        },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "Resultado seguinte"
+                },
+                "previous": {
+                    "compact": "Resultado anterior"
+                }
+            },
+            "placeholder": "Pesquisar por palavras-chave ou frases",
+            "result_many": "{{ current }} de {{ count }} resultados",
+            "result_one": "{{ current }} de {{ count }} resultado",
+            "result_other": "{{ current }} de {{ count }} resultados",
+            "title": "Pesquisar"
         },
         "tableOfContents": {
             "emptyState": {

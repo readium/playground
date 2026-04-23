@@ -1,4 +1,30 @@
 {
+    "common": {
+        "actions": {
+            "cancel": "İptal",
+            "clear": "Temizle",
+            "close": "Kapat",
+            "collapse": "Daralt",
+            "collapseAll": "Tümünü daralt",
+            "decrease": "Azalt",
+            "disable": "Devredışı bırak",
+            "enable": "Etkinleştir",
+            "exit": "Çık",
+            "expand": "Genişlet",
+            "expandAll": "Tümünü genişlet",
+            "filter": "Filtrele",
+            "hide": "Gizle",
+            "hideAll": "Tümünü gizle",
+            "increase": "Arttır",
+            "open": "Aç",
+            "reset": "Sıfırla",
+            "search": "Ara",
+            "show": "Göster",
+            "showAll": "Tümünü göster",
+            "sortBy": "Sırala:",
+            "toggle": "Değiştir"
+        }
+    },
     "reader": {
         "actions": {
             "goBackward": "Geri git",
@@ -11,6 +37,14 @@
                 "compact": "Sonraki",
                 "descriptive": "Sonraki sayfa"
             },
+            "goToNextResource": {
+                "compact": "Sonraki",
+                "descriptive": "Sonraki kaynak"
+            },
+            "goToNextSentence": {
+                "compact": "Sonraki",
+                "descriptive": "Sonraki cümle"
+            },
             "goToPosition": {
                 "compact": "Şuraya git…",
                 "descriptive": "Konuma git"
@@ -22,6 +56,14 @@
             "goToPreviousPage": {
                 "compact": "Önceki",
                 "descriptive": "Önceki sayfa"
+            },
+            "goToPreviousResource": {
+                "compact": "Önceki",
+                "descriptive": "Önceki kaynak"
+            },
+            "goToPreviousSentence": {
+                "compact": "Önceki",
+                "descriptive": "Önceki cümle"
             }
         },
         "preferences": {

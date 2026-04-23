@@ -1,95 +1,130 @@
 {
-  "reader": {
-    "app": {
-      "loading": "Chargement",
-      "publicationWrapper": "Vous êtes dans le contenu de la publication.",
-      "docking": {
-        "dockingLeft": "Panneau ancré à gauche",
-        "dockingRight": "Panneau ancré à droite",
-        "dockingEmpty": "Actuellement vide",
-        "dockingClosed": "Actuellement fermé, il contient {{ action }}",
-        "dockingCollapsed": "Actuellement replié. Il contient {{ action }}"
-      },
-      "header": {
-        "backLink": {
-          "trigger": "Retour à la bibliothèque",
-          "tooltip": "Bibliothèque"
+    "reader": {
+        "app": {
+            "loading": "Chargement",
+            "publicationWrapper": "Vous êtes dans le contenu de la publication.",
+            "docking": {
+                "dockingLeft": "Panneau ancré à gauche",
+                "dockingRight": "Panneau ancré à droite",
+                "dockingEmpty": "Actuellement vide",
+                "dockingClosed": "Actuellement fermé, il contient {{ action }}",
+                "dockingCollapsed": "Actuellement replié. Il contient {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Retour à la bibliothèque",
+                    "tooltip": "Bibliothèque"
+                },
+                "label": "Barre supérieure",
+                "runningHead": "Titre courant",
+                "actions": "Actions"
+            },
+            "footer": {
+                "label": "Barre inférieure"
+            },
+            "progression": {
+                "wrapper": "Progression dans la publication",
+                "referenceFallback": "chapitre en cours",
+                "pubFallback": "la publication"
+            },
+            "docker": {
+                "wrapper": "Options d’ancrage",
+                "dockToLeft": {
+                    "trigger": "Ancrer le panneau à gauche",
+                    "tooltip": "Ancrer à gauche"
+                },
+                "dockToRight": {
+                    "trigger": "Ancrer le panneau à droite",
+                    "tooltip": "Ancrer à droite"
+                },
+                "popover": {
+                    "trigger": "Afficher dans une fenêtre",
+                    "tooltip": "Fenêtrer"
+                },
+                "fullscreen": {
+                    "trigger": "Afficher au-dessus du contenu",
+                    "tooltip": "Superposer"
+                }
+            },
+            "back": {
+                "trigger": "Précédent"
+            },
+            "printingDisabled": "L’impression a été désactivée",
+            "errors": {
+                "title": "Erreur",
+                "notFound": "La publication n’a pas été trouvée.",
+                "accessDenied": "Accès refusé.",
+                "network": "Le serveur n’est pas disponible – merci de réessayer plus tard.",
+                "serverError": "Erreur server – merci de réessayer plus tard.",
+                "clientError": "Requête invalide.",
+                "generic": "Impossible de charger la publication."
+            }
         },
-        "label": "Barre supérieure",
-        "runningHead": "Titre courant",
-        "actions": "Actions"
-      },
-      "footer": {
-        "label": "Barre inférieure"
-      },
-      "progression": {
-        "wrapper": "Progression dans la publication",
-        "referenceFallback": "chapitre en cours",
-        "pubFallback": "la publication"
-      },
-      "docker": {
-        "wrapper": "Options d’ancrage",
-        "dockToLeft": {
-          "trigger": "Ancrer le panneau à gauche",
-          "tooltip": "Ancrer à gauche"
-        },
-        "dockToRight": {
-          "trigger": "Ancrer le panneau à droite",
-          "tooltip": "Ancrer à droite"
-        },
-        "popover": {
-          "trigger": "Afficher dans une fenêtre",
-          "tooltip": "Fenêtrer"
+        "navigation": {
+            "scroll": {
+                "wrapper": "Naviguer à travers la publication"
+            }
         },
         "fullscreen": {
-          "trigger": "Afficher au-dessus du contenu",
-          "tooltip": "Superposer"
+            "tooltip": "Plein-écran",
+            "trigger": "Basculer le mode plein-écran",
+            "close": "Quitter le mode plein-écran"
+        },
+        "toc": {
+            "entries": "Entrées de la table des matières"
+        },
+        "jumpToPosition": {
+            "go": "Aller",
+            "label": "Sélectionner une position entre {{ positionStart }} et {{ positionEnd }} :",
+            "error": {
+                "notFound": "Position non trouvée."
+            }
+        },
+        "overflowMenu": {
+            "active": {
+                "tooltip": "Actions supplémentaires",
+                "trigger": "Basculer le menu"
+            },
+            "hint": {
+                "tooltip": "Basculer les actions",
+                "trigger": "Afficher les actions"
+            }
+        },
+        "settings": {
+            "text": {
+                "advanced": {
+                    "tooltip": "Options supplémentaires",
+                    "trigger": "Options de formatage supplémentaires"
+                }
+            },
+            "spacing": {
+                "advanced": {
+                    "tooltip": "Options supplémentaires",
+                    "trigger": "Options d’espacement supplémentaires"
+                }
+            }
         }
-      },
-      "back": {
-        "trigger": "Précédent"
-      }
     },
-    "navigation": {
-      "scroll": {
-        "wrapper": "Naviguer à travers la publication"
-      }
-    },
-    "fullscreen": {
-      "tooltip": "Plein-écran",
-      "trigger": "Basculer le mode plein-écran",
-      "close": "Quitter le mode plein-écran"
-    },
-    "toc": {
-      "entries": "Entrées de la table des matières"
-    },
-    "jumpToPosition": {
-      "go": "Aller",
-      "label": "Sélectionner une position entre {{ positionStart }} et {{ positionEnd }} :"
-    },
-    "overflowMenu": {
-      "active": {
-        "tooltip": "Actions supplémentaires",
-        "trigger": "Basculer le menu"
-      },
-      "hint": {
-        "tooltip": "Basculer les actions",
-        "trigger": "Afficher les actions"
-      }
-    },
-    "settings": {
-      "text": {
-        "advanced": {
-          "tooltip": "Options supplémentaires",
-          "trigger": "Options de formatage supplémentaires"
+    "audio": {
+        "player": {
+            "progress": "Progression de lecture",
+            "controls": "Contrôles de lecture",
+            "mediaControls": "Actions de lecture",
+            "coverAlt": "Couverture du livre audio"
+        },
+        "remotePlayback": {
+            "trigger": "Lecture distante",
+            "connected": "Appareil connecté"
+        },
+        "settings": {
+            "sleepTimer": {
+                "hours": "h",
+                "minutes": "m",
+                "seconds": "s",
+                "start": "Démarrer",
+                "instruction": "La lecture s’arrêtera après la durée réglée.",
+                "remaining": "Arrêt dans {{ remaining }}"
+            }
         }
-      },
-      "spacing": {
-        "advanced": {
-          "tooltip": "Options supplémentaires",
-          "trigger": "Options d’espacement supplémentaires"
-        }
-      }
     }
-  }
 }

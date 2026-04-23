@@ -49,7 +49,16 @@
                 "referenceFallback": "dabartinis skyrius",
                 "pubFallback": "leidinys"
             },
-            "printingDisabled": "Spausdinimas išjungtas"
+            "printingDisabled": "Spausdinimas išjungtas",
+            "errors": {
+                "title": "Klaida",
+                "notFound": "Leidinys nerastas.",
+                "accessDenied": "Prieiga uždrausta.",
+                "network": "Serveris nepasiekiamas – prašome pabandyti vėliau.",
+                "serverError": "Serverio klaida – prašome pabandyti vėliau.",
+                "clientError": "Netaisyklinga užklausa.",
+                "generic": "Nepavyko įkelti leidinio."
+            }
         },
         "navigation": {
             "scroll": {

@@ -68,7 +68,7 @@
     "fullscreen": {
       "tooltip": "Fullscreen",
       "trigger": "Toggle fullscreen mode",
-      "close": "Exit fullscreen mode"    
+      "close": "Exit fullscreen mode"
     },
     "toc": {
       "entries": "Entries in the table"

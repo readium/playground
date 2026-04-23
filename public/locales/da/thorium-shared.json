@@ -120,12 +120,15 @@
         "progression": {
             "percentage": "{{ percentage }}%",
             "positionsLeft": {
+                "descriptive_one": "",
                 "descriptive_other": "{{ count }} tilbage"
             },
             "positionsLeftInChapter": {
+                "descriptive_one": "",
                 "descriptive_other": "{{ count }} tilbage i nuværende kapitel"
             },
             "positionsLeftInPublication": {
+                "descriptive_one": "",
                 "descriptive_other": "{{ count }} tilbage i bogen"
             },
             "range": "{{ start }}–{{ end }}",

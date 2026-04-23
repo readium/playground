@@ -83,7 +83,7 @@
                     }
                 },
                 "emptyState": {
-                    "description": "No bookmarks added yet.",
+                    "description": "New bookmarks added while reading will show up in this list.",
                     "title": "No bookmarks"
                 },
                 "title": "Bookmarks"
@@ -202,12 +202,20 @@
                 "title": "Layout"
             },
             "letterSpacing": "Letter spacing",
+            "ligatures": {
+                "label": "Enable ligatures",
+                "title": "Ligatures"
+            },
             "lineHeight": {
                 "default": "Default",
                 "large": "Loose",
                 "medium": "Balanced",
                 "small": "Tight",
                 "title": "Line height"
+            },
+            "noRuby": {
+                "label": "Hide ruby annotations",
+                "title": "Ruby annotations"
             },
             "offsetFirstPage": "Display first page on its own",
             "paragraphIndent": "Paragraph indent",
@@ -321,9 +329,23 @@
                 "descriptive": "{{ x }} of {{ y }} ({{ z }})"
             }
         },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "Next result"
+                },
+                "previous": {
+                    "compact": "Previous result"
+                }
+            },
+            "placeholder": "Search for keywords or phrases",
+            "result_one": "{{ current }} of {{ count }} result",
+            "result_other": "{{ current }} of {{ count }} results",
+            "title": "Search"
+        },
         "tableOfContents": {
             "emptyState": {
-                "description": "The table of contents was not provided for this publication.",
+                "description": "A table of contents was not provided by the author.",
                 "title": "No table of contents"
             },
             "title": "Table of contents"

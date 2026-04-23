@@ -38,7 +38,7 @@
             "back": {
                 "trigger": "Anterior"
             },
-            "publicationWrapper": "Agora está na publicação.",
+            "publicationWrapper": "Agora está no documento.",
             "docking": {
                 "dockingEmpty": "Atualmente vazio",
                 "dockingClosed": "Está fechado, contém {{ action }}",
@@ -49,7 +49,16 @@
             "footer": {
                 "label": "Barra inferior"
             },
-            "printingDisabled": "A impressão foi desativada"
+            "printingDisabled": "A impressão foi desativada",
+            "errors": {
+                "title": "Erro",
+                "notFound": "Documento não encontrado.",
+                "accessDenied": "Acesso negado.",
+                "network": "Servidor indisponível. Tente novamente mais tarde.",
+                "serverError": "Erro de servidor. Tente novamente mais tarde.",
+                "clientError": "Pedido inválido.",
+                "generic": "Não foi possível carregar o documento."
+            }
         },
         "navigation": {
             "scroll": {
@@ -58,7 +67,10 @@
         },
         "jumpToPosition": {
             "go": "Ir",
-            "label": "Selecionar uma posição entre {{ positionStart }} e {{ positionEnd }}:"
+            "label": "Selecionar uma posição entre {{ positionStart }} e {{ positionEnd }}:",
+            "error": {
+                "notFound": "Posição não encontrada."
+            }
         },
         "toc": {
             "entries": "Entradas no índice"

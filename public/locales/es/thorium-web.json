@@ -1,0 +1,130 @@
+{
+    "reader": {
+        "app": {
+            "loading": "Cargando",
+            "printingDisabled": "La impresión está deshabilitada",
+            "publicationWrapper": "Ahora estás dentro de la publicación.",
+            "errors": {
+                "title": "Error",
+                "notFound": "No se ha encontrado la publicación.",
+                "accessDenied": "Acceso denegado.",
+                "network": "Servidor no disponible. Por favor, inténtelo de nuevo más tarde.",
+                "serverError": "Error del servidor. Por favor, inténtelo de nuevo más tarde.",
+                "clientError": "Solicitud no válida.",
+                "generic": "No se ha podido cargar la publicación."
+            },
+            "docking": {
+                "dockingLeft": "Panel acoplado a la izquierda",
+                "dockingRight": "Panel acoplado a la derecha",
+                "dockingEmpty": "Actualmente vacío",
+                "dockingClosed": "Está cerrado; contiene {{ action }}",
+                "dockingCollapsed": "Está contraído, contiene {{ action }}"
+            },
+            "header": {
+                "backLink": {
+                    "trigger": "Volver a la biblioteca",
+                    "tooltip": "Biblioteca"
+                },
+                "label": "Barra superior",
+                "runningHead": "Titulillo",
+                "actions": "Acciones"
+            },
+            "footer": {
+                "label": "Barra inferior"
+            },
+            "progression": {
+                "wrapper": "Progreso actual",
+                "referenceFallback": "Capítulo actual",
+                "pubFallback": "la publicación"
+            },
+            "docker": {
+                "wrapper": "Opciones de acoplamiento",
+                "dockToLeft": {
+                    "trigger": "Acoplar el panel a la izquierda",
+                    "tooltip": "Acoplar a la izquierda"
+                },
+                "dockToRight": {
+                    "trigger": "Acoplar el panel a la derecha",
+                    "tooltip": "Acoplar a la derecha"
+                },
+                "popover": {
+                    "trigger": "Mostrar en una ventana",
+                    "tooltip": "Abrir como ventana emergente"
+                },
+                "fullscreen": {
+                    "trigger": "Mostrar encima del contenido",
+                    "tooltip": "Superposición"
+                }
+            },
+            "back": {
+                "trigger": "Atrás"
+            }
+        },
+        "navigation": {
+            "scroll": {
+                "wrapper": "Navegar por la publicación"
+            }
+        },
+        "fullscreen": {
+            "tooltip": "Pantalla completa",
+            "trigger": "Alternar modo de pantalla completa",
+            "close": "Salir del modo de pantalla completa"
+        },
+        "toc": {
+            "entries": "Entradas en la tabla de contenidos"
+        },
+        "jumpToPosition": {
+            "go": "Ir",
+            "label": "Seleccione una posición de {{ positionStart }} a {{ positionEnd }}:",
+            "error": {
+                "notFound": "Posición no encontrada."
+            }
+        },
+        "overflowMenu": {
+            "active": {
+                "tooltip": "Más acciones",
+                "trigger": "Mostrar u ocultar el menú"
+            },
+            "hint": {
+                "tooltip": "Mostrar u ocultar las acciones",
+                "trigger": "Mostrar acciones"
+            }
+        },
+        "settings": {
+            "text": {
+                "advanced": {
+                    "tooltip": "Más opciones",
+                    "trigger": "Más opciones de formato de texto"
+                }
+            },
+            "spacing": {
+                "advanced": {
+                    "tooltip": "Más opciones",
+                    "trigger": "Más opciones de espaciado de texto"
+                }
+            }
+        }
+    },
+    "audio": {
+        "player": {
+            "progress": "Progreso de reproducción",
+            "controls": "Controles de reproducción",
+            "mediaControls": "Configuración de audio",
+            "coverAlt": "Portada del audiolibro"
+        },
+        "remotePlayback": {
+            "trigger": "Reproducción remota",
+            "connected": "Conexión remota"
+        },
+        "settings": {
+            "sleepTimer": {
+                "hours": "h",
+                "minutes": "min",
+                "seconds": "s",
+                "start": "Inicio",
+                "instruction": "La reproducción se pausará transcurrido el tiempo establecido.",
+                "remaining": "Pausando en {{ remaining }}"
+            }
+        }
+    }
+}

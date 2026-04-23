@@ -2,7 +2,7 @@
     "reader": {
         "app": {
             "loading": "Laddar",
-            "publicationWrapper": "Du är nu i boken.",
+            "publicationWrapper": "Du är nu i publikationen.",
             "docking": {
                 "dockingLeft": "Dockad panel till vänster",
                 "dockingRight": "Dockad panel till höger",
@@ -49,7 +49,16 @@
             "back": {
                 "trigger": "Tillbaka"
             },
-            "printingDisabled": "Utskrift har inaktiverats"
+            "printingDisabled": "Utskrift har inaktiverats",
+            "errors": {
+                "title": "Fel",
+                "notFound": "Ingen publikation hittades.",
+                "accessDenied": "Access nekas.",
+                "network": "Server otillgänglig - försök igen senare.",
+                "serverError": "Serverfel - försök igen senare.",
+                "clientError": "Ogiltig begäran.",
+                "generic": "Kan inte ladda publikationen."
+            }
         },
         "navigation": {
             "scroll": {
@@ -66,7 +75,10 @@
         },
         "jumpToPosition": {
             "go": "Hoppa",
-            "label": "Välj en position från {{ positionStart }} till {{ positionEnd }}:"
+            "label": "Välj en position från {{ positionStart }} till {{ positionEnd }}:",
+            "error": {
+                "notFound": "Positionen hittades inte."
+            }
         },
         "overflowMenu": {
             "active": {

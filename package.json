@@ -34,10 +34,10 @@
     "copy-assets": "pnpm locales && pnpm fonts"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.4.0",
+    "@edrlab/thorium-web": "^1.4.1",
     "@readium/css": "^2.0.2",
-    "@readium/navigator": "^2.5.0",
-    "@readium/navigator-html-injectables": "^2.4.0",
+    "@readium/navigator": "^2.5.1",
+    "@readium/navigator-html-injectables": "^2.4.1",
     "@readium/shared": "^2.2.0",
     "@reduxjs/toolkit": "^2.11.2",
     "classnames": "^2.5.1",

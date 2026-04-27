@@ -55,7 +55,7 @@
                 "notFound": "La publication n’a pas été trouvée.",
                 "accessDenied": "Accès refusé.",
                 "network": "Le serveur n’est pas disponible – merci de réessayer plus tard.",
-                "serverError": "Erreur server – merci de réessayer plus tard.",
+                "serverError": "Erreur serveur – merci de réessayer plus tard.",
                 "clientError": "Requête invalide.",
                 "generic": "Impossible de charger la publication."
             }

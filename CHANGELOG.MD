@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.1] – 1026-04-27
+
+### Added
+
+- Implemented container-based breakpoints
+- Locales `ar`, `es`, and `et` are now supported
+
+### Changed
+
+- Collapsible `true` now checks the available space and collapses icons automatically
+- Hyphen state is no longer reset (`null`) on change to `publisher` text-alignment
+- audiobook volume is disabled for iOS
+
 ## [1.4.0] – 2026-04-23
 
 ### Added

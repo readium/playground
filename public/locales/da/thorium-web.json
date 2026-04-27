@@ -2,7 +2,7 @@
     "reader": {
         "app": {
             "loading": "Indlæser",
-            "publicationWrapper": "Du er nu i den åbnede bog.",
+            "publicationWrapper": "Du er nu i bogens indhold.",
             "docking": {
                 "dockingLeft": "Docket panel til venstre",
                 "dockingRight": "Docket panel til højre",
@@ -48,6 +48,16 @@
             },
             "back": {
                 "trigger": "Tilbage"
+            },
+            "printingDisabled": "Udskrivning er deaktiveret",
+            "errors": {
+                "title": "Fejl",
+                "notFound": "Bogen blev ikke fundet.",
+                "accessDenied": "Adgang nægtet.",
+                "network": "Serveren er utilgængelig - forsøg venligst igen senere.",
+                "serverError": "Server fejl - forsøg venligst igen senere.",
+                "clientError": "Ugyldig handling.",
+                "generic": "Kunne ikke åbne bogen."
             }
         },
         "navigation": {
@@ -65,7 +75,10 @@
         },
         "jumpToPosition": {
             "go": "Gå",
-            "label": "Vælg en position fra {{ positionStart }} til {{ positionEnd }}:"
+            "label": "Vælg en position fra {{ positionStart }} til {{ positionEnd }}:",
+            "error": {
+                "notFound": "Position i bogen kunne ikke findes."
+            }
         },
         "overflowMenu": {
             "active": {
@@ -89,6 +102,28 @@
                     "tooltip": "Flere indstillinger",
                     "trigger": "Flere afstands-indstillinger"
                 }
+            }
+        }
+    },
+    "audio": {
+        "player": {
+            "progress": "Position i bogen",
+            "controls": "Afspilnings-styring",
+            "mediaControls": "Lydindstillinger",
+            "coverAlt": "Lydbogens forside"
+        },
+        "remotePlayback": {
+            "trigger": "Afspilning via andre enheder",
+            "connected": "Forbundet til fjernafspilning"
+        },
+        "settings": {
+            "sleepTimer": {
+                "hours": "timer",
+                "minutes": "min",
+                "seconds": "s",
+                "start": "Start",
+                "instruction": "Afspilning vil blive sat på pause når timeren udløber.",
+                "remaining": "Sætter på pause om {{ remaining }}"
             }
         }
     }

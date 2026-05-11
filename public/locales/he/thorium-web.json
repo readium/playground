@@ -1,0 +1,9 @@
+{
+    "reader": {
+        "app": {
+            "loading": "טעינה",
+            "printingDisabled": "הדפסה אינה זמינה",
+            "publicationWrapper": "אתה עכשיו בכותר"
+        }
+    }
+}

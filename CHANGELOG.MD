@@ -5,7 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.4.1] – 1026-04-27
+## [1.5.0] – 2026–05–11
+
+### Added
+
+- Shortcuts have been re-enabled after migrating to Readium Navigator’s Peripheral API
+
+### Changed
+
+- Line height presets are now compensated depending on the publication language
+- Zoom-in/out are now mapped to font-size/zoom callbacks
+
+### Fixed
+
+- Audiobook cover is now resolved against `baseUrl` instead of `window.location`
+- Pagination arrows do no longer lose focus on navigation
+
+## [1.4.1] – 2026-04-27
 
 ### Added
 

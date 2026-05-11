@@ -1,15 +1,17 @@
 "use client";
 
 import { ThCollapsibilityVisibility } from "@edrlab/thorium-web/core/components";
-import { 
-  createPreferences, 
-  CustomizableKeys, 
-  defaultPreferences, 
-  ThActionsKeys, 
-  ThBackLinkVariant, 
-  ThBreakpoints, 
-  ThDockingTypes, 
-  ThSheetTypes 
+import {
+  createPreferences,
+  CustomizableKeys,
+  defaultPreferences,
+  TEXT_INPUT_SELECTORS,
+  ThActionsKeys,
+  ThBackLinkVariant,
+  ThBreakpoints,
+  ThDockingTypes,
+  ThSheetTypes,
+  type ThShortcutConfig
 } from "@edrlab/thorium-web/core/preferences";
 
 export enum PlaygroundActionsKeys {
@@ -59,7 +61,10 @@ export const playgroundPreferences = createPreferences<CustomKeys>({
       ...defaultPreferences.actions.keys,
       [PlaygroundActionsKeys.layoutPresets]: {
         visibility: ThCollapsibilityVisibility.overflow,
-        shortcut: null,
+        shortcut: {
+          label: "Y",
+          keyCombos: [{ keyCode: 89, shift: true, alt: true, suppressOnInteractiveElement: TEXT_INPUT_SELECTORS }]
+        } satisfies ThShortcutConfig,
         sheet: {
           defaultSheet: ThSheetTypes.popover,
           breakpoints: {
@@ -78,7 +83,10 @@ export const playgroundPreferences = createPreferences<CustomKeys>({
       },
       [PlaygroundActionsKeys.readerSettings]: {
         visibility: ThCollapsibilityVisibility.overflow,
-        shortcut: null,
+        shortcut: {
+          label: "E",
+          keyCombos: [{ keyCode: 69, shift: true, alt: true, suppressOnInteractiveElement: TEXT_INPUT_SELECTORS }]
+        } satisfies ThShortcutConfig,
         sheet: {
           defaultSheet: ThSheetTypes.popover,
           breakpoints: {

@@ -12,8 +12,8 @@
             },
             "header": {
                 "backLink": {
-                    "trigger": "Ritorna alla tua libreria",
-                    "tooltip": "Libreria"
+                    "trigger": "Ritorna alla tua biblioteca",
+                    "tooltip": "Biblioteca"
                 },
                 "label": "Barra in alto",
                 "runningHead": "Titolo principale",
@@ -122,7 +122,7 @@
                 "minutes": "min",
                 "seconds": "s",
                 "start": "Avvio",
-                "instruction": "La riproduzione si fermerà dopo l'intervallo di tempo selezionato.",
+                "instruction": "La riproduzione si interromperà dopo l'intervallo di tempo selezionato.",
                 "remaining": "Arresto in {{ remaining }}"
             }
         }

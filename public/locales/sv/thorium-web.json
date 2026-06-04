@@ -121,8 +121,8 @@
                 "hours": "h",
                 "minutes": "min",
                 "seconds": "s",
-                "instruction": "Uppspelningen pausas efter den inställda tiden.",
-                "remaining": "Pausar om {{ remaining }}",
+                "instruction": "Uppspelningen stoppas efter den inställda tiden.",
+                "remaining": "Stoppar uppspelning om {{ remaining }}",
                 "start": "Starta sömntimer"
             }
         }

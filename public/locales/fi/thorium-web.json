@@ -118,7 +118,7 @@
         },
         "settings": {
             "sleepTimer": {
-                "hours": "h",
+                "hours": "t",
                 "minutes": "min",
                 "seconds": "s",
                 "start": "Aloita",

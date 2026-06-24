@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.4] – 2026–06–24
+
+### Fixed
+
+- Fixed the case where the `useTheming` hook would struggle to handle an audiobook without a cover, resulting in an incomplete auto theme. It now falls back to `colorScheme` in that specific case;
+- Corrected sizing of the fallback cover for such audio publications;
+- Resolved Publication’s Timeline API struggling with media fragments containing decimals, due to `LocatorLocations.time()` using `parseInt` instead of `parseFloat` in TS-Toolkit, resulting in Previous/Next playback controls not working as expected.
+
 ## [1.5.3] – 2026–06–04
 
 ### Added

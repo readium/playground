@@ -1,6 +1,6 @@
 {
   "name": "@readium/playground",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Play with Readium technologies in this reference deployment of Thorium Web",
   "keywords": [
     "readium",
@@ -34,11 +34,11 @@
     "copy-assets": "pnpm locales && pnpm fonts"
   },
   "dependencies": {
-    "@edrlab/thorium-web": "^1.5.4",
+    "@edrlab/thorium-web": "^1.5.5",
     "@readium/css": ">=2.0.5",
-    "@readium/navigator": ">=2.5.8",
-    "@readium/navigator-html-injectables": ">=2.4.4",
-    "@readium/shared": "^2.2.1",
+    "@readium/navigator": ">=2.6.1",
+    "@readium/navigator-html-injectables": ">=2.5.0",
+    "@readium/shared": ">=2.2.3",
     "@reduxjs/toolkit": "^2.11.2",
     "classnames": "^2.5.1",
     "i18next": "^25.8.13",

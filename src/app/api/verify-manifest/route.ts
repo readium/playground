@@ -1,9 +1,6 @@
 import { NextResponse } from "next/server";
 import { verifyManifestUrlFromEnv } from "@edrlab/thorium-web/next";
 
-// Configure this route to use the Edge Runtime
-export const runtime = "edge";
-
 // This function runs on the server
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

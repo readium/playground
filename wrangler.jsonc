@@ -6,5 +6,11 @@
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
+	},
+	"images": {
+		"binding": "IMAGES"
+	},
+	"vars": {
+		"PNPM_VERSION": "11.1.0"
 	}
 }

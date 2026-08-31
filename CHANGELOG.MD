@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] – 2026–08–31
+
+### Added
+
+- Docked actions can now be reserved (`docked.reserved`) so their slot can’t be popped out or evicted by other actions;
+- Added `docked.reopenOnLoad` to control whether a docked action should reopen if never manipulated by the user;
+- Added `sheet.fallbackSheet`, used when a default `dockedStart`/`dockedEnd` sheet has no slot available;
+
+### Changed
+
+- `dockedStart`/`dockedEnd` can now be used as `defaultSheet`;
+- `width`, `minWidth`, `maxWidth` (`docking` and `layout.defaults.dockingWidth`) now accept strings with an explicit unit (`px`, `%`, `em`, `rem`, `vh`, `vw`);
+- Updated Arabic, Spanish and Swedish translations.
+
+### Fixed
+
+- Docked panels should now remember the user’s chosen width.
+
 ## [1.5.5] – 2026–07–24
 
 ### Changed

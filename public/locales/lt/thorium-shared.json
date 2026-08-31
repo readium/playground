@@ -29,6 +29,9 @@
         "actions": {
             "goBackward": "Eiti atgal",
             "goForward": "Eiti pirmyn",
+            "goToExtendedDescription": {
+                "compact": "Išplėstinis aprašymas"
+            },
             "goToNextChapter": {
                 "compact": "Kitas",
                 "descriptive": "Kitas skyrius"
@@ -200,8 +203,8 @@
                 "title": "Skiemenavimas"
             },
             "layout": {
-                "paginated": "Puslapiuotas",
-                "scrolled": "Slenkamasis",
+                "paginated": "Puslapiais",
+                "scrolled": "Slenkamas",
                 "title": "Išdėstymas"
             },
             "letterSpacing": "Raidžių išretinimas",
@@ -210,9 +213,9 @@
                 "title": "Ligatūros"
             },
             "lineHeight": {
-                "default": "Numatytasis",
+                "default": "Numatytas",
                 "large": "Erdvus",
-                "medium": "Subalansuotas",
+                "medium": "Vidutinis",
                 "small": "Glaudus",
                 "title": "Eilutės aukštis"
             },
@@ -245,9 +248,9 @@
             "spacing": {
                 "presets": {
                     "accessible": "Prieinamas",
-                    "balanced": "Subalansuotas",
+                    "balanced": "Vidutinis",
                     "custom": "Tinkintas",
-                    "default": "Numatytasis",
+                    "default": "Numatytas",
                     "loose": "Erdvus",
                     "tight": "Glaustas",
                     "title": "Išankstiniai"
@@ -320,9 +323,9 @@
                 "descriptive_other": "Liko {{ count }} pozicijų"
             },
             "positionsLeftInChapter": {
-                "compact_few": "Skyriuje lijo {{ count }}",
-                "compact_one": "Skyriuje lijo {{ count }}",
-                "compact_other": "Skyriuje lijo {{ count }}",
+                "compact_few": "Skyriuje liko {{ count }}",
+                "compact_one": "Skyriuje liko {{ count }}",
+                "compact_other": "Skyriuje liko {{ count }}",
                 "descriptive_few": "Skyriuje liko {{ count }} pozicijos",
                 "descriptive_one": "Skyriuje liko {{ count }} pozicija",
                 "descriptive_other": "Skyriuje liko {{ count }} pozicijų"

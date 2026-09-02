@@ -77,7 +77,7 @@
     "cpx2": "^8.0.0",
     "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^9.39.2",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "16.2.12",
     "typescript": "^5.9.3",
     "wrangler": "^4.127.1"
   }

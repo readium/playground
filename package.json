@@ -22,6 +22,7 @@
     "url": "https://github.com/readium/playground/issues"
   },
   "private": true,
+  "packageManager": "pnpm@11.1.0",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -77,6 +78,7 @@
     "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.1.6",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.127.1"
   }
 }

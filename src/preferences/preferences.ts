@@ -56,6 +56,7 @@ export const playgroundPreferences = createPreferences<CustomKeys>({
       PlaygroundActionsKeys.readerSettings
     ],
     webPubOrder: defaultPreferences.actions.webPubOrder,
+    divinaOrder: defaultPreferences.actions.divinaOrder,
     collapse: defaultPreferences.actions.collapse, 
     keys: {
       ...defaultPreferences.actions.keys,

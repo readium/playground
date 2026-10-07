@@ -23,7 +23,7 @@ const epubPlugins = async (): Promise<ThPlugin[]> => {
     id: "custom",
     name: "Custom Components",
     description: "Custom components for Readium Playground StatefulReader",
-    version: "1.6.0",
+    version: "1.7.0",
     components: {
       actions: {
         [PlaygroundActionsKeys.layoutPresets]: {
@@ -47,6 +47,8 @@ export const CustomReader = (props: Omit<ReaderComponentProps<ReaderProfile | nu
       import("@edrlab/thorium-web/webpub/styles");
     } else if (props.profile === "audio") {
       import("@edrlab/thorium-web/audio/styles");
+    } else if (props.profile === "divina") {
+      import("@edrlab/thorium-web/divina/styles");
     }
   }, [props.profile]);
 

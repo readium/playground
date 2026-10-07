@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] – 2026–10–07
+
+### Added
+
+- Divina support (comics, manga, webtoons) via Thorium Web 1.7.0, with “Pepper & Carrot: Fresh Start” as an example publication.
+
+### Changed
+
+- Updated Thorium Web to 1.7.0 and Readium dependencies (`@readium/navigator` 2.11.1, `@readium/shared` 2.7.0, `@readium/navigator-html-injectables` 2.8.5);
+- Updated Danish, English, French, Spanish and Swedish translations.
+
 ## [1.6.0] – 2026–08–31
 
 ### Added
